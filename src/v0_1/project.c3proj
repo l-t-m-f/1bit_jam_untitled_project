@@ -33,14 +33,22 @@
 			"name": "Sprite",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "v15jb14ulow",
 	"objectTypes": {
 		"items": [
 			"Master_SpriteTest",
-			"Master_JSON",
-			"Master_AJAX"
+			"Master_DialogsDataJSON",
+			"Master_AJAX",
+			"Master_Text"
 		],
 		"subfolders": [
 			{
@@ -61,7 +69,8 @@
 	},
 	"layouts": {
 		"items": [
-			"Master_FirstGym"
+			"Master_FirstGym",
+			"Master_Defaults"
 		],
 		"subfolders": [
 			{
@@ -176,7 +185,7 @@
 				{
 					"items": [
 						{
-							"name": "Test.json",
+							"name": "DialogsData.json",
 							"type": "application/json",
 							"sid": 883003318830563,
 							"file-info": {
@@ -257,5 +266,5 @@
 	},
 	"viewportWidth": 640,
 	"viewportHeight": 480,
-	"firstLayout": null
+	"firstLayout": "Master_FirstGym"
 }

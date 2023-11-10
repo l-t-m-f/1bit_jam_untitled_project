@@ -1,5 +1,67 @@
 {
 	"name": "E_DialogSystem",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 905418738297007
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "InitDialogSystem",
+					"sid": 871474802622997
+				}
+			],
+			"sid": 767257293834461
+		},
+		{
+			"functionName": "InitDialogSystem",
+			"functionDescription": "",
+			"functionCategory": "DialogSystem",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "request-project-file",
+					"objectClass": "Master_AJAX",
+					"sid": 376945376853686,
+					"parameters": {
+						"tag": "\"dialog_load\"",
+						"file": "DialogsData.json"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 595539094013894
+				},
+				{
+					"id": "parse",
+					"objectClass": "Master_DialogsDataJSON",
+					"sid": 435236723489928,
+					"parameters": {
+						"data": "Master_AJAX.LastData"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Master_Text",
+					"sid": 307707269987221,
+					"parameters": {
+						"text": "Master_DialogsDataJSON.Get(\"lines.0\")"
+					}
+				}
+			],
+			"sid": 303684509473369
+		}
+	],
 	"sid": 812242941960170
 }

@@ -1,5 +1,10 @@
 {
 	"name": "E_TestEvents1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "E_DialogSystem"
+		}
+	],
 	"sid": 228151295908341
 }

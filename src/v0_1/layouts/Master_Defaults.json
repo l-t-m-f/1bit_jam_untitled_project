@@ -1,44 +1,11 @@
 {
-	"name": "E_TestLayout1",
+	"name": "Master_Defaults",
 	"layers": [
 		{
 			"name": "Layer 0",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
-				{
-					"type": "E_NP_DialogBox",
-					"properties": {
-						"left-margin": 12,
-						"right-margin": 12,
-						"top-margin": 12,
-						"bottom-margin": 12,
-						"edges": "tile",
-						"fill": "stretch",
-						"initially-visible": true,
-						"origin": "top-left",
-						"seams": "overlap"
-					},
-					"uid": 3,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 64,
-						"y": 320,
-						"width": 512,
-						"height": 128,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
 				{
 					"type": "Master_Text",
 					"properties": {
@@ -63,14 +30,14 @@
 						"origin": "top-left",
 						"read-aloud": false
 					},
-					"uid": 6,
+					"uid": 7,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 96,
-						"y": 352,
-						"width": 448,
-						"height": 64,
+						"x": 13,
+						"y": 23,
+						"width": 200,
+						"height": 30,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -84,7 +51,7 @@
 					}
 				}
 			],
-			"sid": 884218117682803,
+			"sid": 310504732903417,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -95,9 +62,9 @@
 				1
 			],
 			"backgroundColor": [
-				0,
-				0,
-				0,
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
 				1
 			],
 			"isTransparent": false,
@@ -113,21 +80,14 @@
 			"global": false
 		}
 	],
-	"sid": 127882250725424,
-	"nonworld-instances": [
-		{
-			"type": "Master_DialogsDataJSON",
-			"properties": {},
-			"uid": 4,
-			"instanceVariables": {}
-		}
-	],
+	"sid": 850621575646510,
+	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 640,
-	"height": 480,
+	"width": 1280,
+	"height": 960,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "E_TestEvents1"
+	"eventSheet": null
 }
