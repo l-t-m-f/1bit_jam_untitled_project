@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "NinePatch",
+			"name": "9-patch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -22,7 +29,8 @@
 		"subfolders": [
 			{
 				"items": [
-					"E_OtherSpriteTest"
+					"E_SP_Test2",
+					"E_NP_DialogBox"
 				],
 				"subfolders": [],
 				"name": "Emile"
@@ -56,7 +64,8 @@
 		"subfolders": [
 			{
 				"items": [
-					"E_TestEvents1"
+					"E_TestEvents1",
+					"E_DialogSystem"
 				],
 				"subfolders": [],
 				"name": "Emile"
@@ -147,7 +156,22 @@
 		},
 		"general": {
 			"items": [],
-			"subfolders": []
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "file.json",
+							"type": "application/json",
+							"sid": 883003318830563,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "Dialog"
+				}
+			]
 		}
 	},
 	"timelines": {
