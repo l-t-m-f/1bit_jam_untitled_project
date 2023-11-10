@@ -1,0 +1,17 @@
+{
+	"name": "sf8Dir",
+	"plugin-id": "Sprite",
+	"sid": 949012588499926,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 803034617818336
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"sPlayer"
+	]
+}

@@ -1,5 +1,5 @@
 {
-	"name": "E_S_Player",
+	"name": "sPlayer",
 	"plugin-id": "Sprite",
 	"sid": 765675962221485,
 	"isGlobal": false,
@@ -12,13 +12,13 @@
 				"frames": [
 					{
 						"width": 32,
-						"height": 64,
+						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2834578,
+						"imageSpriteId": 8844124,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

@@ -1,5 +1,5 @@
 {
-	"name": "E_DialogSystem",
+	"name": "eDialogsSystem",
 	"events": [
 		{
 			"eventType": "variable",
@@ -22,23 +22,6 @@
 			"sid": 278107052179653
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 905418738297007
-				}
-			],
-			"actions": [
-				{
-					"callFunction": "InitDialogSystem",
-					"sid": 871474802622997
-				}
-			],
-			"sid": 767257293834461
-		},
-		{
 			"functionName": "InitDialogSystem",
 			"functionDescription": "",
 			"functionCategory": "DialogSystem",
@@ -51,11 +34,11 @@
 			"actions": [
 				{
 					"id": "request-project-file",
-					"objectClass": "Main_AJAX",
+					"objectClass": "AJAX",
 					"sid": 376945376853686,
 					"parameters": {
 						"tag": "\"dialog_load\"",
-						"file": "DialogsData.json"
+						"file": "RefDialogsData.json"
 					}
 				},
 				{
@@ -65,10 +48,10 @@
 				},
 				{
 					"id": "parse",
-					"objectClass": "Main_DialogsDataJSON",
+					"objectClass": "jsonDialogsData",
 					"sid": 435236723489928,
 					"parameters": {
-						"data": "Main_AJAX.LastData"
+						"data": "AJAX.LastData"
 					}
 				},
 				{
@@ -85,11 +68,11 @@
 				},
 				{
 					"id": "set-text",
-					"objectClass": "Main_Text",
+					"objectClass": "Text",
 					"sid": 797659682297831,
 					"disabled": true,
 					"parameters": {
-						"text": "Main_DialogsDataJSON.Get(\"lines.0\")"
+						"text": "jsonDialogsData.Get(\"lines.0\")"
 					}
 				}
 			],
@@ -176,8 +159,8 @@
 									"objectClass": "System",
 									"sid": 313858749431274,
 									"parameters": {
-										"object": "Main_SpriteFont_1",
-										"expression": "Main_SpriteFont_1.TemplateName",
+										"object": "sfTimesNewYorker",
+										"expression": "sfTimesNewYorker.TemplateName",
 										"comparison": 0,
 										"value": "\"Spritefont1_Text\""
 									}
@@ -186,11 +169,11 @@
 							"actions": [
 								{
 									"id": "typewriter-text",
-									"objectClass": "Main_SpriteFont_1",
+									"objectClass": "sfTimesNewYorker",
 									"sid": 812778449808445,
 									"parameters": {
-										"text": "Main_DialogsDataJSON.Get(last_line_access_str&\".text\")",
-										"duration": "0.04 * len(Main_DialogsDataJSON.Get(last_line_access_str&\".text\"))"
+										"text": "jsonDialogsData.Get(last_line_access_str&\".text\")",
+										"duration": "0.04 * len(jsonDialogsData.Get(last_line_access_str&\".text\"))"
 									}
 								}
 							],
@@ -274,7 +257,7 @@
 							"sid": 394063877811817,
 							"parameters": {
 								"variable": "last_choice_cnt",
-								"value": "Main_DialogsDataJSON.ArraySize(pChoicesAccessStr)"
+								"value": "jsonDialogsData.ArraySize(pChoicesAccessStr)"
 							}
 						}
 					],
@@ -325,10 +308,10 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 269352522538540,
+									"sid": 202770700738452,
 									"parameters": {
-										"object-to-create": "E_NP_DialogChoice",
-										"layer": "0",
+										"object-to-create": "npDialogChoice",
+										"layer": "\"E_HUD_Dialogs\"",
 										"x": "(LayoutWidth/2) - (((128*last_choice_cnt)+(32*(last_choice_cnt-1)))/2) + ((loopindex(\"i\")-1) * 160)",
 										"y": "CHOICE_BUTTON_INITIAL_SPAWN_Y",
 										"create-hierarchy": true,
@@ -343,10 +326,10 @@
 									"conditions": [
 										{
 											"id": "pick-children",
-											"objectClass": "E_NP_DialogChoice",
+											"objectClass": "npDialogChoice",
 											"sid": 482040441768460,
 											"parameters": {
-												"child": "Main_SpriteFont_1",
+												"child": "sfTimesNewYorker",
 												"which": "own"
 											}
 										}
@@ -354,10 +337,10 @@
 									"actions": [
 										{
 											"id": "set-text",
-											"objectClass": "Main_SpriteFont_1",
+											"objectClass": "sfTimesNewYorker",
 											"sid": 466395651112063,
 											"parameters": {
-												"text": "Main_DialogsDataJSON.Get(pChoicesAccessStr&\".\"&str(loopindex(\"i\")-1))"
+												"text": "jsonDialogsData.Get(pChoicesAccessStr&\".\"&str(loopindex(\"i\")-1))"
 											}
 										}
 									],
@@ -374,14 +357,14 @@
 			"conditions": [
 				{
 					"id": "on-created",
-					"objectClass": "E_NP_DialogChoice",
+					"objectClass": "npDialogChoice",
 					"sid": 965885542193092
 				}
 			],
 			"actions": [
 				{
 					"id": "tween-one-property",
-					"objectClass": "E_NP_DialogChoice",
+					"objectClass": "npDialogChoice",
 					"sid": 710363231380857,
 					"behaviorType": "Tween",
 					"parameters": {

@@ -1,0 +1,26 @@
+{
+	"name": "eGlobal",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "true",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 909854605988470
+		},
+		{
+			"eventType": "variable",
+			"name": "false",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 726629606761193
+		}
+	],
+	"sid": 873891583360930
+}

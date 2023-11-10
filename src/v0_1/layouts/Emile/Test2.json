@@ -1,5 +1,5 @@
 {
-	"name": "E_LevelTest1",
+	"name": "Test2",
 	"layers": [
 		{
 			"name": "Background",
@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "E_NP_StageBoundary",
+					"type": "npStageBoundary",
 					"properties": {
 						"left-margin": 6,
 						"right-margin": 6,
@@ -74,7 +74,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "E_S_Player",
+					"type": "sPlayer",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -84,12 +84,25 @@
 					},
 					"uid": 11,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"8Direction": {
+							"properties": {
+								"max-speed": -1,
+								"acceleration": -1,
+								"deceleration": -1,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"allow-sliding": false,
+								"default-controls": false,
+								"enabled": false
+							}
+						}
+					},
 					"world": {
 						"x": 320,
-						"y": 256,
+						"y": 288,
 						"width": 32,
-						"height": 64,
+						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -174,5 +187,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": null
+	"eventSheet": "eTest2"
 }

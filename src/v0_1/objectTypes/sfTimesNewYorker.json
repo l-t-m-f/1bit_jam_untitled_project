@@ -1,20 +1,20 @@
 {
-	"name": "E_NP_DialogChoice",
-	"plugin-id": "NinePatch",
-	"sid": 708573301057603,
+	"name": "sfTimesNewYorker",
+	"plugin-id": "Spritefont2",
+	"sid": 401314369215146,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 48,
-		"height": 48,
+		"width": 512,
+		"height": 512,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
-		"imageSpriteId": 4516662,
+		"imageSpriteId": 8167394,
 		"useCollisionPoly": true,
 		"tag": ""
 	}

@@ -1,0 +1,879 @@
+{
+	"name": "eKeyboard",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 400079733942433
+				}
+			],
+			"actions": [
+				{
+					"id": "set-at-xy",
+					"objectClass": "aKeystate",
+					"sid": 911616551218990,
+					"parameters": {
+						"x": "0",
+						"y": "0",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 546316951744455,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 404456416059647,
+							"parameters": {
+								"first-value": "Functions.IsUnpressed(Keyboard.LastKeyCode)",
+								"comparison": 0,
+								"second-value": "true"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "aKeystate",
+							"sid": 594369366727650,
+							"parameters": {
+								"x": "0",
+								"y": "Keyboard.LastKeyCode",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 688366835395897,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 887514167235689,
+									"parameters": {
+										"first-value": "Functions.IsMovementKeycode(Keyboard.LastKeyCode)",
+										"comparison": 0,
+										"second-value": "true"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 350806576942981,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 880474466043277,
+											"parameters": {
+												"first-value": "Functions.IsCurrentMoveKeysOpposite(Keyboard.LastKeyCode)",
+												"comparison": 0,
+												"second-value": "true"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "SetMoveKeyMemPos",
+											"sid": 976286160284541,
+											"parameters": [
+												"0",
+												"Keyboard.LastKeyCode"
+											]
+										}
+									],
+									"sid": 847370124638406
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 971769277602755
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 104265349565808,
+											"parameters": {
+												"first-value": "Functions.IsMoveKeyPosEmpty(0)",
+												"comparison": 0,
+												"second-value": "true"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "SetMoveKeyMemPos",
+											"sid": 685931444252445,
+											"parameters": [
+												"0",
+												"Keyboard.LastKeyCode"
+											]
+										}
+									],
+									"sid": 371299962031580
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 745577310361183
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 917469938431121,
+											"parameters": {
+												"first-value": "Functions.IsMoveKeyPosEmpty(1)",
+												"comparison": 0,
+												"second-value": "true"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "SetMoveKeyMemPos",
+											"sid": 261691381265402,
+											"parameters": [
+												"1",
+												"Keyboard.LastKeyCode"
+											]
+										}
+									],
+									"sid": 465970281306321
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 445896963011733
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "SetMoveKeyMemPos",
+											"sid": 204099848713418,
+											"parameters": [
+												"1",
+												"Keyboard.LastKeyCode"
+											]
+										}
+									],
+									"sid": 167832745716264
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-released",
+					"objectClass": "Keyboard",
+					"sid": 966742594797011
+				}
+			],
+			"actions": [],
+			"sid": 115401742270632,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 373985577268168,
+							"parameters": {
+								"first-value": "Functions.IsPressed(Keyboard.LastKeyCode)",
+								"comparison": 0,
+								"second-value": "true"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "aKeystate",
+							"sid": 349702110310843,
+							"parameters": {
+								"x": "0",
+								"y": "Keyboard.LastKeyCode",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 439213257908735,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 614159268416350,
+									"parameters": {
+										"first-value": "Functions.IsMovementKeycode(Keyboard.LastKeyCode)",
+										"comparison": 0,
+										"second-value": "true"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 236616880953045,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 441472226396609,
+											"parameters": {
+												"first-value": "Functions.IsMoveKeyPosCurrentKeycode(1, Keyboard.LastKeyCode)",
+												"comparison": 0,
+												"second-value": "true"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "SetMoveKeyMemPos",
+											"sid": 518274901249940,
+											"parameters": [
+												"1",
+												"0"
+											]
+										}
+									],
+									"sid": 250255049647720
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 716481647256454
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 397520420977131,
+											"parameters": {
+												"first-value": "Functions.IsMoveKeyPosCurrentKeycode(0, Keyboard.LastKeyCode)",
+												"comparison": 0,
+												"second-value": "true"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 682931948842097,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 472678434745660,
+													"parameters": {
+														"first-value": "Functions.IsMoveKeyPosEmpty(1)",
+														"comparison": 0,
+														"second-value": "false"
+													}
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "SetMoveKeyMemPos",
+													"sid": 241153075545097,
+													"parameters": [
+														"0",
+														"aMoveKeyMem.At(1)"
+													]
+												},
+												{
+													"callFunction": "SetMoveKeyMemPos",
+													"sid": 428942133805616,
+													"parameters": [
+														"1",
+														"0"
+													]
+												}
+											],
+											"sid": 836509292282224
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 170359146304589
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "SetMoveKeyMemPos",
+													"sid": 887751959314110,
+													"parameters": [
+														"0",
+														"0"
+													]
+												}
+											],
+											"sid": 159858832840714
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"functionName": "IsUnpressed",
+			"functionDescription": "",
+			"functionCategory": "Keyboard",
+			"functionReturnType": "number",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "pKeycode",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"sid": 953261647713263
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 410303965811058,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-at-xy",
+							"objectClass": "aKeystate",
+							"sid": 886498292119289,
+							"parameters": {
+								"x": "0",
+								"y": "pKeycode",
+								"comparison": 0,
+								"value": "false"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-function-return-value",
+							"objectClass": "Functions",
+							"sid": 892110515963644,
+							"parameters": {
+								"value": "true"
+							}
+						}
+					],
+					"sid": 685362901670237
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 156701591917281
+						}
+					],
+					"actions": [
+						{
+							"id": "set-function-return-value",
+							"objectClass": "Functions",
+							"sid": 240729871215847,
+							"parameters": {
+								"value": "false"
+							}
+						}
+					],
+					"sid": 487223708060542
+				}
+			]
+		},
+		{
+			"functionName": "IsPressed",
+			"functionDescription": "",
+			"functionCategory": "Keyboard",
+			"functionReturnType": "number",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "pKeycode",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"sid": 220012763619707
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 882175719217793,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-at-xy",
+							"objectClass": "aKeystate",
+							"sid": 908540020239993,
+							"parameters": {
+								"x": "0",
+								"y": "pKeycode",
+								"comparison": 0,
+								"value": "true"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-function-return-value",
+							"objectClass": "Functions",
+							"sid": 212333752982128,
+							"parameters": {
+								"value": "true"
+							}
+						}
+					],
+					"sid": 462018516962724
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 141227389091707
+						}
+					],
+					"actions": [
+						{
+							"id": "set-function-return-value",
+							"objectClass": "Functions",
+							"sid": 664352679162325,
+							"parameters": {
+								"value": "false"
+							}
+						}
+					],
+					"sid": 127425876317509
+				}
+			]
+		},
+		{
+			"functionName": "IsMovementKeycode",
+			"functionDescription": "",
+			"functionCategory": "Keyboard",
+			"functionReturnType": "number",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "pKeycode",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"sid": 336907806603436
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 604765678950886,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 203692537987104,
+							"parameters": {
+								"first-value": "pKeycode",
+								"comparison": 0,
+								"second-value": "37"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 423888742035414,
+							"parameters": {
+								"first-value": "pKeycode",
+								"comparison": 0,
+								"second-value": "38"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 343497290226536,
+							"parameters": {
+								"first-value": "pKeycode",
+								"comparison": 0,
+								"second-value": "39"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 155867685307598,
+							"parameters": {
+								"first-value": "pKeycode",
+								"comparison": 0,
+								"second-value": "40"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-function-return-value",
+							"objectClass": "Functions",
+							"sid": 599439122007112,
+							"parameters": {
+								"value": "true"
+							}
+						}
+					],
+					"sid": 404605615061289,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 607284160230464
+						}
+					],
+					"actions": [
+						{
+							"id": "set-function-return-value",
+							"objectClass": "Functions",
+							"sid": 534052421250610,
+							"parameters": {
+								"value": "false"
+							}
+						}
+					],
+					"sid": 394373224557050
+				}
+			]
+		},
+		{
+			"functionName": "IsCurrentMoveKeysOpposite",
+			"functionDescription": "",
+			"functionCategory": "Keyboard",
+			"functionReturnType": "number",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "pKeycode",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"sid": 563134336521592
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 273727556841229,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "r",
+					"type": "number",
+					"initialValue": "3",
+					"comment": "Reverse keycode index in aKeystate",
+					"isStatic": false,
+					"isConstant": true,
+					"sid": 899536880458591
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-at-xy",
+							"objectClass": "aKeystate",
+							"sid": 772929752653140,
+							"parameters": {
+								"x": "r",
+								"y": "aMoveKeyMem.At(0,0)",
+								"comparison": 0,
+								"value": "pKeycode"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-function-return-value",
+							"objectClass": "Functions",
+							"sid": 337073957921583,
+							"parameters": {
+								"value": "true"
+							}
+						}
+					],
+					"sid": 860395465144931
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 153717237250249
+						}
+					],
+					"actions": [
+						{
+							"id": "set-function-return-value",
+							"objectClass": "Functions",
+							"sid": 919485612558903,
+							"parameters": {
+								"value": "false"
+							}
+						}
+					],
+					"sid": 504038974426568
+				}
+			]
+		},
+		{
+			"functionName": "IsMoveKeyPosEmpty",
+			"functionDescription": "",
+			"functionCategory": "Keyboard",
+			"functionReturnType": "number",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "pMoveKeyPos",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"sid": 898149200880291
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 596850057910040,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-at-xy",
+							"objectClass": "aMoveKeyMem",
+							"sid": 543557424264626,
+							"parameters": {
+								"x": "pMoveKeyPos",
+								"y": "0",
+								"comparison": 0,
+								"value": "false"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-function-return-value",
+							"objectClass": "Functions",
+							"sid": 962262440247937,
+							"parameters": {
+								"value": "true"
+							}
+						}
+					],
+					"sid": 833871610618799
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 352379581821092
+						}
+					],
+					"actions": [
+						{
+							"id": "set-function-return-value",
+							"objectClass": "Functions",
+							"sid": 604217426190073,
+							"parameters": {
+								"value": "false"
+							}
+						}
+					],
+					"sid": 898009882826555
+				}
+			]
+		},
+		{
+			"functionName": "SetMoveKeyMemPos",
+			"functionDescription": "",
+			"functionCategory": "Keyboard",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "pMoveKeyPos",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"sid": 155791471651638
+				},
+				{
+					"name": "pKeycode",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"sid": 820207607827895
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-at-xy",
+					"objectClass": "aMoveKeyMem",
+					"sid": 450038783678051,
+					"parameters": {
+						"x": "pMoveKeyPos",
+						"y": "0",
+						"value": "pKeycode"
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "aMoveKeyMem",
+					"sid": 495628829510558,
+					"parameters": {
+						"x": "pMoveKeyPos",
+						"y": "1",
+						"value": "aKeystate.At(1, pKeycode)"
+					}
+				}
+			],
+			"sid": 694839001829071
+		},
+		{
+			"functionName": "IsMoveKeyPosCurrentKeycode",
+			"functionDescription": "",
+			"functionCategory": "Keyboard",
+			"functionReturnType": "number",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "pMoveKeyPos",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"sid": 730536776006374
+				},
+				{
+					"name": "pKeycode",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"sid": 168758561602366
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 630347677043536,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-at-xy",
+							"objectClass": "aMoveKeyMem",
+							"sid": 746140768263375,
+							"parameters": {
+								"x": "pMoveKeyPos",
+								"y": "0",
+								"comparison": 0,
+								"value": "pKeycode"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-function-return-value",
+							"objectClass": "Functions",
+							"sid": 682715808684578,
+							"parameters": {
+								"value": "true"
+							}
+						}
+					],
+					"sid": 772739845810177
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 103637572164541
+						}
+					],
+					"actions": [
+						{
+							"id": "set-function-return-value",
+							"objectClass": "Functions",
+							"sid": 615601383703346,
+							"parameters": {
+								"value": "false"
+							}
+						}
+					],
+					"sid": 704156523047880
+				}
+			]
+		}
+	],
+	"sid": 600543906992764
+}

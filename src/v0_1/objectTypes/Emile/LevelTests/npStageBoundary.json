@@ -1,20 +1,20 @@
 {
-	"name": "Main_SpriteFont_1",
-	"plugin-id": "Spritefont2",
-	"sid": 401314369215146,
+	"name": "npStageBoundary",
+	"plugin-id": "NinePatch",
+	"sid": 764061025687211,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 512,
-		"height": 512,
+		"width": 32,
+		"height": 32,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
-		"imageSpriteId": 8167394,
+		"imageSpriteId": 8080928,
 		"useCollisionPoly": true,
 		"tag": ""
 	}

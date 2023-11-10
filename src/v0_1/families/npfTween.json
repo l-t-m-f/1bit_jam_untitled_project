@@ -1,5 +1,5 @@
 {
-	"name": "Main_Tween",
+	"name": "npfTween",
 	"plugin-id": "NinePatch",
 	"sid": 550367266777425,
 	"instanceVariables": [],
@@ -12,6 +12,6 @@
 	],
 	"effectTypes": [],
 	"members": [
-		"E_NP_DialogChoice"
+		"npDialogChoice"
 	]
 }

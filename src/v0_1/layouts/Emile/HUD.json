@@ -1,5 +1,5 @@
 {
-	"name": "E_HUD",
+	"name": "HUD",
 	"layers": [
 		{
 			"name": "E_HUD_Dialogs",
@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "E_NP_DialogBox",
+					"type": "npDialogBox",
 					"properties": {
 						"left-margin": 12,
 						"right-margin": 12,
@@ -40,7 +40,7 @@
 					}
 				},
 				{
-					"type": "Main_SpriteFont_1",
+					"type": "sfTimesNewYorker",
 					"properties": {
 						"text": "Text",
 						"enable-bbcode": true,
@@ -292,9 +292,29 @@
 	"sid": 127882250725424,
 	"nonworld-instances": [
 		{
-			"type": "Main_DialogsDataJSON",
+			"type": "jsonDialogsData",
 			"properties": {},
 			"uid": 4,
+			"instanceVariables": {}
+		},
+		{
+			"type": "aKeystate",
+			"properties": {
+				"width": 1,
+				"height": 255,
+				"depth": 1
+			},
+			"uid": 19,
+			"instanceVariables": {}
+		},
+		{
+			"type": "aMoveKeyMem",
+			"properties": {
+				"width": 2,
+				"height": 2,
+				"depth": 1
+			},
+			"uid": 20,
 			"instanceVariables": {}
 		}
 	],
@@ -305,5 +325,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "E_TestEvents1"
+	"eventSheet": "eTest2"
 }

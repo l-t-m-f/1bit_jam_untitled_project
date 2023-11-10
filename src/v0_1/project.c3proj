@@ -15,6 +15,20 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Json",
 			"name": "JSON",
 			"author": "Scirra",
@@ -64,6 +78,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
 			"author": "Scirra",
@@ -73,36 +94,37 @@
 	"uniqueId": "v15jb14ulow",
 	"objectTypes": {
 		"items": [
-			"Main_SpriteTest",
-			"Main_DialogsDataJSON",
-			"Main_AJAX",
-			"Main_Text",
-			"Main_SpriteFont_1"
+			"sTest",
+			"jsonDialogsData",
+			"AJAX",
+			"Text",
+			"sfTimesNewYorker",
+			"Browser"
 		],
 		"subfolders": [
 			{
 				"items": [
-					"E_SP_Test2"
+					"sTest2"
 				],
 				"subfolders": [
 					{
 						"items": [
-							"E_NP_DialogBox",
-							"E_NP_DialogChoice"
+							"npDialogBox",
+							"npDialogChoice"
 						],
 						"subfolders": [],
 						"name": "DialogsSystem"
 					},
 					{
 						"items": [
-							"E_NP_StageBoundary"
+							"npStageBoundary"
 						],
 						"subfolders": [],
 						"name": "LevelTests"
 					},
 					{
 						"items": [
-							"E_S_Player"
+							"sPlayer"
 						],
 						"subfolders": [],
 						"name": "Entities"
@@ -112,8 +134,10 @@
 			},
 			{
 				"items": [
-					"Main_Keyboard",
-					"Main_Mouse"
+					"Keyboard",
+					"Mouse",
+					"aKeystate",
+					"aMoveKeyMem"
 				],
 				"subfolders": [],
 				"name": "Inputs"
@@ -124,20 +148,21 @@
 	"containers": [],
 	"families": {
 		"items": [
-			"Main_Tween"
+			"npfTween",
+			"sf8Dir"
 		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
-			"Main_FirstGym",
-			"Main_Defaults"
+			"FirstGym",
+			"Test"
 		],
 		"subfolders": [
 			{
 				"items": [
-					"E_HUD",
-					"E_LevelTest1"
+					"HUD",
+					"Test2"
 				],
 				"subfolders": [],
 				"name": "Emile"
@@ -146,16 +171,32 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Main_FirstGymEvents"
+			"eGlobal"
 		],
 		"subfolders": [
 			{
 				"items": [
-					"E_TestEvents1",
-					"E_DialogSystem"
+					"eDialogsSystem",
+					"ePlayer",
+					"eKeyboard"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"eTest2"
+						],
+						"subfolders": [],
+						"name": "LayoutEvents"
+					}
+				],
+				"name": "Emile"
+			},
+			{
+				"items": [
+					"eFirstGym"
 				],
 				"subfolders": [],
-				"name": "Emile"
+				"name": "LayoutEvents"
 			}
 		]
 	},
@@ -247,7 +288,7 @@
 				{
 					"items": [
 						{
-							"name": "DialogsData.json",
+							"name": "RefDialogsData.json",
 							"type": "application/json",
 							"sid": 883003318830563,
 							"file-info": {
@@ -257,6 +298,20 @@
 					],
 					"subfolders": [],
 					"name": "Dialog"
+				},
+				{
+					"items": [
+						{
+							"name": "RefKeyboardState.json",
+							"type": "application/json",
+							"sid": 446151980475779,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "Inputs"
 				}
 			]
 		}
@@ -328,5 +383,5 @@
 	},
 	"viewportWidth": 640,
 	"viewportHeight": 480,
-	"firstLayout": "Main_FirstGym"
+	"firstLayout": "FirstGym"
 }

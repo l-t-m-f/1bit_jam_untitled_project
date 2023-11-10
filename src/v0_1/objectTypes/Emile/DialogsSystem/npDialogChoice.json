@@ -1,20 +1,20 @@
 {
-	"name": "E_NP_StageBoundary",
+	"name": "npDialogChoice",
 	"plugin-id": "NinePatch",
-	"sid": 764061025687211,
+	"sid": 708573301057603,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 32,
-		"height": 32,
+		"width": 48,
+		"height": 48,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
-		"imageSpriteId": 8080928,
+		"imageSpriteId": 4516662,
 		"useCollisionPoly": true,
 		"tag": ""
 	}
