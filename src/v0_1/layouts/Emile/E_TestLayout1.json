@@ -70,7 +70,14 @@
 		}
 	],
 	"sid": 127882250725424,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "Master_JSON",
+			"properties": {},
+			"uid": 4,
+			"instanceVariables": {}
+		}
+	],
 	"effectTypes": [],
 	"width": 640,
 	"height": 480,
