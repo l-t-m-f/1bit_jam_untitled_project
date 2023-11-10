@@ -17,7 +17,7 @@
 	"uniqueId": "v15jb14ulow",
 	"objectTypes": {
 		"items": [
-			"Test"
+			"Master_SpriteTest"
 		],
 		"subfolders": [
 			{
@@ -37,7 +37,7 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Master_FirstGym"
 		],
 		"subfolders": [
 			{
@@ -51,7 +51,7 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Master_FirstGymEvents"
 		],
 		"subfolders": [
 			{

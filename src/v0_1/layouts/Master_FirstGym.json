@@ -1,5 +1,5 @@
 {
-	"name": "Layout 1",
+	"name": "Master_FirstGym",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Test",
+					"type": "Master_SpriteTest",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -74,5 +74,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Event sheet 1"
+	"eventSheet": "Master_FirstGymEvents"
 }
