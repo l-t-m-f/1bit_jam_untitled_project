@@ -68,11 +68,25 @@
 		"subfolders": [
 			{
 				"items": [
-					"E_SP_Test2",
-					"E_NP_DialogBox",
-					"E_NP_DialogChoice"
+					"E_SP_Test2"
 				],
-				"subfolders": [],
+				"subfolders": [
+					{
+						"items": [
+							"E_NP_DialogBox",
+							"E_NP_DialogChoice"
+						],
+						"subfolders": [],
+						"name": "DialogsSystem"
+					},
+					{
+						"items": [
+							"E_NP_StageBoundary"
+						],
+						"subfolders": [],
+						"name": "LevelTests"
+					}
+				],
 				"name": "Emile"
 			}
 		]
@@ -93,7 +107,8 @@
 		"subfolders": [
 			{
 				"items": [
-					"E_TestLayout1"
+					"E_HUD",
+					"E_LevelTest1"
 				],
 				"subfolders": [],
 				"name": "Emile"

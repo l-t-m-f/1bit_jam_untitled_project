@@ -1,0 +1,21 @@
+{
+	"name": "E_NP_StageBoundary",
+	"plugin-id": "NinePatch",
+	"sid": 764061025687211,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 32,
+		"height": 32,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 8080928,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}
