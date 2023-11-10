@@ -36,6 +36,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
@@ -48,7 +55,8 @@
 			"Master_SpriteTest",
 			"Master_DialogsDataJSON",
 			"Master_AJAX",
-			"Master_Text"
+			"Master_Text",
+			"Master_SpriteFont_1"
 		],
 		"subfolders": [
 			{
