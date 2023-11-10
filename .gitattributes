@@ -1,0 +1,6 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Anything in `/RawContent` dir.
+/raw_content/* filter=lfs diff=lfs merge=lfs -text
+/raw_content/**/* filter=lfs diff=lfs merge=lfs -text
