@@ -29,6 +29,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Camera3D",
+			"name": "3D camera",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Json",
 			"name": "JSON",
 			"author": "Scirra",
@@ -52,6 +59,13 @@
 			"type": "plugin",
 			"id": "NinePatch",
 			"name": "9-patch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Shape3D",
+			"name": "3D shape",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -95,13 +109,9 @@
 	"objectTypes": {
 		"items": [
 			"sTest",
-			"jsonDialogsData",
 			"AJAX",
-			"Text",
-			"sfTimesNewYorker",
 			"Browser",
-			"sPlayerSpawn",
-			"sEntityTile"
+			"3DShapeTest"
 		],
 		"subfolders": [
 			{
@@ -112,7 +122,8 @@
 					{
 						"items": [
 							"npDialogBox",
-							"npDialogChoice"
+							"npDialogChoice",
+							"jsonDialogsData"
 						],
 						"subfolders": [],
 						"name": "DialogsSystem"
@@ -128,10 +139,34 @@
 						"items": [
 							"sPlayerBase",
 							"sPlayerArt",
-							"sPlayerCol"
+							"sPlayerCol",
+							"sEntityTile",
+							"sPlayerSpawn"
 						],
 						"subfolders": [],
 						"name": "Entities"
+					},
+					{
+						"items": [
+							"3DCamera"
+						],
+						"subfolders": [],
+						"name": "3DView"
+					},
+					{
+						"items": [
+							"aKeystate",
+							"aMoveKeyMem"
+						],
+						"subfolders": [],
+						"name": "InputSystem"
+					},
+					{
+						"items": [
+							"sClue"
+						],
+						"subfolders": [],
+						"name": "Inspection"
 					}
 				],
 				"name": "Emile"
@@ -139,12 +174,18 @@
 			{
 				"items": [
 					"Keyboard",
-					"Mouse",
-					"aKeystate",
-					"aMoveKeyMem"
+					"Mouse"
 				],
 				"subfolders": [],
 				"name": "Inputs"
+			},
+			{
+				"items": [
+					"sfTimesNewYorker",
+					"Text"
+				],
+				"subfolders": [],
+				"name": "Fonts"
 			}
 		]
 	},
@@ -342,7 +383,7 @@
 		"authorWebsite": "",
 		"appId": "",
 		"pixelRounding": true,
-		"zAxisScale": "normalized",
+		"zAxisScale": "regular",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
 		"fullscreenMode": "letterbox-integer-scale",

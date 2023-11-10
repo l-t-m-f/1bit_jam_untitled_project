@@ -10,6 +10,16 @@
 			"includeSheet": "eDialogsSystem"
 		},
 		{
+			"eventType": "variable",
+			"name": "bIs3DView",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 149460887754931
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
