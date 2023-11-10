@@ -794,7 +794,36 @@
 					}
 				}
 			],
-			"sid": 694839001829071
+			"sid": 694839001829071,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 587388030295415,
+							"parameters": {
+								"object": "Text",
+								"expression": "Text.TemplateName",
+								"comparison": 0,
+								"value": "\"DebugHUD\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Text",
+							"sid": 480386993337755,
+							"parameters": {
+								"text": "aMoveKeyMem.At(0,0)&\", \"&aMoveKeyMem.At(1,0)"
+							}
+						}
+					],
+					"sid": 342329015572728
+				}
+			]
 		},
 		{
 			"functionName": "IsMoveKeyPosCurrentKeycode",

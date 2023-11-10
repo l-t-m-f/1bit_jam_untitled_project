@@ -156,7 +156,7 @@
 	"layouts": {
 		"items": [
 			"FirstGym",
-			"Test"
+			"Defaults"
 		],
 		"subfolders": [
 			{
@@ -178,7 +178,8 @@
 				"items": [
 					"eDialogsSystem",
 					"ePlayer",
-					"eKeyboard"
+					"eKeyboard",
+					"eLogger"
 				],
 				"subfolders": [
 					{
