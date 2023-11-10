@@ -1,0 +1,32 @@
+{
+	"name": "sfTween",
+	"plugin-id": "Sprite",
+	"sid": 582764015213291,
+	"instanceVariables": [
+		{
+			"name": "TweenVal1",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 735118377244286
+		},
+		{
+			"name": "TweenVal2",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 253585902033744
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 919259980831929
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"sPlayerBase"
+	]
+}

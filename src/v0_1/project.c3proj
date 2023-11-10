@@ -99,7 +99,9 @@
 			"AJAX",
 			"Text",
 			"sfTimesNewYorker",
-			"Browser"
+			"Browser",
+			"sPlayerSpawn",
+			"sEntityTile"
 		],
 		"subfolders": [
 			{
@@ -124,7 +126,9 @@
 					},
 					{
 						"items": [
-							"sPlayer"
+							"sPlayerBase",
+							"sPlayerArt",
+							"sPlayerCol"
 						],
 						"subfolders": [],
 						"name": "Entities"
@@ -149,7 +153,8 @@
 	"families": {
 		"items": [
 			"npfTween",
-			"sf8Dir"
+			"sf8Dir",
+			"sfTween"
 		],
 		"subfolders": []
 	},
@@ -179,7 +184,8 @@
 					"eDialogsSystem",
 					"ePlayer",
 					"eKeyboard",
-					"eLogger"
+					"eLogger",
+					"eHUD"
 				],
 				"subfolders": [
 					{
@@ -335,7 +341,7 @@
 		"authorEmail": "",
 		"authorWebsite": "",
 		"appId": "",
-		"pixelRounding": false,
+		"pixelRounding": true,
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,

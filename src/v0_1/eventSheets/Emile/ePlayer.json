@@ -1,5 +1,564 @@
 {
 	"name": "ePlayer",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-playing",
+					"objectClass": "sPlayerBase",
+					"sid": 506135881926895,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"8dir_jump\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "sPlayerBase",
+					"sid": 500588185630539,
+					"parameters": {
+						"instance-variable": "TweenVal1",
+						"value": "sfTween.Tween.Value(\"8dir_jump\")"
+					}
+				}
+			],
+			"sid": 316594009749611
+		},
+		{
+			"functionName": "UpdatePlayer",
+			"functionDescription": "",
+			"functionCategory": "Player",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 999520248952580,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "sPlayerCol",
+							"sid": 287006447263857,
+							"parameters": {
+								"x": "lerp(Self.X, sPlayerBase.X, 0.5)",
+								"y": "lerp(Self.Y, sPlayerBase.Y - sPlayerBase.TweenVal1, 0.5)"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "sPlayerArt",
+							"sid": 438812554357609,
+							"parameters": {
+								"x": "lerp(Self.X, sPlayerCol.X, 0.5)",
+								"y": "lerp(Self.Y, sPlayerCol.Y, 0.5)"
+							}
+						}
+					],
+					"sid": 227356510359759
+				},
+				{
+					"eventType": "comment",
+					"text": "Movement"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-at-xy",
+							"objectClass": "aMoveKeyMem",
+							"sid": 200035743570147,
+							"parameters": {
+								"x": "0",
+								"y": "0",
+								"comparison": 0,
+								"value": "KEYCODE_UP"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "sPlayerBase",
+							"sid": 561202123082315,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "up"
+							}
+						}
+					],
+					"sid": 605177735095984,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-at-xy",
+									"objectClass": "aMoveKeyMem",
+									"sid": 819151471192218,
+									"parameters": {
+										"x": "1",
+										"y": "0",
+										"comparison": 0,
+										"value": "KEYCODE_LEFT"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "sPlayerBase",
+									"sid": 640903148945685,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "left"
+									}
+								}
+							],
+							"sid": 957545822186684
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 278483171620859
+								},
+								{
+									"id": "compare-at-xy",
+									"objectClass": "aMoveKeyMem",
+									"sid": 287660791062228,
+									"parameters": {
+										"x": "1",
+										"y": "0",
+										"comparison": 0,
+										"value": "KEYCODE_RIGHT"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "sPlayerBase",
+									"sid": 225090905877208,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
+							"sid": 892033479367334
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 208288419962288
+								}
+							],
+							"actions": [],
+							"sid": 540886124189609
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 958365414927988
+						},
+						{
+							"id": "compare-at-xy",
+							"objectClass": "aMoveKeyMem",
+							"sid": 170233771140507,
+							"parameters": {
+								"x": "0",
+								"y": "0",
+								"comparison": 0,
+								"value": "KEYCODE_LEFT"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "sPlayerBase",
+							"sid": 979991060045228,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "left"
+							}
+						}
+					],
+					"sid": 718552850340087,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-at-xy",
+									"objectClass": "aMoveKeyMem",
+									"sid": 312968172074220,
+									"parameters": {
+										"x": "1",
+										"y": "0",
+										"comparison": 0,
+										"value": "KEYCODE_UP"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "sPlayerBase",
+									"sid": 518396886863753,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "up"
+									}
+								}
+							],
+							"sid": 332485963997277
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 821390968498605
+								},
+								{
+									"id": "compare-at-xy",
+									"objectClass": "aMoveKeyMem",
+									"sid": 931806713788273,
+									"parameters": {
+										"x": "1",
+										"y": "0",
+										"comparison": 0,
+										"value": "KEYCODE_DOWN"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "sPlayerBase",
+									"sid": 132639739719968,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
+							"sid": 950908199989460
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 534006203953001
+								}
+							],
+							"actions": [],
+							"sid": 832035846874370
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 670586167663317
+						},
+						{
+							"id": "compare-at-xy",
+							"objectClass": "aMoveKeyMem",
+							"sid": 302658052290380,
+							"parameters": {
+								"x": "0",
+								"y": "0",
+								"comparison": 0,
+								"value": "KEYCODE_DOWN"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "sPlayerBase",
+							"sid": 371952733333441,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "down"
+							}
+						}
+					],
+					"sid": 699387887822471,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-at-xy",
+									"objectClass": "aMoveKeyMem",
+									"sid": 667826566188311,
+									"parameters": {
+										"x": "1",
+										"y": "0",
+										"comparison": 0,
+										"value": "KEYCODE_LEFT"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "sPlayerBase",
+									"sid": 504592519149071,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "left"
+									}
+								}
+							],
+							"sid": 928059930386700
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 456172600556412
+								},
+								{
+									"id": "compare-at-xy",
+									"objectClass": "aMoveKeyMem",
+									"sid": 291692427765646,
+									"parameters": {
+										"x": "1",
+										"y": "0",
+										"comparison": 0,
+										"value": "KEYCODE_RIGHT"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "sPlayerBase",
+									"sid": 937490024606576,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
+							"sid": 276371484021136
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 163286962171325
+								}
+							],
+							"actions": [],
+							"sid": 245904567367943
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 749643810063798
+						},
+						{
+							"id": "compare-at-xy",
+							"objectClass": "aMoveKeyMem",
+							"sid": 722587354527025,
+							"parameters": {
+								"x": "0",
+								"y": "0",
+								"comparison": 0,
+								"value": "KEYCODE_RIGHT"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "sPlayerBase",
+							"sid": 515379170118639,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 389731211984317,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-at-xy",
+									"objectClass": "aMoveKeyMem",
+									"sid": 419100856024557,
+									"parameters": {
+										"x": "1",
+										"y": "0",
+										"comparison": 0,
+										"value": "KEYCODE_UP"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "sPlayerBase",
+									"sid": 624292478505231,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "up"
+									}
+								}
+							],
+							"sid": 189934815052069
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 749389747116592
+								},
+								{
+									"id": "compare-at-xy",
+									"objectClass": "aMoveKeyMem",
+									"sid": 917753512715199,
+									"parameters": {
+										"x": "1",
+										"y": "0",
+										"comparison": 0,
+										"value": "KEYCODE_DOWN"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "sPlayerBase",
+									"sid": 178391621075922,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
+							"sid": 126137413248746
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 825989857544353
+								}
+							],
+							"actions": [],
+							"sid": 965547403380234
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "Movement"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 764647496917539
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 753429923330045,
+							"parameters": {
+								"first-value": "Functions.IsPressed(KEYCODE_SPACE)",
+								"comparison": 0,
+								"second-value": "TRUE"
+							}
+						},
+						{
+							"id": "is-playing",
+							"objectClass": "sPlayerBase",
+							"sid": 343770617931700,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"8dir_jump\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-value",
+							"objectClass": "sPlayerBase",
+							"sid": 746617626397585,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"8dir_jump\"",
+								"start-value": "0",
+								"end-value": "30",
+								"time": ".5",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "yes",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"callFunction": "Unpress",
+							"sid": 248422563149178,
+							"parameters": [
+								"KEYCODE_SPACE"
+							]
+						}
+					],
+					"sid": 133949732258402
+				}
+			]
+		}
+	],
 	"sid": 373529578703370
 }

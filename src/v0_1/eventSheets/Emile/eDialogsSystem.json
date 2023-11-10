@@ -22,6 +22,36 @@
 			"sid": 278107052179653
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "npDialogChoice",
+					"sid": 638666006900014
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "npDialogChoice",
+					"sid": 733712293001241,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "400",
+						"time": "0.5",
+						"ease": "easeinback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 183386577170012
+		},
+		{
 			"functionName": "InitDialogSystem",
 			"functionDescription": "",
 			"functionCategory": "DialogSystem",
@@ -308,10 +338,10 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 202770700738452,
+									"sid": 404343385916897,
 									"parameters": {
 										"object-to-create": "npDialogChoice",
-										"layer": "\"E_HUD_Dialogs\"",
+										"layer": "\"HUD_Dialogs\"",
 										"x": "(LayoutWidth/2) - (((128*last_choice_cnt)+(32*(last_choice_cnt-1)))/2) + ((loopindex(\"i\")-1) * 160)",
 										"y": "CHOICE_BUTTON_INITIAL_SPAWN_Y",
 										"create-hierarchy": true,
@@ -351,36 +381,6 @@
 					]
 				}
 			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-created",
-					"objectClass": "npDialogChoice",
-					"sid": 965885542193092
-				}
-			],
-			"actions": [
-				{
-					"id": "tween-one-property",
-					"objectClass": "npDialogChoice",
-					"sid": 710363231380857,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetY",
-						"end-value": "400",
-						"time": "0.5",
-						"ease": "easeinback",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no",
-						"repeat-count": "1"
-					}
-				}
-			],
-			"sid": 807300326363070
 		}
 	],
 	"sid": 812242941960170

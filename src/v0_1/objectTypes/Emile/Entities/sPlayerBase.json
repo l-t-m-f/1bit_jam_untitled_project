@@ -1,5 +1,5 @@
 {
-	"name": "sPlayer",
+	"name": "sPlayerBase",
 	"plugin-id": "Sprite",
 	"sid": 765675962221485,
 	"isGlobal": false,
@@ -18,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8844124,
+						"imageSpriteId": 9116939,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

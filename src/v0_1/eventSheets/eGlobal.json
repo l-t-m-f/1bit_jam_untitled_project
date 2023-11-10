@@ -3,23 +3,77 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "true",
+			"name": "TRUE",
 			"type": "number",
 			"initialValue": "1",
 			"comment": "",
 			"isStatic": false,
-			"isConstant": false,
+			"isConstant": true,
 			"sid": 909854605988470
 		},
 		{
 			"eventType": "variable",
-			"name": "false",
+			"name": "FALSE",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
-			"isConstant": false,
+			"isConstant": true,
 			"sid": 726629606761193
+		},
+		{
+			"eventType": "comment",
+			"text": "wasd"
+		},
+		{
+			"eventType": "variable",
+			"name": "KEYCODE_UP",
+			"type": "number",
+			"initialValue": "38",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 946589547115546
+		},
+		{
+			"eventType": "variable",
+			"name": "KEYCODE_LEFT",
+			"type": "number",
+			"initialValue": "37",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 546185610988007
+		},
+		{
+			"eventType": "variable",
+			"name": "KEYCODE_DOWN",
+			"type": "number",
+			"initialValue": "40",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 696218789818364
+		},
+		{
+			"eventType": "variable",
+			"name": "KEYCODE_RIGHT",
+			"type": "number",
+			"initialValue": "39",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 587287728449773
+		},
+		{
+			"eventType": "variable",
+			"name": "KEYCODE_SPACE",
+			"type": "number",
+			"initialValue": "32",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 687242996865655
 		}
 	],
 	"sid": 873891583360930

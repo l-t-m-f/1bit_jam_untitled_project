@@ -12,6 +12,6 @@
 	],
 	"effectTypes": [],
 	"members": [
-		"sPlayer"
+		"sPlayerBase"
 	]
 }

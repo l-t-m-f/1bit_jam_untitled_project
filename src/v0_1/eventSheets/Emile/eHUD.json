@@ -1,0 +1,59 @@
+{
+	"name": "eHUD",
+	"events": [
+		{
+			"functionName": "UpdateHUD",
+			"functionDescription": "",
+			"functionCategory": "HUD",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 417213520800064,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 356416903277614,
+							"parameters": {
+								"object": "Text",
+								"expression": "Text.TemplateName",
+								"comparison": 0,
+								"value": "\"DebugHUD\""
+							}
+						},
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 877990088469333,
+							"parameters": {
+								"object": "Text",
+								"expression": "Text.TextID",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Text",
+							"sid": 862186666455605,
+							"parameters": {
+								"text": "sPlayerBase.TweenVal1"
+							}
+						}
+					],
+					"sid": 481345839933067
+				}
+			]
+		}
+	],
+	"sid": 392544450869419
+}

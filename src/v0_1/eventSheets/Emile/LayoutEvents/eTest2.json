@@ -3,11 +3,11 @@
 	"events": [
 		{
 			"eventType": "include",
-			"includeSheet": "eDialogsSystem"
+			"includeSheet": "ePlayer"
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "eKeyboard"
+			"includeSheet": "eDialogsSystem"
 		},
 		{
 			"eventType": "block",
@@ -28,7 +28,99 @@
 					"sid": 871474802622997
 				}
 			],
-			"sid": 391808221990853
+			"sid": 391808221990853,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-random-instance",
+							"objectClass": "System",
+							"sid": 685332367276834,
+							"parameters": {
+								"object": "sPlayerSpawn"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 820986478133761,
+							"parameters": {
+								"object-to-create": "sPlayerBase",
+								"layer": "\"Entities\"",
+								"x": "sPlayerSpawn.X",
+								"y": "sPlayerSpawn.Y",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 670392168662624
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 884196158741438
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "UpdatePlayer",
+					"sid": 610645567043058
+				},
+				{
+					"callFunction": "UpdateHUD",
+					"sid": 836115979660535
+				}
+			],
+			"sid": 200094368713445
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 602580023455428
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "ExecuteKeyPress",
+					"sid": 387098036604538,
+					"parameters": [
+						"Keyboard.LastKeyCode"
+					]
+				}
+			],
+			"sid": 747465103455287
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-released",
+					"objectClass": "Keyboard",
+					"sid": 940779353855599
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "ExecuteKeyRelease",
+					"sid": 468817237154722,
+					"parameters": [
+						"Keyboard.LastKeyCode"
+					]
+				}
+			],
+			"sid": 815841121445326
 		},
 		{
 			"functionName": "InitInputs",
