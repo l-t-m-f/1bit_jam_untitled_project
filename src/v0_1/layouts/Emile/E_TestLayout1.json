@@ -40,25 +40,20 @@
 					}
 				},
 				{
-					"type": "Master_Text",
+					"type": "Master_SpriteFont_1",
 					"properties": {
 						"text": "Text",
 						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
+						"character-width": 46,
+						"character-height": 50,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "[[8,\" \"],[5,\"'|\"],[8,\";[\"],[9,\"-]`\"],[10,\"\\\"\"],[11,\")\"],[12,\".,°\"],[13,\"1:(\"],[14,\"!\"],[15,\"/\"],[16,\"jl\\\\<>\"],[17,\"?£€\"],[18,\"ist~=\"],[19,\"345*\"],[20,\"aef27\"],[21,\"89#\"],[22,\"FId0\"],[23,\"ghpquyz6+\"],[24,\"Sox$\"],[25,\"Tcn\"],[26,\"PR%\"],[27,\"CEGJQUbw&\"],[28,\"Lk_\"],[29,\"AOVZ\"],[30,\"DKNY\"],[31,\"r@\"],[32,\"BHXm\"],[36,\"MWv\"]]\n",
+						"scale": 0.6666,
+						"character-spacing": 0,
 						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
 						"horizontal-alignment": "left",
 						"vertical-alignment": "top",
 						"wrapping": "word",
-						"icon-set": -1,
 						"initially-visible": true,
 						"origin": "top-left",
 						"read-aloud": false
@@ -66,11 +61,192 @@
 					"uid": 6,
 					"instanceVariables": {},
 					"behaviors": {},
+					"template": {
+						"mode": "replica",
+						"templateName": "",
+						"sourceTemplateName": "Spritefont1_Text",
+						"components": [
+							{
+								"id": "plugin",
+								"component": [
+									{
+										"key": "plugin",
+										"state": [
+											[
+												"text",
+												true
+											],
+											[
+												"enable-bbcode",
+												true
+											],
+											[
+												"character-width",
+												true
+											],
+											[
+												"character-height",
+												true
+											],
+											[
+												"character-set",
+												true
+											],
+											[
+												"spacing-data",
+												true
+											],
+											[
+												"scale",
+												true
+											],
+											[
+												"character-spacing",
+												true
+											],
+											[
+												"line-height",
+												true
+											],
+											[
+												"horizontal-alignment",
+												true
+											],
+											[
+												"vertical-alignment",
+												true
+											],
+											[
+												"wrapping",
+												true
+											],
+											[
+												"initially-visible",
+												true
+											],
+											[
+												"origin",
+												true
+											],
+											[
+												"read-aloud",
+												true
+											]
+										]
+									}
+								]
+							},
+							{
+								"id": "instance-variable",
+								"component": [
+									{
+										"key": "instance-variable",
+										"state": []
+									}
+								]
+							},
+							{
+								"id": "behavior",
+								"component": []
+							},
+							{
+								"id": "effect",
+								"component": []
+							},
+							{
+								"id": "world-instance",
+								"component": [
+									{
+										"key": "world-instance",
+										"state": [
+											[
+												"x",
+												false
+											],
+											[
+												"y",
+												false
+											],
+											[
+												"z",
+												true
+											],
+											[
+												"w",
+												false
+											],
+											[
+												"h",
+												false
+											],
+											[
+												"a",
+												true
+											],
+											[
+												"o",
+												true
+											],
+											[
+												"c",
+												true
+											],
+											[
+												"sx",
+												false
+											],
+											[
+												"sy",
+												false
+											],
+											[
+												"bm",
+												true
+											],
+											[
+												"twpx",
+												true
+											],
+											[
+												"twpy",
+												true
+											],
+											[
+												"twpz",
+												true
+											],
+											[
+												"twpw",
+												true
+											],
+											[
+												"twph",
+												true
+											],
+											[
+												"twpa",
+												true
+											],
+											[
+												"dwp",
+												true
+											],
+											[
+												"ssm",
+												true
+											]
+										]
+									}
+								]
+							}
+						],
+						"replicasUIDs": null
+					},
 					"world": {
-						"x": 96,
-						"y": 352,
-						"width": 448,
-						"height": 64,
+						"x": 80,
+						"y": 336,
+						"width": 480,
+						"height": 96,
 						"originX": 0,
 						"originY": 0,
 						"color": [

@@ -1,7 +1,29 @@
 {
-	"lines" : [
-		"hello, world",
-		"how are you doing world",
-		"bye, world!"
+	"stories": [
+		{
+			"lines": [
+				{
+					"text": "hello, world",
+					"choices": [
+						"Hi"
+					]
+				},
+				{
+					"text": "What are you doing here, my friend?",
+					"choices": [
+						"Die",
+						"Cook",
+						"Grow"
+					]
+				},
+				{
+					"text": "bye, world!",
+					"choices": [
+						"Bye",
+						"k"
+					]
+				}
+			]
+		}
 	]
 }

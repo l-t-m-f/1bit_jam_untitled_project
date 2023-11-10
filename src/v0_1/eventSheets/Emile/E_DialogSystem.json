@@ -72,22 +72,166 @@
 					}
 				},
 				{
+					"callFunction": "PullDialogText",
+					"sid": 890878417333007,
+					"parameters": [
+						"0",
+						"1"
+					]
+				},
+				{
+					"type": "comment",
+					"text": "Replaced by spritefont"
+				},
+				{
 					"id": "set-text",
 					"objectClass": "Master_Text",
-					"sid": 307707269987221,
+					"sid": 797659682297831,
+					"disabled": true,
 					"parameters": {
 						"text": "Master_DialogsDataJSON.Get(\"lines.0\")"
 					}
-				},
-				{
-					"callFunction": "CreateDialogChoice",
-					"sid": 914881116034530,
-					"parameters": [
-						"3"
-					]
 				}
 			],
 			"sid": 303684509473369
+		},
+		{
+			"functionName": "PullDialogText",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "pDialogStory",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"sid": 674323268591386
+				},
+				{
+					"name": "pDialogLine",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"sid": 475138684193896
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 303761251514374,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "last_story_access_str",
+					"type": "string",
+					"initialValue": "NULL",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 741422477146826
+				},
+				{
+					"eventType": "variable",
+					"name": "last_line_access_str",
+					"type": "string",
+					"initialValue": "NULL",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 593760548509691
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 959000216303964,
+							"parameters": {
+								"variable": "last_story_access_str",
+								"value": "\"stories.\"&str(pDialogStory)"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 216182480493705,
+							"parameters": {
+								"variable": "last_line_access_str",
+								"value": "last_story_access_str&\".lines.\"&str(pDialogLine)"
+							}
+						}
+					],
+					"sid": 617746150289565,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 313858749431274,
+									"parameters": {
+										"object": "Master_SpriteFont_1",
+										"expression": "Master_SpriteFont_1.TemplateName",
+										"comparison": 0,
+										"value": "\"Spritefont1_Text\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "typewriter-text",
+									"objectClass": "Master_SpriteFont_1",
+									"sid": 812778449808445,
+									"parameters": {
+										"text": "Master_DialogsDataJSON.Get(last_line_access_str&\".text\")",
+										"duration": "0.04 * len(Master_DialogsDataJSON.Get(last_line_access_str&\".text\"))"
+									}
+								}
+							],
+							"sid": 399422387252886
+						}
+					]
+				},
+				{
+					"eventType": "variable",
+					"name": "last_choices_access_str",
+					"type": "string",
+					"initialValue": "NULL",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 895134144195585
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 181836445780088,
+							"parameters": {
+								"variable": "last_choices_access_str",
+								"value": "last_story_access_str&\".lines.\"&str(pDialogLine)&\".choices\""
+							}
+						},
+						{
+							"callFunction": "CreateDialogChoice",
+							"sid": 392955131498338,
+							"parameters": [
+								"last_choices_access_str"
+							]
+						}
+					],
+					"sid": 901189748429778
+				}
+			]
 		},
 		{
 			"functionName": "CreateDialogChoice",
@@ -98,11 +242,11 @@
 			"functionIsAsync": false,
 			"functionParameters": [
 				{
-					"name": "pChoices",
-					"type": "number",
-					"initialValue": "0",
+					"name": "pChoicesAccessStr",
+					"type": "string",
+					"initialValue": "NULL",
 					"comment": "",
-					"sid": 995831802974293
+					"sid": 991836306258598
 				}
 			],
 			"eventType": "function-block",
@@ -111,14 +255,40 @@
 			"sid": 260034986543526,
 			"children": [
 				{
+					"eventType": "variable",
+					"name": "last_choice_cnt",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 830222404377305
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 394063877811817,
+							"parameters": {
+								"variable": "last_choice_cnt",
+								"value": "Master_DialogsDataJSON.ArraySize(pChoicesAccessStr)"
+							}
+						}
+					],
+					"sid": 376156920759018
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 454467940513570,
+							"sid": 208524180836026,
 							"parameters": {
-								"first-value": "pChoices",
+								"first-value": "last_choice_cnt",
 								"comparison": 4,
 								"second-value": "0"
 							}
@@ -128,16 +298,26 @@
 					"sid": 891832943527090,
 					"children": [
 						{
+							"eventType": "variable",
+							"name": "last_choice_text",
+							"type": "string",
+							"initialValue": "NULL",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 579836780354039
+						},
+						{
 							"eventType": "block",
 							"conditions": [
 								{
 									"id": "for",
 									"objectClass": "System",
-									"sid": 805043433342863,
+									"sid": 229885269329610,
 									"parameters": {
 										"name": "\"i\"",
 										"start-index": "1",
-										"end-index": "pChoices"
+										"end-index": "last_choice_cnt"
 									}
 								}
 							],
@@ -145,18 +325,45 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 913153570809751,
+									"sid": 269352522538540,
 									"parameters": {
 										"object-to-create": "E_NP_DialogChoice",
 										"layer": "0",
-										"x": "(LayoutWidth/2) - (((128*pChoices)+(32*(pChoices-1)))/2) + ((loopindex(\"i\")-1) * 160)",
+										"x": "(LayoutWidth/2) - (((128*last_choice_cnt)+(32*(last_choice_cnt-1)))/2) + ((loopindex(\"i\")-1) * 160)",
 										"y": "CHOICE_BUTTON_INITIAL_SPAWN_Y",
 										"create-hierarchy": true,
 										"template-name": "\"\""
 									}
 								}
 							],
-							"sid": 722468349013364
+							"sid": 722468349013364,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-children",
+											"objectClass": "E_NP_DialogChoice",
+											"sid": 482040441768460,
+											"parameters": {
+												"child": "Master_SpriteFont_1",
+												"which": "own"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-text",
+											"objectClass": "Master_SpriteFont_1",
+											"sid": 466395651112063,
+											"parameters": {
+												"text": "Master_DialogsDataJSON.Get(pChoicesAccessStr&\".\"&str(loopindex(\"i\")-1))"
+											}
+										}
+									],
+									"sid": 977176197590058
+								}
+							]
 						}
 					]
 				}
