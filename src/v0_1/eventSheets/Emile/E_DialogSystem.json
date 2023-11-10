@@ -2,6 +2,26 @@
 	"name": "E_DialogSystem",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "CHOICE_BUTTON_INITIAL_SPAWN_Y",
+			"type": "number",
+			"initialValue": "480",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 567994772483965
+		},
+		{
+			"eventType": "variable",
+			"name": "CHOICE_BUTTON_MARGIN",
+			"type": "number",
+			"initialValue": "32",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 278107052179653
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -58,9 +78,119 @@
 					"parameters": {
 						"text": "Master_DialogsDataJSON.Get(\"lines.0\")"
 					}
+				},
+				{
+					"callFunction": "CreateDialogChoice",
+					"sid": 914881116034530,
+					"parameters": [
+						"3"
+					]
 				}
 			],
 			"sid": 303684509473369
+		},
+		{
+			"functionName": "CreateDialogChoice",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "pChoices",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 995831802974293
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 260034986543526,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 454467940513570,
+							"parameters": {
+								"first-value": "pChoices",
+								"comparison": 4,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 891832943527090,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 805043433342863,
+									"parameters": {
+										"name": "\"i\"",
+										"start-index": "1",
+										"end-index": "pChoices"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 913153570809751,
+									"parameters": {
+										"object-to-create": "E_NP_DialogChoice",
+										"layer": "0",
+										"x": "(LayoutWidth/2) - (((128*pChoices)+(32*(pChoices-1)))/2) + ((loopindex(\"i\")-1) * 160)",
+										"y": "CHOICE_BUTTON_INITIAL_SPAWN_Y",
+										"create-hierarchy": true,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 722468349013364
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "E_NP_DialogChoice",
+					"sid": 965885542193092
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "E_NP_DialogChoice",
+					"sid": 710363231380857,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "400",
+						"time": "0.5",
+						"ease": "easeinback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 807300326363070
 		}
 	],
 	"sid": 812242941960170

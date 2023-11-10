@@ -65,10 +65,61 @@
 					},
 					"uid": 3,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": null,
+						"uid": 3,
+						"children": [
+							{
+								"uid": 17,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							}
+						],
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
 					"world": {
-						"x": 30,
-						"y": 203,
+						"x": 32,
+						"y": 192,
 						"width": 128,
 						"height": 64,
 						"originX": 0,
@@ -544,6 +595,254 @@
 						"y": 296.46080242531207,
 						"width": 114.30259425547189,
 						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Master_SpriteFont_1",
+					"properties": {
+						"text": "Text",
+						"enable-bbcode": true,
+						"character-width": 46,
+						"character-height": 50,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "[[8,\" \"],[5,\"'|\"],[8,\";[\"],[9,\"-]`\"],[10,\"\\\"\"],[11,\")\"],[12,\".,°\"],[13,\"1:(\"],[14,\"!\"],[15,\"/\"],[16,\"jl\\\\<>\"],[17,\"?£€\"],[18,\"ist~=\"],[19,\"345*\"],[20,\"aef27\"],[21,\"89#\"],[22,\"FId0\"],[23,\"ghpquyz6+\"],[24,\"Sox$\"],[25,\"Tcn\"],[26,\"PR%\"],[27,\"CEGJQUbw&\"],[28,\"Lk_\"],[29,\"AOVZ\"],[30,\"DKNY\"],[31,\"r@\"],[32,\"BHXm\"],[36,\"MWv\"]]\n",
+						"scale": 1,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 17,
+					"instanceVariables": {},
+					"behaviors": {},
+					"template": {
+						"mode": "replica",
+						"templateName": "",
+						"sourceTemplateName": "Spritefont1_Choice",
+						"components": [
+							{
+								"id": "plugin",
+								"component": [
+									{
+										"key": "plugin",
+										"state": [
+											[
+												"text",
+												true
+											],
+											[
+												"enable-bbcode",
+												true
+											],
+											[
+												"character-width",
+												true
+											],
+											[
+												"character-height",
+												true
+											],
+											[
+												"character-set",
+												true
+											],
+											[
+												"spacing-data",
+												true
+											],
+											[
+												"scale",
+												true
+											],
+											[
+												"character-spacing",
+												true
+											],
+											[
+												"line-height",
+												true
+											],
+											[
+												"horizontal-alignment",
+												false
+											],
+											[
+												"vertical-alignment",
+												false
+											],
+											[
+												"wrapping",
+												true
+											],
+											[
+												"initially-visible",
+												true
+											],
+											[
+												"origin",
+												true
+											],
+											[
+												"read-aloud",
+												true
+											]
+										]
+									}
+								]
+							},
+							{
+								"id": "instance-variable",
+								"component": [
+									{
+										"key": "instance-variable",
+										"state": []
+									}
+								]
+							},
+							{
+								"id": "behavior",
+								"component": []
+							},
+							{
+								"id": "effect",
+								"component": []
+							},
+							{
+								"id": "world-instance",
+								"component": [
+									{
+										"key": "world-instance",
+										"state": [
+											[
+												"x",
+												false
+											],
+											[
+												"y",
+												false
+											],
+											[
+												"z",
+												true
+											],
+											[
+												"w",
+												false
+											],
+											[
+												"h",
+												false
+											],
+											[
+												"a",
+												true
+											],
+											[
+												"o",
+												true
+											],
+											[
+												"c",
+												true
+											],
+											[
+												"sx",
+												false
+											],
+											[
+												"sy",
+												false
+											],
+											[
+												"bm",
+												true
+											],
+											[
+												"twpx",
+												true
+											],
+											[
+												"twpy",
+												true
+											],
+											[
+												"twpz",
+												true
+											],
+											[
+												"twpw",
+												true
+											],
+											[
+												"twph",
+												true
+											],
+											[
+												"twpa",
+												true
+											],
+											[
+												"dwp",
+												true
+											],
+											[
+												"ssm",
+												true
+											]
+										]
+									}
+								]
+							}
+						],
+						"replicasUIDs": null
+					},
+					"sceneGraphData": {
+						"parent-uid": 3,
+						"uid": 17,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 32,
+						"y": 192,
+						"width": 128,
+						"height": 64,
 						"originX": 0,
 						"originY": 0,
 						"color": [

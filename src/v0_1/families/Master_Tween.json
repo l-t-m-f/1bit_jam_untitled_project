@@ -1,0 +1,17 @@
+{
+	"name": "Master_Tween",
+	"plugin-id": "NinePatch",
+	"sid": 550367266777425,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 955647099108526
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"E_NP_DialogChoice"
+	]
+}
