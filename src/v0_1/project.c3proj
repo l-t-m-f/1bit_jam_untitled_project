@@ -22,6 +22,20 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "NinePatch",
 			"name": "9-patch",
 			"author": "Scirra",
@@ -59,11 +73,11 @@
 	"uniqueId": "v15jb14ulow",
 	"objectTypes": {
 		"items": [
-			"Master_SpriteTest",
-			"Master_DialogsDataJSON",
-			"Master_AJAX",
-			"Master_Text",
-			"Master_SpriteFont_1"
+			"Main_SpriteTest",
+			"Main_DialogsDataJSON",
+			"Main_AJAX",
+			"Main_Text",
+			"Main_SpriteFont_1"
 		],
 		"subfolders": [
 			{
@@ -85,9 +99,24 @@
 						],
 						"subfolders": [],
 						"name": "LevelTests"
+					},
+					{
+						"items": [
+							"E_S_Player"
+						],
+						"subfolders": [],
+						"name": "Entities"
 					}
 				],
 				"name": "Emile"
+			},
+			{
+				"items": [
+					"Main_Keyboard",
+					"Main_Mouse"
+				],
+				"subfolders": [],
+				"name": "Inputs"
 			}
 		]
 	},
@@ -95,14 +124,14 @@
 	"containers": [],
 	"families": {
 		"items": [
-			"Master_Tween"
+			"Main_Tween"
 		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
-			"Master_FirstGym",
-			"Master_Defaults"
+			"Main_FirstGym",
+			"Main_Defaults"
 		],
 		"subfolders": [
 			{
@@ -117,7 +146,7 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Master_FirstGymEvents"
+			"Main_FirstGymEvents"
 		],
 		"subfolders": [
 			{
@@ -299,5 +328,5 @@
 	},
 	"viewportWidth": 640,
 	"viewportHeight": 480,
-	"firstLayout": "Master_FirstGym"
+	"firstLayout": "Main_FirstGym"
 }

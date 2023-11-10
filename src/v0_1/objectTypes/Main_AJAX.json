@@ -1,9 +1,9 @@
 {
-	"name": "Master_AJAX",
+	"name": "Main_AJAX",
 	"plugin-id": "AJAX",
 	"sid": 657564634475081,
 	"singleglobal-inst": {
-		"type": "Master_AJAX",
+		"type": "Main_AJAX",
 		"properties": {},
 		"uid": 5
 	}

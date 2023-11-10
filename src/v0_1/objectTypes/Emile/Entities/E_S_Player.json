@@ -1,7 +1,7 @@
 {
-	"name": "Master_SpriteTest",
+	"name": "E_S_Player",
 	"plugin-id": "Sprite",
-	"sid": 384119488304341,
+	"sid": 765675962221485,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,20 +11,20 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 32,
+						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4141312,
+						"imageSpriteId": 2834578,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 172192779132535,
+				"sid": 572739762923057,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

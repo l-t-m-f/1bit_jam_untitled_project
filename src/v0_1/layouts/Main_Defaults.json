@@ -1,5 +1,5 @@
 {
-	"name": "Master_Defaults",
+	"name": "Main_Defaults",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Master_Text",
+					"type": "Main_Text",
 					"properties": {
 						"text": "Text",
 						"enable-bbcode": true,
@@ -168,7 +168,7 @@
 					}
 				},
 				{
-					"type": "Master_SpriteFont_1",
+					"type": "Main_SpriteFont_1",
 					"properties": {
 						"text": "Text",
 						"enable-bbcode": true,
@@ -388,7 +388,7 @@
 					}
 				},
 				{
-					"type": "Master_SpriteFont_1",
+					"type": "Main_SpriteFont_1",
 					"properties": {
 						"text": "Text",
 						"enable-bbcode": true,
@@ -608,7 +608,7 @@
 					}
 				},
 				{
-					"type": "Master_SpriteFont_1",
+					"type": "Main_SpriteFont_1",
 					"properties": {
 						"text": "Text",
 						"enable-bbcode": true,
@@ -890,7 +890,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Master_Text",
+					"type": "Main_Text",
 					"properties": {
 						"text": "This layout is for placing the first version of every object type. This ensure that we control the state of \"instance 0\" for each object. So that when drags from the Project window, it has that state.",
 						"enable-bbcode": true,
@@ -1115,7 +1115,7 @@
 					}
 				},
 				{
-					"type": "Master_Text",
+					"type": "Main_Text",
 					"properties": {
 						"text": "On every object, you can use the system of Template/Replica. Each original \"Template\" should be placed on Master_Defaults (here) also. So that when you select a replica of that kind, it takes that style. For example this current text is a replica of the one on the left.",
 						"enable-bbcode": true,

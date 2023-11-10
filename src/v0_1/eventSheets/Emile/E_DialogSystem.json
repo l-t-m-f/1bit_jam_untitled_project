@@ -51,7 +51,7 @@
 			"actions": [
 				{
 					"id": "request-project-file",
-					"objectClass": "Master_AJAX",
+					"objectClass": "Main_AJAX",
 					"sid": 376945376853686,
 					"parameters": {
 						"tag": "\"dialog_load\"",
@@ -65,10 +65,10 @@
 				},
 				{
 					"id": "parse",
-					"objectClass": "Master_DialogsDataJSON",
+					"objectClass": "Main_DialogsDataJSON",
 					"sid": 435236723489928,
 					"parameters": {
-						"data": "Master_AJAX.LastData"
+						"data": "Main_AJAX.LastData"
 					}
 				},
 				{
@@ -85,11 +85,11 @@
 				},
 				{
 					"id": "set-text",
-					"objectClass": "Master_Text",
+					"objectClass": "Main_Text",
 					"sid": 797659682297831,
 					"disabled": true,
 					"parameters": {
-						"text": "Master_DialogsDataJSON.Get(\"lines.0\")"
+						"text": "Main_DialogsDataJSON.Get(\"lines.0\")"
 					}
 				}
 			],
@@ -176,8 +176,8 @@
 									"objectClass": "System",
 									"sid": 313858749431274,
 									"parameters": {
-										"object": "Master_SpriteFont_1",
-										"expression": "Master_SpriteFont_1.TemplateName",
+										"object": "Main_SpriteFont_1",
+										"expression": "Main_SpriteFont_1.TemplateName",
 										"comparison": 0,
 										"value": "\"Spritefont1_Text\""
 									}
@@ -186,11 +186,11 @@
 							"actions": [
 								{
 									"id": "typewriter-text",
-									"objectClass": "Master_SpriteFont_1",
+									"objectClass": "Main_SpriteFont_1",
 									"sid": 812778449808445,
 									"parameters": {
-										"text": "Master_DialogsDataJSON.Get(last_line_access_str&\".text\")",
-										"duration": "0.04 * len(Master_DialogsDataJSON.Get(last_line_access_str&\".text\"))"
+										"text": "Main_DialogsDataJSON.Get(last_line_access_str&\".text\")",
+										"duration": "0.04 * len(Main_DialogsDataJSON.Get(last_line_access_str&\".text\"))"
 									}
 								}
 							],
@@ -274,7 +274,7 @@
 							"sid": 394063877811817,
 							"parameters": {
 								"variable": "last_choice_cnt",
-								"value": "Master_DialogsDataJSON.ArraySize(pChoicesAccessStr)"
+								"value": "Main_DialogsDataJSON.ArraySize(pChoicesAccessStr)"
 							}
 						}
 					],
@@ -346,7 +346,7 @@
 											"objectClass": "E_NP_DialogChoice",
 											"sid": 482040441768460,
 											"parameters": {
-												"child": "Master_SpriteFont_1",
+												"child": "Main_SpriteFont_1",
 												"which": "own"
 											}
 										}
@@ -354,10 +354,10 @@
 									"actions": [
 										{
 											"id": "set-text",
-											"objectClass": "Master_SpriteFont_1",
+											"objectClass": "Main_SpriteFont_1",
 											"sid": 466395651112063,
 											"parameters": {
-												"text": "Master_DialogsDataJSON.Get(pChoicesAccessStr&\".\"&str(loopindex(\"i\")-1))"
+												"text": "Main_DialogsDataJSON.Get(pChoicesAccessStr&\".\"&str(loopindex(\"i\")-1))"
 											}
 										}
 									],

@@ -40,7 +40,7 @@
 					}
 				},
 				{
-					"type": "Master_SpriteFont_1",
+					"type": "Main_SpriteFont_1",
 					"properties": {
 						"text": "Text",
 						"enable-bbcode": true,
@@ -292,7 +292,7 @@
 	"sid": 127882250725424,
 	"nonworld-instances": [
 		{
-			"type": "Master_DialogsDataJSON",
+			"type": "Main_DialogsDataJSON",
 			"properties": {},
 			"uid": 4,
 			"instanceVariables": {}
