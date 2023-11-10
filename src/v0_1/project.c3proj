@@ -54,7 +54,8 @@
 			{
 				"items": [
 					"E_SP_Test2",
-					"E_NP_DialogBox"
+					"E_NP_DialogBox",
+					"E_NP_DialogChoice"
 				],
 				"subfolders": [],
 				"name": "Emile"
