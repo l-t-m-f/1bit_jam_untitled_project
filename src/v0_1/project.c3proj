@@ -19,7 +19,15 @@
 		"items": [
 			"Test"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"E_OtherSpriteTest"
+				],
+				"subfolders": [],
+				"name": "Emile"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],
@@ -31,13 +39,29 @@
 		"items": [
 			"Layout 1"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"E_TestLayout1"
+				],
+				"subfolders": [],
+				"name": "Emile"
+			}
+		]
 	},
 	"eventSheets": {
 		"items": [
 			"Event sheet 1"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"E_TestEvents1"
+				],
+				"subfolders": [],
+				"name": "Emile"
+			}
+		]
 	},
 	"rootFileFolders": {
 		"script": {
