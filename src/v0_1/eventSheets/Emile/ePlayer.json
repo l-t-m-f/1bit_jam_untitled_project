@@ -504,16 +504,11 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 764647496917539
-						},
-						{
 							"id": "compare-two-values",
 							"objectClass": "System",
 							"sid": 753429923330045,
 							"parameters": {
-								"first-value": "Functions.IsPressed(KEYCODE_SPACE)",
+								"first-value": "Functions.IsMarkedPressed(KEYCODE_SPACE)",
 								"comparison": 0,
 								"second-value": "TRUE"
 							}
@@ -548,7 +543,7 @@
 							}
 						},
 						{
-							"callFunction": "Unpress",
+							"callFunction": "MarkReleased",
 							"sid": 248422563149178,
 							"parameters": [
 								"KEYCODE_SPACE"

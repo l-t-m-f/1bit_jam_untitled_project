@@ -28,9 +28,9 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 764120325291554,
+							"sid": 578833052386288,
 							"parameters": {
-								"first-value": "Functions.IsUnpressed(Keyboard.LastKeyCode)",
+								"first-value": "Functions.IsMarkedReleased(pKeycode)",
 								"comparison": 0,
 								"second-value": "true"
 							}
@@ -38,10 +38,10 @@
 					],
 					"actions": [
 						{
-							"callFunction": "Press",
-							"sid": 785074489508549,
+							"callFunction": "MarkPressed",
+							"sid": 281285905009887,
 							"parameters": [
-								"Keyboard.LastKeyCode"
+								"pKeycode"
 							]
 						}
 					],
@@ -53,9 +53,9 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 155356302548653,
+									"sid": 661674132329068,
 									"parameters": {
-										"first-value": "Functions.IsMovementKeycode(Keyboard.LastKeyCode)",
+										"first-value": "Functions.IsMovementKeycode(pKeycode)",
 										"comparison": 0,
 										"second-value": "true"
 									}
@@ -70,9 +70,9 @@
 										{
 											"id": "compare-two-values",
 											"objectClass": "System",
-											"sid": 904858546728061,
+											"sid": 602700106034126,
 											"parameters": {
-												"first-value": "Functions.IsCurrentMoveKeysOpposite(Keyboard.LastKeyCode)",
+												"first-value": "Functions.IsCurrentMoveKeysOpposite(pKeycode)",
 												"comparison": 0,
 												"second-value": "true"
 											}
@@ -81,10 +81,10 @@
 									"actions": [
 										{
 											"callFunction": "SetMoveKeyMemPos",
-											"sid": 409579463168910,
+											"sid": 427078670837688,
 											"parameters": [
 												"0",
-												"Keyboard.LastKeyCode"
+												"pKeycode"
 											]
 										}
 									],
@@ -112,10 +112,10 @@
 									"actions": [
 										{
 											"callFunction": "SetMoveKeyMemPos",
-											"sid": 137307343663146,
+											"sid": 126130555397905,
 											"parameters": [
 												"0",
-												"Keyboard.LastKeyCode"
+												"pKeycode"
 											]
 										}
 									],
@@ -143,10 +143,10 @@
 									"actions": [
 										{
 											"callFunction": "SetMoveKeyMemPos",
-											"sid": 755460780896425,
+											"sid": 430940714628184,
 											"parameters": [
 												"1",
-												"Keyboard.LastKeyCode"
+												"pKeycode"
 											]
 										}
 									],
@@ -164,10 +164,10 @@
 									"actions": [
 										{
 											"callFunction": "SetMoveKeyMemPos",
-											"sid": 819537609068169,
+											"sid": 645432497241736,
 											"parameters": [
 												"1",
-												"Keyboard.LastKeyCode"
+												"pKeycode"
 											]
 										}
 									],
@@ -206,9 +206,9 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 685965156198929,
+							"sid": 860800722911894,
 							"parameters": {
-								"first-value": "Functions.IsPressed(Keyboard.LastKeyCode)",
+								"first-value": "Functions.IsMarkedPressed(pKeycode)",
 								"comparison": 0,
 								"second-value": "true"
 							}
@@ -216,10 +216,10 @@
 					],
 					"actions": [
 						{
-							"callFunction": "Unpress",
-							"sid": 111432031948488,
+							"callFunction": "MarkReleased",
+							"sid": 190288981631134,
 							"parameters": [
-								"Keyboard.LastKeyCode"
+								"pKeycode"
 							]
 						}
 					],
@@ -231,9 +231,9 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 411759883178140,
+									"sid": 527132784056973,
 									"parameters": {
-										"first-value": "Functions.IsMovementKeycode(Keyboard.LastKeyCode)",
+										"first-value": "Functions.IsMovementKeycode(pKeycode)",
 										"comparison": 0,
 										"second-value": "true"
 									}
@@ -248,9 +248,9 @@
 										{
 											"id": "compare-two-values",
 											"objectClass": "System",
-											"sid": 290311538677096,
+											"sid": 984273264679384,
 											"parameters": {
-												"first-value": "Functions.IsMoveKeyPosCurrentKeycode(1, Keyboard.LastKeyCode)",
+												"first-value": "Functions.IsMoveKeyPosCurrentKeycode(1, pKeycode)",
 												"comparison": 0,
 												"second-value": "true"
 											}
@@ -279,9 +279,9 @@
 										{
 											"id": "compare-two-values",
 											"objectClass": "System",
-											"sid": 551383748748932,
+											"sid": 632351654234719,
 											"parameters": {
-												"first-value": "Functions.IsMoveKeyPosCurrentKeycode(0, Keyboard.LastKeyCode)",
+												"first-value": "Functions.IsMoveKeyPosCurrentKeycode(0, pKeycode)",
 												"comparison": 0,
 												"second-value": "true"
 											}
@@ -354,7 +354,7 @@
 			]
 		},
 		{
-			"functionName": "Press",
+			"functionName": "MarkPressed",
 			"functionDescription": "",
 			"functionCategory": "Keyboard",
 			"functionReturnType": "none",
@@ -386,7 +386,7 @@
 			"sid": 854501393587636
 		},
 		{
-			"functionName": "Unpress",
+			"functionName": "MarkReleased",
 			"functionDescription": "",
 			"functionCategory": "Keyboard",
 			"functionReturnType": "none",
@@ -418,7 +418,78 @@
 			"sid": 418010350707654
 		},
 		{
-			"functionName": "IsUnpressed",
+			"functionName": "IsMarkedPressed",
+			"functionDescription": "",
+			"functionCategory": "Keyboard",
+			"functionReturnType": "number",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "pKeycode",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"sid": 220012763619707
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 744577777801859,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-at-xy",
+							"objectClass": "aKeystate",
+							"sid": 740221217319194,
+							"parameters": {
+								"x": "0",
+								"y": "pKeycode",
+								"comparison": 0,
+								"value": "true"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-function-return-value",
+							"objectClass": "Functions",
+							"sid": 149226543066850,
+							"parameters": {
+								"value": "TRUE"
+							}
+						}
+					],
+					"sid": 591165370030584
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 177397392213561
+						}
+					],
+					"actions": [
+						{
+							"id": "set-function-return-value",
+							"objectClass": "Functions",
+							"sid": 969376746820196,
+							"parameters": {
+								"value": "FALSE"
+							}
+						}
+					],
+					"sid": 920098296553340
+				}
+			]
+		},
+		{
+			"functionName": "IsMarkedReleased",
 			"functionDescription": "",
 			"functionCategory": "Keyboard",
 			"functionReturnType": "number",
@@ -485,77 +556,6 @@
 						}
 					],
 					"sid": 487223708060542
-				}
-			]
-		},
-		{
-			"functionName": "IsPressed",
-			"functionDescription": "",
-			"functionCategory": "Keyboard",
-			"functionReturnType": "number",
-			"functionCopyPicked": false,
-			"functionIsAsync": false,
-			"functionParameters": [
-				{
-					"name": "pKeycode",
-					"type": "number",
-					"initialValue": "-1",
-					"comment": "",
-					"sid": 220012763619707
-				}
-			],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [],
-			"sid": 882175719217793,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-at-xy",
-							"objectClass": "aKeystate",
-							"sid": 908540020239993,
-							"parameters": {
-								"x": "0",
-								"y": "pKeycode",
-								"comparison": 0,
-								"value": "true"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-function-return-value",
-							"objectClass": "Functions",
-							"sid": 891777603157098,
-							"parameters": {
-								"value": "TRUE"
-							}
-						}
-					],
-					"sid": 462018516962724
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 141227389091707
-						}
-					],
-					"actions": [
-						{
-							"id": "set-function-return-value",
-							"objectClass": "Functions",
-							"sid": 485790105660778,
-							"parameters": {
-								"value": "FALSE"
-							}
-						}
-					],
-					"sid": 127425876317509
 				}
 			]
 		},
