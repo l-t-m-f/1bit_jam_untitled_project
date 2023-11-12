@@ -100,7 +100,17 @@
 					"children": [
 						{
 							"eventType": "block",
-							"conditions": [],
+							"conditions": [
+								{
+									"id": "pick-children",
+									"objectClass": "sPlayerCol",
+									"sid": 943959633969250,
+									"parameters": {
+										"child": "gEntitySprite",
+										"which": "own"
+									}
+								}
+							],
 							"actions": [
 								{
 									"id": "set-position",
@@ -113,7 +123,7 @@
 								},
 								{
 									"id": "set-position",
-									"objectClass": "sPlayerArt",
+									"objectClass": "gEntitySprite",
 									"sid": 874805998547229,
 									"parameters": {
 										"x": "lerp(Self.X, sPlayerCol.X, 0.5)",

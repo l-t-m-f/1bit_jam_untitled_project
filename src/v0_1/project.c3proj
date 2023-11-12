@@ -118,7 +118,8 @@
 			"sTest",
 			"AJAX",
 			"Browser",
-			"3DShapeTest"
+			"3DShapeTest",
+			"npEntityTile"
 		],
 		"subfolders": [
 			{
@@ -148,7 +149,9 @@
 							"sPlayerArt",
 							"sPlayerCol",
 							"sEntityTile",
-							"sPlayerSpawn"
+							"sPlayerSpawn",
+							"sPlayerArtNew",
+							"sPlayerArtNew2"
 						],
 						"subfolders": [],
 						"name": "Entities"
@@ -181,6 +184,13 @@
 						],
 						"subfolders": [],
 						"name": "Camera"
+					},
+					{
+						"items": [
+							"sDoor"
+						],
+						"subfolders": [],
+						"name": "GameplayElements"
 					}
 				],
 				"name": "Emile"
@@ -210,7 +220,8 @@
 			"npfTween",
 			"sf8Dir",
 			"sfTween",
-			"sfScrollTo"
+			"sfScrollTo",
+			"gEntitySprite"
 		],
 		"subfolders": []
 	},

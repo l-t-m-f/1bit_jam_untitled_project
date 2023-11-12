@@ -1,0 +1,12 @@
+{
+	"name": "gEntitySprite",
+	"plugin-id": "Sprite",
+	"sid": 844289996405720,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"sPlayerArt",
+		"sPlayerArtNew2"
+	]
+}
