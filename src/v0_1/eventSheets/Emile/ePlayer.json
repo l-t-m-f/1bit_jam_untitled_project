@@ -69,7 +69,17 @@
 			"functionParameters": [],
 			"eventType": "function-block",
 			"conditions": [],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "sCamera",
+					"sid": 574629734590971,
+					"parameters": {
+						"x": "lerp(Self.X, sPlayerBase.X, 0.02)",
+						"y": "lerp(Self.Y, sPlayerBase.Y, 0.02)"
+					}
+				}
+			],
 			"sid": 999520248952580,
 			"children": [
 				{

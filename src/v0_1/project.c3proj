@@ -103,6 +103,13 @@
 			"name": "Tween",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "v15jb14ulow",
@@ -167,6 +174,13 @@
 						],
 						"subfolders": [],
 						"name": "Inspection"
+					},
+					{
+						"items": [
+							"sCamera"
+						],
+						"subfolders": [],
+						"name": "Camera"
 					}
 				],
 				"name": "Emile"
@@ -195,7 +209,8 @@
 		"items": [
 			"npfTween",
 			"sf8Dir",
-			"sfTween"
+			"sfTween",
+			"sfScrollTo"
 		],
 		"subfolders": []
 	},
@@ -382,7 +397,7 @@
 		"authorEmail": "",
 		"authorWebsite": "",
 		"appId": "",
-		"pixelRounding": true,
+		"pixelRounding": false,
 		"zAxisScale": "regular",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,

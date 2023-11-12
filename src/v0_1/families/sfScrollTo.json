@@ -1,0 +1,17 @@
+{
+	"name": "sfScrollTo",
+	"plugin-id": "Sprite",
+	"sid": 624375798797461,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 760758371666677
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"sCamera"
+	]
+}
