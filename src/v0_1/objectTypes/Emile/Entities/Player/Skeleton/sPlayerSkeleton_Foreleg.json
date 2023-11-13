@@ -4,7 +4,13 @@
 	"sid": 396929972074833,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 662221240943418
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -20,6 +26,13 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 3335570,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Feet",
+								"x": 0.5,
+								"y": 0.984375
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					}

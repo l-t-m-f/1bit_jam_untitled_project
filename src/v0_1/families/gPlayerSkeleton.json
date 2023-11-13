@@ -1,0 +1,25 @@
+{
+	"name": "gPlayerSkeleton",
+	"plugin-id": "Sprite",
+	"sid": 926372001243434,
+	"instanceVariables": [
+		{
+			"name": "AnchorName",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 245831470971297
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"sPlayerSkeleton_Auxiliary",
+		"sPlayerSkeleton_Feet",
+		"sPlayerSkeleton_Foreleg",
+		"sPlayerSkeleton_Head",
+		"sPlayerSkeleton_Hindleg",
+		"sPlayerSkeleton_Shoulder",
+		"sPlayerSkeleton_Tongue"
+	]
+}

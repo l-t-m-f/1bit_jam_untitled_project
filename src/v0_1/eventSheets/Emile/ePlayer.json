@@ -60,6 +60,157 @@
 			"sid": 859295498416001
 		},
 		{
+			"functionName": "UpdatePlayerSkeleton",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 348719804163313,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 489316330472184,
+							"parameters": {
+								"object": "sPlayerSkeleton_Shoulder"
+							}
+						},
+						{
+							"id": "pick-parent",
+							"objectClass": "sPlayerSkeleton_Shoulder",
+							"sid": 187736658241451,
+							"parameters": {
+								"parent": "sPlayerSkeleton_Head",
+								"which": "own"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "sPlayerSkeleton_Shoulder",
+							"sid": 568478290910436,
+							"parameters": {
+								"x": "sPlayerSkeleton_Head.ImagePointX(sPlayerSkeleton_Shoulder.AnchorName)",
+								"y": "sPlayerSkeleton_Head.ImagePointY(sPlayerSkeleton_Shoulder.AnchorName)"
+							}
+						}
+					],
+					"sid": 672398291338756
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 577374357047460,
+							"parameters": {
+								"object": "sPlayerSkeleton_Hindleg"
+							}
+						},
+						{
+							"id": "pick-parent",
+							"objectClass": "sPlayerSkeleton_Hindleg",
+							"sid": 207503278448766,
+							"parameters": {
+								"parent": "sPlayerSkeleton_Shoulder",
+								"which": "own"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "sPlayerSkeleton_Hindleg",
+							"sid": 689747004128729,
+							"parameters": {
+								"x": "sPlayerSkeleton_Shoulder.ImagePointX(sPlayerSkeleton_Hindleg.AnchorName)",
+								"y": "sPlayerSkeleton_Shoulder.ImagePointY(sPlayerSkeleton_Hindleg.AnchorName)"
+							}
+						}
+					],
+					"sid": 120853603185174
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 747947459099148,
+							"parameters": {
+								"object": "sPlayerSkeleton_Foreleg"
+							}
+						},
+						{
+							"id": "pick-parent",
+							"objectClass": "sPlayerSkeleton_Foreleg",
+							"sid": 399369584850741,
+							"parameters": {
+								"parent": "sPlayerSkeleton_Hindleg",
+								"which": "own"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "sPlayerSkeleton_Foreleg",
+							"sid": 709624461853605,
+							"parameters": {
+								"x": "sPlayerSkeleton_Hindleg.ImagePointX(sPlayerSkeleton_Foreleg.AnchorName)",
+								"y": "sPlayerSkeleton_Hindleg.ImagePointY(sPlayerSkeleton_Foreleg.AnchorName)"
+							}
+						}
+					],
+					"sid": 766150622907304
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 287920264479925,
+							"parameters": {
+								"object": "sPlayerSkeleton_Feet"
+							}
+						},
+						{
+							"id": "pick-parent",
+							"objectClass": "sPlayerSkeleton_Feet",
+							"sid": 789344880519313,
+							"parameters": {
+								"parent": "sPlayerSkeleton_Foreleg",
+								"which": "own"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "sPlayerSkeleton_Feet",
+							"sid": 453552794582692,
+							"parameters": {
+								"x": "sPlayerSkeleton_Foreleg.ImagePointX(sPlayerSkeleton_Feet.AnchorName)",
+								"y": "sPlayerSkeleton_Foreleg.ImagePointY(sPlayerSkeleton_Feet.AnchorName)"
+							}
+						}
+					],
+					"sid": 169002243393222
+				}
+			]
+		},
+		{
 			"functionName": "UpdatePlayer",
 			"functionDescription": "",
 			"functionCategory": "Player",
@@ -78,6 +229,10 @@
 						"x": "lerp(Self.X, sPlayerBase.X, 0.02)",
 						"y": "lerp(Self.Y, sPlayerBase.Y, 0.02)"
 					}
+				},
+				{
+					"callFunction": "UpdatePlayerSkeleton",
+					"sid": 989932899000537
 				}
 			],
 			"sid": 999520248952580,

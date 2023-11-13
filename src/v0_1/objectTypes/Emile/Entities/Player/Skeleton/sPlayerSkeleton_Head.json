@@ -4,7 +4,13 @@
 	"sid": 852730148781052,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 275157402177325
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -20,6 +26,18 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 7274352,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "LeftShoulder",
+								"x": 0.05,
+								"y": 0.95
+							},
+							{
+								"name": "RightShoulder",
+								"x": 0.95,
+								"y": 0.95
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					}
