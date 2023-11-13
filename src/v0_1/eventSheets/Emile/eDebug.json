@@ -1,0 +1,288 @@
+{
+	"name": "eDebug",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "bDebugLogging",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 782093824897062
+		},
+		{
+			"eventType": "variable",
+			"name": "bShowDebugColliders",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "True if should show debug colliders. (Breaks 1-bit)",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 709123185130868
+		},
+		{
+			"functionName": "UpdateDebug",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 826352406554300,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 905908784403946,
+							"parameters": {
+								"first-value": "Functions.IsMarkedPressed(KEYCODE_G)",
+								"comparison": 0,
+								"second-value": "TRUE"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 965953252876974,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "toggle-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 191720132185319,
+									"parameters": {
+										"variable": "bDebugLogging"
+									}
+								}
+							],
+							"sid": 812593065119376
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 558801583219080,
+									"parameters": {
+										"variable": "bDebugLogging"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 519776277222488,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each",
+											"objectClass": "System",
+											"sid": 603537843527805,
+											"parameters": {
+												"object": "tbEntityBase"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "tbEntityBase",
+											"sid": 318940342655027,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 209797838565638
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 537797021394802
+								}
+							],
+							"actions": [],
+							"sid": 306577382066458,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each",
+											"objectClass": "System",
+											"sid": 405132198291143,
+											"parameters": {
+												"object": "tbEntityBase"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "tbEntityBase",
+											"sid": 246863348114903,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 868275146450515
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"callFunction": "MarkReleased",
+									"sid": 460932150301154,
+									"parameters": [
+										"KEYCODE_G"
+									]
+								}
+							],
+							"sid": 729675272561579
+						}
+					]
+				}
+			]
+		},
+		{
+			"functionName": "LoggerPost",
+			"functionDescription": "",
+			"functionCategory": "Logger",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "message",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 701493655780898
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 450477300233439,
+					"parameters": {
+						"variable": "bDebugLogging"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 630303095977054,
+					"parameters": {
+						"type": "log",
+						"message": "message"
+					}
+				}
+			],
+			"sid": 996688721561942
+		},
+		{
+			"functionName": "LoggerWarn",
+			"functionDescription": "",
+			"functionCategory": "Logger",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "message",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 736139770557416
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 273252779770326,
+					"parameters": {
+						"variable": "bDebugLogging"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 357823662121425,
+					"parameters": {
+						"type": "warn",
+						"message": "message"
+					}
+				}
+			],
+			"sid": 271062839505376
+		},
+		{
+			"functionName": "LoggerError",
+			"functionDescription": "",
+			"functionCategory": "Logger",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "message",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 164630885294933
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 182609550543572,
+					"parameters": {
+						"variable": "bDebugLogging"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 286115594744582,
+					"parameters": {
+						"type": "error",
+						"message": "message"
+					}
+				}
+			],
+			"sid": 625309495153326
+		}
+	],
+	"sid": 228292167168584
+}

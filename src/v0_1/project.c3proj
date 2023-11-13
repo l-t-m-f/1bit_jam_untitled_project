@@ -1,7 +1,7 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 35800,
-	"name": "untitled_project",
+	"name": "HNTBAM",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
@@ -91,9 +91,23 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -117,6 +131,13 @@
 			"name": "Scroll To",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "v15jb14ulow",
@@ -125,13 +146,13 @@
 			"sTest",
 			"AJAX",
 			"Browser",
-			"3DShapeTest",
-			"npEntityTile"
+			"3DShapeTest"
 		],
 		"subfolders": [
 			{
 				"items": [
-					"sTest2"
+					"sTest2",
+					"sSolidTest"
 				],
 				"subfolders": [
 					{
@@ -152,20 +173,10 @@
 					},
 					{
 						"items": [
-							"sPlayerBase",
-							"sPlayerArt",
 							"sPlayerCol",
-							"sEntityTile",
-							"sPlayerArtNew2"
+							"tbEntityBase"
 						],
 						"subfolders": [
-							{
-								"items": [
-									"sPlayerPortraitArt"
-								],
-								"subfolders": [],
-								"name": "Portraits"
-							},
 							{
 								"items": [],
 								"subfolders": [
@@ -185,6 +196,22 @@
 									}
 								],
 								"name": "Player"
+							},
+							{
+								"items": [
+									"sMmmgmmgmmgrArt",
+									"sPlayerArt"
+								],
+								"subfolders": [
+									{
+										"items": [
+											"sPlayerPortraitArt"
+										],
+										"subfolders": [],
+										"name": "Portraits"
+									}
+								],
+								"name": "Art"
 							}
 						],
 						"name": "Entities"
@@ -225,6 +252,22 @@
 						],
 						"subfolders": [],
 						"name": "GameplayElements"
+					},
+					{
+						"items": [
+							"npViewportDeadzone"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"npEntityTile",
+									"sExclaim"
+								],
+								"subfolders": [],
+								"name": "InGame"
+							}
+						],
+						"name": "UI"
 					}
 				],
 				"name": "Emile"
@@ -252,17 +295,20 @@
 	"families": {
 		"items": [
 			"npfTween",
-			"sf8Dir",
-			"sfTween",
 			"sfScrollTo",
 			"gEntitySprite",
-			"gPlayerSkeleton"
+			"gPlayerSkeleton",
+			"tbf8Dir",
+			"tbfTween",
+			"tbfSolid",
+			"tbfLineOfSight",
+			"gInteractive"
 		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
-			"FirstGym",
+			"Test1",
 			"Defaults"
 		],
 		"subfolders": [
@@ -286,8 +332,9 @@
 					"eDialogsSystem",
 					"ePlayer",
 					"eKeyboard",
-					"eLogger",
-					"eHUD"
+					"eDebug",
+					"eHUD",
+					"eEntities"
 				],
 				"subfolders": [
 					{
@@ -299,13 +346,6 @@
 					}
 				],
 				"name": "Emile"
-			},
-			{
-				"items": [
-					"eFirstGym"
-				],
-				"subfolders": [],
-				"name": "LayoutEvents"
 			}
 		]
 	},
@@ -438,7 +478,7 @@
 	},
 	"properties": {
 		"description": "",
-		"version": "0.0.0.1",
+		"version": "0.0.0.2",
 		"author": "Anael, Neko & LTMF",
 		"authorEmail": "",
 		"authorWebsite": "",
@@ -492,5 +532,5 @@
 	},
 	"viewportWidth": 640,
 	"viewportHeight": 480,
-	"firstLayout": "FirstGym"
+	"firstLayout": "Test1"
 }

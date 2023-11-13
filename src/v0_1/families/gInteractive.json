@@ -1,0 +1,11 @@
+{
+	"name": "gInteractive",
+	"plugin-id": "TiledBg",
+	"sid": 887504767299122,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"tbEntityBase"
+	]
+}

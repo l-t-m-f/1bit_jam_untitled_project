@@ -2,29 +2,29 @@
 	"name": "ePlayer",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "bCanInteract",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 566829066602111
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "is-playing",
-					"objectClass": "sPlayerBase",
-					"sid": 506135881926895,
+					"objectClass": "tbEntityBase",
+					"sid": 491440158163808,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"8dir_jump\""
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "set-instvar-value",
-					"objectClass": "sPlayerBase",
-					"sid": 500588185630539,
-					"parameters": {
-						"instance-variable": "TweenVal1",
-						"value": "sfTween.Tween.Value(\"8dir_jump\")"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 316594009749611
 		},
 		{
@@ -219,15 +219,27 @@
 			"functionIsAsync": false,
 			"functionParameters": [],
 			"eventType": "function-block",
-			"conditions": [],
+			"conditions": [
+				{
+					"id": "pick-by-comparison",
+					"objectClass": "System",
+					"sid": 705459161798256,
+					"parameters": {
+						"object": "tbEntityBase",
+						"expression": "tbEntityBase.TemplateName",
+						"comparison": 0,
+						"value": "\"Player\""
+					}
+				}
+			],
 			"actions": [
 				{
 					"id": "set-position",
 					"objectClass": "sCamera",
-					"sid": 574629734590971,
+					"sid": 692421473633357,
 					"parameters": {
-						"x": "lerp(Self.X, sPlayerBase.X, 0.02)",
-						"y": "lerp(Self.Y, sPlayerBase.Y, 0.02)"
+						"x": "lerp(Self.X, tbEntityBase.X, 0.02)",
+						"y": "lerp(Self.Y, tbEntityBase.Y, 0.02)"
 					}
 				},
 				{
@@ -254,41 +266,6 @@
 					"sid": 736729151498199,
 					"children": [
 						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "pick-children",
-									"objectClass": "sPlayerCol",
-									"sid": 943959633969250,
-									"parameters": {
-										"child": "gEntitySprite",
-										"which": "own"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-position",
-									"objectClass": "sPlayerCol",
-									"sid": 902127313895359,
-									"parameters": {
-										"x": "lerp(Self.X, sPlayerBase.X, 0.5)",
-										"y": "lerp(Self.Y, sPlayerBase.Y - sPlayerBase.TweenVal1, 0.5)"
-									}
-								},
-								{
-									"id": "set-position",
-									"objectClass": "gEntitySprite",
-									"sid": 874805998547229,
-									"parameters": {
-										"x": "lerp(Self.X, sPlayerCol.X, 0.5)",
-										"y": "lerp(Self.Y, sPlayerCol.Y, 0.5)"
-									}
-								}
-							],
-							"sid": 647625569632402
-						},
-						{
 							"eventType": "comment",
 							"text": "Movement"
 						},
@@ -310,8 +287,8 @@
 							"actions": [
 								{
 									"id": "simulate-control",
-									"objectClass": "sPlayerBase",
-									"sid": 477275415469235,
+									"objectClass": "tbEntityBase",
+									"sid": 195102063809488,
 									"behaviorType": "8Direction",
 									"parameters": {
 										"control": "up"
@@ -338,8 +315,8 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sPlayerBase",
-											"sid": 900861304657903,
+											"objectClass": "tbEntityBase",
+											"sid": 772053826459441,
 											"behaviorType": "8Direction",
 											"parameters": {
 												"control": "left"
@@ -371,8 +348,8 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sPlayerBase",
-											"sid": 392507117523382,
+											"objectClass": "tbEntityBase",
+											"sid": 109681761635535,
 											"behaviorType": "8Direction",
 											"parameters": {
 												"control": "right"
@@ -418,8 +395,8 @@
 							"actions": [
 								{
 									"id": "simulate-control",
-									"objectClass": "sPlayerBase",
-									"sid": 801001808895447,
+									"objectClass": "tbEntityBase",
+									"sid": 574730375263207,
 									"behaviorType": "8Direction",
 									"parameters": {
 										"control": "left"
@@ -446,8 +423,8 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sPlayerBase",
-											"sid": 379692164673637,
+											"objectClass": "tbEntityBase",
+											"sid": 414617586166709,
 											"behaviorType": "8Direction",
 											"parameters": {
 												"control": "up"
@@ -479,8 +456,8 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sPlayerBase",
-											"sid": 210318222808585,
+											"objectClass": "tbEntityBase",
+											"sid": 245621033893889,
 											"behaviorType": "8Direction",
 											"parameters": {
 												"control": "down"
@@ -526,8 +503,8 @@
 							"actions": [
 								{
 									"id": "simulate-control",
-									"objectClass": "sPlayerBase",
-									"sid": 179704471163983,
+									"objectClass": "tbEntityBase",
+									"sid": 847983218453112,
 									"behaviorType": "8Direction",
 									"parameters": {
 										"control": "down"
@@ -554,8 +531,8 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sPlayerBase",
-											"sid": 927968872976946,
+											"objectClass": "tbEntityBase",
+											"sid": 936312247257912,
 											"behaviorType": "8Direction",
 											"parameters": {
 												"control": "left"
@@ -587,8 +564,8 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sPlayerBase",
-											"sid": 151975865435091,
+											"objectClass": "tbEntityBase",
+											"sid": 575010624433002,
 											"behaviorType": "8Direction",
 											"parameters": {
 												"control": "right"
@@ -634,8 +611,8 @@
 							"actions": [
 								{
 									"id": "simulate-control",
-									"objectClass": "sPlayerBase",
-									"sid": 124292842999118,
+									"objectClass": "tbEntityBase",
+									"sid": 252478914078847,
 									"behaviorType": "8Direction",
 									"parameters": {
 										"control": "right"
@@ -662,8 +639,8 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sPlayerBase",
-											"sid": 324054074929354,
+											"objectClass": "tbEntityBase",
+											"sid": 942596804951881,
 											"behaviorType": "8Direction",
 											"parameters": {
 												"control": "up"
@@ -695,8 +672,8 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sPlayerBase",
-											"sid": 698906711564601,
+											"objectClass": "tbEntityBase",
+											"sid": 560365317618344,
 											"behaviorType": "8Direction",
 											"parameters": {
 												"control": "down"
@@ -738,8 +715,8 @@
 								},
 								{
 									"id": "is-playing",
-									"objectClass": "sPlayerBase",
-									"sid": 350143060777979,
+									"objectClass": "tbEntityBase",
+									"sid": 308215373799293,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"8dir_jump\""
@@ -750,8 +727,8 @@
 							"actions": [
 								{
 									"id": "tween-value",
-									"objectClass": "sPlayerBase",
-									"sid": 111631030935181,
+									"objectClass": "tbEntityBase",
+									"sid": 508680286472663,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"8dir_jump\"",
@@ -785,7 +762,7 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 492728135898624,
+									"sid": 653882928503741,
 									"parameters": {
 										"first-value": "Functions.IsMarkedPressed(KEYCODE_E)",
 										"comparison": 0,
@@ -794,7 +771,7 @@
 								}
 							],
 							"actions": [],
-							"sid": 552580137807577,
+							"sid": 544506816557966,
 							"children": [
 								{
 									"eventType": "block",
@@ -802,7 +779,7 @@
 										{
 											"id": "is-overlapping-another-object",
 											"objectClass": "sPlayerCol",
-											"sid": 947782809771994,
+											"sid": 304108696278185,
 											"parameters": {
 												"object": "sClue"
 											}
@@ -811,7 +788,7 @@
 									"actions": [
 										{
 											"callFunction": "MarkReleased",
-											"sid": 222782775758159,
+											"sid": 687306498764920,
 											"parameters": [
 												"KEYCODE_E"
 											]
@@ -819,7 +796,7 @@
 										{
 											"id": "look-parallel-to-layout",
 											"objectClass": "3DCamera",
-											"sid": 132811907973759,
+											"sid": 142155246490434,
 											"parameters": {
 												"cam-x": "0",
 												"cam-y": "0",
@@ -830,10 +807,10 @@
 										{
 											"id": "set-position",
 											"objectClass": "3DCamera",
-											"sid": 733578325892854,
+											"sid": 410021483475383,
 											"parameters": {
-												"x": "sPlayerBase.X",
-												"y": "sPlayerBase.Y",
+												"x": "tbEntityBase.X",
+												"y": "tbEntityBase.Y",
 												"z": "32",
 												"which": "camera"
 											}
@@ -841,7 +818,7 @@
 										{
 											"id": "set-position",
 											"objectClass": "3DCamera",
-											"sid": 770451684996567,
+											"sid": 925614004551785,
 											"parameters": {
 												"x": "sClue.X",
 												"y": "sClue.Y",
@@ -852,19 +829,103 @@
 										{
 											"id": "request-pointer-lock",
 											"objectClass": "Mouse",
-											"sid": 609071747923720
+											"sid": 697033049274649
 										},
 										{
 											"id": "set-boolean-eventvar",
 											"objectClass": "System",
-											"sid": 661581441517728,
+											"sid": 802762450162074,
 											"parameters": {
 												"variable": "bIs3DView",
 												"value": "true"
 											}
 										}
 									],
-									"sid": 811779681307931
+									"sid": 878661143229174
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 790965011291774,
+									"parameters": {
+										"variable": "bCanInteract",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 667264857703732
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 746601939426634,
+									"parameters": {
+										"object": "gInteractive"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 711085400605566,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "has-los-to-object",
+											"objectClass": "tbEntityBase",
+											"sid": 505669641927095,
+											"behaviorType": "LineOfSight",
+											"parameters": {
+												"object": "gInteractive",
+												"image-point": "0"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 219234584439352,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 363210605691390,
+													"parameters": {
+														"first-value": "gInteractive.UID",
+														"comparison": 1,
+														"second-value": "tbEntityBase.UID"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 754772432108604,
+													"parameters": {
+														"variable": "bCanInteract",
+														"value": "true"
+													}
+												},
+												{
+													"id": "stop-loop",
+													"objectClass": "System",
+													"sid": 905356765347127
+												}
+											],
+											"sid": 149701093865789
+										}
+									]
 								}
 							]
 						}

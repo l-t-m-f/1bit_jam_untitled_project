@@ -1,32 +1,32 @@
 {
-	"name": "sfTween",
-	"plugin-id": "Sprite",
-	"sid": 582764015213291,
+	"name": "tbfTween",
+	"plugin-id": "TiledBg",
+	"sid": 717296466702796,
 	"instanceVariables": [
 		{
-			"name": "TweenVal1",
+			"name": "ivTweenVal1",
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 735118377244286
+			"sid": 556639672098378
 		},
 		{
-			"name": "TweenVal2",
+			"name": "ivTweenVal2",
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 253585902033744
+			"sid": 805457353590452
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Tween",
 			"name": "Tween",
-			"sid": 919259980831929
+			"sid": 226547331193881
 		}
 	],
 	"effectTypes": [],
 	"members": [
-		"sPlayerBase"
+		"tbEntityBase"
 	]
 }

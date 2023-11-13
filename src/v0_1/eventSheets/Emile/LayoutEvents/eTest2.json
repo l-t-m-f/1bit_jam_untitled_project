@@ -36,6 +36,14 @@
 				{
 					"callFunction": "InitDialogSystem",
 					"sid": 871474802622997
+				},
+				{
+					"callFunction": "SpawnEntity",
+					"sid": 122010774045153,
+					"parameters": [
+						"\"NPC_Mmmgmmgmmgr\"",
+						"\"460, 250\""
+					]
 				}
 			],
 			"sid": 391808221990853,
@@ -54,17 +62,12 @@
 					],
 					"actions": [
 						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 820986478133761,
-							"parameters": {
-								"object-to-create": "sPlayerBase",
-								"layer": "\"Entities\"",
-								"x": "sPlayerSpawn.X",
-								"y": "sPlayerSpawn.Y",
-								"create-hierarchy": true,
-								"template-name": "\"\""
-							}
+							"callFunction": "SpawnEntity",
+							"sid": 780969459436215,
+							"parameters": [
+								"\"Player\"",
+								"sPlayerSpawn.X&\", \"&sPlayerSpawn.Y"
+							]
 						}
 					],
 					"sid": 670392168662624
@@ -88,6 +91,10 @@
 				{
 					"callFunction": "UpdateHUD",
 					"sid": 836115979660535
+				},
+				{
+					"callFunction": "UpdateDebug",
+					"sid": 192256164711043
 				}
 			],
 			"sid": 200094368713445

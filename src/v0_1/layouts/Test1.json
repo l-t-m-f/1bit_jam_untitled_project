@@ -1,5 +1,5 @@
 {
-	"name": "FirstGym",
+	"name": "Test1",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -74,5 +74,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "eFirstGym"
+	"eventSheet": null
 }

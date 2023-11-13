@@ -1,7 +1,7 @@
 {
-	"name": "sPlayerBase",
+	"name": "sMmmgmmgmmgrArt",
 	"plugin-id": "Sprite",
-	"sid": 765675962221485,
+	"sid": 983107136109495,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -12,19 +12,19 @@
 				"frames": [
 					{
 						"width": 32,
-						"height": 32,
+						"height": 64,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.75,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9116939,
+						"imageSpriteId": 3261238,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 572739762923057,
+				"sid": 364183661766610,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -2,11 +2,19 @@
 	"name": "gEntitySprite",
 	"plugin-id": "Sprite",
 	"sid": 844289996405720,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "ivSyncRate",
+			"type": "number",
+			"desc": "Delta of the linear interpolation between the gEntitySprite and its parent sEntityBase.",
+			"show": true,
+			"sid": 275652443564322
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"sPlayerArt",
-		"sPlayerArtNew2"
+		"sMmmgmmgmmgrArt",
+		"sPlayerArt"
 	]
 }

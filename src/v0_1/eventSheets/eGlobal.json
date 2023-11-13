@@ -84,6 +84,16 @@
 			"isStatic": false,
 			"isConstant": true,
 			"sid": 317010678700534
+		},
+		{
+			"eventType": "variable",
+			"name": "KEYCODE_G",
+			"type": "number",
+			"initialValue": "71",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 917309545184517
 		}
 	],
 	"sid": 873891583360930
