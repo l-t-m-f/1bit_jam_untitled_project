@@ -1,7 +1,7 @@
 {
-	"name": "sPlayerAuxiliaryCollider8",
+	"name": "sPlayerSkeleton_Tongue",
 	"plugin-id": "Sprite",
-	"sid": 870933904735772,
+	"sid": 801105566350321,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,20 +11,20 @@
 			{
 				"frames": [
 					{
-						"width": 18,
-						"height": 27,
-						"originX": 0.4444444444444444,
-						"originY": 0.07407407407407407,
+						"width": 17,
+						"height": 32,
+						"originX": 0.47058823529411764,
+						"originY": 0.0625,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7315613,
+						"imageSpriteId": 6845422,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 463655550493158,
+				"sid": 783852880284253,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

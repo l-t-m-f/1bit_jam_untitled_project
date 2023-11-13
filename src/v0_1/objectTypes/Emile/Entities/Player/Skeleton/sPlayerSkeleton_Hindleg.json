@@ -1,7 +1,7 @@
 {
-	"name": "sPlayerAuxiliaryCollider",
+	"name": "sPlayerSkeleton_Hindleg",
 	"plugin-id": "Sprite",
-	"sid": 939800110919972,
+	"sid": 317975051308212,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,20 +11,20 @@
 			{
 				"frames": [
 					{
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 8,
+						"height": 60,
+						"originX": 0.625,
+						"originY": 0.95,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 32874,
+						"imageSpriteId": 1485480,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 985559349648332,
+				"sid": 301914658761757,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

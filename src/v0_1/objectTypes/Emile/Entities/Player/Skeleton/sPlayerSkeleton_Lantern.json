@@ -1,7 +1,7 @@
 {
-	"name": "sPlayerAuxiliaryCollider4",
+	"name": "sPlayerSkeleton_Lantern",
 	"plugin-id": "Sprite",
-	"sid": 396929972074833,
+	"sid": 374282618917978,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,20 +11,20 @@
 			{
 				"frames": [
 					{
-						"width": 8,
-						"height": 128,
+						"width": 18,
+						"height": 32,
 						"originX": 0.5,
-						"originY": 0.015625,
+						"originY": 0.09375,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3335570,
+						"imageSpriteId": 7967384,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 728701792916265,
+				"sid": 437987179954758,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1759,36 +1759,7 @@
 					}
 				},
 				{
-					"type": "sPlayerAuxiliaryCollider",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 33,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 576,
-						"y": 624,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.33
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "sPlayerAuxiliaryCollider2",
+					"type": "sPlayerSkeleton_Head",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1817,7 +1788,7 @@
 					}
 				},
 				{
-					"type": "sPlayerAuxiliaryCollider3",
+					"type": "sPlayerSkeleton_Shoulder",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1846,7 +1817,7 @@
 					}
 				},
 				{
-					"type": "sPlayerAuxiliaryCollider3",
+					"type": "sPlayerSkeleton_Shoulder",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1875,7 +1846,7 @@
 					}
 				},
 				{
-					"type": "sPlayerAuxiliaryCollider4",
+					"type": "sPlayerSkeleton_Foreleg",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1904,7 +1875,7 @@
 					}
 				},
 				{
-					"type": "sPlayerAuxiliaryCollider4",
+					"type": "sPlayerSkeleton_Foreleg",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1933,7 +1904,7 @@
 					}
 				},
 				{
-					"type": "sPlayerAuxiliaryCollider5",
+					"type": "sPlayerSkeleton_Hindleg",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1962,7 +1933,7 @@
 					}
 				},
 				{
-					"type": "sPlayerAuxiliaryCollider5",
+					"type": "sPlayerSkeleton_Hindleg",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1991,7 +1962,7 @@
 					}
 				},
 				{
-					"type": "sPlayerAuxiliaryCollider6",
+					"type": "sPlayerSkeleton_Feet",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -2020,7 +1991,7 @@
 					}
 				},
 				{
-					"type": "sPlayerAuxiliaryCollider6",
+					"type": "sPlayerSkeleton_Feet",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -2049,7 +2020,7 @@
 					}
 				},
 				{
-					"type": "sPlayerAuxiliaryCollider7",
+					"type": "sPlayerSkeleton_Tongue",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -2078,7 +2049,7 @@
 					}
 				},
 				{
-					"type": "sPlayerAuxiliaryCollider8",
+					"type": "sPlayerSkeleton_Auxiliary",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -2107,7 +2078,7 @@
 					}
 				},
 				{
-					"type": "sPlayerAuxiliaryCollider8",
+					"type": "sPlayerSkeleton_Auxiliary",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -2136,7 +2107,7 @@
 					}
 				},
 				{
-					"type": "sPlayerAuxiliaryCollider8",
+					"type": "sPlayerSkeleton_Auxiliary",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -2165,7 +2136,7 @@
 					}
 				},
 				{
-					"type": "sPlayerAuxiliaryCollider9",
+					"type": "sPlayerSkeleton_Lantern",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",

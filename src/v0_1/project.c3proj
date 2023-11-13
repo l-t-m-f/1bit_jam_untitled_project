@@ -164,15 +164,14 @@
 								"subfolders": [
 									{
 										"items": [
-											"sPlayerAuxiliaryCollider",
-											"sPlayerAuxiliaryCollider2",
-											"sPlayerAuxiliaryCollider3",
-											"sPlayerAuxiliaryCollider4",
-											"sPlayerAuxiliaryCollider5",
-											"sPlayerAuxiliaryCollider6",
-											"sPlayerAuxiliaryCollider7",
-											"sPlayerAuxiliaryCollider8",
-											"sPlayerAuxiliaryCollider9"
+											"sPlayerSkeleton_Head",
+											"sPlayerSkeleton_Shoulder",
+											"sPlayerSkeleton_Foreleg",
+											"sPlayerSkeleton_Hindleg",
+											"sPlayerSkeleton_Feet",
+											"sPlayerSkeleton_Tongue",
+											"sPlayerSkeleton_Auxiliary",
+											"sPlayerSkeleton_Lantern"
 										],
 										"subfolders": [],
 										"name": "Skeleton"

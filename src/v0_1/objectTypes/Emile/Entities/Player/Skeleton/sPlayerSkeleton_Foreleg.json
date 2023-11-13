@@ -1,7 +1,7 @@
 {
-	"name": "sPlayerAuxiliaryCollider9",
+	"name": "sPlayerSkeleton_Foreleg",
 	"plugin-id": "Sprite",
-	"sid": 374282618917978,
+	"sid": 396929972074833,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,20 +11,20 @@
 			{
 				"frames": [
 					{
-						"width": 18,
-						"height": 32,
+						"width": 8,
+						"height": 128,
 						"originX": 0.5,
-						"originY": 0.09375,
+						"originY": 0.015625,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7967384,
+						"imageSpriteId": 3335570,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 437987179954758,
+				"sid": 728701792916265,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
