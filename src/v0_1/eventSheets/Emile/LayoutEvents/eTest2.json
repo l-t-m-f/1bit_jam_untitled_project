@@ -39,10 +39,10 @@
 				},
 				{
 					"callFunction": "SpawnEntity",
-					"sid": 470373072400449,
+					"sid": 122010774045153,
 					"parameters": [
 						"\"NPC_Mmmgmmgmmgr\"",
-						"\"160, 250\""
+						"\"460, 250\""
 					]
 				}
 			],

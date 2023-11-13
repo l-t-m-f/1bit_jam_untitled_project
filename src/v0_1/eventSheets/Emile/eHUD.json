@@ -27,30 +27,66 @@
 								"comparison": 0,
 								"value": "\"DebugHUD\""
 							}
+						}
+					],
+					"actions": [],
+					"sid": 481345839933067,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 110160573208850,
+									"parameters": {
+										"object": "Text",
+										"expression": "Text.TextID",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "Text",
+									"sid": 341919518589686,
+									"parameters": {
+										"text": "tbEntityBase.ivTweenVal1"
+									}
+								}
+							],
+							"sid": 813781847654446
 						},
 						{
-							"id": "pick-by-comparison",
-							"objectClass": "System",
-							"sid": 877990088469333,
-							"parameters": {
-								"object": "Text",
-								"expression": "Text.TextID",
-								"comparison": 0,
-								"value": "1"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 384978866187984,
+									"parameters": {
+										"object": "Text",
+										"expression": "Text.TextID",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "Text",
+									"sid": 428039392511084,
+									"parameters": {
+										"text": "\"bCanInteract: \"&bCanInteract"
+									}
+								}
+							],
+							"sid": 781006966917840
 						}
-					],
-					"actions": [
-						{
-							"id": "set-text",
-							"objectClass": "Text",
-							"sid": 354756588885048,
-							"parameters": {
-								"text": "tbEntityBase.ivTweenVal1"
-							}
-						}
-					],
-					"sid": 481345839933067
+					]
 				}
 			]
 		}

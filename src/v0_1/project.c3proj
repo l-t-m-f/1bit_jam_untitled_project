@@ -106,6 +106,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Sin",
 			"name": "Sine",
 			"author": "Scirra",
@@ -139,13 +146,13 @@
 			"sTest",
 			"AJAX",
 			"Browser",
-			"3DShapeTest",
-			"sSolidTest"
+			"3DShapeTest"
 		],
 		"subfolders": [
 			{
 				"items": [
-					"sTest2"
+					"sTest2",
+					"sSolidTest"
 				],
 				"subfolders": [
 					{
@@ -167,7 +174,6 @@
 					{
 						"items": [
 							"sPlayerCol",
-							"sEntityTile",
 							"tbEntityBase"
 						],
 						"subfolders": [
@@ -294,7 +300,9 @@
 			"gPlayerSkeleton",
 			"tbf8Dir",
 			"tbfTween",
-			"tbfSolid"
+			"tbfSolid",
+			"tbfLineOfSight",
+			"gInteractive"
 		],
 		"subfolders": []
 	},
@@ -338,13 +346,6 @@
 					}
 				],
 				"name": "Emile"
-			},
-			{
-				"items": [
-					"eFirstGym"
-				],
-				"subfolders": [],
-				"name": "LayoutEvents"
 			}
 		]
 	},

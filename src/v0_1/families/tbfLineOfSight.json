@@ -1,0 +1,17 @@
+{
+	"name": "tbfLineOfSight",
+	"plugin-id": "TiledBg",
+	"sid": 702751167010188,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 951389924783261
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"tbEntityBase"
+	]
+}

@@ -2,6 +2,16 @@
 	"name": "ePlayer",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "bCanInteract",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 566829066602111
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -752,7 +762,7 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 492728135898624,
+									"sid": 653882928503741,
 									"parameters": {
 										"first-value": "Functions.IsMarkedPressed(KEYCODE_E)",
 										"comparison": 0,
@@ -761,7 +771,7 @@
 								}
 							],
 							"actions": [],
-							"sid": 552580137807577,
+							"sid": 544506816557966,
 							"children": [
 								{
 									"eventType": "block",
@@ -769,7 +779,7 @@
 										{
 											"id": "is-overlapping-another-object",
 											"objectClass": "sPlayerCol",
-											"sid": 947782809771994,
+											"sid": 304108696278185,
 											"parameters": {
 												"object": "sClue"
 											}
@@ -778,7 +788,7 @@
 									"actions": [
 										{
 											"callFunction": "MarkReleased",
-											"sid": 222782775758159,
+											"sid": 687306498764920,
 											"parameters": [
 												"KEYCODE_E"
 											]
@@ -786,7 +796,7 @@
 										{
 											"id": "look-parallel-to-layout",
 											"objectClass": "3DCamera",
-											"sid": 132811907973759,
+											"sid": 142155246490434,
 											"parameters": {
 												"cam-x": "0",
 												"cam-y": "0",
@@ -797,7 +807,7 @@
 										{
 											"id": "set-position",
 											"objectClass": "3DCamera",
-											"sid": 512907403509872,
+											"sid": 410021483475383,
 											"parameters": {
 												"x": "tbEntityBase.X",
 												"y": "tbEntityBase.Y",
@@ -808,7 +818,7 @@
 										{
 											"id": "set-position",
 											"objectClass": "3DCamera",
-											"sid": 770451684996567,
+											"sid": 925614004551785,
 											"parameters": {
 												"x": "sClue.X",
 												"y": "sClue.Y",
@@ -819,19 +829,103 @@
 										{
 											"id": "request-pointer-lock",
 											"objectClass": "Mouse",
-											"sid": 609071747923720
+											"sid": 697033049274649
 										},
 										{
 											"id": "set-boolean-eventvar",
 											"objectClass": "System",
-											"sid": 661581441517728,
+											"sid": 802762450162074,
 											"parameters": {
 												"variable": "bIs3DView",
 												"value": "true"
 											}
 										}
 									],
-									"sid": 811779681307931
+									"sid": 878661143229174
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 790965011291774,
+									"parameters": {
+										"variable": "bCanInteract",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 667264857703732
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 746601939426634,
+									"parameters": {
+										"object": "gInteractive"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 711085400605566,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "has-los-to-object",
+											"objectClass": "tbEntityBase",
+											"sid": 505669641927095,
+											"behaviorType": "LineOfSight",
+											"parameters": {
+												"object": "gInteractive",
+												"image-point": "0"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 219234584439352,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 363210605691390,
+													"parameters": {
+														"first-value": "gInteractive.UID",
+														"comparison": 1,
+														"second-value": "tbEntityBase.UID"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 754772432108604,
+													"parameters": {
+														"variable": "bCanInteract",
+														"value": "true"
+													}
+												},
+												{
+													"id": "stop-loop",
+													"objectClass": "System",
+													"sid": 905356765347127
+												}
+											],
+											"sid": 149701093865789
+										}
+									]
 								}
 							]
 						}
