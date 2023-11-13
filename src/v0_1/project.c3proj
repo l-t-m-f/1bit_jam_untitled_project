@@ -139,7 +139,8 @@
 			"sTest",
 			"AJAX",
 			"Browser",
-			"3DShapeTest"
+			"3DShapeTest",
+			"sSolidTest"
 		],
 		"subfolders": [
 			{
@@ -165,10 +166,9 @@
 					},
 					{
 						"items": [
-							"sEntityBase",
 							"sPlayerCol",
 							"sEntityTile",
-							"sEntityCollider"
+							"tbEntityBase"
 						],
 						"subfolders": [
 							{
@@ -289,17 +289,18 @@
 	"families": {
 		"items": [
 			"npfTween",
-			"sf8Dir",
-			"sfTween",
 			"sfScrollTo",
 			"gEntitySprite",
-			"gPlayerSkeleton"
+			"gPlayerSkeleton",
+			"tbf8Dir",
+			"tbfTween",
+			"tbfSolid"
 		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
-			"FirstGym",
+			"Test1",
 			"Defaults"
 		],
 		"subfolders": [
@@ -530,5 +531,5 @@
 	},
 	"viewportWidth": 640,
 	"viewportHeight": 480,
-	"firstLayout": "FirstGym"
+	"firstLayout": "Test1"
 }

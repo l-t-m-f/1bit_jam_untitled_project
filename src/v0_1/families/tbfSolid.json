@@ -1,0 +1,17 @@
+{
+	"name": "tbfSolid",
+	"plugin-id": "TiledBg",
+	"sid": 604662650310552,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 444103433690605
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"tbEntityBase"
+	]
+}

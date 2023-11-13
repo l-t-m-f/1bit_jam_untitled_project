@@ -24,9 +24,9 @@
 						{
 							"id": "for-each",
 							"objectClass": "System",
-							"sid": 518176497363041,
+							"sid": 229856117329392,
 							"parameters": {
-								"object": "sEntityBase"
+								"object": "tbEntityBase"
 							}
 						}
 					],
@@ -42,8 +42,8 @@
 							"conditions": [
 								{
 									"id": "pick-children",
-									"objectClass": "sEntityBase",
-									"sid": 253967121383367,
+									"objectClass": "tbEntityBase",
+									"sid": 251917006610626,
 									"parameters": {
 										"child": "gEntitySprite",
 										"which": "own"
@@ -54,10 +54,10 @@
 								{
 									"id": "set-position",
 									"objectClass": "gEntitySprite",
-									"sid": 601130337893527,
+									"sid": 814177549047556,
 									"parameters": {
-										"x": "lerp(Self.X, sEntityBase.X, Self.ivSyncRate)",
-										"y": "lerp(Self.Y, sEntityBase.Y, Self.ivSyncRate)"
+										"x": "lerp(Self.X, tbEntityBase.X, Self.ivSyncRate)",
+										"y": "lerp(Self.Y, tbEntityBase.Y, Self.ivSyncRate)"
 									}
 								}
 							],
@@ -68,8 +68,8 @@
 							"conditions": [
 								{
 									"id": "pick-children",
-									"objectClass": "sEntityBase",
-									"sid": 479872887048922,
+									"objectClass": "tbEntityBase",
+									"sid": 115115304901195,
 									"parameters": {
 										"child": "gEntitySprite",
 										"which": "own"
@@ -80,10 +80,10 @@
 								{
 									"id": "set-position",
 									"objectClass": "gEntitySprite",
-									"sid": 548915393219389,
+									"sid": 393148713298634,
 									"parameters": {
-										"x": "lerp(Self.X, sEntityBase.X, Self.ivSyncRate)",
-										"y": "lerp(Self.Y, sEntityBase.Y, Self.ivSyncRate)"
+										"x": "lerp(Self.X, tbEntityBase.X, Self.ivSyncRate)",
+										"y": "lerp(Self.Y, tbEntityBase.Y, Self.ivSyncRate)"
 									}
 								}
 							],
@@ -126,9 +126,9 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 484801704859669,
+					"sid": 168280413378116,
 					"parameters": {
-						"object-to-create": "sEntityBase",
+						"object-to-create": "tbEntityBase",
 						"layer": "\"Entities\"",
 						"x": "int(tokenat(pEntityPos, 0, \",\"))",
 						"y": "int(tokenat(pEntityPos, 1, \",\"))",

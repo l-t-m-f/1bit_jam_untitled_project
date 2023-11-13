@@ -63,7 +63,7 @@
 					"actions": [
 						{
 							"callFunction": "SpawnEntity",
-							"sid": 748799500241952,
+							"sid": 780969459436215,
 							"parameters": [
 								"\"Player\"",
 								"sPlayerSpawn.X&\", \"&sPlayerSpawn.Y"

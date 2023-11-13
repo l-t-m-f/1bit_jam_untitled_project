@@ -1,16 +1,10 @@
 {
-	"name": "sEntityCollider",
+	"name": "tbEntityBase",
 	"plugin-id": "TiledBg",
-	"sid": 753634152329943,
+	"sid": 335546278304129,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 228277955175822
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
 		"width": 8,
@@ -20,7 +14,7 @@
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
-		"imageSpriteId": 9158148,
+		"imageSpriteId": 8353827,
 		"useCollisionPoly": true,
 		"tag": ""
 	}

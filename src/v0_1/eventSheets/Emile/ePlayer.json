@@ -6,25 +6,15 @@
 			"conditions": [
 				{
 					"id": "is-playing",
-					"objectClass": "sEntityBase",
-					"sid": 506135881926895,
+					"objectClass": "tbEntityBase",
+					"sid": 491440158163808,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"8dir_jump\""
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "set-instvar-value",
-					"objectClass": "sEntityBase",
-					"sid": 500588185630539,
-					"parameters": {
-						"instance-variable": "TweenVal1",
-						"value": "sfTween.Tween.Value(\"8dir_jump\")"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 316594009749611
 		},
 		{
@@ -223,10 +213,10 @@
 				{
 					"id": "pick-by-comparison",
 					"objectClass": "System",
-					"sid": 492988078959207,
+					"sid": 705459161798256,
 					"parameters": {
-						"object": "sEntityBase",
-						"expression": "sEntityBase.TemplateName",
+						"object": "tbEntityBase",
+						"expression": "tbEntityBase.TemplateName",
 						"comparison": 0,
 						"value": "\"Player\""
 					}
@@ -236,10 +226,10 @@
 				{
 					"id": "set-position",
 					"objectClass": "sCamera",
-					"sid": 574629734590971,
+					"sid": 692421473633357,
 					"parameters": {
-						"x": "lerp(Self.X, sEntityBase.X, 0.02)",
-						"y": "lerp(Self.Y, sEntityBase.Y, 0.02)"
+						"x": "lerp(Self.X, tbEntityBase.X, 0.02)",
+						"y": "lerp(Self.Y, tbEntityBase.Y, 0.02)"
 					}
 				},
 				{
@@ -266,43 +256,6 @@
 					"sid": 736729151498199,
 					"children": [
 						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "pick-children",
-									"objectClass": "sPlayerCol",
-									"sid": 943959633969250,
-									"parameters": {
-										"child": "gEntitySprite",
-										"which": "own"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-position",
-									"objectClass": "sPlayerCol",
-									"sid": 902127313895359,
-									"disabled": true,
-									"parameters": {
-										"x": "lerp(Self.X, sEntityBase.X, 0.5)",
-										"y": "lerp(Self.Y, sEntityBase.Y - sEntityBase.TweenVal1, 0.5)"
-									}
-								},
-								{
-									"id": "set-position",
-									"objectClass": "gEntitySprite",
-									"sid": 874805998547229,
-									"disabled": true,
-									"parameters": {
-										"x": "lerp(Self.X, sPlayerCol.X, 0.5)",
-										"y": "lerp(Self.Y, sPlayerCol.Y, 0.5)"
-									}
-								}
-							],
-							"sid": 647625569632402
-						},
-						{
 							"eventType": "comment",
 							"text": "Movement"
 						},
@@ -324,8 +277,8 @@
 							"actions": [
 								{
 									"id": "simulate-control",
-									"objectClass": "sEntityBase",
-									"sid": 477275415469235,
+									"objectClass": "tbEntityBase",
+									"sid": 195102063809488,
 									"behaviorType": "8Direction",
 									"parameters": {
 										"control": "up"
@@ -352,8 +305,8 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sEntityBase",
-											"sid": 900861304657903,
+											"objectClass": "tbEntityBase",
+											"sid": 772053826459441,
 											"behaviorType": "8Direction",
 											"parameters": {
 												"control": "left"
@@ -385,8 +338,8 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sEntityBase",
-											"sid": 392507117523382,
+											"objectClass": "tbEntityBase",
+											"sid": 109681761635535,
 											"behaviorType": "8Direction",
 											"parameters": {
 												"control": "right"
@@ -432,8 +385,8 @@
 							"actions": [
 								{
 									"id": "simulate-control",
-									"objectClass": "sEntityBase",
-									"sid": 801001808895447,
+									"objectClass": "tbEntityBase",
+									"sid": 574730375263207,
 									"behaviorType": "8Direction",
 									"parameters": {
 										"control": "left"
@@ -460,8 +413,8 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sEntityBase",
-											"sid": 379692164673637,
+											"objectClass": "tbEntityBase",
+											"sid": 414617586166709,
 											"behaviorType": "8Direction",
 											"parameters": {
 												"control": "up"
@@ -493,8 +446,8 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sEntityBase",
-											"sid": 210318222808585,
+											"objectClass": "tbEntityBase",
+											"sid": 245621033893889,
 											"behaviorType": "8Direction",
 											"parameters": {
 												"control": "down"
@@ -540,8 +493,8 @@
 							"actions": [
 								{
 									"id": "simulate-control",
-									"objectClass": "sEntityBase",
-									"sid": 179704471163983,
+									"objectClass": "tbEntityBase",
+									"sid": 847983218453112,
 									"behaviorType": "8Direction",
 									"parameters": {
 										"control": "down"
@@ -568,8 +521,8 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sEntityBase",
-											"sid": 927968872976946,
+											"objectClass": "tbEntityBase",
+											"sid": 936312247257912,
 											"behaviorType": "8Direction",
 											"parameters": {
 												"control": "left"
@@ -601,8 +554,8 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sEntityBase",
-											"sid": 151975865435091,
+											"objectClass": "tbEntityBase",
+											"sid": 575010624433002,
 											"behaviorType": "8Direction",
 											"parameters": {
 												"control": "right"
@@ -648,8 +601,8 @@
 							"actions": [
 								{
 									"id": "simulate-control",
-									"objectClass": "sEntityBase",
-									"sid": 124292842999118,
+									"objectClass": "tbEntityBase",
+									"sid": 252478914078847,
 									"behaviorType": "8Direction",
 									"parameters": {
 										"control": "right"
@@ -676,8 +629,8 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sEntityBase",
-											"sid": 324054074929354,
+											"objectClass": "tbEntityBase",
+											"sid": 942596804951881,
 											"behaviorType": "8Direction",
 											"parameters": {
 												"control": "up"
@@ -709,8 +662,8 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sEntityBase",
-											"sid": 698906711564601,
+											"objectClass": "tbEntityBase",
+											"sid": 560365317618344,
 											"behaviorType": "8Direction",
 											"parameters": {
 												"control": "down"
@@ -752,8 +705,8 @@
 								},
 								{
 									"id": "is-playing",
-									"objectClass": "sEntityBase",
-									"sid": 350143060777979,
+									"objectClass": "tbEntityBase",
+									"sid": 308215373799293,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"8dir_jump\""
@@ -764,8 +717,8 @@
 							"actions": [
 								{
 									"id": "tween-value",
-									"objectClass": "sEntityBase",
-									"sid": 111631030935181,
+									"objectClass": "tbEntityBase",
+									"sid": 508680286472663,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"8dir_jump\"",
@@ -844,10 +797,10 @@
 										{
 											"id": "set-position",
 											"objectClass": "3DCamera",
-											"sid": 733578325892854,
+											"sid": 512907403509872,
 											"parameters": {
-												"x": "sEntityBase.X",
-												"y": "sEntityBase.Y",
+												"x": "tbEntityBase.X",
+												"y": "tbEntityBase.Y",
 												"z": "32",
 												"which": "camera"
 											}

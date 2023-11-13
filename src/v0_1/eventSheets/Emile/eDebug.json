@@ -89,14 +89,14 @@
 											"objectClass": "System",
 											"sid": 603537843527805,
 											"parameters": {
-												"object": "sEntityCollider"
+												"object": "tbEntityBase"
 											}
 										}
 									],
 									"actions": [
 										{
 											"id": "set-visible",
-											"objectClass": "sEntityCollider",
+											"objectClass": "tbEntityBase",
 											"sid": 318940342655027,
 											"parameters": {
 												"visibility": "visible"
@@ -127,14 +127,14 @@
 											"objectClass": "System",
 											"sid": 405132198291143,
 											"parameters": {
-												"object": "sEntityCollider"
+												"object": "tbEntityBase"
 											}
 										}
 									],
 									"actions": [
 										{
 											"id": "set-visible",
-											"objectClass": "sEntityCollider",
+											"objectClass": "tbEntityBase",
 											"sid": 246863348114903,
 											"parameters": {
 												"visibility": "invisible"
