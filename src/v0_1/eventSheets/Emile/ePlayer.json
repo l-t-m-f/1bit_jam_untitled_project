@@ -794,6 +794,10 @@
 											]
 										},
 										{
+											"callFunction": "ToggleDialogBox",
+											"sid": 727489572427982
+										},
+										{
 											"type": "comment",
 											"text": "Old: enter 3d"
 										},
@@ -871,19 +875,35 @@
 							"sid": 667264857703732
 						},
 						{
+							"eventType": "variable",
+							"name": "bMatchFound",
+							"type": "boolean",
+							"initialValue": "false",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 153439144716628
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 288763196243909
+						},
+						{
 							"eventType": "block",
 							"conditions": [
 								{
 									"id": "for-each",
 									"objectClass": "System",
-									"sid": 746601939426634,
+									"sid": 456643249115634,
 									"parameters": {
 										"object": "gInteractive"
 									}
 								}
 							],
 							"actions": [],
-							"sid": 711085400605566,
+							"sid": 814590459727338,
 							"children": [
 								{
 									"eventType": "block",
@@ -891,7 +911,7 @@
 										{
 											"id": "has-los-to-object",
 											"objectClass": "tbEntityBase",
-											"sid": 505669641927095,
+											"sid": 742238320467390,
 											"behaviorType": "LineOfSight",
 											"parameters": {
 												"object": "gInteractive",
@@ -900,7 +920,7 @@
 										}
 									],
 									"actions": [],
-									"sid": 219234584439352,
+									"sid": 132530100939638,
 									"children": [
 										{
 											"eventType": "block",
@@ -908,7 +928,7 @@
 												{
 													"id": "compare-two-values",
 													"objectClass": "System",
-													"sid": 363210605691390,
+													"sid": 484386486320482,
 													"parameters": {
 														"first-value": "gInteractive.UID",
 														"comparison": 1,
@@ -920,23 +940,61 @@
 												{
 													"id": "set-boolean-eventvar",
 													"objectClass": "System",
-													"sid": 754772432108604,
+													"sid": 419276343138121,
 													"parameters": {
 														"variable": "bCanInteract",
 														"value": "true"
 													}
 												},
 												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 754252823124893,
+													"parameters": {
+														"variable": "bMatchFound",
+														"value": "true"
+													}
+												},
+												{
 													"id": "stop-loop",
 													"objectClass": "System",
-													"sid": 905356765347127
+													"sid": 151878709251580
 												}
 											],
-											"sid": 149701093865789
+											"sid": 415973019907125
 										}
 									]
 								}
 							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 791617781788879,
+									"parameters": {
+										"variable": "bMatchFound"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 708524828187716,
+									"parameters": {
+										"variable": "bIsDialogMode"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "HideDialogBox",
+									"sid": 127215430469367
+								}
+							],
+							"sid": 316327433181305
 						}
 					]
 				}

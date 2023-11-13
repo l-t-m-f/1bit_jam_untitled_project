@@ -3,6 +3,16 @@
 	"events": [
 		{
 			"eventType": "variable",
+			"name": "bIsDialogMode",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 318069421722408
+		},
+		{
+			"eventType": "variable",
 			"name": "CHOICE_BUTTON_INITIAL_SPAWN_Y",
 			"type": "number",
 			"initialValue": "480",
@@ -106,6 +116,71 @@
 		},
 		{
 			"eventType": "comment",
+			"text": "A function which acts as a convenience toggle for the E key."
+		},
+		{
+			"functionName": "ToggleDialogBox",
+			"functionDescription": "A function which acts as a convenience toggle for the E key.",
+			"functionCategory": "DialogSystem",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 191961447393540,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 490670523330309,
+							"parameters": {
+								"variable": "bIsDialogMode"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "DisplayDialogBox",
+							"sid": 678822240702248
+						}
+					],
+					"sid": 306627193667045
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 392564339662029
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 699236923755922,
+							"parameters": {
+								"variable": "bIsDialogMode"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "HideDialogBox",
+							"sid": 426502635514706
+						}
+					],
+					"sid": 316274087197150
+				}
+			]
+		},
+		{
+			"eventType": "comment",
 			"text": "A function to put the dialog box UI on-screen."
 		},
 		{
@@ -151,6 +226,15 @@
 								"0",
 								"1"
 							]
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 468039618896043,
+							"parameters": {
+								"variable": "bIsDialogMode",
+								"value": "true"
+							}
 						}
 					],
 					"sid": 927410290555342
@@ -194,6 +278,15 @@
 							"parameters": {
 								"layer": "\"HUD_Dialogs\"",
 								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 695176584611208,
+							"parameters": {
+								"variable": "bIsDialogMode",
+								"value": "false"
 							}
 						}
 					],
