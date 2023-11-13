@@ -1,7 +1,7 @@
 {
-	"name": "sPlayerArtNew",
+	"name": "sPlayerAuxiliaryCollider9",
 	"plugin-id": "Sprite",
-	"sid": 958848750479405,
+	"sid": 374282618917978,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,21 +11,21 @@
 			{
 				"frames": [
 					{
-						"width": 277,
-						"height": 427,
-						"originX": 0.4404332129963899,
-						"originY": 0.5152224824355972,
+						"width": 18,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.09375,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7711986,
+						"imageSpriteId": 7967384,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 191525036723559,
-				"name": "Default",
+				"sid": 437987179954758,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

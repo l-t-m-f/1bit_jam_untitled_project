@@ -149,11 +149,38 @@
 							"sPlayerArt",
 							"sPlayerCol",
 							"sEntityTile",
-							"sPlayerSpawn",
-							"sPlayerArtNew",
 							"sPlayerArtNew2"
 						],
-						"subfolders": [],
+						"subfolders": [
+							{
+								"items": [
+									"sPlayerPortraitArt"
+								],
+								"subfolders": [],
+								"name": "Portraits"
+							},
+							{
+								"items": [],
+								"subfolders": [
+									{
+										"items": [
+											"sPlayerAuxiliaryCollider",
+											"sPlayerAuxiliaryCollider2",
+											"sPlayerAuxiliaryCollider3",
+											"sPlayerAuxiliaryCollider4",
+											"sPlayerAuxiliaryCollider5",
+											"sPlayerAuxiliaryCollider6",
+											"sPlayerAuxiliaryCollider7",
+											"sPlayerAuxiliaryCollider8",
+											"sPlayerAuxiliaryCollider9"
+										],
+										"subfolders": [],
+										"name": "Skeleton"
+									}
+								],
+								"name": "Player"
+							}
+						],
 						"name": "Entities"
 					},
 					{
@@ -187,7 +214,8 @@
 					},
 					{
 						"items": [
-							"sDoor"
+							"sDoor",
+							"sPlayerSpawn"
 						],
 						"subfolders": [],
 						"name": "GameplayElements"
