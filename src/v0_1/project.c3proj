@@ -139,9 +139,7 @@
 			"sTest",
 			"AJAX",
 			"Browser",
-			"3DShapeTest",
-			"npEntityTile",
-			"npViewportDeadzone"
+			"3DShapeTest"
 		],
 		"subfolders": [
 			{
@@ -192,11 +190,6 @@
 									}
 								],
 								"name": "Player"
-							},
-							{
-								"items": [],
-								"subfolders": [],
-								"name": "New folder"
 							},
 							{
 								"items": [
@@ -253,6 +246,22 @@
 						],
 						"subfolders": [],
 						"name": "GameplayElements"
+					},
+					{
+						"items": [
+							"npViewportDeadzone"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"npEntityTile",
+									"sExclaim"
+								],
+								"subfolders": [],
+								"name": "InGame"
+							}
+						],
+						"name": "UI"
 					}
 				],
 				"name": "Emile"
@@ -314,7 +323,7 @@
 					"eDialogsSystem",
 					"ePlayer",
 					"eKeyboard",
-					"eLogger",
+					"eDebug",
 					"eHUD",
 					"eEntities"
 				],

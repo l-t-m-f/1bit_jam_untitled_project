@@ -62,17 +62,12 @@
 					],
 					"actions": [
 						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 988567320976364,
-							"parameters": {
-								"object-to-create": "sEntityBase",
-								"layer": "\"Entities\"",
-								"x": "sPlayerSpawn.X",
-								"y": "sPlayerSpawn.Y",
-								"create-hierarchy": true,
-								"template-name": "\"Player\""
-							}
+							"callFunction": "SpawnEntity",
+							"sid": 748799500241952,
+							"parameters": [
+								"\"Player\"",
+								"sPlayerSpawn.X&\", \"&sPlayerSpawn.Y"
+							]
 						}
 					],
 					"sid": 670392168662624
@@ -96,6 +91,10 @@
 				{
 					"callFunction": "UpdateHUD",
 					"sid": 836115979660535
+				},
+				{
+					"callFunction": "UpdateDebug",
+					"sid": 192256164711043
 				}
 			],
 			"sid": 200094368713445
