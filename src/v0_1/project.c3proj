@@ -173,7 +173,6 @@
 					},
 					{
 						"items": [
-							"sPlayerCol",
 							"tbEntityBase"
 						],
 						"subfolders": [
