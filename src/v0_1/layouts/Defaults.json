@@ -151,7 +151,13 @@
 					},
 					"uid": 8,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 21,
 						"y": 56,
@@ -3960,7 +3966,7 @@
 						"ivTweenVal2": -1,
 						"InteractionKind": 0,
 						"DefaultStory": 0,
-						"DefaultLine": 1
+						"DefaultLine": 0
 					},
 					"behaviors": {
 						"8Direction": {

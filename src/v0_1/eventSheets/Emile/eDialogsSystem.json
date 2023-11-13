@@ -295,22 +295,24 @@
 			"functionIsAsync": false,
 			"functionParameters": [
 				{
-					"name": "pDialogStory",
+					"name": "pDialogOwnerUID",
 					"type": "number",
 					"initialValue": "-1",
 					"comment": "",
-					"sid": 674323268591386
-				},
-				{
-					"name": "pDialogLine",
-					"type": "number",
-					"initialValue": "-1",
-					"comment": "",
-					"sid": 475138684193896
+					"sid": 853968655000058
 				}
 			],
 			"eventType": "function-block",
-			"conditions": [],
+			"conditions": [
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "tbfDialogOwner",
+					"sid": 488236425142064,
+					"parameters": {
+						"unique-id": "pDialogOwnerUID"
+					}
+				}
+			],
 			"actions": [],
 			"sid": 303761251514374,
 			"children": [
@@ -341,19 +343,19 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 959000216303964,
+							"sid": 130876162226969,
 							"parameters": {
 								"variable": "last_story_access_str",
-								"value": "\"stories.\"&str(pDialogStory)"
+								"value": "\"stories.\"&str(tbfDialogOwner.DefaultStory)"
 							}
 						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 216182480493705,
+							"sid": 833483831561652,
 							"parameters": {
 								"variable": "last_line_access_str",
-								"value": "last_story_access_str&\".lines.\"&str(pDialogLine)"
+								"value": "last_story_access_str&\".lines.\"&str(tbfDialogOwner.DefaultLine)"
 							}
 						}
 					],
@@ -406,10 +408,10 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 181836445780088,
+							"sid": 655485464956310,
 							"parameters": {
 								"variable": "last_choices_access_str",
-								"value": "last_story_access_str&\".lines.\"&str(pDialogLine)&\".choices\""
+								"value": "last_story_access_str&\".lines.\"&str(tbfDialogOwner.DefaultLine)&\".choices\""
 							}
 						},
 						{
@@ -446,10 +448,10 @@
 				{
 					"id": "destroy",
 					"objectClass": "npDialogChoice",
-					"sid": 198719750913244
+					"sid": 752455504431915
 				}
 			],
-			"sid": 260034986543526,
+			"sid": 229575125922854,
 			"children": [
 				{
 					"eventType": "variable",
@@ -459,7 +461,7 @@
 					"comment": "",
 					"isStatic": true,
 					"isConstant": false,
-					"sid": 830222404377305
+					"sid": 293288673073519
 				},
 				{
 					"eventType": "block",
@@ -468,14 +470,14 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 394063877811817,
+							"sid": 387561198798652,
 							"parameters": {
 								"variable": "last_choice_cnt",
 								"value": "jsonDialogsData.ArraySize(pChoicesAccessStr)"
 							}
 						}
 					],
-					"sid": 376156920759018
+					"sid": 192604607495362
 				},
 				{
 					"eventType": "block",
@@ -483,7 +485,7 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 208524180836026,
+							"sid": 215697317966889,
 							"parameters": {
 								"first-value": "last_choice_cnt",
 								"comparison": 4,
@@ -492,7 +494,7 @@
 						}
 					],
 					"actions": [],
-					"sid": 891832943527090,
+					"sid": 932608089541688,
 					"children": [
 						{
 							"eventType": "variable",
@@ -502,7 +504,7 @@
 							"comment": "",
 							"isStatic": false,
 							"isConstant": false,
-							"sid": 579836780354039
+							"sid": 466183213730208
 						},
 						{
 							"eventType": "block",
@@ -510,7 +512,7 @@
 								{
 									"id": "for",
 									"objectClass": "System",
-									"sid": 229885269329610,
+									"sid": 237779586368568,
 									"parameters": {
 										"name": "\"i\"",
 										"start-index": "1",
@@ -522,7 +524,7 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 348733326617821,
+									"sid": 143077265751739,
 									"parameters": {
 										"object-to-create": "npDialogChoice",
 										"layer": "\"HUD_Dialogs\"",
@@ -533,7 +535,7 @@
 									}
 								}
 							],
-							"sid": 722468349013364,
+							"sid": 779049085553720,
 							"children": [
 								{
 									"eventType": "block",
@@ -541,7 +543,7 @@
 										{
 											"id": "pick-children",
 											"objectClass": "npDialogChoice",
-											"sid": 482040441768460,
+											"sid": 605836950342439,
 											"parameters": {
 												"child": "sfTimesNewYorker",
 												"which": "own"
@@ -552,13 +554,187 @@
 										{
 											"id": "set-text",
 											"objectClass": "sfTimesNewYorker",
-											"sid": 466395651112063,
+											"sid": 127724949208462,
 											"parameters": {
 												"text": "jsonDialogsData.Get(pChoicesAccessStr&\".\"&str(loopindex(\"i\")-1))"
 											}
 										}
 									],
-									"sid": 977176197590058
+									"sid": 297332140696909
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "A function to increase the dialog line by 1 on the owner. It can wrap around optionally."
+		},
+		{
+			"functionName": "IncrementDialogOwnerLine",
+			"functionDescription": "A function to increase the dialog line by 1 on the owner. It can wrap around optionally.",
+			"functionCategory": "DialogSystem",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "pDialogOwnerUID",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"sid": 429039586148901
+				},
+				{
+					"name": "pbShouldWrap",
+					"type": "boolean",
+					"initialValue": "false",
+					"comment": "",
+					"sid": 457086578894118
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "tbfDialogOwner",
+					"sid": 392792075098468,
+					"parameters": {
+						"unique-id": "pDialogOwnerUID"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 205952458084267,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "owner_story_access_str",
+					"type": "string",
+					"initialValue": "NULL",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 207559421034252
+				},
+				{
+					"eventType": "variable",
+					"name": "owner_story_line_count",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 846978985616612
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 158082431445068,
+							"parameters": {
+								"variable": "owner_story_access_str",
+								"value": "\"stories.\"&str(tbfDialogOwner.DefaultStory)"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 231448816472662,
+							"parameters": {
+								"variable": "owner_story_line_count",
+								"value": "jsonDialogsData.ArraySize(owner_story_access_str&\".lines\")"
+							}
+						}
+					],
+					"sid": 240159168585397,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "add-to-instvar",
+									"objectClass": "tbfDialogOwner",
+									"sid": 841128603058648,
+									"parameters": {
+										"instance-variable": "DefaultLine",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 555112093404998,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "tbfDialogOwner",
+											"sid": 654756497003568,
+											"parameters": {
+												"instance-variable": "DefaultLine",
+												"comparison": 5,
+												"value": "owner_story_line_count"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 896447858278254,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 898425821037513,
+													"parameters": {
+														"variable": "pbShouldWrap"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-instvar-value",
+													"objectClass": "tbfDialogOwner",
+													"sid": 914384388191693,
+													"parameters": {
+														"instance-variable": "DefaultLine",
+														"value": "0"
+													}
+												}
+											],
+											"sid": 120466666523313
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 503263224442653
+												}
+											],
+											"actions": [
+												{
+													"id": "set-instvar-value",
+													"objectClass": "tbfDialogOwner",
+													"sid": 563349989867309,
+													"parameters": {
+														"instance-variable": "DefaultLine",
+														"value": "owner_story_line_count-1"
+													}
+												}
+											],
+											"sid": 728805495131398
+										}
+									]
 								}
 							]
 						}

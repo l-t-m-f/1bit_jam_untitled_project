@@ -10,6 +10,10 @@
 			"includeSheet": "eDialogsSystem"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "eMouse"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{

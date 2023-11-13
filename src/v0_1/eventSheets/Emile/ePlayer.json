@@ -881,10 +881,9 @@
 											"actions": [
 												{
 													"callFunction": "PullDialogText",
-													"sid": 564044416939180,
+													"sid": 509330826214056,
 													"parameters": [
-														"tbfDialogOwner.DefaultStory",
-														"tbfDialogOwner.DefaultLine"
+														"tbfDialogOwner.UID"
 													]
 												}
 											],

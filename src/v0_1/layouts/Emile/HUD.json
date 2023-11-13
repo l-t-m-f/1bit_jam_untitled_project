@@ -83,19 +83,25 @@
 						"edges": "tile",
 						"fill": "stretch",
 						"initially-visible": true,
-						"origin": "top-left",
-						"seams": "overlap"
+						"origin": "center",
+						"seams": "exact"
 					},
 					"uid": 9,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
-						"x": 64,
-						"y": 320,
+						"x": 320,
+						"y": 384,
 						"width": 512,
 						"height": 128,
-						"originX": 0,
-						"originY": 0,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

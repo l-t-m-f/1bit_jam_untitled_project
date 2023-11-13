@@ -1,0 +1,135 @@
+{
+	"name": "eMouse",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 667139637254510,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "npDialogBox"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 898640927476959,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "npDialogBox",
+							"sid": 814327227023902
+						},
+						{
+							"id": "is-playing",
+							"objectClass": "npDialogBox",
+							"sid": 662307959775128,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"dialog_anim\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "npDialogBox",
+							"sid": 906042354558116,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"dialog_anim\"",
+								"property": "size",
+								"end-x": "530",
+								"end-y": "140",
+								"time": ".2",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "yes",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 949955970765368,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "tbfDialogOwner",
+									"sid": 669442941395133,
+									"parameters": {
+										"unique-id": "InteractiveUID"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-instvar",
+									"objectClass": "tbfDialogOwner",
+									"sid": 815295221159004,
+									"disabled": true,
+									"parameters": {
+										"instance-variable": "DefaultLine",
+										"value": "1"
+									}
+								},
+								{
+									"callFunction": "IncrementDialogOwnerLine",
+									"sid": 364766569180971,
+									"parameters": [
+										"tbfDialogOwner.UID",
+										true
+									]
+								}
+							],
+							"sid": 547761631543883,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 756294307873910,
+											"parameters": {
+												"variable": "bCanInteract"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 651743153841955,
+											"parameters": {
+												"variable": "bIsDialogMode"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "PullDialogText",
+											"sid": 249574824500755,
+											"parameters": [
+												"tbfDialogOwner.UID"
+											]
+										}
+									],
+									"sid": 581604089890557
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"sid": 450745479575244
+}

@@ -350,7 +350,8 @@
 					"eKeyboard",
 					"eDebug",
 					"eHUD",
-					"eEntities"
+					"eEntities",
+					"eMouse"
 				],
 				"subfolders": [
 					{
