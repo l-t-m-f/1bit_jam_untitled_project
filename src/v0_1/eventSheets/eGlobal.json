@@ -94,6 +94,16 @@
 			"isStatic": false,
 			"isConstant": true,
 			"sid": 917309545184517
+		},
+		{
+			"eventType": "variable",
+			"name": "bIs3DView",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 173203303183980
 		}
 	],
 	"sid": 873891583360930
