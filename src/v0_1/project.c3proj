@@ -126,7 +126,8 @@
 			"AJAX",
 			"Browser",
 			"3DShapeTest",
-			"npEntityTile"
+			"npEntityTile",
+			"npViewportDeadzone"
 		],
 		"subfolders": [
 			{

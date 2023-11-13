@@ -1964,11 +1964,11 @@
 							"properties": {
 								"movement": "angle",
 								"wave": "sine",
-								"period": 3,
+								"period": 2,
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
-								"magnitude": 2,
+								"magnitude": 3,
 								"magnitude-random": 1,
 								"enabled": true,
 								"live-preview": false
@@ -2055,11 +2055,11 @@
 							"properties": {
 								"movement": "angle",
 								"wave": "sine",
-								"period": 3,
+								"period": 2,
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
-								"magnitude": 2,
+								"magnitude": 3,
 								"magnitude-random": 1,
 								"enabled": true,
 								"live-preview": false
@@ -2146,11 +2146,11 @@
 							"properties": {
 								"movement": "angle",
 								"wave": "sine",
-								"period": 3,
+								"period": 1,
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
-								"magnitude": 2,
+								"magnitude": 6,
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
@@ -2220,11 +2220,11 @@
 							"properties": {
 								"movement": "angle",
 								"wave": "sine",
-								"period": 3,
+								"period": 1,
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
-								"magnitude": 2,
+								"magnitude": 6,
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
