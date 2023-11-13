@@ -138,6 +138,13 @@
 			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "difference",
+			"name": "Difference",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "v15jb14ulow",
@@ -146,7 +153,8 @@
 			"sTest",
 			"AJAX",
 			"Browser",
-			"3DShapeTest"
+			"3DShapeTest",
+			"sMouseCursor"
 		],
 		"subfolders": [
 			{

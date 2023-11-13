@@ -2,6 +2,28 @@
 	"name": "eHUD",
 	"events": [
 		{
+			"functionName": "InitHUD",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 346860469128304,
+					"parameters": {
+						"cursor-style": "none"
+					}
+				}
+			],
+			"sid": 163628429863951
+		},
+		{
 			"functionName": "UpdateHUD",
 			"functionDescription": "",
 			"functionCategory": "HUD",
@@ -11,7 +33,17 @@
 			"functionParameters": [],
 			"eventType": "function-block",
 			"conditions": [],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "sMouseCursor",
+					"sid": 775339035205928,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				}
+			],
 			"sid": 417213520800064,
 			"children": [
 				{

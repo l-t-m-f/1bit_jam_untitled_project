@@ -24,6 +24,10 @@
 					"sid": 802458924651591
 				},
 				{
+					"callFunction": "InitHUD",
+					"sid": 794972235298106
+				},
+				{
 					"callFunction": "InitDialogSystem",
 					"sid": 871474802622997
 				},

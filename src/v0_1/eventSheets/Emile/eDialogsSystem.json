@@ -442,7 +442,13 @@
 			],
 			"eventType": "function-block",
 			"conditions": [],
-			"actions": [],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "npDialogChoice",
+					"sid": 198719750913244
+				}
+			],
 			"sid": 260034986543526,
 			"children": [
 				{
