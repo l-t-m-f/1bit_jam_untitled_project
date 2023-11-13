@@ -2,6 +2,42 @@
 	"name": "eKeyboard",
 	"events": [
 		{
+			"functionName": "InitKeyboard",
+			"functionDescription": "",
+			"functionCategory": "Keyboard",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 902204379204631,
+					"parameters": {
+						"tag": "\"input_keycodes\"",
+						"file": "RefKeyboardState.json"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 274880941849074
+				},
+				{
+					"id": "load",
+					"objectClass": "aKeystate",
+					"sid": 774211046951865,
+					"parameters": {
+						"json": "AJAX.LastData"
+					}
+				}
+			],
+			"sid": 184481841150390
+		},
+		{
 			"functionName": "ExecuteKeyPress",
 			"functionDescription": "",
 			"functionCategory": "Keyboard",

@@ -30,7 +30,7 @@
 			],
 			"actions": [
 				{
-					"callFunction": "InitInputs",
+					"callFunction": "InitKeyboard",
 					"sid": 802458924651591
 				},
 				{
@@ -138,42 +138,6 @@
 				}
 			],
 			"sid": 815841121445326
-		},
-		{
-			"functionName": "InitInputs",
-			"functionDescription": "",
-			"functionCategory": "Inputs",
-			"functionReturnType": "none",
-			"functionCopyPicked": false,
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "request-project-file",
-					"objectClass": "AJAX",
-					"sid": 280753733455820,
-					"parameters": {
-						"tag": "\"input_keycodes\"",
-						"file": "RefKeyboardState.json"
-					}
-				},
-				{
-					"id": "wait-for-previous-actions",
-					"objectClass": "System",
-					"sid": 100085598447304
-				},
-				{
-					"id": "load",
-					"objectClass": "aKeystate",
-					"sid": 443189658227193,
-					"parameters": {
-						"json": "AJAX.LastData"
-					}
-				}
-			],
-			"sid": 935868536832080
 		}
 	],
 	"sid": 228151295908341
