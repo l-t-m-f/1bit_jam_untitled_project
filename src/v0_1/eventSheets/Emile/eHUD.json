@@ -65,6 +65,33 @@
 								{
 									"id": "pick-by-comparison",
 									"objectClass": "System",
+									"sid": 552560210706053,
+									"parameters": {
+										"object": "Text",
+										"expression": "Text.TextID",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "Text",
+									"sid": 961913628929982,
+									"parameters": {
+										"text": "\"bIsDialogMode: \"&bIsDialogMode"
+									}
+								}
+							],
+							"sid": 737894704331768
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
 									"sid": 384978866187984,
 									"parameters": {
 										"object": "Text",
