@@ -1,5 +1,5 @@
 {
-	"name": "sPlayerBase",
+	"name": "sEntityBase",
 	"plugin-id": "Sprite",
 	"sid": 765675962221485,
 	"isGlobal": false,
@@ -18,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9116939,
+						"imageSpriteId": 6000579,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

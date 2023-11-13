@@ -6,7 +6,7 @@
 			"conditions": [
 				{
 					"id": "is-playing",
-					"objectClass": "sPlayerBase",
+					"objectClass": "sEntityBase",
 					"sid": 506135881926895,
 					"behaviorType": "Tween",
 					"parameters": {
@@ -17,7 +17,7 @@
 			"actions": [
 				{
 					"id": "set-instvar-value",
-					"objectClass": "sPlayerBase",
+					"objectClass": "sEntityBase",
 					"sid": 500588185630539,
 					"parameters": {
 						"instance-variable": "TweenVal1",
@@ -226,8 +226,8 @@
 					"objectClass": "sCamera",
 					"sid": 574629734590971,
 					"parameters": {
-						"x": "lerp(Self.X, sPlayerBase.X, 0.02)",
-						"y": "lerp(Self.Y, sPlayerBase.Y, 0.02)"
+						"x": "lerp(Self.X, sEntityBase.X, 0.02)",
+						"y": "lerp(Self.Y, sEntityBase.Y, 0.02)"
 					}
 				},
 				{
@@ -272,8 +272,8 @@
 									"objectClass": "sPlayerCol",
 									"sid": 902127313895359,
 									"parameters": {
-										"x": "lerp(Self.X, sPlayerBase.X, 0.5)",
-										"y": "lerp(Self.Y, sPlayerBase.Y - sPlayerBase.TweenVal1, 0.5)"
+										"x": "lerp(Self.X, sEntityBase.X, 0.5)",
+										"y": "lerp(Self.Y, sEntityBase.Y - sEntityBase.TweenVal1, 0.5)"
 									}
 								},
 								{
@@ -310,7 +310,7 @@
 							"actions": [
 								{
 									"id": "simulate-control",
-									"objectClass": "sPlayerBase",
+									"objectClass": "sEntityBase",
 									"sid": 477275415469235,
 									"behaviorType": "8Direction",
 									"parameters": {
@@ -338,7 +338,7 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sPlayerBase",
+											"objectClass": "sEntityBase",
 											"sid": 900861304657903,
 											"behaviorType": "8Direction",
 											"parameters": {
@@ -371,7 +371,7 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sPlayerBase",
+											"objectClass": "sEntityBase",
 											"sid": 392507117523382,
 											"behaviorType": "8Direction",
 											"parameters": {
@@ -418,7 +418,7 @@
 							"actions": [
 								{
 									"id": "simulate-control",
-									"objectClass": "sPlayerBase",
+									"objectClass": "sEntityBase",
 									"sid": 801001808895447,
 									"behaviorType": "8Direction",
 									"parameters": {
@@ -446,7 +446,7 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sPlayerBase",
+											"objectClass": "sEntityBase",
 											"sid": 379692164673637,
 											"behaviorType": "8Direction",
 											"parameters": {
@@ -479,7 +479,7 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sPlayerBase",
+											"objectClass": "sEntityBase",
 											"sid": 210318222808585,
 											"behaviorType": "8Direction",
 											"parameters": {
@@ -526,7 +526,7 @@
 							"actions": [
 								{
 									"id": "simulate-control",
-									"objectClass": "sPlayerBase",
+									"objectClass": "sEntityBase",
 									"sid": 179704471163983,
 									"behaviorType": "8Direction",
 									"parameters": {
@@ -554,7 +554,7 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sPlayerBase",
+											"objectClass": "sEntityBase",
 											"sid": 927968872976946,
 											"behaviorType": "8Direction",
 											"parameters": {
@@ -587,7 +587,7 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sPlayerBase",
+											"objectClass": "sEntityBase",
 											"sid": 151975865435091,
 											"behaviorType": "8Direction",
 											"parameters": {
@@ -634,7 +634,7 @@
 							"actions": [
 								{
 									"id": "simulate-control",
-									"objectClass": "sPlayerBase",
+									"objectClass": "sEntityBase",
 									"sid": 124292842999118,
 									"behaviorType": "8Direction",
 									"parameters": {
@@ -662,7 +662,7 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sPlayerBase",
+											"objectClass": "sEntityBase",
 											"sid": 324054074929354,
 											"behaviorType": "8Direction",
 											"parameters": {
@@ -695,7 +695,7 @@
 									"actions": [
 										{
 											"id": "simulate-control",
-											"objectClass": "sPlayerBase",
+											"objectClass": "sEntityBase",
 											"sid": 698906711564601,
 											"behaviorType": "8Direction",
 											"parameters": {
@@ -738,7 +738,7 @@
 								},
 								{
 									"id": "is-playing",
-									"objectClass": "sPlayerBase",
+									"objectClass": "sEntityBase",
 									"sid": 350143060777979,
 									"behaviorType": "Tween",
 									"parameters": {
@@ -750,7 +750,7 @@
 							"actions": [
 								{
 									"id": "tween-value",
-									"objectClass": "sPlayerBase",
+									"objectClass": "sEntityBase",
 									"sid": 111631030935181,
 									"behaviorType": "Tween",
 									"parameters": {
@@ -832,8 +832,8 @@
 											"objectClass": "3DCamera",
 											"sid": 733578325892854,
 											"parameters": {
-												"x": "sPlayerBase.X",
-												"y": "sPlayerBase.Y",
+												"x": "sEntityBase.X",
+												"y": "sEntityBase.Y",
 												"z": "32",
 												"which": "camera"
 											}

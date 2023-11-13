@@ -46,7 +46,7 @@
 							"objectClass": "Text",
 							"sid": 862186666455605,
 							"parameters": {
-								"text": "sPlayerBase.TweenVal1"
+								"text": "sEntityBase.TweenVal1"
 							}
 						}
 					],

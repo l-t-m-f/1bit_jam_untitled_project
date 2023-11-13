@@ -56,14 +56,14 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 820986478133761,
+							"sid": 988567320976364,
 							"parameters": {
-								"object-to-create": "sPlayerBase",
+								"object-to-create": "sEntityBase",
 								"layer": "\"Entities\"",
 								"x": "sPlayerSpawn.X",
 								"y": "sPlayerSpawn.Y",
 								"create-hierarchy": true,
-								"template-name": "\"\""
+								"template-name": "\"Player\""
 							}
 						}
 					],

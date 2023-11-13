@@ -27,6 +27,6 @@
 	],
 	"effectTypes": [],
 	"members": [
-		"sPlayerBase"
+		"sEntityBase"
 	]
 }

@@ -1090,7 +1090,7 @@
 					}
 				},
 				{
-					"type": "sPlayerBase",
+					"type": "sEntityBase",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1100,76 +1100,31 @@
 					},
 					"uid": 11,
 					"instanceVariables": {
-						"TweenVal1": 0,
-						"TweenVal2": 0
+						"TweenVal1": -1,
+						"TweenVal2": -1
 					},
 					"behaviors": {
 						"8Direction": {
 							"properties": {
-								"max-speed": 64,
-								"acceleration": 128,
-								"deceleration": 640,
+								"max-speed": -1,
+								"acceleration": -1,
+								"deceleration": -1,
 								"directions": "dir-8",
 								"set-angle": "no",
 								"allow-sliding": false,
 								"default-controls": false,
-								"enabled": true
+								"enabled": false
 							}
 						},
 						"Tween": {
 							"properties": {
-								"enabled": true
+								"enabled": false
 							}
-						}
-					},
-					"sceneGraphData": {
-						"parent-uid": null,
-						"uid": 11,
-						"children": [
-							{
-								"uid": 36,
-								"flags": {
-									"x": false,
-									"y": false,
-									"z": false,
-									"w": false,
-									"h": false,
-									"a": false,
-									"o": false,
-									"v": false,
-									"d": true,
-									"sm": "normal"
-								}
-							}
-						],
-						"flags": {
-							"x": true,
-							"y": true,
-							"z": true,
-							"w": true,
-							"h": true,
-							"a": true,
-							"o": false,
-							"v": false,
-							"d": true,
-							"sm": "normal"
-						},
-						"preview": {
-							"transformX": 0,
-							"transformY": 0,
-							"transformZElevation": 0,
-							"transformW": 0,
-							"transformH": 0,
-							"transformA": 0,
-							"transformSX": 0,
-							"transformSY": 0,
-							"transformO": 0,
-							"previewSceneGraph": false
 						}
 					},
 					"world": {
 						"x": 256,
-						"y": 352,
+						"y": 224,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -1203,7 +1158,7 @@
 						}
 					},
 					"sceneGraphData": {
-						"parent-uid": 11,
+						"parent-uid": 35,
 						"uid": 36,
 						"children": [
 							{
@@ -2608,6 +2563,294 @@
 							0.33
 						],
 						"angle": 0.4363323129985824,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sEntityBase",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 35,
+					"instanceVariables": {
+						"TweenVal1": 0,
+						"TweenVal2": 0
+					},
+					"behaviors": {
+						"8Direction": {
+							"properties": {
+								"max-speed": 64,
+								"acceleration": 128,
+								"deceleration": 640,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"allow-sliding": false,
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"template": {
+						"mode": "template",
+						"templateName": "Player",
+						"sourceTemplateName": "",
+						"components": [
+							{
+								"id": "plugin",
+								"component": [
+									{
+										"key": "plugin",
+										"state": [
+											[
+												"initially-visible",
+												true
+											],
+											[
+												"initial-animation",
+												true
+											],
+											[
+												"initial-frame",
+												true
+											],
+											[
+												"enable-collisions",
+												true
+											]
+										]
+									}
+								]
+							},
+							{
+								"id": "instance-variable",
+								"component": [
+									{
+										"key": "instance-variable",
+										"state": [
+											{
+												"iv": "TweenVal1",
+												"state": true
+											},
+											{
+												"iv": "TweenVal2",
+												"state": true
+											}
+										]
+									}
+								]
+							},
+							{
+								"id": "behavior",
+								"component": [
+									{
+										"key": "8Direction",
+										"state": [
+											[
+												"max-speed",
+												true
+											],
+											[
+												"acceleration",
+												true
+											],
+											[
+												"deceleration",
+												true
+											],
+											[
+												"directions",
+												true
+											],
+											[
+												"set-angle",
+												true
+											],
+											[
+												"allow-sliding",
+												true
+											],
+											[
+												"default-controls",
+												true
+											],
+											[
+												"enabled",
+												true
+											]
+										]
+									},
+									{
+										"key": "Tween",
+										"state": [
+											[
+												"enabled",
+												true
+											]
+										]
+									}
+								]
+							},
+							{
+								"id": "effect",
+								"component": []
+							},
+							{
+								"id": "world-instance",
+								"component": [
+									{
+										"key": "world-instance",
+										"state": [
+											[
+												"x",
+												false
+											],
+											[
+												"y",
+												false
+											],
+											[
+												"z",
+												true
+											],
+											[
+												"w",
+												true
+											],
+											[
+												"h",
+												true
+											],
+											[
+												"a",
+												true
+											],
+											[
+												"o",
+												true
+											],
+											[
+												"c",
+												true
+											],
+											[
+												"sx",
+												true
+											],
+											[
+												"sy",
+												true
+											],
+											[
+												"bm",
+												true
+											],
+											[
+												"twpx",
+												true
+											],
+											[
+												"twpy",
+												true
+											],
+											[
+												"twpz",
+												true
+											],
+											[
+												"twpw",
+												true
+											],
+											[
+												"twph",
+												true
+											],
+											[
+												"twpa",
+												true
+											],
+											[
+												"dwp",
+												true
+											],
+											[
+												"ssm",
+												true
+											]
+										]
+									}
+								]
+							}
+						],
+						"replicasUIDs": null
+					},
+					"sceneGraphData": {
+						"parent-uid": null,
+						"uid": 35,
+						"children": [
+							{
+								"uid": 36,
+								"flags": {
+									"x": false,
+									"y": false,
+									"z": false,
+									"w": false,
+									"h": false,
+									"a": false,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							}
+						],
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 256,
+						"y": 352,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							0,
+							1,
+							0,
+							0.33
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}
