@@ -219,7 +219,19 @@
 			"functionIsAsync": false,
 			"functionParameters": [],
 			"eventType": "function-block",
-			"conditions": [],
+			"conditions": [
+				{
+					"id": "pick-by-comparison",
+					"objectClass": "System",
+					"sid": 492988078959207,
+					"parameters": {
+						"object": "sEntityBase",
+						"expression": "sEntityBase.TemplateName",
+						"comparison": 0,
+						"value": "\"Player\""
+					}
+				}
+			],
 			"actions": [
 				{
 					"id": "set-position",
@@ -271,6 +283,7 @@
 									"id": "set-position",
 									"objectClass": "sPlayerCol",
 									"sid": 902127313895359,
+									"disabled": true,
 									"parameters": {
 										"x": "lerp(Self.X, sEntityBase.X, 0.5)",
 										"y": "lerp(Self.Y, sEntityBase.Y - sEntityBase.TweenVal1, 0.5)"
@@ -280,6 +293,7 @@
 									"id": "set-position",
 									"objectClass": "gEntitySprite",
 									"sid": 874805998547229,
+									"disabled": true,
 									"parameters": {
 										"x": "lerp(Self.X, sPlayerCol.X, 0.5)",
 										"y": "lerp(Self.Y, sPlayerCol.Y, 0.5)"

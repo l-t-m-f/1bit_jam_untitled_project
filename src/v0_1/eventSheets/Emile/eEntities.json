@@ -1,0 +1,144 @@
+{
+	"name": "eEntities",
+	"events": [
+		{
+			"eventType": "comment",
+			"text": "A generic update loop for sEntityBase instances."
+		},
+		{
+			"functionName": "UpdateEntities",
+			"functionDescription": "A generic update loop for sEntityBase instances.",
+			"functionCategory": "Entities",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 669087519965142,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 518176497363041,
+							"parameters": {
+								"object": "sEntityBase"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 977382528695209,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Positions the entity's collider on the matching base. Also positions its art (its gEntitySprite) on the collider. "
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-children",
+									"objectClass": "sEntityBase",
+									"sid": 253967121383367,
+									"parameters": {
+										"child": "gEntitySprite",
+										"which": "own"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "gEntitySprite",
+									"sid": 601130337893527,
+									"parameters": {
+										"x": "lerp(Self.X, sEntityBase.X, Self.ivSyncRate)",
+										"y": "lerp(Self.Y, sEntityBase.Y, Self.ivSyncRate)"
+									}
+								}
+							],
+							"sid": 443634679460312
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-children",
+									"objectClass": "sEntityBase",
+									"sid": 479872887048922,
+									"parameters": {
+										"child": "gEntitySprite",
+										"which": "own"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "gEntitySprite",
+									"sid": 548915393219389,
+									"parameters": {
+										"x": "lerp(Self.X, sEntityBase.X, Self.ivSyncRate)",
+										"y": "lerp(Self.Y, sEntityBase.Y, Self.ivSyncRate)"
+									}
+								}
+							],
+							"sid": 539386145519790
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "A function to spawn a sEntityBase template easily."
+		},
+		{
+			"functionName": "SpawnEntity",
+			"functionDescription": "A function to spawn a sEntityBase template easily.",
+			"functionCategory": "Entities",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "pEntityKindName",
+					"type": "string",
+					"initialValue": "NULL",
+					"comment": "The template name of the sEntityBase to spawn.",
+					"sid": 597567598576181
+				},
+				{
+					"name": "pEntityPos",
+					"type": "string",
+					"initialValue": "",
+					"comment": "format is X, Y",
+					"sid": 811332839357525
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 484801704859669,
+					"parameters": {
+						"object-to-create": "sEntityBase",
+						"layer": "\"Entities\"",
+						"x": "int(tokenat(pEntityPos, 0, \",\"))",
+						"y": "int(tokenat(pEntityPos, 1, \",\"))",
+						"create-hierarchy": true,
+						"template-name": "pEntityKindName"
+					}
+				}
+			],
+			"sid": 385605936708287
+		}
+	],
+	"sid": 517299421385040
+}

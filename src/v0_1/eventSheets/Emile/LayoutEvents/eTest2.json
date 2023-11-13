@@ -36,6 +36,14 @@
 				{
 					"callFunction": "InitDialogSystem",
 					"sid": 871474802622997
+				},
+				{
+					"callFunction": "SpawnEntity",
+					"sid": 470373072400449,
+					"parameters": [
+						"\"NPC_Mmmgmmgmmgr\"",
+						"\"160, 250\""
+					]
 				}
 			],
 			"sid": 391808221990853,
