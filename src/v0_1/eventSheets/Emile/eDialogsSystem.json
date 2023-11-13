@@ -52,8 +52,12 @@
 			"sid": 183386577170012
 		},
 		{
+			"eventType": "comment",
+			"text": "A function which needs to run at the start of whichever layout the DialogSystem will be used on."
+		},
+		{
 			"functionName": "InitDialogSystem",
-			"functionDescription": "",
+			"functionDescription": "A function which needs to run at the start of whichever layout the DialogSystem will be used on.",
 			"functionCategory": "DialogSystem",
 			"functionReturnType": "none",
 			"functionCopyPicked": false,
@@ -65,7 +69,7 @@
 				{
 					"id": "request-project-file",
 					"objectClass": "AJAX",
-					"sid": 376945376853686,
+					"sid": 406550579607162,
 					"parameters": {
 						"tag": "\"dialog_load\"",
 						"file": "RefDialogsData.json"
@@ -74,23 +78,15 @@
 				{
 					"id": "wait-for-previous-actions",
 					"objectClass": "System",
-					"sid": 595539094013894
+					"sid": 107310539993226
 				},
 				{
 					"id": "parse",
 					"objectClass": "jsonDialogsData",
-					"sid": 435236723489928,
+					"sid": 927577116820543,
 					"parameters": {
 						"data": "AJAX.LastData"
 					}
-				},
-				{
-					"callFunction": "PullDialogText",
-					"sid": 890878417333007,
-					"parameters": [
-						"0",
-						"1"
-					]
 				},
 				{
 					"type": "comment",
@@ -99,14 +95,111 @@
 				{
 					"id": "set-text",
 					"objectClass": "Text",
-					"sid": 797659682297831,
+					"sid": 675600821780315,
 					"disabled": true,
 					"parameters": {
 						"text": "jsonDialogsData.Get(\"lines.0\")"
 					}
 				}
 			],
-			"sid": 303684509473369
+			"sid": 167503349842810
+		},
+		{
+			"eventType": "comment",
+			"text": "A function to put the dialog box UI on-screen."
+		},
+		{
+			"functionName": "DisplayDialogBox",
+			"functionDescription": "A function to put the dialog box UI on-screen.",
+			"functionCategory": "DialogSystem",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 902452349570772,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 540594100333995,
+							"parameters": {
+								"layer": "\"HUD_Dialogs\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 179371659659581,
+							"parameters": {
+								"layer": "\"HUD_Dialogs\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"callFunction": "PullDialogText",
+							"sid": 968815845988150,
+							"parameters": [
+								"0",
+								"1"
+							]
+						}
+					],
+					"sid": 927410290555342
+				}
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "A function to remove the dialog box UI from the screen."
+		},
+		{
+			"functionName": "HideDialogBox",
+			"functionDescription": "A function to remove the dialog box UI from the screen.",
+			"functionCategory": "DialogSystem",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 551054835002174,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 667081352782748,
+							"parameters": {
+								"layer": "\"HUD_Dialogs\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 370133092381016,
+							"parameters": {
+								"layer": "\"HUD_Dialogs\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 515930515304326
+				}
+			]
 		},
 		{
 			"functionName": "PullDialogText",

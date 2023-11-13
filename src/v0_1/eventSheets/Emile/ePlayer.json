@@ -777,11 +777,11 @@
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "is-overlapping-another-object",
-											"objectClass": "sPlayerCol",
-											"sid": 304108696278185,
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 107823230129500,
 											"parameters": {
-												"object": "sClue"
+												"variable": "bCanInteract"
 											}
 										}
 									],
@@ -794,9 +794,14 @@
 											]
 										},
 										{
+											"type": "comment",
+											"text": "Old: enter 3d"
+										},
+										{
 											"id": "look-parallel-to-layout",
 											"objectClass": "3DCamera",
 											"sid": 142155246490434,
+											"disabled": true,
 											"parameters": {
 												"cam-x": "0",
 												"cam-y": "0",
@@ -808,6 +813,7 @@
 											"id": "set-position",
 											"objectClass": "3DCamera",
 											"sid": 410021483475383,
+											"disabled": true,
 											"parameters": {
 												"x": "tbEntityBase.X",
 												"y": "tbEntityBase.Y",
@@ -819,6 +825,7 @@
 											"id": "set-position",
 											"objectClass": "3DCamera",
 											"sid": 925614004551785,
+											"disabled": true,
 											"parameters": {
 												"x": "sClue.X",
 												"y": "sClue.Y",
@@ -829,12 +836,14 @@
 										{
 											"id": "request-pointer-lock",
 											"objectClass": "Mouse",
-											"sid": 697033049274649
+											"sid": 697033049274649,
+											"disabled": true
 										},
 										{
 											"id": "set-boolean-eventvar",
 											"objectClass": "System",
 											"sid": 802762450162074,
+											"disabled": true,
 											"parameters": {
 												"variable": "bIs3DView",
 												"value": "true"
