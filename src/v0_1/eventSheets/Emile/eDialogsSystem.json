@@ -220,14 +220,6 @@
 							}
 						},
 						{
-							"callFunction": "PullDialogText",
-							"sid": 968815845988150,
-							"parameters": [
-								"0",
-								"1"
-							]
-						},
-						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
 							"sid": 468039618896043,

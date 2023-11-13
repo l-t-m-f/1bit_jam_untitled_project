@@ -1,0 +1,26 @@
+{
+	"name": "tbfDialogOwner",
+	"plugin-id": "TiledBg",
+	"sid": 692579754695942,
+	"instanceVariables": [
+		{
+			"name": "DefaultStory",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 844901878285617
+		},
+		{
+			"name": "DefaultLine",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 632509320951942
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"tbEntityBase"
+	]
+}

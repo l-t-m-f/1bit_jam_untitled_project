@@ -199,7 +199,8 @@
 							{
 								"items": [
 									"sMmmgmmgmmgrArt",
-									"sPlayerArt"
+									"sPlayerArt",
+									"sUrchinArt"
 								],
 								"subfolders": [
 									{
@@ -301,7 +302,8 @@
 			"tbfTween",
 			"tbfSolid",
 			"tbfLineOfSight",
-			"gInteractive"
+			"gInteractive",
+			"tbfDialogOwner"
 		],
 		"subfolders": []
 	},

@@ -3,6 +3,16 @@
 	"events": [
 		{
 			"eventType": "variable",
+			"name": "InteractiveUID",
+			"type": "number",
+			"initialValue": "-1",
+			"comment": "UID of the interactive object to focus onto.",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 267498896551184
+		},
+		{
+			"eventType": "variable",
 			"name": "bCanInteract",
 			"type": "boolean",
 			"initialValue": "false",
@@ -854,7 +864,33 @@
 											}
 										}
 									],
-									"sid": 878661143229174
+									"sid": 878661143229174,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "tbfDialogOwner",
+													"sid": 787551000302335,
+													"parameters": {
+														"unique-id": "InteractiveUID"
+													}
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "PullDialogText",
+													"sid": 564044416939180,
+													"parameters": [
+														"tbfDialogOwner.DefaultStory",
+														"tbfDialogOwner.DefaultLine"
+													]
+												}
+											],
+											"sid": 215466796041145
+										}
+									]
 								}
 							]
 						},
@@ -887,7 +923,17 @@
 						{
 							"eventType": "block",
 							"conditions": [],
-							"actions": [],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 254555283393751,
+									"parameters": {
+										"variable": "InteractiveUID",
+										"value": "-1"
+									}
+								}
+							],
 							"sid": 288763196243909
 						},
 						{
@@ -953,6 +999,15 @@
 													"parameters": {
 														"variable": "bMatchFound",
 														"value": "true"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 701670338342907,
+													"parameters": {
+														"variable": "InteractiveUID",
+														"value": "gInteractive.UID"
 													}
 												},
 												{
