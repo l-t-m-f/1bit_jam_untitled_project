@@ -1,0 +1,11 @@
+{
+	"name": "tbfAI",
+	"plugin-id": "TiledBg",
+	"sid": 553560469423107,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"tbEntityBase"
+	]
+}

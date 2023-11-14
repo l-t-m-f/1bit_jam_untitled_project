@@ -10,15 +10,24 @@
 				{
 					"text": "... *it looks at you shyly*",
 					"choices": [
-						{"text":"Ask it something", "effect":0},
-						{"text":"*Walk away*", "effect":1}
+						{
+							"text": "Ask it something",
+							"effect": 0
+						},
+						{
+							"text": "*Walk away*",
+							"effect": 1
+						}
 					],
 					"default_effect": -1
 				},
 				{
 					"text": "huh? you talking to me?",
 					"choices": [
-						{"text":"Ask it something", "effect":0}
+						{
+							"text": "I mis-spoke :$",
+							"effect": 1
+						}
 					],
 					"default_effect": -1
 				}
@@ -29,16 +38,28 @@
 				{
 					"text": "*The urchin stands silently*",
 					"choices": [
-						{"text":"Kick it", "effect":1},
-						{"text":"*Pet it*", "effect":1}
-						],
+						{
+							"text": "Kick it",
+							"effect": 1
+						},
+						{
+							"text": "*Pet it*",
+							"effect": 1
+						}
+					],
 					"default_effect": -1
 				},
 				{
 					"text": "*The urchin rolls away*",
 					"choices": [
-						{"text":"Kick it", "effect":1},
-						{"text":"*Pet it*", "effect":1}
+						{
+							"text": "Kick it",
+							"effect": 1
+						},
+						{
+							"text": "*Pet it*",
+							"effect": 1
+						}
 					],
 					"default_effect": -1
 				}

@@ -3,7 +3,15 @@
 	"plugin-id": "NinePatch",
 	"sid": 708573301057603,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "ivDialogEffect",
+			"type": "number",
+			"desc": "Action of the choice.",
+			"show": true,
+			"sid": 651649764388406
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {

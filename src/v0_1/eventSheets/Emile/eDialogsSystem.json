@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "CHOICE_BUTTON_INITIAL_SPAWN_Y",
 			"type": "number",
-			"initialValue": "480",
+			"initialValue": "544",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": true,
@@ -388,41 +388,42 @@
 								}
 							],
 							"sid": 399422387252886
-						}
-					]
-				},
-				{
-					"eventType": "variable",
-					"name": "last_choices_access_str",
-					"type": "string",
-					"initialValue": "NULL",
-					"comment": "",
-					"isStatic": true,
-					"isConstant": false,
-					"sid": 895134144195585
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 655485464956310,
-							"parameters": {
-								"variable": "last_choices_access_str",
-								"value": "last_story_access_str&\".lines.\"&str(tbfDialogOwner.DefaultLine)&\".choices\""
-							}
 						},
 						{
-							"callFunction": "CreateDialogChoice",
-							"sid": 392955131498338,
-							"parameters": [
-								"last_choices_access_str"
-							]
+							"eventType": "variable",
+							"name": "last_choices_access_str",
+							"type": "string",
+							"initialValue": "NULL",
+							"comment": "",
+							"isStatic": true,
+							"isConstant": false,
+							"sid": 616434733827014
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 811004031812836,
+									"parameters": {
+										"variable": "last_choices_access_str",
+										"value": "last_story_access_str&\".lines.\"&str(tbfDialogOwner.DefaultLine)&\".choices\""
+									}
+								},
+								{
+									"callFunction": "CreateDialogChoice",
+									"sid": 756674499798600,
+									"parameters": [
+										"pDialogOwnerUID",
+										"last_choices_access_str"
+									]
+								}
+							],
+							"sid": 732258456809196
 						}
-					],
-					"sid": 901189748429778
+					]
 				}
 			]
 		},
@@ -435,6 +436,13 @@
 			"functionIsAsync": false,
 			"functionParameters": [
 				{
+					"name": "pDialogOwnerUID",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"sid": 932383802859295
+				},
+				{
 					"name": "pChoicesAccessStr",
 					"type": "string",
 					"initialValue": "NULL",
@@ -443,7 +451,16 @@
 				}
 			],
 			"eventType": "function-block",
-			"conditions": [],
+			"conditions": [
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "tbfDialogOwner",
+					"sid": 222097303282643,
+					"parameters": {
+						"unique-id": "pDialogOwnerUID"
+					}
+				}
+			],
 			"actions": [
 				{
 					"id": "destroy",
@@ -474,6 +491,15 @@
 							"parameters": {
 								"variable": "last_choice_cnt",
 								"value": "jsonDialogsData.ArraySize(pChoicesAccessStr)"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "tbfDialogOwner",
+							"sid": 148014277786116,
+							"parameters": {
+								"instance-variable": "DisplayedChoiceCount",
+								"value": "last_choice_cnt"
 							}
 						}
 					],
@@ -524,14 +550,23 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 143077265751739,
+									"sid": 964353926432168,
 									"parameters": {
 										"object-to-create": "npDialogChoice",
 										"layer": "\"HUD_Dialogs\"",
-										"x": "(ViewportWidth(\"HUD_Dialogs\")/2) - (((128*last_choice_cnt)+(32*(last_choice_cnt-1)))/2) + ((loopindex(\"i\")-1) * 160)",
+										"x": "(ViewportWidth(\"HUD_Dialogs\")/2) - (((128*last_choice_cnt)+(32*(last_choice_cnt-1)))/2) + ((loopindex(\"i\")-1) * 160) + 64",
 										"y": "CHOICE_BUTTON_INITIAL_SPAWN_Y",
 										"create-hierarchy": true,
 										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "npDialogChoice",
+									"sid": 912650766113500,
+									"parameters": {
+										"instance-variable": "ivDialogEffect",
+										"value": "jsonDialogsData.Get(pChoicesAccessStr&\".\"&str(loopindex(\"i\")-1)&\".effect\")"
 									}
 								}
 							],
@@ -562,9 +597,9 @@
 										{
 											"id": "set-scale",
 											"objectClass": "sfTimesNewYorker",
-											"sid": 238719621298263,
+											"sid": 777236029590909,
 											"parameters": {
-												"scale": "(-4.85 * len(jsonDialogsData.Get(pChoicesAccessStr&\".\"&str(loopindex(\"i\")-1)&\".text\")) +112.75)/100"
+												"scale": "1 - ((0.75/21) * clamp(len(sfTimesNewYorker.Text), 5, 21))"
 											}
 										}
 									],
@@ -573,6 +608,28 @@
 							]
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 846240918223819
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "tbfDialogOwner",
+							"sid": 939671460686317,
+							"parameters": {
+								"instance-variable": "DefaultEffect",
+								"value": "jsonDialogsData.Get(\"stories.\"&tbfDialogOwner.DefaultStory&\".lines.\"&tbfDialogOwner.DefaultLine&\".default_effect\")"
+							}
+						}
+					],
+					"sid": 286056801384526
 				}
 			]
 		},
@@ -747,6 +804,217 @@
 							]
 						}
 					]
+				}
+			]
+		},
+		{
+			"functionName": "ResetDialogOwnerLine",
+			"functionDescription": "A function to reset the dialog owner line to 0.",
+			"functionCategory": "DialogSystem",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "pDialogOwnerUID",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"sid": 234205711291945
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "tbfDialogOwner",
+					"sid": 966428811781233,
+					"parameters": {
+						"unique-id": "pDialogOwnerUID"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "tbfDialogOwner",
+					"sid": 652301859179737,
+					"parameters": {
+						"instance-variable": "DefaultLine",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 464288196368321
+		},
+		{
+			"eventType": "comment",
+			"text": "A function which triggers a dialog effect (either default or from a choice). Its just a provided numerical ID."
+		},
+		{
+			"functionName": "TriggerDialogEffect",
+			"functionDescription": "A function which triggers a dialog effect (either default or from a choice). Its just a provided numerical ID.",
+			"functionCategory": "DialogSystem",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "pDialogEffect",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"sid": 612344469811949
+				},
+				{
+					"name": "pDialogOwnerUID",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"sid": 462309714440206
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "tbfDialogOwner",
+					"sid": 998983756146819,
+					"parameters": {
+						"unique-id": "pDialogOwnerUID"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 149210346166256,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 896009993214662,
+							"parameters": {
+								"variable": "pDialogEffect",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "IncrementDialogOwnerLine",
+							"sid": 409009492904036,
+							"parameters": [
+								"tbfDialogOwner.UID",
+								true
+							]
+						}
+					],
+					"sid": 992003850608650,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 850166838821345,
+									"parameters": {
+										"variable": "bCanInteract"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 567368303019031,
+									"parameters": {
+										"variable": "bIsDialogMode"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "PullDialogText",
+									"sid": 334933275042531,
+									"parameters": [
+										"tbfDialogOwner.UID"
+									]
+								}
+							],
+							"sid": 237112952597795
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 898978473292441
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 759478691347573,
+							"parameters": {
+								"variable": "pDialogEffect",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "ResetDialogOwnerLine",
+							"sid": 734538464234443,
+							"parameters": [
+								"tbfDialogOwner.UID"
+							]
+						},
+						{
+							"callFunction": "HideDialogBox",
+							"sid": 644555028695257
+						}
+					],
+					"sid": 243099970400407
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 207330926015394
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 983297233735704,
+							"parameters": {
+								"variable": "pDialogEffect",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "IncrementDialogOwnerLine",
+							"sid": 394262124992375,
+							"parameters": [
+								"tbfDialogOwner.UID",
+								true
+							]
+						},
+						{
+							"callFunction": "HideDialogBox",
+							"sid": 171579588459856
+						}
+					],
+					"sid": 258437771732461
 				}
 			]
 		}

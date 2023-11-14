@@ -165,15 +165,6 @@
 				"subfolders": [
 					{
 						"items": [
-							"npDialogBox",
-							"npDialogChoice",
-							"jsonDialogsData"
-						],
-						"subfolders": [],
-						"name": "DialogsSystem"
-					},
-					{
-						"items": [
 							"npStageBoundary"
 						],
 						"subfolders": [],
@@ -271,11 +262,28 @@
 									"npEntityTile",
 									"sExclaim"
 								],
-								"subfolders": [],
+								"subfolders": [
+									{
+										"items": [
+											"npDialogBox",
+											"npDialogChoice",
+											"jsonDialogsData"
+										],
+										"subfolders": [],
+										"name": "DialogsSystem"
+									}
+								],
 								"name": "InGame"
 							}
 						],
 						"name": "UI"
+					},
+					{
+						"items": [
+							"sAIAnchorPoint"
+						],
+						"subfolders": [],
+						"name": "AI"
 					}
 				],
 				"name": "Emile"
@@ -311,7 +319,8 @@
 			"tbfSolid",
 			"tbfLineOfSight",
 			"gInteractive",
-			"tbfDialogOwner"
+			"tbfDialogOwner",
+			"tbfAI"
 		],
 		"subfolders": []
 	},
@@ -351,7 +360,8 @@
 					"eDebug",
 					"eHUD",
 					"eEntities",
-					"eMouse"
+					"eMouse",
+					"eAI"
 				],
 				"subfolders": [
 					{

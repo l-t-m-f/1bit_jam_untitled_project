@@ -62,11 +62,13 @@
 						"edges": "stretch",
 						"fill": "stretch",
 						"initially-visible": true,
-						"origin": "top-left",
+						"origin": "center",
 						"seams": "overlap"
 					},
 					"uid": 3,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ivDialogEffect": -1
+					},
 					"behaviors": {
 						"Tween": {
 							"properties": {
@@ -120,12 +122,12 @@
 						}
 					},
 					"world": {
-						"x": 32,
-						"y": 192,
+						"x": 96,
+						"y": 224,
 						"width": 128,
 						"height": 64,
-						"originX": 0,
-						"originY": 0,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -1349,7 +1351,9 @@
 						"ivTweenVal2": -1,
 						"InteractionKind": 0,
 						"DefaultStory": -1,
-						"DefaultLine": -1
+						"DefaultLine": -1,
+						"DisplayedChoiceCount": -1,
+						"DefaultEffect": -1
 					},
 					"behaviors": {
 						"8Direction": {
@@ -1483,6 +1487,14 @@
 											},
 											{
 												"iv": "DefaultLine",
+												"state": true
+											},
+											{
+												"iv": "DisplayedChoiceCount",
+												"state": true
+											},
+											{
+												"iv": "DefaultEffect",
 												"state": true
 											}
 										]
@@ -3309,19 +3321,21 @@
 						"ivTweenVal2": -1,
 						"InteractionKind": 0,
 						"DefaultStory": 0,
-						"DefaultLine": 0
+						"DefaultLine": 0,
+						"DisplayedChoiceCount": -1,
+						"DefaultEffect": -1
 					},
 					"behaviors": {
 						"8Direction": {
 							"properties": {
-								"max-speed": -1,
-								"acceleration": -1,
-								"deceleration": -1,
+								"max-speed": 16,
+								"acceleration": 90,
+								"deceleration": 800,
 								"directions": "dir-8",
 								"set-angle": "no",
 								"allow-sliding": false,
 								"default-controls": false,
-								"enabled": false
+								"enabled": true
 							}
 						},
 						"Tween": {
@@ -3443,6 +3457,14 @@
 											},
 											{
 												"iv": "DefaultLine",
+												"state": true
+											},
+											{
+												"iv": "DisplayedChoiceCount",
+												"state": true
+											},
+											{
+												"iv": "DefaultEffect",
 												"state": true
 											}
 										]
@@ -3966,7 +3988,9 @@
 						"ivTweenVal2": -1,
 						"InteractionKind": 0,
 						"DefaultStory": 1,
-						"DefaultLine": 0
+						"DefaultLine": 0,
+						"DisplayedChoiceCount": -1,
+						"DefaultEffect": -1
 					},
 					"behaviors": {
 						"8Direction": {
@@ -4100,6 +4124,14 @@
 											},
 											{
 												"iv": "DefaultLine",
+												"state": true
+											},
+											{
+												"iv": "DisplayedChoiceCount",
+												"state": true
+											},
+											{
+												"iv": "DefaultEffect",
 												"state": true
 											}
 										]
@@ -4356,6 +4388,35 @@
 							1,
 							1,
 							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sAIAnchorPoint",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 64,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 458,
+						"y": 462,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
 						],
 						"angle": 0,
 						"zElevation": 0

@@ -1,0 +1,31 @@
+{
+	"name": "eAI",
+	"events": [
+		{
+			"eventType": "comment",
+			"text": "A function loops which moves entity marked as AI controlled based on their behavior."
+		},
+		{
+			"functionName": "UpdateAI",
+			"functionDescription": "A function loops which moves entity marked as AI controlled based on their behavior.",
+			"functionCategory": "AI",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 967893104163838,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 594196418265768
+				}
+			]
+		}
+	],
+	"sid": 749071008691227
+}

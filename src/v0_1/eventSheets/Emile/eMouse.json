@@ -37,26 +37,7 @@
 							"isInverted": true
 						}
 					],
-					"actions": [
-						{
-							"id": "tween-two-properties",
-							"objectClass": "npDialogBox",
-							"sid": 906042354558116,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "\"dialog_anim\"",
-								"property": "size",
-								"end-x": "530",
-								"end-y": "140",
-								"time": ".2",
-								"ease": "default",
-								"destroy-on-complete": "no",
-								"loop": "no",
-								"ping-pong": "yes",
-								"repeat-count": "1"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 949955970765368,
 					"children": [
 						{
@@ -71,58 +52,172 @@
 									}
 								}
 							],
-							"actions": [
-								{
-									"id": "add-to-instvar",
-									"objectClass": "tbfDialogOwner",
-									"sid": 815295221159004,
-									"disabled": true,
-									"parameters": {
-										"instance-variable": "DefaultLine",
-										"value": "1"
-									}
-								},
-								{
-									"callFunction": "IncrementDialogOwnerLine",
-									"sid": 364766569180971,
-									"parameters": [
-										"tbfDialogOwner.UID",
-										true
-									]
-								}
-							],
+							"actions": [],
 							"sid": 547761631543883,
 							"children": [
 								{
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "compare-boolean-eventvar",
-											"objectClass": "System",
-											"sid": 756294307873910,
+											"id": "compare-instance-variable",
+											"objectClass": "tbfDialogOwner",
+											"sid": 534740556311472,
 											"parameters": {
-												"variable": "bCanInteract"
-											}
-										},
-										{
-											"id": "compare-boolean-eventvar",
-											"objectClass": "System",
-											"sid": 651743153841955,
-											"parameters": {
-												"variable": "bIsDialogMode"
+												"instance-variable": "DisplayedChoiceCount",
+												"comparison": 0,
+												"value": "0"
 											}
 										}
 									],
 									"actions": [
 										{
-											"callFunction": "PullDialogText",
-											"sid": 249574824500755,
+											"id": "tween-two-properties",
+											"objectClass": "npDialogBox",
+											"sid": 447925609662648,
+											"behaviorType": "Tween",
+											"parameters": {
+												"tags": "\"dialog_anim\"",
+												"property": "size",
+												"end-x": "530",
+												"end-y": "140",
+												"time": ".2",
+												"ease": "default",
+												"destroy-on-complete": "no",
+												"loop": "no",
+												"ping-pong": "yes",
+												"repeat-count": "1"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 518307967902760,
+											"parameters": {
+												"seconds": ".2"
+											}
+										},
+										{
+											"callFunction": "TriggerDialogEffect",
+											"sid": 381682844525825,
 											"parameters": [
+												"tbfDialogOwner.DefaultEffect",
 												"tbfDialogOwner.UID"
 											]
 										}
 									],
-									"sid": 581604089890557
+									"sid": 139819932842731
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 577715569912852,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "npDialogChoice"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 370515885536516,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "npDialogChoice",
+							"sid": 369798097299745
+						},
+						{
+							"id": "is-playing",
+							"objectClass": "npDialogChoice",
+							"sid": 317906462319865,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"dialog_anim\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 289857639782945,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "tbfDialogOwner",
+									"sid": 275724435955828,
+									"parameters": {
+										"unique-id": "InteractiveUID"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 454644304630326,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "tbfDialogOwner",
+											"sid": 993418943370511,
+											"parameters": {
+												"instance-variable": "DisplayedChoiceCount",
+												"comparison": 4,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "tween-two-properties",
+											"objectClass": "npDialogChoice",
+											"sid": 553176317515829,
+											"behaviorType": "Tween",
+											"parameters": {
+												"tags": "\"dialog_anim\"",
+												"property": "size",
+												"end-x": "160",
+												"end-y": "50",
+												"time": ".2",
+												"ease": "default",
+												"destroy-on-complete": "no",
+												"loop": "no",
+												"ping-pong": "yes",
+												"repeat-count": "1"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 744375707629236,
+											"parameters": {
+												"seconds": ".2"
+											}
+										},
+										{
+											"callFunction": "TriggerDialogEffect",
+											"sid": 360555552712487,
+											"parameters": [
+												"npDialogChoice.ivDialogEffect",
+												"tbfDialogOwner.UID"
+											]
+										}
+									],
+									"sid": 753053332315059
 								}
 							]
 						}
