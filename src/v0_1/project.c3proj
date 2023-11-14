@@ -162,7 +162,8 @@
 			"Browser",
 			"3DShapeTest",
 			"sMouseCursor",
-			"sPlayerJumpBuffer"
+			"sPlayerJumpBuffer",
+			"tbBackgroundPebbles"
 		],
 		"subfolders": [
 			{
@@ -320,13 +321,13 @@
 		"items": [
 			"npfTween",
 			"sfScrollTo",
-			"gEntitySprite",
-			"gPlayerSkeleton",
+			"sfEntitySprite",
+			"sfPlayerSkeleton",
 			"tbf8Dir",
 			"tbfTween",
 			"tbfSolid",
 			"tbfLineOfSight",
-			"gInteractive",
+			"tbfInteractive",
 			"tbfDialogOwner",
 			"tbfAI"
 		],

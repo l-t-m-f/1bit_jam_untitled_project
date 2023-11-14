@@ -1984,20 +1984,21 @@
 					},
 					"uid": 50,
 					"instanceVariables": {
-						"AnchorName": "NULL"
+						"AnchorName": "NULL",
+						"DefaultAngle": -1
 					},
 					"behaviors": {
-						"Sine": {
+						"SkeletonAngleSine": {
 							"properties": {
 								"movement": "vertical",
-								"wave": "sine",
-								"period": 4,
+								"wave": "triangle",
+								"period": 2.25,
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
-								"magnitude": 3,
+								"magnitude": 8,
 								"magnitude-random": 0,
-								"enabled": true,
+								"enabled": false,
 								"live-preview": false
 							}
 						}
@@ -2090,10 +2091,11 @@
 					},
 					"uid": 51,
 					"instanceVariables": {
-						"AnchorName": "LeftShoulder"
+						"AnchorName": "LeftShoulder",
+						"DefaultAngle": -1
 					},
 					"behaviors": {
-						"Sine": {
+						"SkeletonAngleSine": {
 							"properties": {
 								"movement": "angle",
 								"wave": "sine",
@@ -2101,7 +2103,7 @@
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
-								"magnitude": 2,
+								"magnitude": 4,
 								"magnitude-random": 1,
 								"enabled": true,
 								"live-preview": false
@@ -2181,10 +2183,11 @@
 					},
 					"uid": 52,
 					"instanceVariables": {
-						"AnchorName": "RightShoulder"
+						"AnchorName": "RightShoulder",
+						"DefaultAngle": -1
 					},
 					"behaviors": {
-						"Sine": {
+						"SkeletonAngleSine": {
 							"properties": {
 								"movement": "angle",
 								"wave": "sine",
@@ -2192,7 +2195,7 @@
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
-								"magnitude": 2,
+								"magnitude": 4,
 								"magnitude-random": 1,
 								"enabled": true,
 								"live-preview": false
@@ -2272,10 +2275,11 @@
 					},
 					"uid": 53,
 					"instanceVariables": {
-						"AnchorName": "Foreleg"
+						"AnchorName": "Foreleg",
+						"DefaultAngle": -1
 					},
 					"behaviors": {
-						"Sine": {
+						"SkeletonAngleSine": {
 							"properties": {
 								"movement": "angle",
 								"wave": "sine",
@@ -2363,10 +2367,11 @@
 					},
 					"uid": 54,
 					"instanceVariables": {
-						"AnchorName": "Foreleg"
+						"AnchorName": "Foreleg",
+						"DefaultAngle": -1
 					},
 					"behaviors": {
-						"Sine": {
+						"SkeletonAngleSine": {
 							"properties": {
 								"movement": "angle",
 								"wave": "sine",
@@ -2454,10 +2459,11 @@
 					},
 					"uid": 57,
 					"instanceVariables": {
-						"AnchorName": "Feet"
+						"AnchorName": "Feet",
+						"DefaultAngle": -1
 					},
 					"behaviors": {
-						"Sine": {
+						"SkeletonAngleSine": {
 							"properties": {
 								"movement": "angle",
 								"wave": "sine",
@@ -2528,10 +2534,11 @@
 					},
 					"uid": 58,
 					"instanceVariables": {
-						"AnchorName": "Feet"
+						"AnchorName": "Feet",
+						"DefaultAngle": -1
 					},
 					"behaviors": {
-						"Sine": {
+						"SkeletonAngleSine": {
 							"properties": {
 								"movement": "angle",
 								"wave": "sine",
@@ -2602,9 +2609,25 @@
 					},
 					"uid": 59,
 					"instanceVariables": {
-						"AnchorName": "NULL"
+						"AnchorName": "NULL",
+						"DefaultAngle": -1
 					},
-					"behaviors": {},
+					"behaviors": {
+						"SkeletonAngleSine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 0,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 0,
+								"magnitude-random": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
 						"x": 459.6318007918644,
 						"y": 338.14795257957206,
@@ -2633,9 +2656,25 @@
 					},
 					"uid": 60,
 					"instanceVariables": {
-						"AnchorName": "NULL"
+						"AnchorName": "NULL",
+						"DefaultAngle": -1
 					},
-					"behaviors": {},
+					"behaviors": {
+						"SkeletonAngleSine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 0,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 0,
+								"magnitude-random": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
 						"x": 443.03209986821514,
 						"y": 318.05343595873734,
@@ -2664,9 +2703,25 @@
 					},
 					"uid": 61,
 					"instanceVariables": {
-						"AnchorName": "NULL"
+						"AnchorName": "NULL",
+						"DefaultAngle": -1
 					},
-					"behaviors": {},
+					"behaviors": {
+						"SkeletonAngleSine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 0,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 0,
+								"magnitude-random": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
 						"x": 497.97710260083204,
 						"y": 318.6888320566602,
@@ -2695,9 +2750,25 @@
 					},
 					"uid": 62,
 					"instanceVariables": {
-						"AnchorName": "NULL"
+						"AnchorName": "NULL",
+						"DefaultAngle": -1
 					},
-					"behaviors": {},
+					"behaviors": {
+						"SkeletonAngleSine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 0,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 0,
+								"magnitude-random": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
 						"x": 477.32420816405045,
 						"y": 338.70633039551876,
@@ -2755,18 +2826,19 @@
 					},
 					"uid": 27,
 					"instanceVariables": {
-						"AnchorName": "Shoulder"
+						"AnchorName": "Shoulder",
+						"DefaultAngle": -1
 					},
 					"behaviors": {
-						"Sine": {
+						"SkeletonAngleSine": {
 							"properties": {
 								"movement": "angle",
 								"wave": "sine",
-								"period": 3,
+								"period": 1.5,
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
-								"magnitude": 2,
+								"magnitude": 6,
 								"magnitude-random": 1,
 								"enabled": true,
 								"live-preview": false
@@ -2846,18 +2918,19 @@
 					},
 					"uid": 33,
 					"instanceVariables": {
-						"AnchorName": "Shoulder"
+						"AnchorName": "Shoulder",
+						"DefaultAngle": -1
 					},
 					"behaviors": {
-						"Sine": {
+						"SkeletonAngleSine": {
 							"properties": {
 								"movement": "angle",
 								"wave": "sine",
-								"period": 3,
+								"period": 1.5,
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
-								"magnitude": 2,
+								"magnitude": 6,
 								"magnitude-random": 1,
 								"enabled": true,
 								"live-preview": false

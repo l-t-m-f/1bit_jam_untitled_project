@@ -1,5 +1,5 @@
 {
-	"name": "gPlayerSkeleton",
+	"name": "sfPlayerSkeleton",
 	"plugin-id": "Sprite",
 	"sid": 926372001243434,
 	"instanceVariables": [
@@ -9,9 +9,22 @@
 			"desc": "",
 			"show": true,
 			"sid": 245831470971297
+		},
+		{
+			"name": "DefaultAngle",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 239554639960853
 		}
 	],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "SkeletonAngleSine",
+			"sid": 769376727120088
+		}
+	],
 	"effectTypes": [],
 	"members": [
 		"sPlayerSkeleton_Auxiliary",

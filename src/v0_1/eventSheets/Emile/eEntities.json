@@ -45,7 +45,7 @@
 									"objectClass": "tbEntityBase",
 									"sid": 251917006610626,
 									"parameters": {
-										"child": "gEntitySprite",
+										"child": "sfEntitySprite",
 										"which": "own"
 									}
 								}
@@ -53,7 +53,7 @@
 							"actions": [
 								{
 									"id": "set-position",
-									"objectClass": "gEntitySprite",
+									"objectClass": "sfEntitySprite",
 									"sid": 814177549047556,
 									"parameters": {
 										"x": "lerp(Self.X, tbEntityBase.X, Self.ivSyncRate)",
@@ -71,7 +71,7 @@
 									"objectClass": "tbEntityBase",
 									"sid": 115115304901195,
 									"parameters": {
-										"child": "gEntitySprite",
+										"child": "sfEntitySprite",
 										"which": "own"
 									}
 								}
@@ -79,7 +79,7 @@
 							"actions": [
 								{
 									"id": "set-position",
-									"objectClass": "gEntitySprite",
+									"objectClass": "sfEntitySprite",
 									"sid": 393148713298634,
 									"parameters": {
 										"x": "lerp(Self.X, tbEntityBase.X, Self.ivSyncRate)",

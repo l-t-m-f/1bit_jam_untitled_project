@@ -22,6 +22,16 @@
 			"sid": 566829066602111
 		},
 		{
+			"eventType": "variable",
+			"name": "gPlayerAnimationState",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 546346854332901
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -92,6 +102,73 @@
 			"sid": 411707937791292
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "tbEntityBase",
+					"sid": 354405137983609,
+					"behaviorType": "8Direction"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 851598043512134,
+					"parameters": {
+						"variable": "gPlayerAnimationState",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 135145529042131
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 528207783721388
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 197559586240756,
+					"parameters": {
+						"variable": "gPlayerAnimationState",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 338200795838496
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "sfPlayerSkeleton",
+					"sid": 202436932423230
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "sfPlayerSkeleton",
+					"sid": 941309948228884,
+					"parameters": {
+						"instance-variable": "DefaultAngle",
+						"value": "Self.Angle"
+					}
+				}
+			],
+			"sid": 844457924870543
+		},
+		{
 			"functionName": "UpdatePlayerSkeleton",
 			"functionDescription": "",
 			"functionCategory": "",
@@ -110,7 +187,7 @@
 						{
 							"id": "for-each",
 							"objectClass": "System",
-							"sid": 489316330472184,
+							"sid": 482148175467674,
 							"parameters": {
 								"object": "sPlayerSkeleton_Shoulder"
 							}
@@ -118,7 +195,7 @@
 						{
 							"id": "pick-parent",
 							"objectClass": "sPlayerSkeleton_Shoulder",
-							"sid": 187736658241451,
+							"sid": 166164380053515,
 							"parameters": {
 								"parent": "sPlayerSkeleton_Head",
 								"which": "own"
@@ -129,14 +206,14 @@
 						{
 							"id": "set-position",
 							"objectClass": "sPlayerSkeleton_Shoulder",
-							"sid": 568478290910436,
+							"sid": 498837946080011,
 							"parameters": {
 								"x": "sPlayerSkeleton_Head.ImagePointX(sPlayerSkeleton_Shoulder.AnchorName)",
 								"y": "sPlayerSkeleton_Head.ImagePointY(sPlayerSkeleton_Shoulder.AnchorName)"
 							}
 						}
 					],
-					"sid": 672398291338756
+					"sid": 276090243587867
 				},
 				{
 					"eventType": "block",
@@ -144,7 +221,7 @@
 						{
 							"id": "for-each",
 							"objectClass": "System",
-							"sid": 577374357047460,
+							"sid": 413847547812569,
 							"parameters": {
 								"object": "sPlayerSkeleton_Hindleg"
 							}
@@ -152,7 +229,7 @@
 						{
 							"id": "pick-parent",
 							"objectClass": "sPlayerSkeleton_Hindleg",
-							"sid": 207503278448766,
+							"sid": 431071227452986,
 							"parameters": {
 								"parent": "sPlayerSkeleton_Shoulder",
 								"which": "own"
@@ -163,14 +240,14 @@
 						{
 							"id": "set-position",
 							"objectClass": "sPlayerSkeleton_Hindleg",
-							"sid": 689747004128729,
+							"sid": 717724092438458,
 							"parameters": {
 								"x": "sPlayerSkeleton_Shoulder.ImagePointX(sPlayerSkeleton_Hindleg.AnchorName)",
 								"y": "sPlayerSkeleton_Shoulder.ImagePointY(sPlayerSkeleton_Hindleg.AnchorName)"
 							}
 						}
 					],
-					"sid": 120853603185174
+					"sid": 567395652332301
 				},
 				{
 					"eventType": "block",
@@ -178,7 +255,7 @@
 						{
 							"id": "for-each",
 							"objectClass": "System",
-							"sid": 747947459099148,
+							"sid": 409499239466759,
 							"parameters": {
 								"object": "sPlayerSkeleton_Foreleg"
 							}
@@ -186,7 +263,7 @@
 						{
 							"id": "pick-parent",
 							"objectClass": "sPlayerSkeleton_Foreleg",
-							"sid": 399369584850741,
+							"sid": 624208362387898,
 							"parameters": {
 								"parent": "sPlayerSkeleton_Hindleg",
 								"which": "own"
@@ -197,14 +274,14 @@
 						{
 							"id": "set-position",
 							"objectClass": "sPlayerSkeleton_Foreleg",
-							"sid": 709624461853605,
+							"sid": 242474501181984,
 							"parameters": {
 								"x": "sPlayerSkeleton_Hindleg.ImagePointX(sPlayerSkeleton_Foreleg.AnchorName)",
 								"y": "sPlayerSkeleton_Hindleg.ImagePointY(sPlayerSkeleton_Foreleg.AnchorName)"
 							}
 						}
 					],
-					"sid": 766150622907304
+					"sid": 375784904738246
 				},
 				{
 					"eventType": "block",
@@ -212,7 +289,7 @@
 						{
 							"id": "for-each",
 							"objectClass": "System",
-							"sid": 287920264479925,
+							"sid": 855610895710763,
 							"parameters": {
 								"object": "sPlayerSkeleton_Feet"
 							}
@@ -220,7 +297,7 @@
 						{
 							"id": "pick-parent",
 							"objectClass": "sPlayerSkeleton_Feet",
-							"sid": 789344880519313,
+							"sid": 215287661318345,
 							"parameters": {
 								"parent": "sPlayerSkeleton_Foreleg",
 								"which": "own"
@@ -231,14 +308,180 @@
 						{
 							"id": "set-position",
 							"objectClass": "sPlayerSkeleton_Feet",
-							"sid": 453552794582692,
+							"sid": 734629393642772,
 							"parameters": {
 								"x": "sPlayerSkeleton_Foreleg.ImagePointX(sPlayerSkeleton_Feet.AnchorName)",
 								"y": "sPlayerSkeleton_Foreleg.ImagePointY(sPlayerSkeleton_Feet.AnchorName)"
 							}
 						}
 					],
-					"sid": 169002243393222
+					"sid": 411001120339075
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 299366791040872,
+							"parameters": {
+								"variable": "gPlayerAnimationState",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 819082179936359,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 154066054477405,
+									"parameters": {
+										"object": "sfPlayerSkeleton"
+									}
+								},
+								{
+									"id": "is-active",
+									"objectClass": "sfPlayerSkeleton",
+									"sid": 177643903759397,
+									"behaviorType": "SkeletonAngleSine",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-active",
+									"objectClass": "sfPlayerSkeleton",
+									"sid": 142514581724698,
+									"behaviorType": "SkeletonAngleSine",
+									"parameters": {
+										"state": "active"
+									}
+								}
+							],
+							"sid": 663874628762174
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 663805719363189
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 649095581874260,
+							"parameters": {
+								"variable": "gPlayerAnimationState",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 398877276679576,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 144095545587679,
+									"parameters": {
+										"object": "sfPlayerSkeleton"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 744032740443802,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-active",
+											"objectClass": "sfPlayerSkeleton",
+											"sid": 718787633492304,
+											"behaviorType": "SkeletonAngleSine"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-cycle-position",
+											"objectClass": "sfPlayerSkeleton",
+											"sid": 610394540486559,
+											"behaviorType": "SkeletonAngleSine",
+											"parameters": {
+												"cycle-position": "lerp(Self.SkeletonAngleSine.CyclePosition, 1, 0.001)"
+											}
+										}
+									],
+									"sid": 939136413837871,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 904976640705420,
+													"parameters": {
+														"first-value": "sfPlayerSkeleton.SkeletonAngleSine.CyclePosition",
+														"comparison": 5,
+														"second-value": "0.9"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-active",
+													"objectClass": "sfPlayerSkeleton",
+													"sid": 845828989709524,
+													"behaviorType": "SkeletonAngleSine",
+													"parameters": {
+														"state": "inactive"
+													}
+												}
+											],
+											"sid": 613042601350429
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 777283849177497
+										}
+									],
+									"actions": [
+										{
+											"id": "set-cycle-position",
+											"objectClass": "sfPlayerSkeleton",
+											"sid": 644404346164932,
+											"behaviorType": "SkeletonAngleSine",
+											"parameters": {
+												"cycle-position": "lerp(Self.SkeletonAngleSine.CyclePosition, 1, 0.1)"
+											}
+										}
+									],
+									"sid": 106046508237851
+								}
+							]
+						}
+					]
 				}
 			]
 		},
@@ -1000,7 +1243,7 @@
 									"objectClass": "System",
 									"sid": 456643249115634,
 									"parameters": {
-										"object": "gInteractive"
+										"object": "tbfInteractive"
 									}
 								}
 							],
@@ -1016,7 +1259,7 @@
 											"sid": 742238320467390,
 											"behaviorType": "LineOfSight",
 											"parameters": {
-												"object": "gInteractive",
+												"object": "tbfInteractive",
 												"image-point": "0"
 											}
 										}
@@ -1032,7 +1275,7 @@
 													"objectClass": "System",
 													"sid": 484386486320482,
 													"parameters": {
-														"first-value": "gInteractive.UID",
+														"first-value": "tbfInteractive.UID",
 														"comparison": 1,
 														"second-value": "tbEntityBase.UID"
 													}
@@ -1063,7 +1306,7 @@
 													"sid": 701670338342907,
 													"parameters": {
 														"variable": "InteractiveUID",
-														"value": "gInteractive.UID"
+														"value": "tbfInteractive.UID"
 													}
 												},
 												{
