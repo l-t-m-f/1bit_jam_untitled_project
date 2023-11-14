@@ -145,6 +145,13 @@
 			"name": "Difference",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "warpobject",
+			"name": "Warp object",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "v15jb14ulow",
@@ -154,7 +161,8 @@
 			"AJAX",
 			"Browser",
 			"3DShapeTest",
-			"sMouseCursor"
+			"sMouseCursor",
+			"sPlayerJumpBuffer"
 		],
 		"subfolders": [
 			{

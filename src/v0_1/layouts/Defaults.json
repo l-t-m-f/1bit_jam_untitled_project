@@ -1145,7 +1145,7 @@
 					},
 					"world": {
 						"x": 256,
-						"y": 352,
+						"y": 353,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -1684,21 +1684,6 @@
 						"uid": 35,
 						"children": [
 							{
-								"uid": 50,
-								"flags": {
-									"x": true,
-									"y": true,
-									"z": false,
-									"w": false,
-									"h": false,
-									"a": false,
-									"o": false,
-									"v": false,
-									"d": true,
-									"sm": "normal"
-								}
-							},
-							{
 								"uid": 36,
 								"flags": {
 									"x": true,
@@ -1722,6 +1707,21 @@
 									"w": true,
 									"h": true,
 									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 65,
+								"flags": {
+									"x": false,
+									"y": false,
+									"z": false,
+									"w": false,
+									"h": false,
+									"a": false,
 									"o": false,
 									"v": false,
 									"d": true,
@@ -1755,8 +1755,8 @@
 						}
 					},
 					"world": {
-						"x": 260.5,
-						"y": 469.5,
+						"x": 258,
+						"y": 485,
 						"width": 157,
 						"height": 53,
 						"originX": 0.5,
@@ -2003,7 +2003,7 @@
 						}
 					},
 					"sceneGraphData": {
-						"parent-uid": 35,
+						"parent-uid": 65,
 						"uid": 50,
 						"children": [
 							{
@@ -2971,8 +2971,8 @@
 						}
 					},
 					"world": {
-						"x": 260.5,
-						"y": 472,
+						"x": 258,
+						"y": 484,
 						"width": 158,
 						"height": 48,
 						"originX": 0.5,
@@ -4417,6 +4417,80 @@
 							1,
 							1,
 							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sPlayerJumpBuffer",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 65,
+					"instanceVariables": {},
+					"behaviors": {},
+					"sceneGraphData": {
+						"parent-uid": 35,
+						"uid": 65,
+						"children": [
+							{
+								"uid": 50,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": false,
+									"w": false,
+									"h": false,
+									"a": false,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							}
+						],
+						"flags": {
+							"x": false,
+							"y": false,
+							"z": false,
+							"w": false,
+							"h": false,
+							"a": false,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 258,
+						"y": 483,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.55
 						],
 						"angle": 0,
 						"zElevation": 0

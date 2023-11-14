@@ -9,10 +9,10 @@
 				{
 					"type": "npViewportDeadzone",
 					"properties": {
-						"left-margin": 44,
-						"right-margin": 44,
-						"top-margin": 44,
-						"bottom-margin": 44,
+						"left-margin": 26,
+						"right-margin": 26,
+						"top-margin": 26,
+						"bottom-margin": 26,
 						"edges": "tile",
 						"fill": "stretch",
 						"initially-visible": true,
@@ -22,6 +22,19 @@
 					"uid": 34,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"WarpObject": {
+							"isEnabled": true,
+							"parameters": {
+								"x-frequency": 3,
+								"y-frequency": 3,
+								"x-amplitude": 1,
+								"y-amplitude": 1,
+								"x-speed": 0.25,
+								"y-speed": 0.25
+							}
+						}
+					},
 					"world": {
 						"x": 0,
 						"y": 0,

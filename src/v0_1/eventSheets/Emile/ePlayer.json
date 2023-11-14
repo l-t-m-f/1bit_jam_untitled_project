@@ -25,22 +25,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-playing",
-					"objectClass": "tbEntityBase",
-					"sid": 491440158163808,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"8dir_jump\""
-					}
-				}
-			],
-			"actions": [],
-			"sid": 316594009749611
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-movement",
 					"objectClass": "Mouse",
 					"sid": 925704400873429
@@ -68,6 +52,44 @@
 				}
 			],
 			"sid": 859295498416001
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "tbEntityBase",
+					"sid": 334563009948144,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"8dir_jump\""
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 605027455362465,
+					"parameters": {
+						"first-value": "tbEntityBase.TemplateName",
+						"comparison": 0,
+						"second-value": "\"Player\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "shake",
+					"objectClass": "sCamera",
+					"sid": 696178452639095,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"magnitude": "20",
+						"duration": "0.4",
+						"mode": "reducing-magnitude"
+					}
+				}
+			],
+			"sid": 411707937791292
 		},
 		{
 			"functionName": "UpdatePlayerSkeleton",
@@ -255,10 +277,45 @@
 				{
 					"callFunction": "UpdatePlayerSkeleton",
 					"sid": 989932899000537
+				},
+				{
+					"id": "set-position",
+					"objectClass": "sPlayerJumpBuffer",
+					"sid": 223045643656687,
+					"parameters": {
+						"x": "lerp(Self.X, tbEntityBase.X, 0.5)",
+						"y": "lerp(Self.Y, tbEntityBase.Y - tbEntityBase.Tween.Value(\"8dir_jump\"), 0.5)"
+					}
 				}
 			],
 			"sid": 999520248952580,
 			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-playing",
+							"objectClass": "tbEntityBase",
+							"sid": 553276906035464,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"8dir_jump\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "tbEntityBase",
+							"sid": 635661653196143,
+							"parameters": {
+								"instance-variable": "ivTweenVal1",
+								"value": "Self.Tween.Value(\"8dir_jump\")"
+							}
+						}
+					],
+					"sid": 853608739819655
+				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -738,14 +795,14 @@
 								{
 									"id": "tween-value",
 									"objectClass": "tbEntityBase",
-									"sid": 508680286472663,
+									"sid": 674161016285476,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"8dir_jump\"",
 										"start-value": "0",
 										"end-value": "30",
 										"time": ".5",
-										"ease": "easeinoutsine",
+										"ease": "easeoutcubic",
 										"destroy-on-complete": "no",
 										"loop": "no",
 										"ping-pong": "yes",
