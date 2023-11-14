@@ -3965,7 +3965,7 @@
 						"ivTweenVal1": -1,
 						"ivTweenVal2": -1,
 						"InteractionKind": 0,
-						"DefaultStory": 0,
+						"DefaultStory": 1,
 						"DefaultLine": 0
 					},
 					"behaviors": {

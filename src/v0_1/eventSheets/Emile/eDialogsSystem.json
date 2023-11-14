@@ -554,9 +554,17 @@
 										{
 											"id": "set-text",
 											"objectClass": "sfTimesNewYorker",
-											"sid": 127724949208462,
+											"sid": 604301098732171,
 											"parameters": {
-												"text": "jsonDialogsData.Get(pChoicesAccessStr&\".\"&str(loopindex(\"i\")-1))"
+												"text": "jsonDialogsData.Get(pChoicesAccessStr&\".\"&str(loopindex(\"i\")-1)&\".text\")"
+											}
+										},
+										{
+											"id": "set-scale",
+											"objectClass": "sfTimesNewYorker",
+											"sid": 238719621298263,
+											"parameters": {
+												"scale": "(-4.85 * len(jsonDialogsData.Get(pChoicesAccessStr&\".\"&str(loopindex(\"i\")-1)&\".text\")) +112.75)/100"
 											}
 										}
 									],
