@@ -7,39 +7,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "npStageBoundary",
-					"properties": {
-						"left-margin": 6,
-						"right-margin": 6,
-						"top-margin": 6,
-						"bottom-margin": 6,
-						"edges": "tile",
-						"fill": "tile",
-						"initially-visible": true,
-						"origin": "top-left",
-						"seams": "overlap"
-					},
-					"uid": 10,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 32,
-						"y": 32,
-						"width": 1216,
-						"height": 896,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "tbBackgroundPebbles",
 					"properties": {
 						"initially-visible": true,
@@ -62,10 +29,98 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
+						"x": 16,
+						"y": 0,
+						"width": 1280,
+						"height": 960,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "tmTiles1",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 67,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"ownData": {
+						"tilemapData": {
+							"width": 80,
+							"height": 60,
+							"max-width": 80,
+							"max-height": 60,
+							"data": "728x0,21,58x0,21,1,57x0,21,2x1,56x0,21,3x1,55x0,21,4x1,31x0,21,23x0,22,2x1,21,1,30x0,21,1,24x0,22,21,2x1,29x0,21,2x1,24x0,21,3x1,28x0,21,3x1,24x0,22,3x1,27x0,21,4x1,25x0,22,2x1,27x0,22,2x1,21,1,26x0,22,1,28x0,22,21,2x1,27x0,22,28x0,21,3x1,56x0,22,3x1,57x0,22,2x1,58x0,22,1,59x0,22,1189x0,25,58x0,25,23,4x25,13x0,21,41x0,25,16x0,21,1,57x0,21,2x1,56x0,21,3x1,55x0,21,4x1,55x0,22,2x1,21,1,33x0,21,22x0,22,21,2x1,32x0,21,1,22x0,21,3x1,31x0,21,2x1,22x0,22,3x1,30x0,21,3x1,23x0,22,2x1,29x0,21,4x1,24x0,22,1,29x0,22,2x1,21,1,25x0,22,30x0,22,21,2x1,56x0,21,3x1,56x0,22,3x1,57x0,22,2x1,58x0,22,1,59x0,22,877x0"
+						},
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
 						"x": 0,
 						"y": 0,
 						"width": 1280,
 						"height": 960,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "npStageBoundary",
+					"properties": {
+						"left-margin": 6,
+						"right-margin": 6,
+						"top-margin": 6,
+						"bottom-margin": 6,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "overlap"
+					},
+					"uid": 10,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 32,
+						"y": 32,
+						"width": 1216,
+						"height": 896,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -187,42 +242,6 @@
 						"y": 144,
 						"width": 96,
 						"height": 96,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "sSolidTest",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 55,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 400,
-						"y": 272,
-						"width": 64,
-						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

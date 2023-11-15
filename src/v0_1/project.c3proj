@@ -98,6 +98,13 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
@@ -169,7 +176,8 @@
 			{
 				"items": [
 					"sTest2",
-					"sSolidTest"
+					"sSolidTest",
+					"tmTiles1"
 				],
 				"subfolders": [
 					{
