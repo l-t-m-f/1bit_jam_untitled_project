@@ -1113,6 +1113,11 @@
 							"properties": {
 								"enabled": true
 							}
+						},
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
 						}
 					},
 					"sceneGraphData": {
@@ -3271,7 +3276,7 @@
 					"uid": 70,
 					"instanceVariables": {
 						"ivDestinationLayout": "NULL",
-						"ivDestinationPortal": -1
+						"ivDestinationSpawn": -1
 					},
 					"behaviors": {},
 					"sceneGraphData": {

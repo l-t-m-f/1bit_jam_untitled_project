@@ -12,7 +12,7 @@
 			"sid": 380784306616412
 		},
 		{
-			"name": "ivDestinationPortal",
+			"name": "ivDestinationSpawn",
 			"type": "number",
 			"desc": "",
 			"show": true,

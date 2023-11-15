@@ -67,6 +67,39 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "sEntityBase",
+					"sid": 772045250335220,
+					"parameters": {
+						"object": "sPortal"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 222216244356343,
+					"parameters": {
+						"variable": "NextPortalUID",
+						"value": "sPortal.ivDestinationSpawn"
+					}
+				},
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 833618590794869,
+					"parameters": {
+						"layout": "sPortal.ivDestinationLayout"
+					}
+				}
+			],
+			"sid": 198296943860654
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-tweens-finished",
 					"objectClass": "sEntityBase",
 					"sid": 745784307358917,
@@ -100,6 +133,28 @@
 				}
 			],
 			"sid": 411707937791292
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "sfPlayerSkeleton",
+					"sid": 234072809547956
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "sfPlayerSkeleton",
+					"sid": 729198386568903,
+					"parameters": {
+						"instance-variable": "DefaultAngle",
+						"value": "Self.Angle"
+					}
+				}
+			],
+			"sid": 669070732071691
 		},
 		{
 			"eventType": "block",
@@ -145,28 +200,6 @@
 				}
 			],
 			"sid": 338200795838496
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-created",
-					"objectClass": "sfPlayerSkeleton",
-					"sid": 202436932423230
-				}
-			],
-			"actions": [
-				{
-					"id": "set-instvar-value",
-					"objectClass": "sfPlayerSkeleton",
-					"sid": 941309948228884,
-					"parameters": {
-						"instance-variable": "DefaultAngle",
-						"value": "Self.Angle"
-					}
-				}
-			],
-			"sid": 844457924870543
 		},
 		{
 			"functionName": "UpdatePlayerSkeleton",
@@ -484,12 +517,6 @@
 					]
 				}
 			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [],
-			"actions": [],
-			"sid": 830890167355761
 		},
 		{
 			"functionName": "UpdatePlayer",

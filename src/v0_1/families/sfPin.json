@@ -1,0 +1,17 @@
+{
+	"name": "sfPin",
+	"plugin-id": "Sprite",
+	"sid": 551149000280641,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 754863134036085
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"sCamera"
+	]
+}

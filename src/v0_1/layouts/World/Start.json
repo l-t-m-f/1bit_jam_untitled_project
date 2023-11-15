@@ -23,10 +23,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 0,
-						"y": 0,
-						"width": 640,
-						"height": 480,
+						"x": 16,
+						"y": 16,
+						"width": 608,
+						"height": 448,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -249,8 +249,8 @@
 					},
 					"uid": 72,
 					"instanceVariables": {
-						"ivDestinationLayout": "NULL",
-						"ivDestinationPortal": -1
+						"ivDestinationLayout": "House",
+						"ivDestinationSpawn": -1
 					},
 					"behaviors": {},
 					"sceneGraphData": {
@@ -376,13 +376,79 @@
 			"blendMode": "normal",
 			"zElevation": 0,
 			"global": false
+		},
+		{
+			"name": "HUD_Overlay",
+			"overriden": 1,
+			"subLayers": [],
+			"instances": [],
+			"sid": 520513783209331,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "HUD_Mouse",
+			"overriden": 1,
+			"subLayers": [],
+			"instances": [],
+			"sid": 425160919935606,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
 		}
 	],
 	"sid": 570739682389578,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 641,
-	"height": 481,
+	"width": 640,
+	"height": 480,
 	"unboundedScrolling": true,
 	"vpX": 0.5,
 	"vpY": 0.5,

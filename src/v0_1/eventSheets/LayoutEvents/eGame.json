@@ -14,6 +14,16 @@
 			"includeSheet": "eMouse"
 		},
 		{
+			"eventType": "variable",
+			"name": "NextPortalUID",
+			"type": "number",
+			"initialValue": "-1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 274468032206511
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -42,25 +52,73 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "pick-random-instance",
+							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 120713359202691,
+							"sid": 857884874374964,
 							"parameters": {
-								"object": "sPlayerSpawn"
+								"first-value": "NextPortalUID",
+								"comparison": 0,
+								"second-value": "-1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 160079737480496,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-random-instance",
+									"objectClass": "System",
+									"sid": 738687764549428,
+									"parameters": {
+										"object": "sPlayerSpawn"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "SpawnEntity",
+									"sid": 782473892435911,
+									"parameters": [
+										"\"Player\"",
+										"sPlayerSpawn.X&\", \"&sPlayerSpawn.Y"
+									]
+								}
+							],
+							"sid": 269543632452318
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 829928631553319
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "sPlayerSpawn",
+							"sid": 410826846030993,
+							"parameters": {
+								"unique-id": "NextPortalUID"
 							}
 						}
 					],
 					"actions": [
 						{
 							"callFunction": "SpawnEntity",
-							"sid": 857233894460761,
+							"sid": 211333052812238,
 							"parameters": [
 								"\"Player\"",
 								"sPlayerSpawn.X&\", \"&sPlayerSpawn.Y"
 							]
 						}
 					],
-					"sid": 186461300254218
+					"sid": 830456853065558
 				}
 			]
 		},

@@ -120,6 +120,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Rotate",
 			"name": "Rotate",
 			"author": "Scirra",
@@ -182,20 +189,13 @@
 			"AJAX",
 			"Browser",
 			"3DShapeTest",
-			"sMouseCursor",
-			"sPlayerJumpBuffer",
 			"tbBackgroundPebbles",
-			"sPortalArt",
-			"sPortal",
-			"tbBlackMask",
-			"sEntityBase"
+			"tbBlackMask"
 		],
 		"subfolders": [
 			{
 				"items": [
-					"sTest2",
-					"sSolidTest",
-					"tmTiles1"
+					"sTest2"
 				],
 				"subfolders": [
 					{
@@ -207,11 +207,13 @@
 					},
 					{
 						"items": [
-							"tbEntityBase"
+							"sEntityBase"
 						],
 						"subfolders": [
 							{
-								"items": [],
+								"items": [
+									"sPlayerJumpBuffer"
+								],
 								"subfolders": [
 									{
 										"items": [
@@ -289,7 +291,8 @@
 					},
 					{
 						"items": [
-							"npViewportDeadzone"
+							"npViewportDeadzone",
+							"sMouseCursor"
 						],
 						"subfolders": [
 							{
@@ -319,6 +322,16 @@
 						],
 						"subfolders": [],
 						"name": "AI"
+					},
+					{
+						"items": [
+							"sPortal",
+							"sPortalArt",
+							"sSolidTest",
+							"tmTiles1"
+						],
+						"subfolders": [],
+						"name": "World"
 					}
 				],
 				"name": "Emile"
@@ -354,7 +367,8 @@
 			"sfLineOfSight",
 			"sfInteractive",
 			"sfDialogOwner",
-			"sfTween"
+			"sfTween",
+			"sfPin"
 		],
 		"subfolders": []
 	},
