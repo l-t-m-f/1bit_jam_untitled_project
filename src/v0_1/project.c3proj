@@ -120,6 +120,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Sin",
 			"name": "Sine",
 			"author": "Scirra",
@@ -155,6 +162,13 @@
 		},
 		{
 			"type": "effect",
+			"id": "hexpixellate",
+			"name": "Hexagonal pixellate",
+			"author": "Evan Wallace",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "warpobject",
 			"name": "Warp object",
 			"author": "Scirra",
@@ -170,7 +184,8 @@
 			"3DShapeTest",
 			"sMouseCursor",
 			"sPlayerJumpBuffer",
-			"tbBackgroundPebbles"
+			"tbBackgroundPebbles",
+			"sPortal"
 		],
 		"subfolders": [
 			{

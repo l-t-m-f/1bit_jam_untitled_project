@@ -1,5 +1,134 @@
 {
 	"name": "eGame",
-	"events": [],
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "ePlayer"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "eDialogsSystem"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "eMouse"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 812821784794974
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "InitKeyboard",
+					"sid": 439093432913722
+				},
+				{
+					"callFunction": "InitHUD",
+					"sid": 413745317895025
+				},
+				{
+					"callFunction": "InitDialogSystem",
+					"sid": 521560486314555
+				}
+			],
+			"sid": 310329735738831,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-random-instance",
+							"objectClass": "System",
+							"sid": 120713359202691,
+							"parameters": {
+								"object": "sPlayerSpawn"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "SpawnEntity",
+							"sid": 857233894460761,
+							"parameters": [
+								"\"Player\"",
+								"sPlayerSpawn.X&\", \"&sPlayerSpawn.Y"
+							]
+						}
+					],
+					"sid": 186461300254218
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 132534576183626
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "UpdatePlayer",
+					"sid": 672724786974327
+				},
+				{
+					"callFunction": "UpdateHUD",
+					"sid": 146440846953038
+				},
+				{
+					"callFunction": "UpdateDebug",
+					"sid": 511348542959237
+				}
+			],
+			"sid": 238306684305949
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 636428335680900
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "ExecuteKeyPress",
+					"sid": 692406850212780,
+					"parameters": [
+						"Keyboard.LastKeyCode"
+					]
+				}
+			],
+			"sid": 561445570844559
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-released",
+					"objectClass": "Keyboard",
+					"sid": 840532627264871
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "ExecuteKeyRelease",
+					"sid": 411130681112816,
+					"parameters": [
+						"Keyboard.LastKeyCode"
+					]
+				}
+			],
+			"sid": 182893421532334
+		}
+	],
 	"sid": 478604728114749
 }
