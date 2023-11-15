@@ -12,6 +12,7 @@
 	],
 	"effectTypes": [],
 	"members": [
-		"sCamera"
+		"sCamera",
+		"sStageCenter"
 	]
 }

@@ -21,12 +21,7 @@
 			"sid": 101748039782279
 		}
 	],
-	"effectTypes": [
-		{
-			"effectId": "hexpixellate",
-			"name": "HexagonalPixellate"
-		}
-	],
+	"effectTypes": [],
 	"animations": {
 		"items": [
 			{

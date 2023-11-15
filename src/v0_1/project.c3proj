@@ -169,13 +169,6 @@
 		},
 		{
 			"type": "effect",
-			"id": "hexpixellate",
-			"name": "Hexagonal pixellate",
-			"author": "Evan Wallace",
-			"bundled": false
-		},
-		{
-			"type": "effect",
 			"id": "warpobject",
 			"name": "Warp object",
 			"author": "Scirra",
@@ -188,14 +181,13 @@
 			"sTest",
 			"AJAX",
 			"Browser",
-			"3DShapeTest",
-			"tbBackgroundPebbles",
-			"tbBlackMask"
+			"3DShapeTest"
 		],
 		"subfolders": [
 			{
 				"items": [
-					"sTest2"
+					"sTest2",
+					"sStageCenter"
 				],
 				"subfolders": [
 					{
@@ -328,7 +320,9 @@
 							"sPortal",
 							"sPortalArt",
 							"sSolidTest",
-							"tmTiles1"
+							"tmTiles1",
+							"tbBackgroundPebbles",
+							"tbBlackMask"
 						],
 						"subfolders": [],
 						"name": "World"
