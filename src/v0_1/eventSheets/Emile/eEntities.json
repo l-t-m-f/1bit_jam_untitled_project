@@ -24,9 +24,9 @@
 						{
 							"id": "for-each",
 							"objectClass": "System",
-							"sid": 229856117329392,
+							"sid": 887296329479293,
 							"parameters": {
-								"object": "tbEntityBase"
+								"object": "sEntityBase"
 							}
 						}
 					],
@@ -42,10 +42,10 @@
 							"conditions": [
 								{
 									"id": "pick-children",
-									"objectClass": "tbEntityBase",
-									"sid": 251917006610626,
+									"objectClass": "sEntityBase",
+									"sid": 893193025182688,
 									"parameters": {
-										"child": "sfEntitySprite",
+										"child": "sEntityArt",
 										"which": "own"
 									}
 								}
@@ -53,11 +53,11 @@
 							"actions": [
 								{
 									"id": "set-position",
-									"objectClass": "sfEntitySprite",
-									"sid": 814177549047556,
+									"objectClass": "sEntityArt",
+									"sid": 450496732640110,
 									"parameters": {
-										"x": "lerp(Self.X, tbEntityBase.X, Self.ivSyncRate)",
-										"y": "lerp(Self.Y, tbEntityBase.Y, Self.ivSyncRate)"
+										"x": "lerp(Self.X, sEntityBase.X, Self.ivSyncRate)",
+										"y": "lerp(Self.Y, sEntityBase.Y, Self.ivSyncRate)"
 									}
 								}
 							],
@@ -68,10 +68,10 @@
 							"conditions": [
 								{
 									"id": "pick-children",
-									"objectClass": "tbEntityBase",
-									"sid": 115115304901195,
+									"objectClass": "sEntityBase",
+									"sid": 288289505901393,
 									"parameters": {
-										"child": "sfEntitySprite",
+										"child": "sEntityArt",
 										"which": "own"
 									}
 								}
@@ -79,11 +79,11 @@
 							"actions": [
 								{
 									"id": "set-position",
-									"objectClass": "sfEntitySprite",
-									"sid": 393148713298634,
+									"objectClass": "sEntityArt",
+									"sid": 309528732018920,
 									"parameters": {
-										"x": "lerp(Self.X, tbEntityBase.X, Self.ivSyncRate)",
-										"y": "lerp(Self.Y, tbEntityBase.Y, Self.ivSyncRate)"
+										"x": "lerp(Self.X, sEntityBase.X, Self.ivSyncRate)",
+										"y": "lerp(Self.Y, sEntityBase.Y, Self.ivSyncRate)"
 									}
 								}
 							],
@@ -126,9 +126,9 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 168280413378116,
+					"sid": 703554298279282,
 					"parameters": {
-						"object-to-create": "tbEntityBase",
+						"object-to-create": "sEntityBase",
 						"layer": "\"Entities\"",
 						"x": "int(tokenat(pEntityPos, 0, \",\"))",
 						"y": "int(tokenat(pEntityPos, 1, \",\"))",

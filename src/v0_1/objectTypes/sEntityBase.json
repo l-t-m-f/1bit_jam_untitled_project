@@ -1,24 +1,9 @@
 {
-	"name": "sPortal",
+	"name": "sEntityBase",
 	"plugin-id": "Sprite",
-	"sid": 582681762845727,
+	"sid": 969292918692788,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "ivDestinationLayout",
-			"type": "string",
-			"desc": "",
-			"show": true,
-			"sid": 380784306616412
-		},
-		{
-			"name": "ivDestinationPortal",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 746320479242549
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -33,19 +18,19 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9275061,
+						"imageSpriteId": 6234591,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 668514065488209,
+				"sid": 908385800028113,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 0
+				"speed": 5
 			}
 		],
 		"subfolders": []

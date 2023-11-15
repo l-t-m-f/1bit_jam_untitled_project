@@ -1,17 +1,17 @@
 {
-	"name": "tbfLineOfSight",
-	"plugin-id": "TiledBg",
-	"sid": 702751167010188,
+	"name": "sfLineOfSight",
+	"plugin-id": "Sprite",
+	"sid": 598654187111290,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "LOS",
 			"name": "LineOfSight",
-			"sid": 951389924783261
+			"sid": 654972118437848
 		}
 	],
 	"effectTypes": [],
 	"members": [
-		"tbEntityBase"
+		"sEntityBase"
 	]
 }

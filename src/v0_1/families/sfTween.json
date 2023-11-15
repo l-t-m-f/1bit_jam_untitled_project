@@ -1,0 +1,32 @@
+{
+	"name": "sfTween",
+	"plugin-id": "Sprite",
+	"sid": 862840018816553,
+	"instanceVariables": [
+		{
+			"name": "ivTweenVal1",
+			"type": "number",
+			"desc": "Generic value holder which should get populated by the Tween behavior.",
+			"show": false,
+			"sid": 943147818439392
+		},
+		{
+			"name": "ivTweenVal2",
+			"type": "number",
+			"desc": "",
+			"show": false,
+			"sid": 436388907880554
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 808787940263975
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"sEntityBase"
+	]
+}

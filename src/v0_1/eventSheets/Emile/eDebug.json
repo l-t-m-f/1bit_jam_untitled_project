@@ -87,17 +87,17 @@
 										{
 											"id": "for-each",
 											"objectClass": "System",
-											"sid": 603537843527805,
+											"sid": 252882272260226,
 											"parameters": {
-												"object": "tbEntityBase"
+												"object": "sEntityBase"
 											}
 										}
 									],
 									"actions": [
 										{
 											"id": "set-visible",
-											"objectClass": "tbEntityBase",
-											"sid": 318940342655027,
+											"objectClass": "sEntityBase",
+											"sid": 291998300246056,
 											"parameters": {
 												"visibility": "visible"
 											}
@@ -125,17 +125,17 @@
 										{
 											"id": "for-each",
 											"objectClass": "System",
-											"sid": 405132198291143,
+											"sid": 383042767451215,
 											"parameters": {
-												"object": "tbEntityBase"
+												"object": "sEntityBase"
 											}
 										}
 									],
 									"actions": [
 										{
 											"id": "set-visible",
-											"objectClass": "tbEntityBase",
-											"sid": 246863348114903,
+											"objectClass": "sEntityBase",
+											"sid": 596938000364780,
 											"parameters": {
 												"visibility": "invisible"
 											}

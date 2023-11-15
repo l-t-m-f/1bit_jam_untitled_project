@@ -1,17 +1,17 @@
 {
-	"name": "tbf8Dir",
-	"plugin-id": "TiledBg",
-	"sid": 625278847520456,
+	"name": "sf8Dir",
+	"plugin-id": "Sprite",
+	"sid": 241033940270726,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "EightDir",
 			"name": "8Direction",
-			"sid": 392077379372381
+			"sid": 994959518323540
 		}
 	],
 	"effectTypes": [],
 	"members": [
-		"tbEntityBase"
+		"sEntityBase"
 	]
 }

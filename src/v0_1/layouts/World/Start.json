@@ -250,7 +250,7 @@
 					"uid": 72,
 					"instanceVariables": {
 						"ivDestinationLayout": "NULL",
-						"ivDestinationCoordinates": "NULL"
+						"ivDestinationPortal": -1
 					},
 					"behaviors": {},
 					"sceneGraphData": {
@@ -381,9 +381,9 @@
 	"sid": 570739682389578,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 640,
-	"height": 480,
-	"unboundedScrolling": false,
+	"width": 641,
+	"height": 481,
+	"unboundedScrolling": true,
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",

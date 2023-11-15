@@ -83,9 +83,9 @@
 								{
 									"id": "set-text",
 									"objectClass": "Text",
-									"sid": 341919518589686,
+									"sid": 444467591606740,
 									"parameters": {
-										"text": "tbEntityBase.ivTweenVal1"
+										"text": "sEntityBase.ivTweenVal1"
 									}
 								}
 							],

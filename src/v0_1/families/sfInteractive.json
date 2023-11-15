@@ -1,0 +1,19 @@
+{
+	"name": "sfInteractive",
+	"plugin-id": "Sprite",
+	"sid": 878826812273213,
+	"instanceVariables": [
+		{
+			"name": "ivInteractionKind",
+			"type": "number",
+			"desc": "Numerical ID indicating which kind of interaction this is.",
+			"show": true,
+			"sid": 923920721187052
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"sEntityBase"
+	]
+}

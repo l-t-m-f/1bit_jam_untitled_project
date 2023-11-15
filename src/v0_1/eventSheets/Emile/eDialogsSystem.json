@@ -306,8 +306,8 @@
 			"conditions": [
 				{
 					"id": "pick-by-unique-id",
-					"objectClass": "tbfDialogOwner",
-					"sid": 488236425142064,
+					"objectClass": "sfDialogOwner",
+					"sid": 787462851859447,
 					"parameters": {
 						"unique-id": "pDialogOwnerUID"
 					}
@@ -343,19 +343,19 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 130876162226969,
+							"sid": 148083646632121,
 							"parameters": {
 								"variable": "last_story_access_str",
-								"value": "\"stories.\"&str(tbfDialogOwner.DefaultStory)"
+								"value": "\"stories.\"&str(sfDialogOwner.ivStoryNumber)"
 							}
 						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 833483831561652,
+							"sid": 399589054676205,
 							"parameters": {
 								"variable": "last_line_access_str",
-								"value": "last_story_access_str&\".lines.\"&str(tbfDialogOwner.DefaultLine)"
+								"value": "last_story_access_str&\".lines.\"&str(sfDialogOwner.ivLineNumber)"
 							}
 						}
 					],
@@ -406,10 +406,10 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
-									"sid": 811004031812836,
+									"sid": 320366708433222,
 									"parameters": {
 										"variable": "last_choices_access_str",
-										"value": "last_story_access_str&\".lines.\"&str(tbfDialogOwner.DefaultLine)&\".choices\""
+										"value": "last_line_access_str&\".choices\""
 									}
 								},
 								{
@@ -454,8 +454,8 @@
 			"conditions": [
 				{
 					"id": "pick-by-unique-id",
-					"objectClass": "tbfDialogOwner",
-					"sid": 222097303282643,
+					"objectClass": "sfDialogOwner",
+					"sid": 145952119836068,
 					"parameters": {
 						"unique-id": "pDialogOwnerUID"
 					}
@@ -495,10 +495,10 @@
 						},
 						{
 							"id": "set-instvar-value",
-							"objectClass": "tbfDialogOwner",
-							"sid": 148014277786116,
+							"objectClass": "sfDialogOwner",
+							"sid": 845833106697168,
 							"parameters": {
-								"instance-variable": "DisplayedChoiceCount",
+								"instance-variable": "ivChoiceCnt",
 								"value": "last_choice_cnt"
 							}
 						}
@@ -621,11 +621,11 @@
 					"actions": [
 						{
 							"id": "set-instvar-value",
-							"objectClass": "tbfDialogOwner",
-							"sid": 939671460686317,
+							"objectClass": "sfDialogOwner",
+							"sid": 803712754249953,
 							"parameters": {
-								"instance-variable": "DefaultEffect",
-								"value": "jsonDialogsData.Get(\"stories.\"&tbfDialogOwner.DefaultStory&\".lines.\"&tbfDialogOwner.DefaultLine&\".default_effect\")"
+								"instance-variable": "ivDefaultEffect",
+								"value": "jsonDialogsData.Get(\"stories.\"&sfDialogOwner.ivStoryNumber&\".lines.\"&sfDialogOwner.ivLineNumber&\".default_effect\")"
 							}
 						}
 					],
@@ -664,8 +664,8 @@
 			"conditions": [
 				{
 					"id": "pick-by-unique-id",
-					"objectClass": "tbfDialogOwner",
-					"sid": 392792075098468,
+					"objectClass": "sfDialogOwner",
+					"sid": 427889432581279,
 					"parameters": {
 						"unique-id": "pDialogOwnerUID"
 					}
@@ -701,10 +701,10 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 158082431445068,
+							"sid": 903414408557211,
 							"parameters": {
 								"variable": "owner_story_access_str",
-								"value": "\"stories.\"&str(tbfDialogOwner.DefaultStory)"
+								"value": "\"stories.\"&str(sfDialogOwner.ivStoryNumber)"
 							}
 						},
 						{
@@ -725,10 +725,10 @@
 							"actions": [
 								{
 									"id": "add-to-instvar",
-									"objectClass": "tbfDialogOwner",
-									"sid": 841128603058648,
+									"objectClass": "sfDialogOwner",
+									"sid": 822736344230073,
 									"parameters": {
-										"instance-variable": "DefaultLine",
+										"instance-variable": "ivLineNumber",
 										"value": "1"
 									}
 								}
@@ -740,10 +740,10 @@
 									"conditions": [
 										{
 											"id": "compare-instance-variable",
-											"objectClass": "tbfDialogOwner",
-											"sid": 654756497003568,
+											"objectClass": "sfDialogOwner",
+											"sid": 787190837628623,
 											"parameters": {
-												"instance-variable": "DefaultLine",
+												"instance-variable": "ivLineNumber",
 												"comparison": 5,
 												"value": "owner_story_line_count"
 											}
@@ -767,10 +767,10 @@
 											"actions": [
 												{
 													"id": "set-instvar-value",
-													"objectClass": "tbfDialogOwner",
-													"sid": 914384388191693,
+													"objectClass": "sfDialogOwner",
+													"sid": 964876150129136,
 													"parameters": {
-														"instance-variable": "DefaultLine",
+														"instance-variable": "ivLineNumber",
 														"value": "0"
 													}
 												}
@@ -789,10 +789,10 @@
 											"actions": [
 												{
 													"id": "set-instvar-value",
-													"objectClass": "tbfDialogOwner",
-													"sid": 563349989867309,
+													"objectClass": "sfDialogOwner",
+													"sid": 615080255976686,
 													"parameters": {
-														"instance-variable": "DefaultLine",
+														"instance-variable": "ivLineNumber",
 														"value": "owner_story_line_count-1"
 													}
 												}
@@ -827,8 +827,8 @@
 			"conditions": [
 				{
 					"id": "pick-by-unique-id",
-					"objectClass": "tbfDialogOwner",
-					"sid": 966428811781233,
+					"objectClass": "sfDialogOwner",
+					"sid": 137014642325656,
 					"parameters": {
 						"unique-id": "pDialogOwnerUID"
 					}
@@ -837,10 +837,10 @@
 			"actions": [
 				{
 					"id": "set-instvar-value",
-					"objectClass": "tbfDialogOwner",
-					"sid": 652301859179737,
+					"objectClass": "sfDialogOwner",
+					"sid": 813546983365119,
 					"parameters": {
-						"instance-variable": "DefaultLine",
+						"instance-variable": "ivLineNumber",
 						"value": "0"
 					}
 				}
@@ -878,8 +878,8 @@
 			"conditions": [
 				{
 					"id": "pick-by-unique-id",
-					"objectClass": "tbfDialogOwner",
-					"sid": 998983756146819,
+					"objectClass": "sfDialogOwner",
+					"sid": 405046068990743,
 					"parameters": {
 						"unique-id": "pDialogOwnerUID"
 					}
@@ -905,9 +905,9 @@
 					"actions": [
 						{
 							"callFunction": "IncrementDialogOwnerLine",
-							"sid": 409009492904036,
+							"sid": 814268876923542,
 							"parameters": [
-								"tbfDialogOwner.UID",
+								"sfDialogOwner.UID",
 								true
 							]
 						}
@@ -937,9 +937,9 @@
 							"actions": [
 								{
 									"callFunction": "PullDialogText",
-									"sid": 334933275042531,
+									"sid": 789902395441710,
 									"parameters": [
-										"tbfDialogOwner.UID"
+										"sfDialogOwner.UID"
 									]
 								}
 							],
@@ -969,9 +969,9 @@
 					"actions": [
 						{
 							"callFunction": "ResetDialogOwnerLine",
-							"sid": 734538464234443,
+							"sid": 790766695751088,
 							"parameters": [
-								"tbfDialogOwner.UID"
+								"sfDialogOwner.UID"
 							]
 						},
 						{
@@ -1003,9 +1003,9 @@
 					"actions": [
 						{
 							"callFunction": "IncrementDialogOwnerLine",
-							"sid": 394262124992375,
+							"sid": 557754164372571,
 							"parameters": [
-								"tbfDialogOwner.UID",
+								"sfDialogOwner.UID",
 								true
 							]
 						},

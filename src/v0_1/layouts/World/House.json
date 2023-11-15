@@ -330,8 +330,8 @@
 					},
 					"uid": 78,
 					"instanceVariables": {
-						"ivDestinationLayout": "NULL",
-						"ivDestinationCoordinates": "NULL"
+						"ivDestinationLayout": "Start",
+						"ivDestinationPortal": -1
 					},
 					"behaviors": {},
 					"sceneGraphData": {

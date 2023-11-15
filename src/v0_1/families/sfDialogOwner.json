@@ -1,0 +1,40 @@
+{
+	"name": "sfDialogOwner",
+	"plugin-id": "Sprite",
+	"sid": 898972700897637,
+	"instanceVariables": [
+		{
+			"name": "ivStoryNumber",
+			"type": "number",
+			"desc": "Current story to display.",
+			"show": true,
+			"sid": 772639009065645
+		},
+		{
+			"name": "ivLineNumber",
+			"type": "number",
+			"desc": "Current dialog line.",
+			"show": true,
+			"sid": 427283050351668
+		},
+		{
+			"name": "ivChoiceCnt",
+			"type": "number",
+			"desc": "Number of choices to present to the user.",
+			"show": true,
+			"sid": 289566665590261
+		},
+		{
+			"name": "ivDefaultEffect",
+			"type": "number",
+			"desc": "Numerical effect of the default effect of the next dialog (if no choices).",
+			"show": true,
+			"sid": 578032231445668
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"sEntityBase"
+	]
+}

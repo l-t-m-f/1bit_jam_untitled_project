@@ -187,7 +187,8 @@
 			"tbBackgroundPebbles",
 			"sPortalArt",
 			"sPortal",
-			"tbBlackMask"
+			"tbBlackMask",
+			"sEntityBase"
 		],
 		"subfolders": [
 			{
@@ -346,15 +347,14 @@
 		"items": [
 			"npfTween",
 			"sfScrollTo",
-			"sfEntitySprite",
+			"sEntityArt",
 			"sfPlayerSkeleton",
-			"tbf8Dir",
-			"tbfTween",
-			"tbfSolid",
-			"tbfLineOfSight",
-			"tbfInteractive",
-			"tbfDialogOwner",
-			"tbfAI"
+			"sf8Dir",
+			"sfSolid",
+			"sfLineOfSight",
+			"sfInteractive",
+			"sfDialogOwner",
+			"sfTween"
 		],
 		"subfolders": []
 	},

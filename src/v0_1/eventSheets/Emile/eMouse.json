@@ -45,8 +45,8 @@
 							"conditions": [
 								{
 									"id": "pick-by-unique-id",
-									"objectClass": "tbfDialogOwner",
-									"sid": 669442941395133,
+									"objectClass": "sfDialogOwner",
+									"sid": 101652721334145,
 									"parameters": {
 										"unique-id": "InteractiveUID"
 									}
@@ -60,10 +60,10 @@
 									"conditions": [
 										{
 											"id": "compare-instance-variable",
-											"objectClass": "tbfDialogOwner",
-											"sid": 534740556311472,
+											"objectClass": "sfDialogOwner",
+											"sid": 529408770961422,
 											"parameters": {
-												"instance-variable": "DisplayedChoiceCount",
+												"instance-variable": "ivChoiceCnt",
 												"comparison": 0,
 												"value": "0"
 											}
@@ -98,10 +98,10 @@
 										},
 										{
 											"callFunction": "TriggerDialogEffect",
-											"sid": 381682844525825,
+											"sid": 811036683642446,
 											"parameters": [
-												"tbfDialogOwner.DefaultEffect",
-												"tbfDialogOwner.UID"
+												"sfDialogOwner.ivDefaultEffect",
+												"sfDialogOwner.UID"
 											]
 										}
 									],
@@ -157,8 +157,8 @@
 							"conditions": [
 								{
 									"id": "pick-by-unique-id",
-									"objectClass": "tbfDialogOwner",
-									"sid": 275724435955828,
+									"objectClass": "sfDialogOwner",
+									"sid": 742635706519511,
 									"parameters": {
 										"unique-id": "InteractiveUID"
 									}
@@ -172,10 +172,10 @@
 									"conditions": [
 										{
 											"id": "compare-instance-variable",
-											"objectClass": "tbfDialogOwner",
-											"sid": 993418943370511,
+											"objectClass": "sfDialogOwner",
+											"sid": 461973252731093,
 											"parameters": {
-												"instance-variable": "DisplayedChoiceCount",
+												"instance-variable": "ivChoiceCnt",
 												"comparison": 4,
 												"value": "0"
 											}
@@ -210,10 +210,10 @@
 										},
 										{
 											"callFunction": "TriggerDialogEffect",
-											"sid": 360555552712487,
+											"sid": 125476795371812,
 											"parameters": [
 												"npDialogChoice.ivDialogEffect",
-												"tbfDialogOwner.UID"
+												"sfDialogOwner.UID"
 											]
 										}
 									],
