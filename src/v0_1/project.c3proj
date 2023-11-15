@@ -185,7 +185,9 @@
 			"sMouseCursor",
 			"sPlayerJumpBuffer",
 			"tbBackgroundPebbles",
-			"sPortal"
+			"sPortalArt",
+			"sPortal",
+			"tbBlackMask"
 		],
 		"subfolders": [
 			{

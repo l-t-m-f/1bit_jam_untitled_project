@@ -38,9 +38,43 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
+				}
+			],
+			"sid": 861927348234844,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0,
+				0,
+				0,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Objects",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
 				{
-					"type": "sPortal",
+					"type": "sPortalArt",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -48,7 +82,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 69,
+					"uid": 71,
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -96,9 +130,37 @@
 							}
 						}
 					},
+					"sceneGraphData": {
+						"parent-uid": 72,
+						"uid": 71,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
 					"world": {
-						"x": 320,
-						"y": 32,
+						"x": 32,
+						"y": 240,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -114,7 +176,7 @@
 					}
 				}
 			],
-			"sid": 861927348234844,
+			"sid": 551579087520447,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -125,12 +187,12 @@
 				1
 			],
 			"backgroundColor": [
-				0,
-				0,
-				0,
+				1,
+				1,
+				1,
 				1
 			],
-			"isTransparent": false,
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -171,6 +233,83 @@
 							1,
 							1,
 							0.33
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sPortal",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 72,
+					"instanceVariables": {
+						"ivDestinationLayout": "NULL",
+						"ivDestinationCoordinates": "NULL"
+					},
+					"behaviors": {},
+					"sceneGraphData": {
+						"parent-uid": null,
+						"uid": 72,
+						"children": [
+							{
+								"uid": 71,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							}
+						],
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 32,
+						"y": 240,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
 						],
 						"angle": 0,
 						"zElevation": 0
