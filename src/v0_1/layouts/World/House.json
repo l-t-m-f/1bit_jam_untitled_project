@@ -95,9 +95,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 577,
-						"y": 192,
-						"width": 121.16827451522512,
+						"x": 578,
+						"y": 191,
+						"width": 121,
 						"height": 224,
 						"originX": 0,
 						"originY": 0,
@@ -135,9 +135,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 640,
-						"y": 229.68944757538569,
+						"y": 228.94999558327004,
 						"width": 121.79078676940844,
-						"height": 149.26054800788435,
+						"height": 150,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -180,7 +180,7 @@
 			"global": false
 		},
 		{
-			"name": "Object",
+			"name": "Objects",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [],
@@ -331,7 +331,7 @@
 					"uid": 78,
 					"instanceVariables": {
 						"ivDestinationLayout": "Start",
-						"ivDestinationSpawn": -1
+						"ivDestinationSpawn": 110
 					},
 					"behaviors": {},
 					"sceneGraphData": {
@@ -409,7 +409,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 752,
+						"x": 800,
 						"y": 304,
 						"width": 32,
 						"height": 32,
