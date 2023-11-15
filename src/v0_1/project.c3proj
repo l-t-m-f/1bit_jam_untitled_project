@@ -343,7 +343,6 @@
 	},
 	"layouts": {
 		"items": [
-			"Test1",
 			"Defaults"
 		],
 		"subfolders": [
@@ -357,10 +356,21 @@
 			{
 				"items": [
 					"HUD",
-					"Test2"
+					"Gym"
 				],
 				"subfolders": [],
 				"name": "Emile"
+			},
+			{
+				"items": [
+					"House",
+					"Start",
+					"Garden",
+					"Ending",
+					"BigArea"
+				],
+				"subfolders": [],
+				"name": "World"
 			}
 		]
 	},
@@ -380,16 +390,16 @@
 					"eMouse",
 					"eAI"
 				],
-				"subfolders": [
-					{
-						"items": [
-							"eTest2"
-						],
-						"subfolders": [],
-						"name": "LayoutEvents"
-					}
-				],
+				"subfolders": [],
 				"name": "Emile"
+			},
+			{
+				"items": [
+					"eGym",
+					"eGame"
+				],
+				"subfolders": [],
+				"name": "LayoutEvents"
 			}
 		]
 	},
@@ -576,5 +586,5 @@
 	},
 	"viewportWidth": 640,
 	"viewportHeight": 480,
-	"firstLayout": "Test1"
+	"firstLayout": "Start"
 }
