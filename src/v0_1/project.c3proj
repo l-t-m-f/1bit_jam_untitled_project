@@ -181,7 +181,8 @@
 			"sTest",
 			"AJAX",
 			"Browser",
-			"3DShapeTest"
+			"3DShapeTest",
+			"tbFence1"
 		],
 		"subfolders": [
 			{
