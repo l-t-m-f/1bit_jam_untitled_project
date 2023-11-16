@@ -258,7 +258,7 @@
 							"height": 68,
 							"max-width": 82,
 							"max-height": 74,
-							"data": "1053x0,21,72x0,21,73x0,22,74x0,22,215x0,16,73x0,16,5x20,68x0,16,2x20,18,2x20,68x0,16,2x20,71x0,16,2x20,71x0,16,2x20,71x0,16,2x20,71x0,16,2x20,71x0,16,2x20,71x0,16,2x20,71x0,16,20,18,3x20,68x0,16,5x20,68x0,16,0,22,74x0,22,21,72x0,21,72x0,21,73x0,22,74x0,22,74x0,22,74x0,22,3165x0"
+							"data": "1799x0,21,72x0,21,73x0,22,74x0,22,215x0,16,73x0,16,5x20,68x0,16,2x20,18,2x20,68x0,16,2x20,71x0,16,2x20,71x0,16,2x20,71x0,16,2x20,71x0,16,2x20,71x0,16,2x20,71x0,16,2x20,71x0,16,20,18,3x20,68x0,16,5x20,68x0,16,0,22,74x0,22,21,72x0,21,72x0,21,73x0,22,74x0,22,74x0,22,74x0,22,2419x0"
 						},
 						"tile-width": 16,
 						"tile-height": 16,
@@ -872,6 +872,105 @@
 				0.3686274509803922,
 				0.3686274509803922,
 				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Fog",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "pFog",
+					"properties": {
+						"rate": 20,
+						"spray-cone": 2,
+						"type": "continuous-spray",
+						"object": 359161257022950,
+						"initially-visible": true,
+						"live-preview": false,
+						"speed": 30,
+						"size": 240,
+						"opacity": 100,
+						"grow-rate": 0,
+						"x-randomiser": 960,
+						"y-randomiser": 0,
+						"initial-speed-randomiser": 0,
+						"size-randomiser": 0,
+						"grow-rate-randomiser": 0,
+						"acceleration": 0,
+						"gravity": 0,
+						"angle-randomiser": 0,
+						"life-speed-randomiser": 80,
+						"opacity-randomiser": 0,
+						"destroy-mode": "fade-to-invisible",
+						"timeout": 5
+					},
+					"uid": 141,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 400,
+						"y": -2.1553783664993418e-14,
+						"width": 224,
+						"height": 800,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 195369295305899,
+			"effectTypes": [
+				{
+					"effectId": "hexpixellate",
+					"name": "HexagonalPixellate",
+					"instance": {
+						"isEnabled": true,
+						"parameters": {
+							"scale": 16
+						}
+					}
+				},
+				{
+					"effectId": "difference",
+					"name": "Difference",
+					"instance": {
+						"isEnabled": true,
+						"parameters": {}
+					}
+				}
+			],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
 				1
 			],
 			"isTransparent": true,

@@ -64,6 +64,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Shape3D",
 			"name": "3D shape",
 			"author": "Scirra",
@@ -169,6 +176,13 @@
 		},
 		{
 			"type": "effect",
+			"id": "hexpixellate",
+			"name": "Hexagonal pixellate",
+			"author": "Evan Wallace",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "warpobject",
 			"name": "Warp object",
 			"author": "Scirra",
@@ -182,7 +196,9 @@
 			"AJAX",
 			"Browser",
 			"3DShapeTest",
-			"tbFence1"
+			"tbFence1",
+			"sFogParticle",
+			"pFog"
 		],
 		"subfolders": [
 			{
