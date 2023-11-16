@@ -45,7 +45,7 @@
 									"objectClass": "sEntityBase",
 									"sid": 893193025182688,
 									"parameters": {
-										"child": "sEntityArt",
+										"child": "famEntityArt",
 										"which": "own"
 									}
 								}
@@ -53,7 +53,7 @@
 							"actions": [
 								{
 									"id": "set-position",
-									"objectClass": "sEntityArt",
+									"objectClass": "famEntityArt",
 									"sid": 450496732640110,
 									"parameters": {
 										"x": "lerp(Self.X, sEntityBase.X, Self.ivSyncRate)",
@@ -71,7 +71,7 @@
 									"objectClass": "sEntityBase",
 									"sid": 288289505901393,
 									"parameters": {
-										"child": "sEntityArt",
+										"child": "famEntityArt",
 										"which": "own"
 									}
 								}
@@ -79,7 +79,7 @@
 							"actions": [
 								{
 									"id": "set-position",
-									"objectClass": "sEntityArt",
+									"objectClass": "famEntityArt",
 									"sid": 309528732018920,
 									"parameters": {
 										"x": "lerp(Self.X, sEntityBase.X, Self.ivSyncRate)",

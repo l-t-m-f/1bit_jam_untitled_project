@@ -45,7 +45,7 @@
 							"conditions": [
 								{
 									"id": "pick-by-unique-id",
-									"objectClass": "sfDialogOwner",
+									"objectClass": "famDialogOwner",
 									"sid": 101652721334145,
 									"parameters": {
 										"unique-id": "InteractiveUID"
@@ -60,7 +60,7 @@
 									"conditions": [
 										{
 											"id": "compare-instance-variable",
-											"objectClass": "sfDialogOwner",
+											"objectClass": "famDialogOwner",
 											"sid": 529408770961422,
 											"parameters": {
 												"instance-variable": "ivChoiceCnt",
@@ -100,8 +100,8 @@
 											"callFunction": "TriggerDialogEffect",
 											"sid": 811036683642446,
 											"parameters": [
-												"sfDialogOwner.ivDefaultEffect",
-												"sfDialogOwner.UID"
+												"famDialogOwner.ivDefaultEffect",
+												"famDialogOwner.UID"
 											]
 										}
 									],
@@ -157,7 +157,7 @@
 							"conditions": [
 								{
 									"id": "pick-by-unique-id",
-									"objectClass": "sfDialogOwner",
+									"objectClass": "famDialogOwner",
 									"sid": 742635706519511,
 									"parameters": {
 										"unique-id": "InteractiveUID"
@@ -172,7 +172,7 @@
 									"conditions": [
 										{
 											"id": "compare-instance-variable",
-											"objectClass": "sfDialogOwner",
+											"objectClass": "famDialogOwner",
 											"sid": 461973252731093,
 											"parameters": {
 												"instance-variable": "ivChoiceCnt",
@@ -213,7 +213,7 @@
 											"sid": 125476795371812,
 											"parameters": [
 												"npDialogChoice.ivDialogEffect",
-												"sfDialogOwner.UID"
+												"famDialogOwner.UID"
 											]
 										}
 									],

@@ -186,8 +186,7 @@
 		"subfolders": [
 			{
 				"items": [
-					"sTest2",
-					"sStageCenter"
+					"sTest2"
 				],
 				"subfolders": [
 					{
@@ -322,7 +321,8 @@
 							"sSolidTest",
 							"tmTiles1",
 							"tbBackgroundPebbles",
-							"tbBlackMask"
+							"tbBlackMask",
+							"sStageCenter"
 						],
 						"subfolders": [],
 						"name": "World"
@@ -352,17 +352,18 @@
 	"containers": [],
 	"families": {
 		"items": [
-			"npfTween",
-			"sfScrollTo",
-			"sEntityArt",
-			"sfPlayerSkeleton",
-			"sf8Dir",
-			"sfSolid",
-			"sfLineOfSight",
-			"sfInteractive",
-			"sfDialogOwner",
-			"sfTween",
-			"sfPin"
+			"famTween_np",
+			"famScrollTo",
+			"famEntityArt",
+			"famPlayerSkeleton",
+			"fam8Dir",
+			"famSolid",
+			"famLOS",
+			"famInteractive",
+			"famDialogOwner",
+			"famTween",
+			"famPin",
+			"famDebugObject"
 		],
 		"subfolders": []
 	},

@@ -1,0 +1,25 @@
+{
+	"name": "famDebugObject",
+	"plugin-id": "Sprite",
+	"sid": 117456213598257,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"sPlayerJumpBuffer",
+		"sCamera",
+		"sEntityBase",
+		"sDoor",
+		"sPlayerSkeleton_Auxiliary",
+		"sPlayerSkeleton_Feet",
+		"sPlayerSkeleton_Foreleg",
+		"sPlayerSkeleton_Head",
+		"sPlayerSkeleton_Hindleg",
+		"sPlayerSkeleton_Lantern",
+		"sPlayerSkeleton_Shoulder",
+		"sPlayerSkeleton_Tongue",
+		"sPlayerSpawn",
+		"sPortal",
+		"sStageCenter"
+	]
+}

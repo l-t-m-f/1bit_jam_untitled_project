@@ -139,14 +139,14 @@
 			"conditions": [
 				{
 					"id": "on-created",
-					"objectClass": "sfPlayerSkeleton",
+					"objectClass": "famPlayerSkeleton",
 					"sid": 234072809547956
 				}
 			],
 			"actions": [
 				{
 					"id": "set-instvar-value",
-					"objectClass": "sfPlayerSkeleton",
+					"objectClass": "famPlayerSkeleton",
 					"sid": 729198386568903,
 					"parameters": {
 						"instance-variable": "DefaultAngle",
@@ -375,12 +375,12 @@
 									"objectClass": "System",
 									"sid": 154066054477405,
 									"parameters": {
-										"object": "sfPlayerSkeleton"
+										"object": "famPlayerSkeleton"
 									}
 								},
 								{
 									"id": "is-active",
-									"objectClass": "sfPlayerSkeleton",
+									"objectClass": "famPlayerSkeleton",
 									"sid": 177643903759397,
 									"behaviorType": "SkeletonAngleSine",
 									"isInverted": true
@@ -389,7 +389,7 @@
 							"actions": [
 								{
 									"id": "set-active",
-									"objectClass": "sfPlayerSkeleton",
+									"objectClass": "famPlayerSkeleton",
 									"sid": 142514581724698,
 									"behaviorType": "SkeletonAngleSine",
 									"parameters": {
@@ -431,7 +431,7 @@
 									"objectClass": "System",
 									"sid": 144095545587679,
 									"parameters": {
-										"object": "sfPlayerSkeleton"
+										"object": "famPlayerSkeleton"
 									}
 								}
 							],
@@ -443,7 +443,7 @@
 									"conditions": [
 										{
 											"id": "is-active",
-											"objectClass": "sfPlayerSkeleton",
+											"objectClass": "famPlayerSkeleton",
 											"sid": 718787633492304,
 											"behaviorType": "SkeletonAngleSine"
 										}
@@ -451,7 +451,7 @@
 									"actions": [
 										{
 											"id": "set-cycle-position",
-											"objectClass": "sfPlayerSkeleton",
+											"objectClass": "famPlayerSkeleton",
 											"sid": 610394540486559,
 											"behaviorType": "SkeletonAngleSine",
 											"parameters": {
@@ -469,7 +469,7 @@
 													"objectClass": "System",
 													"sid": 904976640705420,
 													"parameters": {
-														"first-value": "sfPlayerSkeleton.SkeletonAngleSine.CyclePosition",
+														"first-value": "famPlayerSkeleton.SkeletonAngleSine.CyclePosition",
 														"comparison": 5,
 														"second-value": "0.9"
 													}
@@ -478,7 +478,7 @@
 											"actions": [
 												{
 													"id": "set-active",
-													"objectClass": "sfPlayerSkeleton",
+													"objectClass": "famPlayerSkeleton",
 													"sid": 845828989709524,
 													"behaviorType": "SkeletonAngleSine",
 													"parameters": {
@@ -502,7 +502,7 @@
 									"actions": [
 										{
 											"id": "set-cycle-position",
-											"objectClass": "sfPlayerSkeleton",
+											"objectClass": "famPlayerSkeleton",
 											"sid": 644404346164932,
 											"behaviorType": "SkeletonAngleSine",
 											"parameters": {
@@ -1148,7 +1148,7 @@
 											"conditions": [
 												{
 													"id": "pick-by-unique-id",
-													"objectClass": "sfDialogOwner",
+													"objectClass": "famDialogOwner",
 													"sid": 891417563975369,
 													"parameters": {
 														"unique-id": "InteractiveUID"
@@ -1160,7 +1160,7 @@
 													"callFunction": "PullDialogText",
 													"sid": 294240111612701,
 													"parameters": [
-														"sfDialogOwner.UID"
+														"famDialogOwner.UID"
 													]
 												}
 											],
@@ -1220,7 +1220,7 @@
 									"objectClass": "System",
 									"sid": 403162626377860,
 									"parameters": {
-										"object": "sfInteractive"
+										"object": "famInteractive"
 									}
 								}
 							],
@@ -1236,7 +1236,7 @@
 											"sid": 245753555704231,
 											"behaviorType": "LineOfSight",
 											"parameters": {
-												"object": "sfInteractive",
+												"object": "famInteractive",
 												"image-point": "0"
 											}
 										}
@@ -1252,7 +1252,7 @@
 													"objectClass": "System",
 													"sid": 770033975277229,
 													"parameters": {
-														"first-value": "sfInteractive.UID",
+														"first-value": "famInteractive.UID",
 														"comparison": 1,
 														"second-value": "sEntityBase.UID"
 													}
@@ -1283,7 +1283,7 @@
 													"sid": 568045540262682,
 													"parameters": {
 														"variable": "InteractiveUID",
-														"value": "sfInteractive.UID"
+														"value": "famInteractive.UID"
 													}
 												},
 												{

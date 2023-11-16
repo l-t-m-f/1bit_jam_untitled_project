@@ -14,6 +14,10 @@
 			"includeSheet": "eMouse"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "eDebug"
+		},
+		{
 			"eventType": "variable",
 			"name": "NextPortalUID",
 			"type": "number",

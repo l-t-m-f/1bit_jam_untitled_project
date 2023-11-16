@@ -306,7 +306,7 @@
 			"conditions": [
 				{
 					"id": "pick-by-unique-id",
-					"objectClass": "sfDialogOwner",
+					"objectClass": "famDialogOwner",
 					"sid": 787462851859447,
 					"parameters": {
 						"unique-id": "pDialogOwnerUID"
@@ -346,7 +346,7 @@
 							"sid": 148083646632121,
 							"parameters": {
 								"variable": "last_story_access_str",
-								"value": "\"stories.\"&str(sfDialogOwner.ivStoryNumber)"
+								"value": "\"stories.\"&str(famDialogOwner.ivStoryNumber)"
 							}
 						},
 						{
@@ -355,7 +355,7 @@
 							"sid": 399589054676205,
 							"parameters": {
 								"variable": "last_line_access_str",
-								"value": "last_story_access_str&\".lines.\"&str(sfDialogOwner.ivLineNumber)"
+								"value": "last_story_access_str&\".lines.\"&str(famDialogOwner.ivLineNumber)"
 							}
 						}
 					],
@@ -454,7 +454,7 @@
 			"conditions": [
 				{
 					"id": "pick-by-unique-id",
-					"objectClass": "sfDialogOwner",
+					"objectClass": "famDialogOwner",
 					"sid": 145952119836068,
 					"parameters": {
 						"unique-id": "pDialogOwnerUID"
@@ -495,7 +495,7 @@
 						},
 						{
 							"id": "set-instvar-value",
-							"objectClass": "sfDialogOwner",
+							"objectClass": "famDialogOwner",
 							"sid": 845833106697168,
 							"parameters": {
 								"instance-variable": "ivChoiceCnt",
@@ -621,11 +621,11 @@
 					"actions": [
 						{
 							"id": "set-instvar-value",
-							"objectClass": "sfDialogOwner",
+							"objectClass": "famDialogOwner",
 							"sid": 803712754249953,
 							"parameters": {
 								"instance-variable": "ivDefaultEffect",
-								"value": "jsonDialogsData.Get(\"stories.\"&sfDialogOwner.ivStoryNumber&\".lines.\"&sfDialogOwner.ivLineNumber&\".default_effect\")"
+								"value": "jsonDialogsData.Get(\"stories.\"&famDialogOwner.ivStoryNumber&\".lines.\"&famDialogOwner.ivLineNumber&\".default_effect\")"
 							}
 						}
 					],
@@ -664,7 +664,7 @@
 			"conditions": [
 				{
 					"id": "pick-by-unique-id",
-					"objectClass": "sfDialogOwner",
+					"objectClass": "famDialogOwner",
 					"sid": 427889432581279,
 					"parameters": {
 						"unique-id": "pDialogOwnerUID"
@@ -704,7 +704,7 @@
 							"sid": 903414408557211,
 							"parameters": {
 								"variable": "owner_story_access_str",
-								"value": "\"stories.\"&str(sfDialogOwner.ivStoryNumber)"
+								"value": "\"stories.\"&str(famDialogOwner.ivStoryNumber)"
 							}
 						},
 						{
@@ -725,7 +725,7 @@
 							"actions": [
 								{
 									"id": "add-to-instvar",
-									"objectClass": "sfDialogOwner",
+									"objectClass": "famDialogOwner",
 									"sid": 822736344230073,
 									"parameters": {
 										"instance-variable": "ivLineNumber",
@@ -740,7 +740,7 @@
 									"conditions": [
 										{
 											"id": "compare-instance-variable",
-											"objectClass": "sfDialogOwner",
+											"objectClass": "famDialogOwner",
 											"sid": 787190837628623,
 											"parameters": {
 												"instance-variable": "ivLineNumber",
@@ -767,7 +767,7 @@
 											"actions": [
 												{
 													"id": "set-instvar-value",
-													"objectClass": "sfDialogOwner",
+													"objectClass": "famDialogOwner",
 													"sid": 964876150129136,
 													"parameters": {
 														"instance-variable": "ivLineNumber",
@@ -789,7 +789,7 @@
 											"actions": [
 												{
 													"id": "set-instvar-value",
-													"objectClass": "sfDialogOwner",
+													"objectClass": "famDialogOwner",
 													"sid": 615080255976686,
 													"parameters": {
 														"instance-variable": "ivLineNumber",
@@ -827,7 +827,7 @@
 			"conditions": [
 				{
 					"id": "pick-by-unique-id",
-					"objectClass": "sfDialogOwner",
+					"objectClass": "famDialogOwner",
 					"sid": 137014642325656,
 					"parameters": {
 						"unique-id": "pDialogOwnerUID"
@@ -837,7 +837,7 @@
 			"actions": [
 				{
 					"id": "set-instvar-value",
-					"objectClass": "sfDialogOwner",
+					"objectClass": "famDialogOwner",
 					"sid": 813546983365119,
 					"parameters": {
 						"instance-variable": "ivLineNumber",
@@ -878,7 +878,7 @@
 			"conditions": [
 				{
 					"id": "pick-by-unique-id",
-					"objectClass": "sfDialogOwner",
+					"objectClass": "famDialogOwner",
 					"sid": 405046068990743,
 					"parameters": {
 						"unique-id": "pDialogOwnerUID"
@@ -907,7 +907,7 @@
 							"callFunction": "IncrementDialogOwnerLine",
 							"sid": 814268876923542,
 							"parameters": [
-								"sfDialogOwner.UID",
+								"famDialogOwner.UID",
 								true
 							]
 						}
@@ -939,7 +939,7 @@
 									"callFunction": "PullDialogText",
 									"sid": 789902395441710,
 									"parameters": [
-										"sfDialogOwner.UID"
+										"famDialogOwner.UID"
 									]
 								}
 							],
@@ -971,7 +971,7 @@
 							"callFunction": "ResetDialogOwnerLine",
 							"sid": 790766695751088,
 							"parameters": [
-								"sfDialogOwner.UID"
+								"famDialogOwner.UID"
 							]
 						},
 						{
@@ -1005,7 +1005,7 @@
 							"callFunction": "IncrementDialogOwnerLine",
 							"sid": 557754164372571,
 							"parameters": [
-								"sfDialogOwner.UID",
+								"famDialogOwner.UID",
 								true
 							]
 						},

@@ -392,7 +392,7 @@
 				{
 					"type": "sPortal",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -469,7 +469,7 @@
 				{
 					"type": "sPlayerSpawn",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -498,7 +498,7 @@
 			],
 			"sid": 129062705864357,
 			"effectTypes": [],
-			"isInitiallyVisible": true,
+			"isInitiallyVisible": false,
 			"isInitiallyInteractive": true,
 			"color": [
 				1,

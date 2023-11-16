@@ -22,6 +22,27 @@
 			"sid": 709123185130868
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "famDebugObject",
+					"sid": 161592538742935
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-layer",
+					"objectClass": "famDebugObject",
+					"sid": 739109073524726,
+					"parameters": {
+						"layer": "\"Debug\""
+					}
+				}
+			],
+			"sid": 132031107229053
+		},
+		{
 			"functionName": "UpdateDebug",
 			"functionDescription": "",
 			"functionCategory": "",
@@ -48,64 +69,41 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"callFunction": "MarkReleased",
+							"sid": 757818590348911,
+							"parameters": [
+								"KEYCODE_G"
+							]
+						}
+					],
 					"sid": 965953252876974,
 					"children": [
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [
-								{
-									"id": "toggle-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 191720132185319,
-									"parameters": {
-										"variable": "bDebugLogging"
-									}
-								}
-							],
-							"sid": 812593065119376
-						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
 									"id": "compare-boolean-eventvar",
 									"objectClass": "System",
-									"sid": 558801583219080,
+									"sid": 646090181756229,
 									"parameters": {
-										"variable": "bDebugLogging"
+										"variable": "bShowDebugColliders"
 									}
 								}
 							],
-							"actions": [],
-							"sid": 519776277222488,
-							"children": [
+							"actions": [
 								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "for-each",
-											"objectClass": "System",
-											"sid": 252882272260226,
-											"parameters": {
-												"object": "sEntityBase"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-visible",
-											"objectClass": "sEntityBase",
-											"sid": 291998300246056,
-											"parameters": {
-												"visibility": "visible"
-											}
-										}
-									],
-									"sid": 209797838565638
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 582965951144522,
+									"parameters": {
+										"layer": "\"Debug\"",
+										"visibility": "invisible"
+									}
 								}
-							]
+							],
+							"sid": 519776277222488
 						},
 						{
 							"eventType": "block",
@@ -116,48 +114,33 @@
 									"sid": 537797021394802
 								}
 							],
-							"actions": [],
-							"sid": 306577382066458,
-							"children": [
+							"actions": [
 								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "for-each",
-											"objectClass": "System",
-											"sid": 383042767451215,
-											"parameters": {
-												"object": "sEntityBase"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-visible",
-											"objectClass": "sEntityBase",
-											"sid": 596938000364780,
-											"parameters": {
-												"visibility": "invisible"
-											}
-										}
-									],
-									"sid": 868275146450515
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 296342127858988,
+									"parameters": {
+										"layer": "\"Debug\"",
+										"visibility": "visible"
+									}
 								}
-							]
+							],
+							"sid": 306577382066458
 						},
 						{
 							"eventType": "block",
 							"conditions": [],
 							"actions": [
 								{
-									"callFunction": "MarkReleased",
-									"sid": 460932150301154,
-									"parameters": [
-										"KEYCODE_G"
-									]
+									"id": "toggle-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 198803072682172,
+									"parameters": {
+										"variable": "bShowDebugColliders"
+									}
 								}
 							],
-							"sid": 729675272561579
+							"sid": 125100050890483
 						}
 					]
 				}

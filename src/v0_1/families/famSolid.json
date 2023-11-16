@@ -1,13 +1,13 @@
 {
-	"name": "sf8Dir",
+	"name": "famSolid",
 	"plugin-id": "Sprite",
-	"sid": 241033940270726,
+	"sid": 994380681746229,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "EightDir",
-			"name": "8Direction",
-			"sid": 994959518323540
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 347413009562296
 		}
 	],
 	"effectTypes": [],
