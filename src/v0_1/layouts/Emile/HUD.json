@@ -51,6 +51,277 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "sfRazorKeen",
+					"properties": {
+						"text": "Name",
+						"enable-bbcode": true,
+						"character-width": 56,
+						"character-height": 117,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>%",
+						"spacing-data": "[[16,\" \"],[5,\"'\"],[7,\".:\"],[9,\"l,;\"],[10,\"Ii1\"],[11,\"!\"],[15,\"\\\"\"],[16,\"|\"],[17,\")\"],[18,\"ey\"],[19,\"ckv-&+\"],[20,\"oz`\\\\\"],[21,\"bhnp?\"],[22,\"Tjrsx\"],[23,\"JLPUVadfu°>\"],[24,\"qt3=\"],[25,\"46[]$%\"],[26,\"BKQw~*<\"],[27,\"DFm78\"],[28,\"GNORYZg2\"],[29,\"ACHMX09(\"],[30,\"ES5\"],[32,\"/€\"],[35,\"£\"],[38,\"_\"],[39,\"W\"],[41,\"#\"],[43,\"@\"]]",
+						"scale": 0.75,
+						"character-spacing": 5,
+						"line-height": 0,
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 126,
+					"instanceVariables": {},
+					"behaviors": {},
+					"template": {
+						"mode": "template",
+						"templateName": "AreaLabel",
+						"sourceTemplateName": "",
+						"components": [
+							{
+								"id": "plugin",
+								"component": [
+									{
+										"key": "plugin",
+										"state": [
+											[
+												"text",
+												true
+											],
+											[
+												"enable-bbcode",
+												true
+											],
+											[
+												"character-width",
+												true
+											],
+											[
+												"character-height",
+												true
+											],
+											[
+												"character-set",
+												true
+											],
+											[
+												"spacing-data",
+												true
+											],
+											[
+												"scale",
+												true
+											],
+											[
+												"character-spacing",
+												true
+											],
+											[
+												"line-height",
+												true
+											],
+											[
+												"horizontal-alignment",
+												true
+											],
+											[
+												"vertical-alignment",
+												true
+											],
+											[
+												"wrapping",
+												true
+											],
+											[
+												"initially-visible",
+												true
+											],
+											[
+												"origin",
+												true
+											],
+											[
+												"read-aloud",
+												true
+											]
+										]
+									}
+								]
+							},
+							{
+								"id": "instance-variable",
+								"component": [
+									{
+										"key": "instance-variable",
+										"state": []
+									}
+								]
+							},
+							{
+								"id": "behavior",
+								"component": []
+							},
+							{
+								"id": "effect",
+								"component": [
+									{
+										"key": "Difference",
+										"state": []
+									},
+									{
+										"key": "WarpObject",
+										"state": [
+											[
+												"x-frequency",
+												true
+											],
+											[
+												"y-frequency",
+												true
+											],
+											[
+												"x-amplitude",
+												true
+											],
+											[
+												"y-amplitude",
+												true
+											],
+											[
+												"x-speed",
+												true
+											],
+											[
+												"y-speed",
+												true
+											]
+										]
+									}
+								]
+							},
+							{
+								"id": "world-instance",
+								"component": [
+									{
+										"key": "world-instance",
+										"state": [
+											[
+												"x",
+												false
+											],
+											[
+												"y",
+												false
+											],
+											[
+												"z",
+												true
+											],
+											[
+												"w",
+												true
+											],
+											[
+												"h",
+												true
+											],
+											[
+												"a",
+												true
+											],
+											[
+												"o",
+												true
+											],
+											[
+												"c",
+												true
+											],
+											[
+												"sx",
+												true
+											],
+											[
+												"sy",
+												true
+											],
+											[
+												"bm",
+												true
+											],
+											[
+												"twpx",
+												true
+											],
+											[
+												"twpy",
+												true
+											],
+											[
+												"twpz",
+												true
+											],
+											[
+												"twpw",
+												true
+											],
+											[
+												"twph",
+												true
+											],
+											[
+												"twpa",
+												true
+											],
+											[
+												"dwp",
+												true
+											],
+											[
+												"ssm",
+												true
+											]
+										]
+									}
+								]
+							}
+						],
+						"replicasUIDs": null
+					},
+					"effects": {
+						"Difference": {
+							"isEnabled": true,
+							"parameters": {}
+						},
+						"WarpObject": {
+							"isEnabled": true,
+							"parameters": {
+								"x-frequency": 4,
+								"y-frequency": 2,
+								"x-amplitude": 2,
+								"y-amplitude": 2,
+								"x-speed": 0.5,
+								"y-speed": 0.5
+							}
+						}
+					},
+					"world": {
+						"x": 64,
+						"y": 400,
+						"width": 272,
+						"height": 80,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 950170973996812,

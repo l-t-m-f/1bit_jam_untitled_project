@@ -1,0 +1,30 @@
+{
+	"name": "sfRazorKeen",
+	"plugin-id": "Spritefont2",
+	"sid": 160986682729938,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "difference",
+			"name": "Difference"
+		},
+		{
+			"effectId": "warpobject",
+			"name": "WarpObject"
+		}
+	],
+	"image": {
+		"width": 1024,
+		"height": 1024,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 3403276,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

@@ -341,7 +341,8 @@
 			{
 				"items": [
 					"sfTimesNewYorker",
-					"Text"
+					"Text",
+					"sfRazorKeen"
 				],
 				"subfolders": [],
 				"name": "Fonts"

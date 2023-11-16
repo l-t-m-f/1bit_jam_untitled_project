@@ -146,6 +146,33 @@
 							"sid": 781006966917840
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 392320085792498,
+							"parameters": {
+								"object": "sfRazorKeen",
+								"expression": "sfRazorKeen.TemplateName",
+								"comparison": 0,
+								"value": "\"AreaLabel\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "sfRazorKeen",
+							"sid": 901245655822485,
+							"parameters": {
+								"text": "LayoutName"
+							}
+						}
+					],
+					"sid": 438006211763958
 				}
 			]
 		}
