@@ -196,9 +196,25 @@
 			"AJAX",
 			"Browser",
 			"3DShapeTest",
-			"tbFence1",
-			"sFogParticle",
-			"pFog"
+			"BloodJar",
+			"Bra",
+			"CenterBacking",
+			"DogNose",
+			"Eye",
+			"Eye2",
+			"FigherR",
+			"FingerL",
+			"FingerL2",
+			"Heart",
+			"HotPepper",
+			"Lamp",
+			"Mirror",
+			"Silhouette",
+			"Sprite",
+			"Tongue",
+			"TeethUpper",
+			"TeethLower",
+			"TeethLower2"
 		],
 		"subfolders": [
 			{
@@ -236,6 +252,16 @@
 										],
 										"subfolders": [],
 										"name": "Skeleton"
+									},
+									{
+										"items": [
+											"LegLeft",
+											"LegLeft2",
+											"LegLeft3",
+											"LegLeftShoe"
+										],
+										"subfolders": [],
+										"name": "Art"
 									}
 								],
 								"name": "Player"
@@ -339,10 +365,19 @@
 							"tmTiles1",
 							"tbBackgroundPebbles",
 							"tbBlackMask",
-							"sStageCenter"
+							"sStageCenter",
+							"tbFence1"
 						],
 						"subfolders": [],
 						"name": "World"
+					},
+					{
+						"items": [
+							"pFog",
+							"sFogParticle"
+						],
+						"subfolders": [],
+						"name": "FX"
 					}
 				],
 				"name": "Emile"
