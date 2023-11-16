@@ -570,6 +570,91 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 817975518785050,
+							"parameters": {
+								"first-value": "famInteractive.Count",
+								"comparison": 4,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 947290711479000,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 976550742345508,
+									"parameters": {
+										"object": "famInteractive"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 564084676147657,
+									"parameters": {
+										"first-value": "famInteractive.UID",
+										"comparison": 1,
+										"second-value": "sEntityBase.UID"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 932723298528424,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 471892242431052,
+											"parameters": {
+												"first-value": "distance(sEntityBase.X, sEntityBase.Y, famInteractive.X, famInteractive.Y)",
+												"comparison": 2,
+												"second-value": "200"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-angle",
+											"objectClass": "tbRope",
+											"sid": 122591919571828,
+											"parameters": {
+												"angle": "angle(sEntityBase.X, sEntityBase.Y, famInteractive.X, famInteractive.Y)"
+											}
+										},
+										{
+											"id": "set-width",
+											"objectClass": "tbRope",
+											"sid": 778743361440532,
+											"parameters": {
+												"width": "round(distance(sEntityBase.X, sEntityBase.Y, famInteractive.X, famInteractive.Y)/16) * 16 - 32"
+											}
+										},
+										{
+											"id": "stop-loop",
+											"objectClass": "System",
+											"sid": 310538716388305
+										}
+									],
+									"sid": 955855942409907
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "is-playing",
 							"objectClass": "sEntityBase",
 							"sid": 315243316111978,

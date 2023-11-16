@@ -42,6 +42,11 @@
 					"sid": 439093432913722
 				},
 				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 502668026534836
+				},
+				{
 					"callFunction": "InitHUD",
 					"sid": 413745317895025
 				},
@@ -50,8 +55,22 @@
 					"sid": 521560486314555
 				},
 				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 274753923141368
+				},
+				{
 					"callFunction": "InitInventory",
 					"sid": 928915153861480
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 795892928448378
+				},
+				{
+					"callFunction": "InitEntities",
+					"sid": 996532711150342
 				}
 			],
 			"sid": 310329735738831,

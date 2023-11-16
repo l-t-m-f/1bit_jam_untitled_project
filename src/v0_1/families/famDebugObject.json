@@ -20,6 +20,7 @@
 		"sPlayerSkeleton_Tongue",
 		"sPlayerSpawn",
 		"sPortal",
-		"sStageCenter"
+		"sStageCenter",
+		"sEntitySpawn"
 	]
 }

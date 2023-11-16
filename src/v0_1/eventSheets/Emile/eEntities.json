@@ -2,6 +2,45 @@
 	"name": "eEntities",
 	"events": [
 		{
+			"functionName": "InitEntities",
+			"functionDescription": "",
+			"functionCategory": "Entities",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 692278899604803,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 631111195510785,
+							"parameters": {
+								"object": "sEntitySpawn"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "SpawnEntity",
+							"sid": 106342034720313,
+							"parameters": [
+								"sEntitySpawn.EntityName",
+								"sEntitySpawn.X&\", \"&sEntitySpawn.Y"
+							]
+						}
+					],
+					"sid": 825812810783384
+				}
+			]
+		},
+		{
 			"eventType": "comment",
 			"text": "A generic update loop for sEntityBase instances."
 		},

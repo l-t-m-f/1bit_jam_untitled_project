@@ -7,7 +7,7 @@
 			"functionCategory": "Keyboard",
 			"functionReturnType": "none",
 			"functionCopyPicked": false,
-			"functionIsAsync": false,
+			"functionIsAsync": true,
 			"functionParameters": [],
 			"eventType": "function-block",
 			"conditions": [],
