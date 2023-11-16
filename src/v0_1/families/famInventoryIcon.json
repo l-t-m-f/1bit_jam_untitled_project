@@ -1,0 +1,22 @@
+{
+	"name": "famInventoryIcon",
+	"plugin-id": "Sprite",
+	"sid": 897580525278880,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "divide",
+			"name": "Divide"
+		}
+	],
+	"members": [
+		"sInventoryIcon_Teeth",
+		"sInventoryItem_Bra",
+		"sInventoryItem_Clock",
+		"sInventoryItem_HotPepper",
+		"sInventoryItem_Jar",
+		"sInventoryItem_Mirror",
+		"sInventoryItem_Tongue"
+	]
+}

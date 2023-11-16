@@ -1,0 +1,42 @@
+{
+	"name": "eInventory",
+	"events": [
+		{
+			"functionName": "InitInventory",
+			"functionDescription": "",
+			"functionCategory": "Inventory",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 500197722399318,
+					"parameters": {
+						"tag": "\"load_inventory\"",
+						"file": "RefInventory.json"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 850236292559196
+				},
+				{
+					"id": "load",
+					"objectClass": "dInventory",
+					"sid": 648190756824091,
+					"parameters": {
+						"json": "AJAX.LastData"
+					}
+				}
+			],
+			"sid": 721828126941799
+		}
+	],
+	"sid": 564520120746280
+}

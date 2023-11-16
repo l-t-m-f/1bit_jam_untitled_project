@@ -1,7 +1,7 @@
 {
-	"name": "BloodJar",
+	"name": "sInventoryItem_Bra",
 	"plugin-id": "Sprite",
-	"sid": 969561229547282,
+	"sid": 903165863372518,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,20 +11,20 @@
 			{
 				"frames": [
 					{
-						"width": 640,
-						"height": 480,
+						"width": 99,
+						"height": 63,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2330402,
+						"imageSpriteId": 343957,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 802286020376055,
+				"sid": 732275816131225,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

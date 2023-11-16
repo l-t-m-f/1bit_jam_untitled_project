@@ -48,10 +48,43 @@
 				{
 					"callFunction": "InitDialogSystem",
 					"sid": 521560486314555
+				},
+				{
+					"callFunction": "InitInventory",
+					"sid": 928915153861480
 				}
 			],
 			"sid": 310329735738831,
 			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-tag-playing",
+							"objectClass": "Audio",
+							"sid": 184976391865550,
+							"parameters": {
+								"tag": "\"music\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 592082290385292,
+							"parameters": {
+								"audio-file": "music",
+								"loop": "looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"music\""
+							}
+						}
+					],
+					"sid": 198909431125336
+				},
 				{
 					"eventType": "block",
 					"conditions": [

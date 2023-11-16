@@ -36,7 +36,14 @@
 		}
 	],
 	"sid": 532359860679705,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "dInventory",
+			"properties": {},
+			"uid": 168,
+			"instanceVariables": {}
+		}
+	],
 	"effectTypes": [],
 	"width": 1280,
 	"height": 960,

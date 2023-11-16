@@ -22,6 +22,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Browser",
 			"name": "Browser",
 			"author": "Scirra",
@@ -31,6 +38,13 @@
 			"type": "plugin",
 			"id": "Camera3D",
 			"name": "3D camera",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Dictionary",
+			"name": "Dictionary",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -176,6 +190,13 @@
 		},
 		{
 			"type": "effect",
+			"id": "divide",
+			"name": "Divide",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "hexpixellate",
 			"name": "Hexagonal pixellate",
 			"author": "Evan Wallace",
@@ -214,7 +235,17 @@
 			"Tongue",
 			"TeethUpper",
 			"TeethLower",
-			"TeethLower2"
+			"TeethLower2",
+			"sInventoryItem_Jar",
+			"sInventoryItem_Bra",
+			"Heart2",
+			"sInventoryItem_Mirror",
+			"sInventoryItem_Tongue",
+			"sInventoryIcon_Teeth",
+			"sInventoryItem_HotPepper",
+			"sInventoryItem_Clock",
+			"9patch",
+			"Audio"
 		],
 		"subfolders": [
 			{
@@ -378,6 +409,13 @@
 						],
 						"subfolders": [],
 						"name": "FX"
+					},
+					{
+						"items": [
+							"dInventory"
+						],
+						"subfolders": [],
+						"name": "Inventory"
 					}
 				],
 				"name": "Emile"
@@ -416,7 +454,8 @@
 			"famDialogOwner",
 			"famTween",
 			"famPin",
-			"famDebugObject"
+			"famDebugObject",
+			"famInventoryIcon"
 		],
 		"subfolders": []
 	},
@@ -467,7 +506,8 @@
 					"eHUD",
 					"eEntities",
 					"eMouse",
-					"eAI"
+					"eAI",
+					"eInventory"
 				],
 				"subfolders": [],
 				"name": "Emile"
@@ -492,7 +532,16 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "music.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 318103075965471,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
@@ -594,6 +643,20 @@
 					],
 					"subfolders": [],
 					"name": "Inputs"
+				},
+				{
+					"items": [
+						{
+							"name": "RefInventory.json",
+							"type": "application/json",
+							"sid": 710752941059968,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "Inventory"
 				}
 			]
 		}

@@ -54,6 +54,10 @@
 						"\"NPC_Urchin\"",
 						"\"120, 330\""
 					]
+				},
+				{
+					"callFunction": "InitInventory",
+					"sid": 723644966211062
 				}
 			],
 			"sid": 391808221990853,

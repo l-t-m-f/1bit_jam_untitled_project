@@ -1,7 +1,7 @@
 {
-	"name": "BloodJar",
+	"name": "sInventoryItem_Mirror",
 	"plugin-id": "Sprite",
-	"sid": 969561229547282,
+	"sid": 410560779067589,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,20 +11,20 @@
 			{
 				"frames": [
 					{
-						"width": 640,
-						"height": 480,
+						"width": 65,
+						"height": 67,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2330402,
+						"imageSpriteId": 1714204,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 802286020376055,
+				"sid": 602113813588157,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
