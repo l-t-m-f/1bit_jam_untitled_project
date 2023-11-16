@@ -68,7 +68,7 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
-					"objectClass": "sEntityBase",
+					"objectClass": "sPlayerJumpBuffer",
 					"sid": 772045250335220,
 					"parameters": {
 						"object": "sPortal"
