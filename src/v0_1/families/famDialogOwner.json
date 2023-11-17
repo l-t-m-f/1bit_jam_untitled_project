@@ -30,6 +30,20 @@
 			"desc": "Numerical effect of the default effect of the next dialog (if no choices).",
 			"show": true,
 			"sid": 578032231445668
+		},
+		{
+			"name": "ivDialogSuccess",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 500972568606025
+		},
+		{
+			"name": "ivDialogFailure",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 328347212981418
 		}
 	],
 	"behaviorTypes": [],

@@ -370,15 +370,6 @@
 								"variable": "last_story_access_str",
 								"value": "\"stories.\"&str(famDialogOwner.ivStoryNumber)"
 							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 399589054676205,
-							"parameters": {
-								"variable": "last_line_access_str",
-								"value": "last_story_access_str&\".lines.\"&str(famDialogOwner.ivLineNumber)"
-							}
 						}
 					],
 					"sid": 617746150289565,
@@ -387,9 +378,104 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "famDialogOwner",
+									"sid": 885992952262316,
+									"parameters": {
+										"instance-variable": "ivDialogSuccess"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 829241160571158,
+									"parameters": {
+										"variable": "last_line_access_str",
+										"value": "last_story_access_str&\".success\""
+									}
+								}
+							],
+							"sid": 335590347343943
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 404239621336912
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "famDialogOwner",
+									"sid": 484134215349266,
+									"parameters": {
+										"instance-variable": "ivDialogFailure"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 541583719406542,
+									"parameters": {
+										"variable": "last_line_access_str",
+										"value": "last_story_access_str&\".failure\""
+									}
+								}
+							],
+							"sid": 901887195902970
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 816442102027452
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "famDialogOwner",
+									"sid": 903932544414253,
+									"parameters": {
+										"instance-variable": "ivDialogSuccess"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "famDialogOwner",
+									"sid": 800338537888192,
+									"parameters": {
+										"instance-variable": "ivDialogFailure"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 393791445298599,
+									"parameters": {
+										"variable": "last_line_access_str",
+										"value": "last_story_access_str&\".lines.\"&str(famDialogOwner.ivLineNumber)"
+									}
+								}
+							],
+							"sid": 818346312069028
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "pick-by-comparison",
 									"objectClass": "System",
-									"sid": 313858749431274,
+									"sid": 505456365668090,
 									"parameters": {
 										"object": "sfTimesNewYorker",
 										"expression": "sfTimesNewYorker.TemplateName",
@@ -402,14 +488,14 @@
 								{
 									"id": "typewriter-text",
 									"objectClass": "sfTimesNewYorker",
-									"sid": 812778449808445,
+									"sid": 582246808509635,
 									"parameters": {
 										"text": "jsonDialogsData.Get(last_line_access_str&\".text\")",
 										"duration": "0.04 * len(jsonDialogsData.Get(last_line_access_str&\".text\"))"
 									}
 								}
 							],
-							"sid": 399422387252886
+							"sid": 283024888905525
 						},
 						{
 							"eventType": "variable",
@@ -419,7 +505,7 @@
 							"comment": "",
 							"isStatic": true,
 							"isConstant": false,
-							"sid": 616434733827014
+							"sid": 893220472589561
 						},
 						{
 							"eventType": "block",
@@ -428,7 +514,7 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
-									"sid": 320366708433222,
+									"sid": 589323790688792,
 									"parameters": {
 										"variable": "last_choices_access_str",
 										"value": "last_line_access_str&\".choices\""
@@ -436,14 +522,14 @@
 								},
 								{
 									"callFunction": "CreateDialogChoice",
-									"sid": 756674499798600,
+									"sid": 680399652197286,
 									"parameters": [
 										"pDialogOwnerUID",
 										"last_choices_access_str"
 									]
 								}
 							],
-							"sid": 732258456809196
+							"sid": 554578723290412
 						}
 					]
 				}
@@ -1169,6 +1255,223 @@
 						}
 					],
 					"sid": 258437771732461
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 732645520940819
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 654111247563079,
+							"parameters": {
+								"variable": "pDialogEffect",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "famDialogOwner",
+							"sid": 809002224940013,
+							"parameters": {
+								"instance-variable": "ivDialogFailure",
+								"value": "true"
+							}
+						},
+						{
+							"callFunction": "HideDialogBox",
+							"sid": 768357471535433
+						}
+					],
+					"sid": 961855043837339
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 301920279742793
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 894783203714129,
+							"parameters": {
+								"variable": "pDialogEffect",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "famDialogOwner",
+							"sid": 424009144457240,
+							"parameters": {
+								"instance-variable": "ivDialogSuccess",
+								"value": "true"
+							}
+						},
+						{
+							"callFunction": "IncrementDialogOwnerLine",
+							"sid": 808242051030779,
+							"parameters": [
+								"famDialogOwner.UID",
+								true
+							]
+						}
+					],
+					"sid": 497700833905671,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 404042718357304,
+									"parameters": {
+										"variable": "bCanInteract"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 168125100118541,
+									"parameters": {
+										"variable": "bIsDialogMode"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "PullDialogText",
+									"sid": 230854199317350,
+									"parameters": [
+										"famDialogOwner.UID"
+									]
+								}
+							],
+							"sid": 727394848610046
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 902619777156143
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 201397048198112,
+							"parameters": {
+								"variable": "pDialogEffect",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "famDialogOwner",
+							"sid": 826734791167597,
+							"parameters": {
+								"instance-variable": "ivDialogSuccess",
+								"value": "true"
+							}
+						},
+						{
+							"callFunction": "HideDialogBox",
+							"sid": 628468042989161
+						}
+					],
+					"sid": 668440061157556
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 193855381561129
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 699486624511334,
+							"parameters": {
+								"variable": "pDialogEffect",
+								"comparison": 0,
+								"value": "6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "IncrementDialogOwnerLine",
+							"sid": 576013622005961,
+							"parameters": [
+								"famDialogOwner.UID",
+								true
+							]
+						},
+						{
+							"callFunction": "IncrementDialogOwnerLine",
+							"sid": 670988292795787,
+							"parameters": [
+								"famDialogOwner.UID",
+								true
+							]
+						}
+					],
+					"sid": 382954312716685,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 524373073228230,
+									"parameters": {
+										"variable": "bCanInteract"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 240643602743803,
+									"parameters": {
+										"variable": "bIsDialogMode"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "PullDialogText",
+									"sid": 924290384433206,
+									"parameters": [
+										"famDialogOwner.UID"
+									]
+								}
+							],
+							"sid": 488191165536251
+						}
+					]
 				}
 			]
 		}

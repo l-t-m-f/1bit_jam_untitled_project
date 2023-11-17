@@ -125,11 +125,11 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "pick-random-instance",
-									"objectClass": "System",
-									"sid": 738687764549428,
+									"id": "pick-by-unique-id",
+									"objectClass": "sPlayerSpawn",
+									"sid": 662399540168126,
 									"parameters": {
-										"object": "sPlayerSpawn"
+										"unique-id": "68"
 									}
 								}
 							],

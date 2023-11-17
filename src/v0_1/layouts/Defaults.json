@@ -3528,6 +3528,8 @@
 						"ivLineNumber": -1,
 						"ivChoiceCnt": -1,
 						"ivDefaultEffect": -1,
+						"ivDialogSuccess": false,
+						"ivDialogFailure": false,
 						"ivTweenVal1": -1,
 						"ivTweenVal2": -1
 					},
@@ -3959,6 +3961,8 @@
 						"ivLineNumber": -1,
 						"ivChoiceCnt": -1,
 						"ivDefaultEffect": -1,
+						"ivDialogSuccess": false,
+						"ivDialogFailure": false,
 						"ivTweenVal1": -1,
 						"ivTweenVal2": -1
 					},
@@ -4058,6 +4062,14 @@
 											},
 											{
 												"iv": "ivTweenVal2",
+												"state": true
+											},
+											{
+												"iv": "ivDialogSuccess",
+												"state": true
+											},
+											{
+												"iv": "ivDialogFailure",
 												"state": true
 											}
 										]
@@ -4365,6 +4377,8 @@
 						"ivLineNumber": 0,
 						"ivChoiceCnt": -1,
 						"ivDefaultEffect": -1,
+						"ivDialogSuccess": false,
+						"ivDialogFailure": false,
 						"ivTweenVal1": -1,
 						"ivTweenVal2": -1
 					},
@@ -4464,6 +4478,14 @@
 											},
 											{
 												"iv": "ivTweenVal2",
+												"state": true
+											},
+											{
+												"iv": "ivDialogSuccess",
+												"state": true
+											},
+											{
+												"iv": "ivDialogFailure",
 												"state": true
 											}
 										]
@@ -4741,6 +4763,8 @@
 						"ivLineNumber": 0,
 						"ivChoiceCnt": -1,
 						"ivDefaultEffect": -1,
+						"ivDialogSuccess": false,
+						"ivDialogFailure": false,
 						"ivTweenVal1": -1,
 						"ivTweenVal2": -1
 					},
@@ -4840,6 +4864,14 @@
 											},
 											{
 												"iv": "ivTweenVal2",
+												"state": true
+											},
+											{
+												"iv": "ivDialogSuccess",
+												"state": true
+											},
+											{
+												"iv": "ivDialogFailure",
 												"state": true
 											}
 										]
@@ -5444,6 +5476,8 @@
 						"ivLineNumber": 0,
 						"ivChoiceCnt": -1,
 						"ivDefaultEffect": -1,
+						"ivDialogSuccess": false,
+						"ivDialogFailure": false,
 						"ivTweenVal1": -1,
 						"ivTweenVal2": -1
 					},
@@ -5543,6 +5577,14 @@
 											},
 											{
 												"iv": "ivTweenVal2",
+												"state": true
+											},
+											{
+												"iv": "ivDialogSuccess",
+												"state": true
+											},
+											{
+												"iv": "ivDialogFailure",
 												"state": true
 											}
 										]
@@ -6057,6 +6099,8 @@
 						"ivLineNumber": 0,
 						"ivChoiceCnt": -1,
 						"ivDefaultEffect": -1,
+						"ivDialogSuccess": false,
+						"ivDialogFailure": false,
 						"ivTweenVal1": -1,
 						"ivTweenVal2": -1
 					},
@@ -6156,6 +6200,14 @@
 											},
 											{
 												"iv": "ivTweenVal2",
+												"state": true
+											},
+											{
+												"iv": "ivDialogSuccess",
+												"state": true
+											},
+											{
+												"iv": "ivDialogFailure",
 												"state": true
 											}
 										]
@@ -6670,6 +6722,8 @@
 						"ivLineNumber": 0,
 						"ivChoiceCnt": -1,
 						"ivDefaultEffect": -1,
+						"ivDialogSuccess": false,
+						"ivDialogFailure": false,
 						"ivTweenVal1": -1,
 						"ivTweenVal2": -1
 					},
@@ -6769,6 +6823,14 @@
 											},
 											{
 												"iv": "ivTweenVal2",
+												"state": true
+											},
+											{
+												"iv": "ivDialogSuccess",
+												"state": true
+											},
+											{
+												"iv": "ivDialogFailure",
 												"state": true
 											}
 										]
@@ -7283,6 +7345,8 @@
 						"ivLineNumber": 0,
 						"ivChoiceCnt": -1,
 						"ivDefaultEffect": -1,
+						"ivDialogSuccess": false,
+						"ivDialogFailure": false,
 						"ivTweenVal1": -1,
 						"ivTweenVal2": -1
 					},
@@ -7382,6 +7446,14 @@
 											},
 											{
 												"iv": "ivTweenVal2",
+												"state": true
+											},
+											{
+												"iv": "ivDialogSuccess",
+												"state": true
+											},
+											{
+												"iv": "ivDialogFailure",
 												"state": true
 											}
 										]
@@ -7688,8 +7760,8 @@
 						}
 					},
 					"world": {
-						"x": 864,
-						"y": 656,
+						"x": 880,
+						"y": 864,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -7764,8 +7836,8 @@
 						}
 					},
 					"world": {
-						"x": 864,
-						"y": 656,
+						"x": 880,
+						"y": 864,
 						"width": 32,
 						"height": 64,
 						"originX": 0.5,
@@ -7864,8 +7936,8 @@
 						}
 					},
 					"world": {
-						"x": 864,
-						"y": 608,
+						"x": 880,
+						"y": 816,
 						"width": 16,
 						"height": 32,
 						"originX": 0.5,
@@ -7892,10 +7964,12 @@
 					"uid": 210,
 					"instanceVariables": {
 						"ivInteractionKind": 0,
-						"ivStoryNumber": 0,
+						"ivStoryNumber": 5,
 						"ivLineNumber": 0,
 						"ivChoiceCnt": -1,
 						"ivDefaultEffect": -1,
+						"ivDialogSuccess": false,
+						"ivDialogFailure": false,
 						"ivTweenVal1": -1,
 						"ivTweenVal2": -1
 					},
@@ -7995,6 +8069,14 @@
 											},
 											{
 												"iv": "ivTweenVal2",
+												"state": true
+											},
+											{
+												"iv": "ivDialogSuccess",
+												"state": true
+											},
+											{
+												"iv": "ivDialogFailure",
 												"state": true
 											}
 										]
@@ -8240,8 +8322,8 @@
 						}
 					},
 					"world": {
-						"x": 864,
-						"y": 656,
+						"x": 880,
+						"y": 864,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -8509,6 +8591,8 @@
 						"ivLineNumber": 0,
 						"ivChoiceCnt": -1,
 						"ivDefaultEffect": -1,
+						"ivDialogSuccess": false,
+						"ivDialogFailure": false,
 						"ivTweenVal1": -1,
 						"ivTweenVal2": -1
 					},
@@ -8608,6 +8692,14 @@
 											},
 											{
 												"iv": "ivTweenVal2",
+												"state": true
+											},
+											{
+												"iv": "ivDialogSuccess",
+												"state": true
+											},
+											{
+												"iv": "ivDialogFailure",
 												"state": true
 											}
 										]
@@ -9122,6 +9214,8 @@
 						"ivLineNumber": 0,
 						"ivChoiceCnt": -1,
 						"ivDefaultEffect": -1,
+						"ivDialogSuccess": false,
+						"ivDialogFailure": false,
 						"ivTweenVal1": -1,
 						"ivTweenVal2": -1
 					},
@@ -9221,6 +9315,14 @@
 											},
 											{
 												"iv": "ivTweenVal2",
+												"state": true
+											},
+											{
+												"iv": "ivDialogSuccess",
+												"state": true
+											},
+											{
+												"iv": "ivDialogFailure",
 												"state": true
 											}
 										]
@@ -9735,6 +9837,8 @@
 						"ivLineNumber": 0,
 						"ivChoiceCnt": -1,
 						"ivDefaultEffect": -1,
+						"ivDialogSuccess": false,
+						"ivDialogFailure": false,
 						"ivTweenVal1": -1,
 						"ivTweenVal2": -1
 					},
@@ -9834,6 +9938,14 @@
 											},
 											{
 												"iv": "ivTweenVal2",
+												"state": true
+											},
+											{
+												"iv": "ivDialogSuccess",
+												"state": true
+											},
+											{
+												"iv": "ivDialogFailure",
 												"state": true
 											}
 										]
@@ -10348,6 +10460,8 @@
 						"ivLineNumber": 0,
 						"ivChoiceCnt": -1,
 						"ivDefaultEffect": -1,
+						"ivDialogSuccess": false,
+						"ivDialogFailure": false,
 						"ivTweenVal1": -1,
 						"ivTweenVal2": -1
 					},
@@ -10447,6 +10561,14 @@
 											},
 											{
 												"iv": "ivTweenVal2",
+												"state": true
+											},
+											{
+												"iv": "ivDialogSuccess",
+												"state": true
+											},
+											{
+												"iv": "ivDialogFailure",
 												"state": true
 											}
 										]
@@ -10961,6 +11083,8 @@
 						"ivLineNumber": 0,
 						"ivChoiceCnt": -1,
 						"ivDefaultEffect": -1,
+						"ivDialogSuccess": false,
+						"ivDialogFailure": false,
 						"ivTweenVal1": -1,
 						"ivTweenVal2": -1
 					},
@@ -11060,6 +11184,14 @@
 											},
 											{
 												"iv": "ivTweenVal2",
+												"state": true
+											},
+											{
+												"iv": "ivDialogSuccess",
+												"state": true
+											},
+											{
+												"iv": "ivDialogFailure",
 												"state": true
 											}
 										]
@@ -11396,6 +11528,8 @@
 						"ivLineNumber": 0,
 						"ivChoiceCnt": -1,
 						"ivDefaultEffect": -1,
+						"ivDialogSuccess": false,
+						"ivDialogFailure": false,
 						"ivTweenVal1": -1,
 						"ivTweenVal2": -1
 					},
@@ -11495,6 +11629,14 @@
 											},
 											{
 												"iv": "ivTweenVal2",
+												"state": true
+											},
+											{
+												"iv": "ivDialogSuccess",
+												"state": true
+											},
+											{
+												"iv": "ivDialogFailure",
 												"state": true
 											}
 										]
@@ -11757,6 +11899,8 @@
 						"ivLineNumber": 0,
 						"ivChoiceCnt": -1,
 						"ivDefaultEffect": -1,
+						"ivDialogSuccess": false,
+						"ivDialogFailure": false,
 						"ivTweenVal1": -1,
 						"ivTweenVal2": -1
 					},
@@ -11856,6 +12000,14 @@
 											},
 											{
 												"iv": "ivTweenVal2",
+												"state": true
+											},
+											{
+												"iv": "ivDialogSuccess",
+												"state": true
+											},
+											{
+												"iv": "ivDialogFailure",
 												"state": true
 											}
 										]

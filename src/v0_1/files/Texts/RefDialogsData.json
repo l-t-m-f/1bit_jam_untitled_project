@@ -1,7 +1,7 @@
 {
 	"stories": [
 		{
-			"name": "",
+			"name": "Trash",
 			"lines": [
 				{
 					"text": "Just an old pile of trash, it seems oddly relatable.",
@@ -11,7 +11,7 @@
 			]
 		},
 		{
-			"name": "",
+			"name": "Door",
 			"lines": [
 				{
 					"text": "You can’t go there anymore. Your landlord kicked you out two weeks ago.",
@@ -21,7 +21,7 @@
 			]
 		},
 		{
-			"name": "",
+			"name": "OldMan",
 			"lines": [
 				{
 					"text": "Oh hi there ! I didn’t expect to see anyone here I used to be the gravedigger around here, but since I died no one’s taking care of the graveyard anymore.",
@@ -50,7 +50,7 @@
 			]
 		},
 		{
-			"name": "",
+			"name": "Fisherman",
 			"lines": [
 				{
 					"text": "No fish. No fish. I’m not looking for fish, I’m looking for something more personal.",
@@ -121,20 +121,55 @@
 					"default_effect": 0
 				},
 				{
-					"text": "I’ve been lost in this cave for as long as I can remember. It’s comfy tho, I like the humidity and the quietness. I just wished I could see something.",
+					"text": "I’ve been lost in this cave for as long as I can remember.",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "It’s comfy tho, I like the humidity and the quietness.",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "I just wished I could see something.",
 					"choices": [
 						{
 							"text": "Give lantern",
-							"effect": 0
+							"effect": 6
 						},
 						{
 							"text": "Leave",
-							"effect": 2
+							"effect": 0
 						}
 					],
 					"default_effect": 0
+				},
+				{
+					"text": "Would you mind not telling people I’m here ? I kind of like being alone",
+					"choices": [],
+					"default_effect": 2
+				},
+				{
+					"text": "Thank you so much! I can actually see your face now !",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "And wow, you’re kind of slaying that whole “bunch of stuff” look. ",
+					"choices": [],
+					"default_effect": 5
 				}
-			]
+			],
+			"success": {
+				"text": "The shadows cast by the lantern remind me of humans, I don't know why.",
+				"choices": [],
+				"default_effect": 0
+			},
+			"failure": {
+				"text": "",
+				"choices": [],
+				"default_effect": 0
+			}
 		},
 		{
 			"name": "Farmer",
