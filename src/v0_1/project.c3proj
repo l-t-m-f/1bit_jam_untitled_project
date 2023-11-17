@@ -445,7 +445,8 @@
 					"sStageCenter",
 					"tbFence1",
 					"npLakeTest",
-					"npWaveTest"
+					"npWaveTest",
+					"tmTiles2"
 				],
 				"subfolders": [],
 				"name": "World"

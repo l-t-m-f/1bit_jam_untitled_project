@@ -300,10 +300,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 96,
-						"y": 288,
-						"width": 208,
-						"height": 96,
+						"x": 22.99554407602386,
+						"y": 182.25414497097037,
+						"width": 281.00445592397614,
+						"height": 201.74585502902963,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -395,7 +395,7 @@
 					},
 					"world": {
 						"x": 128,
-						"y": 320,
+						"y": 326.63676872036143,
 						"width": 160,
 						"height": 16,
 						"originX": 0,
@@ -577,8 +577,8 @@
 						}
 					},
 					"world": {
-						"x": 144,
-						"y": 256,
+						"x": 98.86995244773124,
+						"y": 236.97460814968676,
 						"width": 64,
 						"height": 16,
 						"originX": 0,
@@ -958,6 +958,311 @@
 						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "npWaveTest",
+					"properties": {
+						"left-margin": 0,
+						"right-margin": 0,
+						"top-margin": 0,
+						"bottom-margin": 0,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "overlap"
+					},
+					"uid": 246,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"isEnabled": true,
+							"parameters": {}
+						},
+						"WarpRipple": {
+							"isEnabled": true,
+							"parameters": {
+								"frequency": 1,
+								"amplitude": 0.05,
+								"speed": 5
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 1,
+								"frequency": 0.4,
+								"angle": 3,
+								"delta": 20,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						}
+					},
+					"world": {
+						"x": 205.1258539670711,
+						"y": 201.2870643717116,
+						"width": 64,
+						"height": 16,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "npWaveTest",
+					"properties": {
+						"left-margin": 0,
+						"right-margin": 0,
+						"top-margin": 0,
+						"bottom-margin": 0,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "overlap"
+					},
+					"uid": 247,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"isEnabled": true,
+							"parameters": {}
+						},
+						"WarpRipple": {
+							"isEnabled": true,
+							"parameters": {
+								"frequency": 1,
+								"amplitude": 0.05,
+								"speed": 5
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 1,
+								"frequency": 0.4,
+								"angle": 3,
+								"delta": 20,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						}
+					},
+					"world": {
+						"x": 204.68305190992658,
+						"y": 243.3202904943916,
+						"width": 64,
+						"height": 16,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "npWaveTest",
+					"properties": {
+						"left-margin": 0,
+						"right-margin": 0,
+						"top-margin": 0,
+						"bottom-margin": 0,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "overlap"
+					},
+					"uid": 248,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"isEnabled": true,
+							"parameters": {}
+						},
+						"WarpRipple": {
+							"isEnabled": true,
+							"parameters": {
+								"frequency": 1,
+								"amplitude": 0.05,
+								"speed": 5
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 1,
+								"frequency": 0.4,
+								"angle": 3,
+								"delta": 20,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						}
+					},
+					"world": {
+						"x": 39.20476033815535,
+						"y": 296.85748749068995,
+						"width": 96,
+						"height": 16,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "npWaveTest",
+					"properties": {
+						"left-margin": 0,
+						"right-margin": 0,
+						"top-margin": 0,
+						"bottom-margin": 0,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "overlap"
+					},
+					"uid": 249,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"isEnabled": true,
+							"parameters": {}
+						},
+						"WarpRipple": {
+							"isEnabled": true,
+							"parameters": {
+								"frequency": 1,
+								"amplitude": 0.05,
+								"speed": 5
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 1,
+								"frequency": 0.4,
+								"angle": 3,
+								"delta": 20,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						}
+					},
+					"world": {
+						"x": 45.8410533955726,
+						"y": 208.36601746743332,
+						"width": 120.63373949327371,
+						"height": 16,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "npWaveTest",
+					"properties": {
+						"left-margin": 0,
+						"right-margin": 0,
+						"top-margin": 0,
+						"bottom-margin": 0,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "overlap"
+					},
+					"uid": 250,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"isEnabled": true,
+							"parameters": {}
+						},
+						"WarpRipple": {
+							"isEnabled": true,
+							"parameters": {
+								"frequency": 1,
+								"amplitude": 0.05,
+								"speed": 5
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 1,
+								"frequency": 0.4,
+								"angle": 3,
+								"delta": 20,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						}
+					},
+					"world": {
+						"x": 43.628988203681274,
+						"y": 346.85509408572597,
+						"width": 96,
+						"height": 16,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
