@@ -511,24 +511,18 @@
 	},
 	"eventSheets": {
 		"items": [
-			"eGlobal"
+			"eGlobal",
+			"eAI",
+			"eDebug",
+			"eDialogsSystem",
+			"eEntities",
+			"eHUD",
+			"eInventory",
+			"eKeyboard",
+			"eMouse",
+			"ePlayer"
 		],
 		"subfolders": [
-			{
-				"items": [
-					"eDialogsSystem",
-					"ePlayer",
-					"eKeyboard",
-					"eDebug",
-					"eHUD",
-					"eEntities",
-					"eMouse",
-					"eAI",
-					"eInventory"
-				],
-				"subfolders": [],
-				"name": "Emile"
-			},
 			{
 				"items": [
 					"eGym",
