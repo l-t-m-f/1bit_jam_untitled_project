@@ -241,14 +241,6 @@
 		"subfolders": [
 			{
 				"items": [
-					"Keyboard",
-					"Mouse"
-				],
-				"subfolders": [],
-				"name": "Inputs"
-			},
-			{
-				"items": [
 					"sfTimesNewYorker",
 					"Text",
 					"sfRazorKeen"
@@ -381,7 +373,9 @@
 			{
 				"items": [
 					"aKeystate",
-					"aMoveKeyMem"
+					"aMoveKeyMem",
+					"Keyboard",
+					"Mouse"
 				],
 				"subfolders": [],
 				"name": "InputSystem"
@@ -392,13 +386,6 @@
 				],
 				"subfolders": [],
 				"name": "Inspection"
-			},
-			{
-				"items": [
-					"dInventory"
-				],
-				"subfolders": [],
-				"name": "Inventory"
 			},
 			{
 				"items": [
@@ -433,6 +420,13 @@
 							}
 						],
 						"name": "InGame"
+					},
+					{
+						"items": [
+							"dInventory"
+						],
+						"subfolders": [],
+						"name": "Inventory"
 					}
 				],
 				"name": "UI"
@@ -525,7 +519,6 @@
 		"subfolders": [
 			{
 				"items": [
-					"eGym",
 					"eGame"
 				],
 				"subfolders": [],
@@ -548,6 +541,14 @@
 					"name": "music.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 318103075965471,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "music2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 665161627144552,
 					"file-info": {
 						"purpose": "none"
 					}

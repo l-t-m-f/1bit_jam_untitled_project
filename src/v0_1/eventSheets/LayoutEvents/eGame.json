@@ -92,9 +92,9 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 592082290385292,
+							"sid": 935154282718125,
 							"parameters": {
-								"audio-file": "music",
+								"audio-file": "music2",
 								"loop": "looping",
 								"volume": "0",
 								"stereo-pan": "0",
