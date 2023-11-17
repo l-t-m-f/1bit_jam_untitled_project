@@ -100,6 +100,37 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-created",
+					"objectClass": "sCamera",
+					"sid": 347291344916963
+				},
+				{
+					"id": "pick-parent",
+					"objectClass": "sCamera",
+					"sid": 776060519381678,
+					"parameters": {
+						"parent": "sEntityBase",
+						"which": "own"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "sCamera",
+					"sid": 118405774024407,
+					"parameters": {
+						"x": "sEntityBase.X",
+						"y": "sEntityBase.Y"
+					}
+				}
+			],
+			"sid": 204071134988877
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-tweens-finished",
 					"objectClass": "sEntityBase",
 					"sid": 745784307358917,
@@ -200,6 +231,65 @@
 				}
 			],
 			"sid": 338200795838496
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "sEntityBase",
+					"sid": 687552267985553
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 533194633692707,
+					"parameters": {
+						"first-value": "sEntityBase.TemplateName",
+						"comparison": 0,
+						"second-value": "\"Player\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "MarkReleased",
+					"sid": 584656031351121,
+					"parameters": [
+						"KEYCODE_UP"
+					]
+				},
+				{
+					"callFunction": "MarkReleased",
+					"sid": 315789067507318,
+					"parameters": [
+						"KEYCODE_RIGHT"
+					]
+				},
+				{
+					"callFunction": "MarkReleased",
+					"sid": 650470846201596,
+					"parameters": [
+						"KEYCODE_DOWN"
+					]
+				},
+				{
+					"callFunction": "MarkReleased",
+					"sid": 210400604284811,
+					"parameters": [
+						"KEYCODE_LEFT"
+					]
+				},
+				{
+					"id": "clear",
+					"objectClass": "aMoveKeyMem",
+					"sid": 165415163770847,
+					"parameters": {
+						"value": "0"
+					}
+				}
+			],
+			"sid": 337934201454737
 		},
 		{
 			"functionName": "UpdatePlayerSkeleton",
@@ -584,6 +674,16 @@
 					"sid": 947290711479000,
 					"children": [
 						{
+							"eventType": "variable",
+							"name": "bMatchFound",
+							"type": "boolean",
+							"initialValue": "false",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 200365185299111
+						},
+						{
 							"eventType": "block",
 							"conditions": [
 								{
@@ -640,6 +740,15 @@
 											}
 										},
 										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 767427962722907,
+											"parameters": {
+												"variable": "bMatchFound",
+												"value": "true"
+											}
+										},
+										{
 											"id": "stop-loop",
 											"objectClass": "System",
 											"sid": 310538716388305
@@ -648,6 +757,51 @@
 									"sid": 955855942409907
 								}
 							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 357989747601781,
+									"parameters": {
+										"variable": "bMatchFound"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "tbRope",
+									"sid": 969695787002630,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 903326910415538
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 711536095485995
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "tbRope",
+									"sid": 465781665866865,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 431856142229168
 						}
 					]
 				},

@@ -19,6 +19,12 @@
 					"parameters": {
 						"cursor-style": "none"
 					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "tbFadeBlack",
+					"sid": 846852881479116,
+					"behaviorType": "Fade"
 				}
 			],
 			"sid": 163628429863951

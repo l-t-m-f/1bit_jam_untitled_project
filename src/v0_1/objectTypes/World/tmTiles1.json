@@ -20,11 +20,41 @@
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
-		"imageSpriteId": 4486407,
+		"imageSpriteId": 9216165,
 		"useCollisionPoly": true,
 		"tag": ""
 	},
 	"tile-collision-polys": {
+		"7": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0,
+					1,
+					0,
+					1,
+					1,
+					0,
+					1
+				]
+			},
+			"useCollisionPoly": false
+		},
+		"8": {
+			"collisionPoly": {
+				"points": [
+					1,
+					0,
+					1,
+					1,
+					0,
+					1,
+					0,
+					0
+				]
+			},
+			"useCollisionPoly": false
+		},
 		"20": {
 			"collisionPoly": {
 				"points": [
@@ -38,7 +68,7 @@
 					1
 				]
 			},
-			"useCollisionPoly": true
+			"useCollisionPoly": false
 		},
 		"21": {
 			"collisionPoly": {
@@ -53,7 +83,7 @@
 					1
 				]
 			},
-			"useCollisionPoly": true
+			"useCollisionPoly": false
 		}
 	}
 }

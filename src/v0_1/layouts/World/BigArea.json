@@ -247,7 +247,7 @@
 					"behaviors": {
 						"Solid": {
 							"properties": {
-								"enabled": true,
+								"enabled": false,
 								"tags": ""
 							}
 						}
@@ -258,7 +258,7 @@
 							"height": 60,
 							"max-width": 80,
 							"max-height": 60,
-							"data": "4800x0"
+							"data": "347x0,21,7x26,51x0,21,0,7x26,38x0,21,7x26,4x0,21,2x0,7x26,37x0,21,0,7x26,3x0,21,3x0,7x26,36x0,21,2x0,2x26,2x17,3x26,2x0,21,4x0,7x26,35x0,21,3x0,2x26,2x17,3x26,2x0,22,4x0,7x26,34x0,21,4x0,7x26,3x0,22,3x0,7x26,34x0,22,4x0,7x26,4x0,22,2x0,3x26,2x17,2x26,35x0,22,3x0,7x26,5x0,22,0,3x26,2x17,2x26,36x0,22,2x0,7x26,6x0,22,7x26,37x0,22,0,6x26,21,6x26,1,45x0,22,5x26,21,1,2x26,2x17,3x26,50x0,21,2x0,2x26,2x17,3x26,49x0,21,3x0,7x26,48x0,21,4x0,7x26,48x0,22,4x0,7x26,49x0,22,3x0,7x26,50x0,22,2x0,2x26,2x17,3x26,51x0,22,0,2x26,2x17,3x26,52x0,22,7x26,469x0,15x16,45x0,8x16,18,6x16,45x0,15x16,45x0,15x16,45x0,3x16,18,11x16,45x0,11x16,4x24,45x0,11x16,4x24,45x0,15x16,45x0,6x16,24,8x16,45x0,15x16,534x0,21,22,3x15,20,53x0,21,24,22,3x0,22,53x0,2x24,22,3x0,22,52x0,3x24,22,3x0,22,52x0,2x24,21,22,3x15,20,52x0,24,21,24,34x0,3x16,20x0,3x24,33x0,5x16,19x0,3x24,22,3x15,20,26x0,8x16,18x0,2x24,21,22,3x0,22,24x0,10x16,18x0,24,21,24,22,3x0,22,23x0,12x16,17x0,3x24,22,3x0,22,23x0,12x16,17x0,3x24,22,3x15,20,23x0,12x16,17x0,24,21,22,3x15,20,23x0,13x16,17x0,21,24,22,3x0,22,23x0,13x16,17x0,2x24,22,3x0,22,22x0,14x16,17x0,22,24,22,3x0,22,22x0,12x16,20x0,2x22,3x15,20,22x0,9x16,51x0,9x16,51x0,8x16,51x0,8x16,52x0,7x16,53x0,7x16,53x0,3x16,6x0,9x16,42x0,3x16,5x0,10x16,41x0,3x16,6x0,11x16,40x0,3x16,5x0,12x16,40x0,3x16,5x0,12x16,40x0,20x16,40x0,20x16,29x0"
 						},
 						"tile-width": 16,
 						"tile-height": 16,
@@ -280,6 +280,377 @@
 							1,
 							1
 						],
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "npLakeTest",
+					"properties": {
+						"left-margin": 10,
+						"right-margin": 10,
+						"top-margin": 10,
+						"bottom-margin": 10,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "overlap"
+					},
+					"uid": 182,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 96,
+						"y": 288,
+						"width": 208,
+						"height": 96,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "npLakeTest",
+					"properties": {
+						"left-margin": 10,
+						"right-margin": 10,
+						"top-margin": 10,
+						"bottom-margin": 10,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "overlap"
+					},
+					"uid": 183,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 112,
+						"y": 240,
+						"width": 112,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "npWaveTest",
+					"properties": {
+						"left-margin": 0,
+						"right-margin": 0,
+						"top-margin": 0,
+						"bottom-margin": 0,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "overlap"
+					},
+					"uid": 184,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"isEnabled": true,
+							"parameters": {}
+						},
+						"WarpRipple": {
+							"isEnabled": true,
+							"parameters": {
+								"frequency": 1,
+								"amplitude": 0.05,
+								"speed": 5
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 1,
+								"frequency": 0.4,
+								"angle": 3,
+								"delta": 20,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						}
+					},
+					"world": {
+						"x": 128,
+						"y": 320,
+						"width": 160,
+						"height": 16,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "npWaveTest",
+					"properties": {
+						"left-margin": 0,
+						"right-margin": 0,
+						"top-margin": 0,
+						"bottom-margin": 0,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "overlap"
+					},
+					"uid": 185,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"isEnabled": true,
+							"parameters": {}
+						},
+						"WarpRipple": {
+							"isEnabled": true,
+							"parameters": {
+								"frequency": 1,
+								"amplitude": 0.05,
+								"speed": 5
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 1,
+								"frequency": 0.4,
+								"angle": 3,
+								"delta": 20,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						}
+					},
+					"world": {
+						"x": 160,
+						"y": 304,
+						"width": 96,
+						"height": 16,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "npWaveTest",
+					"properties": {
+						"left-margin": 0,
+						"right-margin": 0,
+						"top-margin": 0,
+						"bottom-margin": 0,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "overlap"
+					},
+					"uid": 186,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"isEnabled": true,
+							"parameters": {}
+						},
+						"WarpRipple": {
+							"isEnabled": true,
+							"parameters": {
+								"frequency": 1,
+								"amplitude": 0.05,
+								"speed": 5
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 1,
+								"frequency": 0.4,
+								"angle": 3,
+								"delta": 20,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						}
+					},
+					"world": {
+						"x": 128,
+						"y": 272,
+						"width": 64,
+						"height": 16,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "npWaveTest",
+					"properties": {
+						"left-margin": 0,
+						"right-margin": 0,
+						"top-margin": 0,
+						"bottom-margin": 0,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "overlap"
+					},
+					"uid": 187,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"isEnabled": true,
+							"parameters": {}
+						},
+						"WarpRipple": {
+							"isEnabled": true,
+							"parameters": {
+								"frequency": 1,
+								"amplitude": 0.05,
+								"speed": 5
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 1,
+								"frequency": 0.4,
+								"angle": 3,
+								"delta": 20,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						}
+					},
+					"world": {
+						"x": 144,
+						"y": 256,
+						"width": 64,
+						"height": 16,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "npWaveTest",
+					"properties": {
+						"left-margin": 0,
+						"right-margin": 0,
+						"top-margin": 0,
+						"bottom-margin": 0,
+						"edges": "tile",
+						"fill": "tile",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "overlap"
+					},
+					"uid": 189,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"isEnabled": true,
+							"parameters": {}
+						},
+						"WarpRipple": {
+							"isEnabled": true,
+							"parameters": {
+								"frequency": 1,
+								"amplitude": 0.05,
+								"speed": 5
+							}
+						},
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 1,
+								"frequency": 0.4,
+								"angle": 3,
+								"delta": 20,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						}
+					},
+					"world": {
+						"x": 160,
+						"y": 352,
+						"width": 96,
+						"height": 16,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}
@@ -314,39 +685,6 @@
 		},
 		{
 			"name": "Objects",
-			"overriden": 0,
-			"subLayers": [],
-			"instances": [],
-			"sid": 875760117104030,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"isInitiallyInteractive": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"drawOrder": "z-order",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
-			"name": "Debug",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
@@ -443,7 +781,41 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
+				}
+			],
+			"sid": 875760117104030,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Debug",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
 				{
 					"type": "sPortal",
 					"properties": {

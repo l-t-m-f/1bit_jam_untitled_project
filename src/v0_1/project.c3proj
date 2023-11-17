@@ -85,13 +85,6 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Shape3D",
-			"name": "3D shape",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -129,6 +122,13 @@
 			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -215,6 +215,20 @@
 			"name": "Warp object",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "warpripple",
+			"name": "Warp ripple",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "water",
+			"name": "Water",
+			"author": "Viktor Korsun",
+			"bundled": false
 		}
 	],
 	"uniqueId": "v15jb14ulow",
@@ -222,212 +236,9 @@
 		"items": [
 			"AJAX",
 			"Browser",
-			"3DShapeTest",
-			"Audio",
-			"tbRope"
+			"Audio"
 		],
 		"subfolders": [
-			{
-				"items": [
-					"sTest2"
-				],
-				"subfolders": [
-					{
-						"items": [
-							"npStageBoundary"
-						],
-						"subfolders": [],
-						"name": "LevelTests"
-					},
-					{
-						"items": [
-							"sEntityBase"
-						],
-						"subfolders": [
-							{
-								"items": [
-									"sPlayerJumpBuffer"
-								],
-								"subfolders": [
-									{
-										"items": [
-											"sPlayerSkeleton_Head",
-											"sPlayerSkeleton_Shoulder",
-											"sPlayerSkeleton_Foreleg",
-											"sPlayerSkeleton_Hindleg",
-											"sPlayerSkeleton_Feet",
-											"sPlayerSkeleton_Tongue",
-											"sPlayerSkeleton_Auxiliary",
-											"sPlayerSkeleton_Lantern"
-										],
-										"subfolders": [],
-										"name": "Skeleton"
-									},
-									{
-										"items": [
-											"LegLeft",
-											"LegLeft2",
-											"LegLeft3",
-											"LegLeftShoe",
-											"BloodJar",
-											"Bra",
-											"CenterBacking",
-											"DogNose",
-											"Eye",
-											"Eye2",
-											"FigherR",
-											"FingerL",
-											"FingerL2",
-											"Heart",
-											"Heart2",
-											"HotPepper",
-											"Lamp",
-											"Mirror",
-											"Silhouette",
-											"sInventoryIcon_Teeth",
-											"sInventoryItem_Bra",
-											"sInventoryItem_Clock",
-											"sInventoryItem_HotPepper",
-											"sInventoryItem_Jar",
-											"sInventoryItem_Mirror",
-											"sInventoryItem_Tongue",
-											"Sprite",
-											"TeethLower",
-											"TeethLower2",
-											"TeethUpper",
-											"Tongue"
-										],
-										"subfolders": [],
-										"name": "Art"
-									}
-								],
-								"name": "Player"
-							},
-							{
-								"items": [
-									"sMmmgmmgmmgrArt",
-									"sPlayerArt",
-									"sUrchinArt"
-								],
-								"subfolders": [
-									{
-										"items": [
-											"sPlayerPortraitArt"
-										],
-										"subfolders": [],
-										"name": "Portraits"
-									}
-								],
-								"name": "Art"
-							}
-						],
-						"name": "Entities"
-					},
-					{
-						"items": [
-							"3DCamera"
-						],
-						"subfolders": [],
-						"name": "3DView"
-					},
-					{
-						"items": [
-							"aKeystate",
-							"aMoveKeyMem"
-						],
-						"subfolders": [],
-						"name": "InputSystem"
-					},
-					{
-						"items": [
-							"sClue"
-						],
-						"subfolders": [],
-						"name": "Inspection"
-					},
-					{
-						"items": [
-							"sCamera"
-						],
-						"subfolders": [],
-						"name": "Camera"
-					},
-					{
-						"items": [
-							"sDoor",
-							"sPlayerSpawn",
-							"sEntitySpawn"
-						],
-						"subfolders": [],
-						"name": "GameplayElements"
-					},
-					{
-						"items": [
-							"npViewportDeadzone",
-							"sMouseCursor",
-							"npInventoryBG"
-						],
-						"subfolders": [
-							{
-								"items": [
-									"npEntityTile",
-									"sExclaim"
-								],
-								"subfolders": [
-									{
-										"items": [
-											"npDialogBox",
-											"npDialogChoice",
-											"jsonDialogsData"
-										],
-										"subfolders": [],
-										"name": "DialogsSystem"
-									}
-								],
-								"name": "InGame"
-							}
-						],
-						"name": "UI"
-					},
-					{
-						"items": [
-							"sAIAnchorPoint"
-						],
-						"subfolders": [],
-						"name": "AI"
-					},
-					{
-						"items": [
-							"sPortal",
-							"sPortalArt",
-							"sSolidTest",
-							"tmTiles1",
-							"tbBackgroundPebbles",
-							"tbBlackMask",
-							"sStageCenter",
-							"tbFence1"
-						],
-						"subfolders": [],
-						"name": "World"
-					},
-					{
-						"items": [
-							"pFog",
-							"sFogParticle"
-						],
-						"subfolders": [],
-						"name": "FX"
-					},
-					{
-						"items": [
-							"dInventory"
-						],
-						"subfolders": [],
-						"name": "Inventory"
-					}
-				],
-				"name": "Emile"
-			},
 			{
 				"items": [
 					"Keyboard",
@@ -444,6 +255,203 @@
 				],
 				"subfolders": [],
 				"name": "Fonts"
+			},
+			{
+				"items": [
+					"3DCamera"
+				],
+				"subfolders": [],
+				"name": "3DView"
+			},
+			{
+				"items": [
+					"sAIAnchorPoint"
+				],
+				"subfolders": [],
+				"name": "AI"
+			},
+			{
+				"items": [
+					"sCamera"
+				],
+				"subfolders": [],
+				"name": "Camera"
+			},
+			{
+				"items": [
+					"sEntityBase"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"sPlayerJumpBuffer"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"sPlayerSkeleton_Head",
+									"sPlayerSkeleton_Shoulder",
+									"sPlayerSkeleton_Foreleg",
+									"sPlayerSkeleton_Hindleg",
+									"sPlayerSkeleton_Feet",
+									"sPlayerSkeleton_Tongue",
+									"sPlayerSkeleton_Auxiliary",
+									"sPlayerSkeleton_Lantern"
+								],
+								"subfolders": [],
+								"name": "Skeleton"
+							},
+							{
+								"items": [
+									"LegLeft",
+									"LegLeft2",
+									"LegLeft3",
+									"LegLeftShoe",
+									"BloodJar",
+									"Bra",
+									"CenterBacking",
+									"DogNose",
+									"Eye",
+									"Eye2",
+									"FigherR",
+									"FingerL",
+									"FingerL2",
+									"Heart",
+									"Heart2",
+									"HotPepper",
+									"Lamp",
+									"Mirror",
+									"Silhouette",
+									"sInventoryIcon_Teeth",
+									"sInventoryItem_Bra",
+									"sInventoryItem_Clock",
+									"sInventoryItem_HotPepper",
+									"sInventoryItem_Jar",
+									"sInventoryItem_Mirror",
+									"sInventoryItem_Tongue",
+									"Sprite",
+									"TeethLower",
+									"TeethLower2",
+									"TeethUpper",
+									"Tongue"
+								],
+								"subfolders": [],
+								"name": "Art"
+							}
+						],
+						"name": "Player"
+					},
+					{
+						"items": [
+							"sMmmgmmgmmgrArt",
+							"sPlayerArt",
+							"sUrchinArt"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"sPlayerPortraitArt"
+								],
+								"subfolders": [],
+								"name": "Portraits"
+							}
+						],
+						"name": "Art"
+					}
+				],
+				"name": "Entities"
+			},
+			{
+				"items": [
+					"pFog",
+					"sFogParticle"
+				],
+				"subfolders": [],
+				"name": "FX"
+			},
+			{
+				"items": [
+					"sDoor",
+					"sPlayerSpawn",
+					"sEntitySpawn"
+				],
+				"subfolders": [],
+				"name": "GameplayElements"
+			},
+			{
+				"items": [
+					"aKeystate",
+					"aMoveKeyMem"
+				],
+				"subfolders": [],
+				"name": "InputSystem"
+			},
+			{
+				"items": [
+					"sClue"
+				],
+				"subfolders": [],
+				"name": "Inspection"
+			},
+			{
+				"items": [
+					"dInventory"
+				],
+				"subfolders": [],
+				"name": "Inventory"
+			},
+			{
+				"items": [
+					"npStageBoundary"
+				],
+				"subfolders": [],
+				"name": "LevelTests"
+			},
+			{
+				"items": [
+					"npViewportDeadzone",
+					"sMouseCursor",
+					"npInventoryBG",
+					"tbRope",
+					"tbFadeBlack"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"npEntityTile",
+							"sExclaim"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"npDialogBox",
+									"npDialogChoice",
+									"jsonDialogsData"
+								],
+								"subfolders": [],
+								"name": "DialogsSystem"
+							}
+						],
+						"name": "InGame"
+					}
+				],
+				"name": "UI"
+			},
+			{
+				"items": [
+					"sPortal",
+					"sPortalArt",
+					"sSolidTest",
+					"tmTiles1",
+					"tbBackgroundPebbles",
+					"tbBlackMask",
+					"sStageCenter",
+					"tbFence1",
+					"npLakeTest",
+					"npWaveTest"
+				],
+				"subfolders": [],
+				"name": "World"
 			}
 		]
 	},
@@ -469,7 +477,9 @@
 	},
 	"layouts": {
 		"items": [
-			"Defaults"
+			"Defaults",
+			"HUD",
+			"Gym"
 		],
 		"subfolders": [
 			{
@@ -481,14 +491,6 @@
 			},
 			{
 				"items": [
-					"HUD",
-					"Gym"
-				],
-				"subfolders": [],
-				"name": "Emile"
-			},
-			{
-				"items": [
 					"House",
 					"Start",
 					"Garden",
@@ -497,6 +499,13 @@
 				],
 				"subfolders": [],
 				"name": "World"
+			},
+			{
+				"items": [
+					"Main"
+				],
+				"subfolders": [],
+				"name": "Menus"
 			}
 		]
 	},
