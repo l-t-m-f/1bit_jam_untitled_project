@@ -42,6 +42,12 @@
 			"properties": {},
 			"uid": 168,
 			"instanceVariables": {}
+		},
+		{
+			"type": "dNarrative",
+			"properties": {},
+			"uid": 192,
+			"instanceVariables": {}
 		}
 	],
 	"effectTypes": [],

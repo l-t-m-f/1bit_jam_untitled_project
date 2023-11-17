@@ -294,11 +294,11 @@
 					},
 					"uid": 232,
 					"instanceVariables": {
-						"EntityName": "NPC_Mayor"
+						"EntityName": "OBJ_Door"
 					},
 					"behaviors": {},
 					"world": {
-						"x": 288,
+						"x": 560,
 						"y": 384,
 						"width": 32,
 						"height": 32,

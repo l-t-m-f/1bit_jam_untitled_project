@@ -1041,12 +1041,12 @@
 					},
 					"uid": 180,
 					"instanceVariables": {
-						"EntityName": "NPC_Urchin"
+						"EntityName": "OBJ_Trash"
 					},
 					"behaviors": {},
 					"world": {
-						"x": 448,
-						"y": 176,
+						"x": 464,
+						"y": 160,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,

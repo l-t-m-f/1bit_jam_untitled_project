@@ -1,0 +1,155 @@
+{
+	"stories": [
+		{
+			"name": "",
+			"lines": [
+				{
+					"text": "Just an old pile of trash, it seems oddly relatable.",
+					"choices": [],
+					"default_effect": 2
+				}
+			]
+		},
+		{
+			"name": "",
+			"lines": [
+				{
+					"text": "You can’t go there anymore. Your landlord kicked you out two weeks ago.",
+					"choices": [],
+					"default_effect": 2
+				}
+			]
+		},
+		{
+			"name": "",
+			"lines": [
+				{
+					"text": "Oh hi there ! I didn’t expect to see anyone here I used to be the gravedigger around here, but since I died no one’s taking care of the graveyard anymore.",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "No one’s coming here anyway, but I wish I had more time to say goodbye to the skeletons, they’re some of the coolest people I’ve ever met.",
+					"choices": [
+						{
+							"text": "Give clock",
+							"effect": 0
+						},
+						{
+							"text": "Leave",
+							"effect": 2
+						}
+					],
+					"default_effect": -1
+				},
+				{
+					"text": "Thanks again for the clock, the constant ticking kind of brought a bit of life back in this garden. It’s really nice.",
+					"choices": [],
+					"default_effect": 2
+				}
+			]
+		},
+		{
+			"name": "",
+			"lines": [
+				{
+					"text": "No fish. No fish. I’m not looking for fish, I’m looking for something more personal.",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "I feel like I can see them on this lake.",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "Maybe it is just me here, it’s always been me right ?I try to find them everyday but I really can’t seem to get them.",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "Not the fish. I mean, I don’t know, maybe ? Maybe it was the fish all along.",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "It just won’t stop…",
+					"choices": [
+						{
+							"text": "Give fingers",
+							"effect": 0
+						},
+						{
+							"text": "Leave",
+							"effect": 2
+						}
+					],
+					"default_effect": 0
+				}
+			]
+		},
+		{
+			"name": "Anarchist Friend",
+			"lines": [
+				{
+					"text": "Hey, nice to see you ! It’s been a while, I haven’t seen you since the “landlord incident”.",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "Talking about that I found a way to get your house back. Are you down to do a “kind of silly prank” ?",
+					"choices": [
+						{
+							"text": "Leave",
+							"effect": 2
+						},
+						{
+							"text": "Yes",
+							"effect": 0
+						}
+					],
+					"default_effect": 0
+				}
+			]
+		},
+		{
+			"name": "Cave Creature",
+			"lines": [
+				{
+					"text": "Are you god ? Or my mom ? I can’t really tell, it’s so dark in here.",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "I’ve been lost in this cave for as long as I can remember. It’s comfy tho, I like the humidity and the quietness. I just wished I could see something.",
+					"choices": [
+						{
+							"text": "Give lantern",
+							"effect": 0
+						},
+						{
+							"text": "Leave",
+							"effect": 2
+						}
+					],
+					"default_effect": 0
+				}
+			]
+		},
+		{
+			"name": "Farmer",
+			"lines": [
+				{
+					"text": "Would you mind not telling people I’m here ? I kind of like being alone",
+					"choices": [
+						{
+							"text": "Leave",
+							"effect": 2
+						}
+					],
+					"default_effect": 0
+				}
+			]
+		}
+	]
+}

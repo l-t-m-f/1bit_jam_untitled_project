@@ -236,7 +236,9 @@
 		"items": [
 			"AJAX",
 			"Browser",
-			"Audio"
+			"Audio",
+			"sPileOfTrash",
+			"sHouseDoor"
 		],
 		"subfolders": [
 			{
@@ -413,7 +415,8 @@
 								"items": [
 									"npDialogBox",
 									"npDialogChoice",
-									"jsonDialogsData"
+									"jsonDialogsData",
+									"dNarrative"
 								],
 								"subfolders": [],
 								"name": "DialogsSystem"
@@ -637,10 +640,18 @@
 							"file-info": {
 								"purpose": "none"
 							}
+						},
+						{
+							"name": "RefNarrative.json",
+							"type": "application/json",
+							"sid": 610765783832442,
+							"file-info": {
+								"purpose": "none"
+							}
 						}
 					],
 					"subfolders": [],
-					"name": "Dialog"
+					"name": "Texts"
 				},
 				{
 					"items": [

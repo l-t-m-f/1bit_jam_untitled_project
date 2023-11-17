@@ -110,6 +110,28 @@
 					"parameters": {
 						"text": "jsonDialogsData.Get(\"lines.0\")"
 					}
+				},
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 385113630295672,
+					"parameters": {
+						"tag": "\"narrative_structure_load\"",
+						"file": "RefNarrative.json"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 738910638615750
+				},
+				{
+					"id": "load",
+					"objectClass": "dNarrative",
+					"sid": 956623341788095,
+					"parameters": {
+						"json": "AJAX.LastData"
+					}
 				}
 			],
 			"sid": 167503349842810
@@ -422,6 +444,138 @@
 								}
 							],
 							"sid": 732258456809196
+						}
+					]
+				}
+			]
+		},
+		{
+			"functionName": "PullNarrativeText",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "pDialogStory",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"sid": 438915377708059
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 395689878266352,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "last_story_access_str",
+					"type": "string",
+					"initialValue": "NULL",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 916016142186102
+				},
+				{
+					"eventType": "variable",
+					"name": "last_line_access_str",
+					"type": "string",
+					"initialValue": "NULL",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 542256747189338
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 921341169859078,
+							"parameters": {
+								"variable": "last_story_access_str",
+								"value": "\"stories.\"&str(pDialogStory)"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 115056410490440,
+							"parameters": {
+								"variable": "last_line_access_str",
+								"value": "last_story_access_str&\".lines.\"&str(dNarrative.Get(str(pDialogStory)))"
+							}
+						}
+					],
+					"sid": 625410034429155,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 419583189234674,
+									"parameters": {
+										"object": "sfTimesNewYorker",
+										"expression": "sfTimesNewYorker.TemplateName",
+										"comparison": 0,
+										"value": "\"Spritefont1_Text\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "typewriter-text",
+									"objectClass": "sfTimesNewYorker",
+									"sid": 224828873713231,
+									"parameters": {
+										"text": "jsonDialogsData.Get(last_line_access_str&\".text\")",
+										"duration": "0.04 * len(jsonDialogsData.Get(last_line_access_str&\".text\"))"
+									}
+								}
+							],
+							"sid": 923769959770901
+						},
+						{
+							"eventType": "variable",
+							"name": "last_choices_access_str",
+							"type": "string",
+							"initialValue": "NULL",
+							"comment": "",
+							"isStatic": true,
+							"isConstant": false,
+							"sid": 307873828360361
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 553806520184054,
+									"parameters": {
+										"variable": "last_choices_access_str",
+										"value": "last_line_access_str&\".choices\""
+									}
+								},
+								{
+									"callFunction": "CreateDialogChoice",
+									"sid": 728918546556773,
+									"parameters": [
+										"pDialogStory",
+										"last_choices_access_str"
+									]
+								}
+							],
+							"sid": 279213311529662
 						}
 					]
 				}
