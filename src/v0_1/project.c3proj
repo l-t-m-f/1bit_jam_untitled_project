@@ -204,6 +204,13 @@
 		},
 		{
 			"type": "effect",
+			"id": "inverse",
+			"name": "Inverse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "pulse",
 			"name": "Pulse",
 			"author": "Danguafer/Silexars",
@@ -240,7 +247,7 @@
 			"sPileOfTrash",
 			"sHouseDoor",
 			"sSmallExit",
-			"sMenuBG"
+			"npButtonArt"
 		],
 		"subfolders": [
 			{
@@ -369,7 +376,9 @@
 			{
 				"items": [
 					"pFog",
-					"sFogParticle"
+					"sFogParticle",
+					"sLightParticle",
+					"pFog2"
 				],
 				"subfolders": [],
 				"name": "FX"
@@ -413,7 +422,11 @@
 					"sMouseCursor",
 					"npInventoryBG",
 					"tbRope",
-					"tbFadeBlack"
+					"tbFadeBlack",
+					"sMenuBG",
+					"sMenuButton",
+					"sTitleHook",
+					"sCreditHook"
 				],
 				"subfolders": [
 					{
@@ -534,7 +547,8 @@
 		"subfolders": [
 			{
 				"items": [
-					"eGame"
+					"eGame",
+					"eMenu"
 				],
 				"subfolders": [],
 				"name": "LayoutEvents"
@@ -772,5 +786,5 @@
 	},
 	"viewportWidth": 640,
 	"viewportHeight": 480,
-	"firstLayout": "Start"
+	"firstLayout": "Main"
 }

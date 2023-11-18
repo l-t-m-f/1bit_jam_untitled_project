@@ -1,0 +1,61 @@
+{
+	"name": "sLightParticle",
+	"plugin-id": "Sprite",
+	"sid": 645168842196902,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 950197839163320
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "difference",
+			"name": "Difference"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 5,
+						"height": 5,
+						"originX": 1,
+						"originY": 1.4,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8056583,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.4,
+								0,
+								0.4,
+								0.8,
+								0,
+								0.8
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 291400032905164,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

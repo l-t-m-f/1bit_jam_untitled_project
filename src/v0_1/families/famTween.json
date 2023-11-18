@@ -27,6 +27,8 @@
 	],
 	"effectTypes": [],
 	"members": [
-		"sEntityBase"
+		"sEntityBase",
+		"sTitleHook",
+		"sCreditHook"
 	]
 }

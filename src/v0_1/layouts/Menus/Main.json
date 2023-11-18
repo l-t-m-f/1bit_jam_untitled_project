@@ -2,7 +2,7 @@
 	"name": "Main",
 	"layers": [
 		{
-			"name": "Layer 0",
+			"name": "MainMenu",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
@@ -25,6 +25,576 @@
 						"height": 512,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sfRazorKeen",
+					"properties": {
+						"text": "How Not to Be \na Mess",
+						"enable-bbcode": true,
+						"character-width": 56,
+						"character-height": 117,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>%",
+						"spacing-data": "[[16,\" \"],[5,\"'\"],[7,\".:\"],[9,\"l,;\"],[10,\"Ii1\"],[11,\"!\"],[15,\"\\\"\"],[16,\"|\"],[17,\")\"],[18,\"ey\"],[19,\"ckv-&+\"],[20,\"oz`\\\\\"],[21,\"bhnp?\"],[22,\"Tjrsx\"],[23,\"JLPUVadfu°>\"],[24,\"qt3=\"],[25,\"46[]$%\"],[26,\"BKQw~*<\"],[27,\"DFm78\"],[28,\"GNORYZg2\"],[29,\"ACHMX09(\"],[30,\"ES5\"],[32,\"/€\"],[35,\"£\"],[38,\"_\"],[39,\"W\"],[41,\"#\"],[43,\"@\"]]",
+						"scale": 1.5,
+						"character-spacing": 5,
+						"line-height": -50,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 256,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"isEnabled": false,
+							"parameters": {}
+						},
+						"WarpObject": {
+							"isEnabled": false,
+							"parameters": {
+								"x-frequency": 4,
+								"y-frequency": 4,
+								"x-amplitude": 10,
+								"y-amplitude": 10,
+								"x-speed": 1,
+								"y-speed": 1
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 265,
+						"uid": 256,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 160,
+						"y": 0,
+						"width": 320,
+						"height": 480,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sfRazorKeen",
+					"properties": {
+						"text": "How Not to Be \na Mess",
+						"enable-bbcode": true,
+						"character-width": 56,
+						"character-height": 117,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>%",
+						"spacing-data": "[[16,\" \"],[5,\"'\"],[7,\".:\"],[9,\"l,;\"],[10,\"Ii1\"],[11,\"!\"],[15,\"\\\"\"],[16,\"|\"],[17,\")\"],[18,\"ey\"],[19,\"ckv-&+\"],[20,\"oz`\\\\\"],[21,\"bhnp?\"],[22,\"Tjrsx\"],[23,\"JLPUVadfu°>\"],[24,\"qt3=\"],[25,\"46[]$%\"],[26,\"BKQw~*<\"],[27,\"DFm78\"],[28,\"GNORYZg2\"],[29,\"ACHMX09(\"],[30,\"ES5\"],[32,\"/€\"],[35,\"£\"],[38,\"_\"],[39,\"W\"],[41,\"#\"],[43,\"@\"]]",
+						"scale": 1.5,
+						"character-spacing": 5,
+						"line-height": -50,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 257,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"isEnabled": false,
+							"parameters": {}
+						},
+						"WarpObject": {
+							"isEnabled": false,
+							"parameters": {
+								"x-frequency": 4,
+								"y-frequency": 4,
+								"x-amplitude": 10,
+								"y-amplitude": 10,
+								"x-speed": 1,
+								"y-speed": 1
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 265,
+						"uid": 257,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 163,
+						"y": -2,
+						"width": 320,
+						"height": 480,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sMenuButton",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 258,
+					"instanceVariables": {
+						"ivButtonEffect": 1
+					},
+					"behaviors": {},
+					"sceneGraphData": {
+						"parent-uid": null,
+						"uid": 258,
+						"children": [
+							{
+								"uid": 260,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							}
+						],
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 480,
+						"y": 400,
+						"width": 128,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sMenuButton",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 259,
+					"instanceVariables": {
+						"ivButtonEffect": 0
+					},
+					"behaviors": {},
+					"sceneGraphData": {
+						"parent-uid": null,
+						"uid": 259,
+						"children": [
+							{
+								"uid": 261,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							}
+						],
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 32,
+						"y": 400,
+						"width": 128,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "npButtonArt",
+					"properties": {
+						"left-margin": 16,
+						"right-margin": 16,
+						"top-margin": 16,
+						"bottom-margin": 16,
+						"edges": "stretch",
+						"fill": "stretch",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "overlap"
+					},
+					"uid": 260,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Inverse": {
+							"isEnabled": false,
+							"parameters": {
+								"intensity": 1
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 258,
+						"uid": 260,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 480,
+						"y": 400,
+						"width": 128,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "npButtonArt",
+					"properties": {
+						"left-margin": 16,
+						"right-margin": 16,
+						"top-margin": 16,
+						"bottom-margin": 16,
+						"edges": "stretch",
+						"fill": "stretch",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "overlap"
+					},
+					"uid": 261,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Inverse": {
+							"isEnabled": false,
+							"parameters": {
+								"intensity": 1
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 259,
+						"uid": 261,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 32,
+						"y": 400,
+						"width": 128,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sfRazorKeen",
+					"properties": {
+						"text": "Play",
+						"enable-bbcode": true,
+						"character-width": 56,
+						"character-height": 117,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>%",
+						"spacing-data": "[[16,\" \"],[5,\"'\"],[7,\".:\"],[9,\"l,;\"],[10,\"Ii1\"],[11,\"!\"],[15,\"\\\"\"],[16,\"|\"],[17,\")\"],[18,\"ey\"],[19,\"ckv-&+\"],[20,\"oz`\\\\\"],[21,\"bhnp?\"],[22,\"Tjrsx\"],[23,\"JLPUVadfu°>\"],[24,\"qt3=\"],[25,\"46[]$%\"],[26,\"BKQw~*<\"],[27,\"DFm78\"],[28,\"GNORYZg2\"],[29,\"ACHMX09(\"],[30,\"ES5\"],[32,\"/€\"],[35,\"£\"],[38,\"_\"],[39,\"W\"],[41,\"#\"],[43,\"@\"]]",
+						"scale": 0.75,
+						"character-spacing": 5,
+						"line-height": -50,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 263,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"isEnabled": true,
+							"parameters": {}
+						},
+						"WarpObject": {
+							"isEnabled": false,
+							"parameters": {
+								"x-frequency": 4,
+								"y-frequency": 4,
+								"x-amplitude": 10,
+								"y-amplitude": 10,
+								"x-speed": 1,
+								"y-speed": 1
+							}
+						}
+					},
+					"world": {
+						"x": 32,
+						"y": 368,
+						"width": 128,
+						"height": 96,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sfRazorKeen",
+					"properties": {
+						"text": "Credits",
+						"enable-bbcode": true,
+						"character-width": 56,
+						"character-height": 117,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>%",
+						"spacing-data": "[[16,\" \"],[5,\"'\"],[7,\".:\"],[9,\"l,;\"],[10,\"Ii1\"],[11,\"!\"],[15,\"\\\"\"],[16,\"|\"],[17,\")\"],[18,\"ey\"],[19,\"ckv-&+\"],[20,\"oz`\\\\\"],[21,\"bhnp?\"],[22,\"Tjrsx\"],[23,\"JLPUVadfu°>\"],[24,\"qt3=\"],[25,\"46[]$%\"],[26,\"BKQw~*<\"],[27,\"DFm78\"],[28,\"GNORYZg2\"],[29,\"ACHMX09(\"],[30,\"ES5\"],[32,\"/€\"],[35,\"£\"],[38,\"_\"],[39,\"W\"],[41,\"#\"],[43,\"@\"]]",
+						"scale": 0.5,
+						"character-spacing": 5,
+						"line-height": -50,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 262,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"isEnabled": true,
+							"parameters": {}
+						},
+						"WarpObject": {
+							"isEnabled": false,
+							"parameters": {
+								"x-frequency": 4,
+								"y-frequency": 4,
+								"x-amplitude": 10,
+								"y-amplitude": 10,
+								"x-speed": 1,
+								"y-speed": 1
+							}
+						}
+					},
+					"world": {
+						"x": 480,
+						"y": 400,
+						"width": 128,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -63,6 +633,948 @@
 			"blendMode": "normal",
 			"zElevation": 0,
 			"global": false
+		},
+		{
+			"name": "Credits",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "sTitleHook",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 265,
+					"instanceVariables": {
+						"ivTweenVal1": -1,
+						"ivTweenVal2": -1
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": null,
+						"uid": 265,
+						"children": [
+							{
+								"uid": 257,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 256,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							}
+						],
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 320,
+						"y": -64,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sCreditHook",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 271,
+					"instanceVariables": {
+						"ivTweenVal1": -1,
+						"ivTweenVal2": -1
+					},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": null,
+						"uid": 271,
+						"children": [
+							{
+								"uid": 264,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 266,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 267,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 268,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 269,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 270,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							},
+							{
+								"uid": 272,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							}
+						],
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 704,
+						"y": -64,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "npDialogBox",
+					"properties": {
+						"left-margin": 12,
+						"right-margin": 12,
+						"top-margin": 12,
+						"bottom-margin": 12,
+						"edges": "tile",
+						"fill": "stretch",
+						"initially-visible": true,
+						"origin": "top-left",
+						"seams": "overlap"
+					},
+					"uid": 272,
+					"instanceVariables": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 271,
+						"uid": 272,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 640,
+						"y": 40,
+						"width": 288,
+						"height": 384,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sfRazorKeen",
+					"properties": {
+						"text": "Art Direction",
+						"enable-bbcode": true,
+						"character-width": 56,
+						"character-height": 117,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>%",
+						"spacing-data": "[[16,\" \"],[5,\"'\"],[7,\".:\"],[9,\"l,;\"],[10,\"Ii1\"],[11,\"!\"],[15,\"\\\"\"],[16,\"|\"],[17,\")\"],[18,\"ey\"],[19,\"ckv-&+\"],[20,\"oz`\\\\\"],[21,\"bhnp?\"],[22,\"Tjrsx\"],[23,\"JLPUVadfu°>\"],[24,\"qt3=\"],[25,\"46[]$%\"],[26,\"BKQw~*<\"],[27,\"DFm78\"],[28,\"GNORYZg2\"],[29,\"ACHMX09(\"],[30,\"ES5\"],[32,\"/€\"],[35,\"£\"],[38,\"_\"],[39,\"W\"],[41,\"#\"],[43,\"@\"]]",
+						"scale": 0.3333,
+						"character-spacing": 5,
+						"line-height": -50,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 267,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"isEnabled": false,
+							"parameters": {}
+						},
+						"WarpObject": {
+							"isEnabled": false,
+							"parameters": {
+								"x-frequency": 4,
+								"y-frequency": 4,
+								"x-amplitude": 10,
+								"y-amplitude": 10,
+								"x-speed": 1,
+								"y-speed": 1
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 271,
+						"uid": 267,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 640,
+						"y": 304,
+						"width": 288,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sfRazorKeen",
+					"properties": {
+						"text": "Nicolas Pons",
+						"enable-bbcode": true,
+						"character-width": 56,
+						"character-height": 117,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>%",
+						"spacing-data": "[[16,\" \"],[5,\"'\"],[7,\".:\"],[9,\"l,;\"],[10,\"Ii1\"],[11,\"!\"],[15,\"\\\"\"],[16,\"|\"],[17,\")\"],[18,\"ey\"],[19,\"ckv-&+\"],[20,\"oz`\\\\\"],[21,\"bhnp?\"],[22,\"Tjrsx\"],[23,\"JLPUVadfu°>\"],[24,\"qt3=\"],[25,\"46[]$%\"],[26,\"BKQw~*<\"],[27,\"DFm78\"],[28,\"GNORYZg2\"],[29,\"ACHMX09(\"],[30,\"ES5\"],[32,\"/€\"],[35,\"£\"],[38,\"_\"],[39,\"W\"],[41,\"#\"],[43,\"@\"]]",
+						"scale": 0.5,
+						"character-spacing": 5,
+						"line-height": -50,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 268,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"isEnabled": false,
+							"parameters": {}
+						},
+						"WarpObject": {
+							"isEnabled": false,
+							"parameters": {
+								"x-frequency": 4,
+								"y-frequency": 4,
+								"x-amplitude": 10,
+								"y-amplitude": 10,
+								"x-speed": 1,
+								"y-speed": 1
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 271,
+						"uid": 268,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 640,
+						"y": 336,
+						"width": 288,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sfRazorKeen",
+					"properties": {
+						"text": "Design & Story",
+						"enable-bbcode": true,
+						"character-width": 56,
+						"character-height": 117,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>%",
+						"spacing-data": "[[16,\" \"],[5,\"'\"],[7,\".:\"],[9,\"l,;\"],[10,\"Ii1\"],[11,\"!\"],[15,\"\\\"\"],[16,\"|\"],[17,\")\"],[18,\"ey\"],[19,\"ckv-&+\"],[20,\"oz`\\\\\"],[21,\"bhnp?\"],[22,\"Tjrsx\"],[23,\"JLPUVadfu°>\"],[24,\"qt3=\"],[25,\"46[]$%\"],[26,\"BKQw~*<\"],[27,\"DFm78\"],[28,\"GNORYZg2\"],[29,\"ACHMX09(\"],[30,\"ES5\"],[32,\"/€\"],[35,\"£\"],[38,\"_\"],[39,\"W\"],[41,\"#\"],[43,\"@\"]]",
+						"scale": 0.3333,
+						"character-spacing": 5,
+						"line-height": -50,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 269,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"isEnabled": false,
+							"parameters": {}
+						},
+						"WarpObject": {
+							"isEnabled": false,
+							"parameters": {
+								"x-frequency": 4,
+								"y-frequency": 4,
+								"x-amplitude": 10,
+								"y-amplitude": 10,
+								"x-speed": 1,
+								"y-speed": 1
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 271,
+						"uid": 269,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 640,
+						"y": 64,
+						"width": 288,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sfRazorKeen",
+					"properties": {
+						"text": "Azael",
+						"enable-bbcode": true,
+						"character-width": 56,
+						"character-height": 117,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>%",
+						"spacing-data": "[[16,\" \"],[5,\"'\"],[7,\".:\"],[9,\"l,;\"],[10,\"Ii1\"],[11,\"!\"],[15,\"\\\"\"],[16,\"|\"],[17,\")\"],[18,\"ey\"],[19,\"ckv-&+\"],[20,\"oz`\\\\\"],[21,\"bhnp?\"],[22,\"Tjrsx\"],[23,\"JLPUVadfu°>\"],[24,\"qt3=\"],[25,\"46[]$%\"],[26,\"BKQw~*<\"],[27,\"DFm78\"],[28,\"GNORYZg2\"],[29,\"ACHMX09(\"],[30,\"ES5\"],[32,\"/€\"],[35,\"£\"],[38,\"_\"],[39,\"W\"],[41,\"#\"],[43,\"@\"]]",
+						"scale": 0.5,
+						"character-spacing": 5,
+						"line-height": -50,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 270,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"isEnabled": false,
+							"parameters": {}
+						},
+						"WarpObject": {
+							"isEnabled": false,
+							"parameters": {
+								"x-frequency": 4,
+								"y-frequency": 4,
+								"x-amplitude": 10,
+								"y-amplitude": 10,
+								"x-speed": 1,
+								"y-speed": 1
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 271,
+						"uid": 270,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 640,
+						"y": 96,
+						"width": 288,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sfRazorKeen",
+					"properties": {
+						"text": "Game Programming",
+						"enable-bbcode": true,
+						"character-width": 56,
+						"character-height": 117,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>%",
+						"spacing-data": "[[16,\" \"],[5,\"'\"],[7,\".:\"],[9,\"l,;\"],[10,\"Ii1\"],[11,\"!\"],[15,\"\\\"\"],[16,\"|\"],[17,\")\"],[18,\"ey\"],[19,\"ckv-&+\"],[20,\"oz`\\\\\"],[21,\"bhnp?\"],[22,\"Tjrsx\"],[23,\"JLPUVadfu°>\"],[24,\"qt3=\"],[25,\"46[]$%\"],[26,\"BKQw~*<\"],[27,\"DFm78\"],[28,\"GNORYZg2\"],[29,\"ACHMX09(\"],[30,\"ES5\"],[32,\"/€\"],[35,\"£\"],[38,\"_\"],[39,\"W\"],[41,\"#\"],[43,\"@\"]]",
+						"scale": 0.3333,
+						"character-spacing": 5,
+						"line-height": -50,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 264,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"isEnabled": false,
+							"parameters": {}
+						},
+						"WarpObject": {
+							"isEnabled": false,
+							"parameters": {
+								"x-frequency": 4,
+								"y-frequency": 4,
+								"x-amplitude": 10,
+								"y-amplitude": 10,
+								"x-speed": 1,
+								"y-speed": 1
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 271,
+						"uid": 264,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 640,
+						"y": 176,
+						"width": 288,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "sfRazorKeen",
+					"properties": {
+						"text": "Emile Frechette",
+						"enable-bbcode": true,
+						"character-width": 56,
+						"character-height": 117,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>%",
+						"spacing-data": "[[16,\" \"],[5,\"'\"],[7,\".:\"],[9,\"l,;\"],[10,\"Ii1\"],[11,\"!\"],[15,\"\\\"\"],[16,\"|\"],[17,\")\"],[18,\"ey\"],[19,\"ckv-&+\"],[20,\"oz`\\\\\"],[21,\"bhnp?\"],[22,\"Tjrsx\"],[23,\"JLPUVadfu°>\"],[24,\"qt3=\"],[25,\"46[]$%\"],[26,\"BKQw~*<\"],[27,\"DFm78\"],[28,\"GNORYZg2\"],[29,\"ACHMX09(\"],[30,\"ES5\"],[32,\"/€\"],[35,\"£\"],[38,\"_\"],[39,\"W\"],[41,\"#\"],[43,\"@\"]]",
+						"scale": 0.5,
+						"character-spacing": 5,
+						"line-height": -50,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 266,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"isEnabled": false,
+							"parameters": {}
+						},
+						"WarpObject": {
+							"isEnabled": false,
+							"parameters": {
+								"x-frequency": 4,
+								"y-frequency": 4,
+								"x-amplitude": 10,
+								"y-amplitude": 10,
+								"x-speed": 1,
+								"y-speed": 1
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 271,
+						"uid": 266,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"world": {
+						"x": 640,
+						"y": 208,
+						"width": 288,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 870896652128559,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "HUD_Overlay",
+			"overriden": 1,
+			"subLayers": [],
+			"instances": [],
+			"sid": 358916639746113,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "HUD_Mouse",
+			"overriden": 1,
+			"subLayers": [],
+			"instances": [],
+			"sid": 626540916646344,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
 		}
 	],
 	"sid": 672303812703991,
@@ -74,5 +1586,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": null
+	"eventSheet": "eMenu"
 }

@@ -1,0 +1,332 @@
+{
+	"name": "eMenu",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "bShowCredits",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 725746056037738
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 846276676565749
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 560842709264351,
+					"parameters": {
+						"cursor-style": "none"
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "tbFadeBlack",
+					"sid": 924208153612513,
+					"behaviorType": "Fade"
+				}
+			],
+			"sid": 551105224955768
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 694888434098593
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "sMouseCursor",
+					"sid": 364468645822567,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				}
+			],
+			"sid": 320909304394206
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 206818388733734,
+					"parameters": {
+						"object": "sMenuButton"
+					}
+				},
+				{
+					"id": "pick-children",
+					"objectClass": "sMenuButton",
+					"sid": 531729633046259,
+					"parameters": {
+						"child": "npButtonArt",
+						"which": "own"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 417479099464195,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "mouse-button-is-down",
+							"objectClass": "Mouse",
+							"sid": 671776169865387,
+							"parameters": {
+								"mouse-button": "left"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 560296145048710
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "npButtonArt",
+							"sid": 822563520327964,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"Inverse\""
+							}
+						}
+					],
+					"sid": 704691589528335,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "sMenuButton",
+									"sid": 100342297267749,
+									"parameters": {
+										"instance-variable": "ivButtonEffect",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 390551799118269,
+									"parameters": {
+										"layout": "Start"
+									}
+								}
+							],
+							"sid": 980290625321027
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 307779342168246
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "sMenuButton",
+									"sid": 416149047478389,
+									"parameters": {
+										"instance-variable": "ivButtonEffect",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 922664645849920,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 945055213572464,
+											"parameters": {
+												"variable": "bShowCredits"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "tween-one-property",
+											"objectClass": "sCreditHook",
+											"sid": 772975540707478,
+											"behaviorType": "Tween",
+											"parameters": {
+												"tags": "\"\"",
+												"property": "offsetX",
+												"end-value": "Self.X + 300",
+												"time": "1",
+												"ease": "easeinoutsine",
+												"destroy-on-complete": "no",
+												"loop": "no",
+												"ping-pong": "no",
+												"repeat-count": "1"
+											}
+										},
+										{
+											"id": "tween-one-property",
+											"objectClass": "sTitleHook",
+											"sid": 328165138107177,
+											"behaviorType": "Tween",
+											"parameters": {
+												"tags": "\"\"",
+												"property": "offsetX",
+												"end-value": "Self.X + 120",
+												"time": "1",
+												"ease": "easeinoutelastic",
+												"destroy-on-complete": "no",
+												"loop": "no",
+												"ping-pong": "no",
+												"repeat-count": "1"
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 420635637662487,
+											"parameters": {
+												"variable": "bShowCredits",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 834845391014092
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 359964498520337
+										}
+									],
+									"actions": [
+										{
+											"id": "tween-one-property",
+											"objectClass": "sCreditHook",
+											"sid": 431255191288264,
+											"behaviorType": "Tween",
+											"parameters": {
+												"tags": "\"\"",
+												"property": "offsetX",
+												"end-value": "Self.X - 300",
+												"time": "1",
+												"ease": "easeinoutsine",
+												"destroy-on-complete": "no",
+												"loop": "no",
+												"ping-pong": "no",
+												"repeat-count": "1"
+											}
+										},
+										{
+											"id": "tween-one-property",
+											"objectClass": "sTitleHook",
+											"sid": 557054895635209,
+											"behaviorType": "Tween",
+											"parameters": {
+												"tags": "\"\"",
+												"property": "offsetX",
+												"end-value": "Self.X - 120",
+												"time": "1",
+												"ease": "easeinoutelastic",
+												"destroy-on-complete": "no",
+												"loop": "no",
+												"ping-pong": "no",
+												"repeat-count": "1"
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 696717649959972,
+											"parameters": {
+												"variable": "bShowCredits",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 180055808646215
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 826002002688343
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "npButtonArt",
+							"sid": 352892162058212,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"Inverse\""
+							}
+						}
+					],
+					"sid": 779393575008206
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 668297884558340
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "npButtonArt",
+					"sid": 802913683292360,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Inverse\""
+					}
+				}
+			],
+			"sid": 207679847181160
+		}
+	],
+	"sid": 580600812307076
+}

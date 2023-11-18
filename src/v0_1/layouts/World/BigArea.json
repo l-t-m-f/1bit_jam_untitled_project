@@ -1645,7 +1645,7 @@
 			"instances": [],
 			"sid": 685451019372271,
 			"effectTypes": [],
-			"isInitiallyVisible": true,
+			"isInitiallyVisible": false,
 			"isInitiallyInteractive": true,
 			"color": [
 				1,

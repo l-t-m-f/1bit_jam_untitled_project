@@ -1,0 +1,26 @@
+{
+	"name": "npButtonArt",
+	"plugin-id": "NinePatch",
+	"sid": 195588213860579,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "inverse",
+			"name": "Inverse"
+		}
+	],
+	"image": {
+		"width": 48,
+		"height": 48,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 9822318,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}
