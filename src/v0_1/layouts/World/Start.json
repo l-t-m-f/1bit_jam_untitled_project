@@ -618,7 +618,7 @@
 					"uid": 72,
 					"instanceVariables": {
 						"ivDestinationLayout": "House",
-						"ivDestinationSpawn": -1
+						"ivDestinationSpawn": 80
 					},
 					"behaviors": {},
 					"sceneGraphData": {
