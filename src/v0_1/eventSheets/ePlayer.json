@@ -687,11 +687,13 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "for-each",
+									"id": "for-each-ordered",
 									"objectClass": "System",
-									"sid": 976550742345508,
+									"sid": 214526698564390,
 									"parameters": {
-										"object": "famInteractive"
+										"object": "famInteractive",
+										"expression": "distance(sEntityBase.X, sEntityBase.Y, famInteractive.X, famInteractive.Y)",
+										"order": "ascending"
 									}
 								},
 								{

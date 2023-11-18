@@ -258,11 +258,11 @@
 				],
 				"sid": 308390637456990,
 				"name": "Animation 1",
-				"isLooping": false,
+				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 0
+				"speed": 12
 			}
 		],
 		"subfolders": []

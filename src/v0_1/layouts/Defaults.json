@@ -5235,14 +5235,29 @@
 					},
 					"uid": 139,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Rotate": {
+							"properties": {
+								"speed": 125,
+								"acceleration": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"effects": {
+						"Difference": {
+							"isEnabled": true,
+							"parameters": {}
+						}
+					},
 					"world": {
 						"x": 640,
 						"y": 128,
-						"width": 5,
-						"height": 5,
-						"originX": 0.4,
-						"originY": 0.4,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -5416,7 +5431,7 @@
 						}
 					},
 					"sceneGraphData": {
-						"parent-uid": null,
+						"parent-uid": 245,
 						"uid": 193,
 						"flags": {
 							"x": true,
@@ -6410,7 +6425,7 @@
 						}
 					},
 					"sceneGraphData": {
-						"parent-uid": null,
+						"parent-uid": 196,
 						"uid": 201,
 						"flags": {
 							"x": true,
@@ -6957,7 +6972,7 @@
 						}
 					},
 					"sceneGraphData": {
-						"parent-uid": null,
+						"parent-uid": 197,
 						"uid": 205,
 						"flags": {
 							"x": true,
@@ -7504,7 +7519,7 @@
 						}
 					},
 					"sceneGraphData": {
-						"parent-uid": null,
+						"parent-uid": 208,
 						"uid": 209,
 						"flags": {
 							"x": true,
@@ -7532,8 +7547,8 @@
 						}
 					},
 					"world": {
-						"x": 880,
-						"y": 816,
+						"x": 879,
+						"y": 823,
 						"width": 16,
 						"height": 32,
 						"originX": 0.5,
@@ -8051,7 +8066,7 @@
 						}
 					},
 					"sceneGraphData": {
-						"parent-uid": null,
+						"parent-uid": 200,
 						"uid": 213,
 						"flags": {
 							"x": true,
@@ -8598,7 +8613,7 @@
 						}
 					},
 					"sceneGraphData": {
-						"parent-uid": null,
+						"parent-uid": 204,
 						"uid": 217,
 						"flags": {
 							"x": true,
@@ -9145,7 +9160,7 @@
 						}
 					},
 					"sceneGraphData": {
-						"parent-uid": null,
+						"parent-uid": 212,
 						"uid": 221,
 						"flags": {
 							"x": true,
@@ -9692,7 +9707,7 @@
 						}
 					},
 					"sceneGraphData": {
-						"parent-uid": null,
+						"parent-uid": 216,
 						"uid": 225,
 						"flags": {
 							"x": true,
@@ -9748,7 +9763,7 @@
 					"uid": 226,
 					"instanceVariables": {
 						"ivInteractionKind": 0,
-						"ivStoryNumber": 0,
+						"ivStoryNumber": 8,
 						"ivLineNumber": 0,
 						"ivChoiceCnt": -1,
 						"ivDefaultEffect": -1,
@@ -14641,6 +14656,23 @@
 					"sceneGraphData": {
 						"parent-uid": 194,
 						"uid": 245,
+						"children": [
+							{
+								"uid": 193,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							}
+						],
 						"flags": {
 							"x": true,
 							"y": true,
@@ -14759,6 +14791,23 @@
 					"sceneGraphData": {
 						"parent-uid": 202,
 						"uid": 196,
+						"children": [
+							{
+								"uid": 201,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							}
+						],
 						"flags": {
 							"x": true,
 							"y": true,
@@ -14818,6 +14867,23 @@
 					"sceneGraphData": {
 						"parent-uid": 206,
 						"uid": 197,
+						"children": [
+							{
+								"uid": 205,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							}
+						],
 						"flags": {
 							"x": true,
 							"y": true,
@@ -14877,6 +14943,23 @@
 					"sceneGraphData": {
 						"parent-uid": 214,
 						"uid": 200,
+						"children": [
+							{
+								"uid": 213,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							}
+						],
 						"flags": {
 							"x": true,
 							"y": true,
@@ -14936,6 +15019,23 @@
 					"sceneGraphData": {
 						"parent-uid": 218,
 						"uid": 204,
+						"children": [
+							{
+								"uid": 217,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							}
+						],
 						"flags": {
 							"x": true,
 							"y": true,
@@ -14995,6 +15095,23 @@
 					"sceneGraphData": {
 						"parent-uid": 222,
 						"uid": 212,
+						"children": [
+							{
+								"uid": 221,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							}
+						],
 						"flags": {
 							"x": true,
 							"y": true,
@@ -15054,6 +15171,23 @@
 					"sceneGraphData": {
 						"parent-uid": 226,
 						"uid": 216,
+						"children": [
+							{
+								"uid": 225,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							}
+						],
 						"flags": {
 							"x": true,
 							"y": true,
@@ -15113,6 +15247,23 @@
 					"sceneGraphData": {
 						"parent-uid": 210,
 						"uid": 208,
+						"children": [
+							{
+								"uid": 209,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							}
+						],
 						"flags": {
 							"x": true,
 							"y": true,

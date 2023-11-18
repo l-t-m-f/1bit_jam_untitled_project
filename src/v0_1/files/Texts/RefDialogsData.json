@@ -284,16 +284,45 @@
 			"name": "Farmer",
 			"lines": [
 				{
-					"text": "Would you mind not telling people I’m here ? I kind of like being alone",
+					"text": "Hello there ! How are you doing on this fine sunny day ?",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "It’s bananas how everything seems to be just right. Everyone is happy here don’t you think ?",
 					"choices": [
 						{
+							"text": "Give red pepper",
+							"effect": 6
+						},
+						{
 							"text": "Leave",
-							"effect": 2
+							"effect": 0
 						}
 					],
 					"default_effect": 0
+				},
+				{
+					"text": "May your day be full of adventures !",
+					"choices": [],
+					"default_effect": 2
+				},
+				{
+					"text": "OH MY ! THIS DAY KEEPS GETTING BETTER !",
+					"choices": [],
+					"default_effect": 6
 				}
-			]
+			],
+			"success": {
+				"text": "They're humming a peaceful song.",
+				"choices": [],
+				"default_effect": 0
+			},
+			"failure": {
+				"text": "",
+				"choices": [],
+				"default_effect": 0
+			}
 		},
 		{
 			"name": "Ending Hole",
@@ -309,6 +338,55 @@
 					"default_effect": 2
 				}
 			]
+		},
+		{
+			"name": "Visitor",
+			"lines": [
+				{
+					"text": "Hey, I’m new in town and I’m kind of lost.",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "Do you know if there’s any cool activities to do around here ?",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "I heard this place sucks but I’m stuck here for my job so…",
+					"choices": [
+						{
+							"text": "Give map",
+							"effect": 6
+						},
+						{
+							"text": "Leave",
+							"effect": 0
+						}
+					],
+					"default_effect": 0
+				},
+				{
+					"text": "Oh, I’ll see you around I guess.",
+					"choices": [],
+					"default_effect": 2
+				},
+				{
+					"text": "Thank you ! I’m sure this will be useful.",
+					"choices": [],
+					"default_effect": 5
+				}
+			],
+			"success": {
+				"text": "This town seems really empty.",
+				"choices": [],
+				"default_effect": 0
+			},
+			"failure": {
+				"text": "",
+				"choices": [],
+				"default_effect": 0
+			}
 		}
 	]
 }

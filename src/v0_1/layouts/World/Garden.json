@@ -981,28 +981,28 @@
 				{
 					"type": "pFog",
 					"properties": {
-						"rate": 20,
+						"rate": 230,
 						"spray-cone": 2,
 						"type": "continuous-spray",
 						"object": 359161257022950,
 						"initially-visible": true,
 						"live-preview": false,
-						"speed": 30,
-						"size": 240,
+						"speed": 25,
+						"size": 16,
 						"opacity": 100,
 						"grow-rate": 0,
 						"x-randomiser": 960,
 						"y-randomiser": 0,
 						"initial-speed-randomiser": 0,
-						"size-randomiser": 0,
+						"size-randomiser": 48,
 						"grow-rate-randomiser": 0,
 						"acceleration": 0,
 						"gravity": 0,
 						"angle-randomiser": 0,
 						"life-speed-randomiser": 80,
 						"opacity-randomiser": 0,
-						"destroy-mode": "fade-to-invisible",
-						"timeout": 5
+						"destroy-mode": "timeout-expired",
+						"timeout": 7
 					},
 					"uid": 141,
 					"instanceVariables": {},
@@ -1031,7 +1031,7 @@
 					"effectId": "hexpixellate",
 					"name": "HexagonalPixellate",
 					"instance": {
-						"isEnabled": true,
+						"isEnabled": false,
 						"parameters": {
 							"scale": 16
 						}
