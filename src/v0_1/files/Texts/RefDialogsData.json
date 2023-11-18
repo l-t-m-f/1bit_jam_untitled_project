@@ -88,7 +88,12 @@
 					"default_effect": 0
 				},
 				{
-					"text": "Maybe it is just me here, it’s always been me right ?I try to find them everyday but I really can’t seem to get them.",
+					"text": "Maybe it is just me here, it’s always been me right ?.",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "I try to find them everyday but I really can’t seem to get them.",
 					"choices": [],
 					"default_effect": 0
 				},
@@ -101,17 +106,37 @@
 					"text": "It just won’t stop…",
 					"choices": [
 						{
-							"text": "Give fingers",
-							"effect": 0
+							"text": "Give tongue",
+							"effect": 6
 						},
 						{
 							"text": "Leave",
-							"effect": 2
+							"effect": 0
 						}
 					],
 					"default_effect": 0
+				},
+				{
+					"text": "If fish can talk, how can you prove you’re not one ?",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "Yes, yes, this will do just fine.",
+					"choices": [],
+					"default_effect": 5
 				}
-			]
+			],
+			"success": {
+				"text": "They threw the tongue in the lake. Fish gathered around to nibble on it.",
+				"choices": [],
+				"default_effect": 0
+			},
+			"failure": {
+				"text": "One day I’ll be like them.",
+				"choices": [],
+				"default_effect": 0
+			}
 		},
 		{
 			"name": "Anarchist Friend",
@@ -126,16 +151,75 @@
 					"choices": [
 						{
 							"text": "Leave",
-							"effect": 2
+							"effect": 0
 						},
 						{
 							"text": "Yes",
-							"effect": 0
+							"effect": 6
 						}
 					],
 					"default_effect": 0
+				},
+				{
+					"text": "Okay, no problem. I’m here if you need me.",
+					"choices": [],
+					"default_effect": 2
+				},
+				{
+					"text": "I heard that your landlord is in town right now. He’s sleeping at this fancy hotel.",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "The plan is : you give me your jar of fuel, that way I can set up the boat by the lake.",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "Meanwhile, you get to the hotel, you pick up the landlord WITHOUT WAKING HIM UP.",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "And then you meet me by the boat for the rest of the plan. Deal ?",
+					"choices": [
+						{
+							"text": "Leave",
+							"effect": 0
+						},
+						{
+							"text": "Give jar",
+							"effect": 6
+						}
+					],
+					"default_effect": 0
+				},
+				{
+					"text": "Okay, no problem. I’m here if you need me.",
+					"choices": [],
+					"default_effect": 2
+				},
+				{
+					"text": "Okay let’s go ! I’m going to repair the boat. The landlord is in room 450.",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "Talk to the receptionist, they’re the only one who can open the room for you. Good luck !",
+					"choices": [],
+					"default_effect": 5
 				}
-			]
+			],
+			"success": {
+				"text": "I’ll meet you at the lake to complete the plan.",
+				"choices": [],
+				"default_effect": 0
+			},
+			"failure": {
+				"text": "",
+				"choices": [],
+				"default_effect": 0
+			}
 		},
 		{
 			"name": "Cave Creature",
