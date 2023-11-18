@@ -238,7 +238,8 @@
 			"Browser",
 			"Audio",
 			"sPileOfTrash",
-			"sHouseDoor"
+			"sHouseDoor",
+			"sSmallExit"
 		],
 		"subfolders": [
 			{

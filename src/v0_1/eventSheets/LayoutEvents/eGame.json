@@ -144,6 +144,35 @@
 								}
 							],
 							"sid": 269543632452318
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 986318634632294
+								},
+								{
+									"id": "pick-random-instance",
+									"objectClass": "System",
+									"sid": 934850320338311,
+									"parameters": {
+										"object": "sPlayerSpawn"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "SpawnEntity",
+									"sid": 331877177234452,
+									"parameters": [
+										"\"Player\"",
+										"sPlayerSpawn.X&\", \"&sPlayerSpawn.Y"
+									]
+								}
+							],
+							"sid": 768613235606863
 						}
 					]
 				},
