@@ -239,7 +239,8 @@
 			"Audio",
 			"sPileOfTrash",
 			"sHouseDoor",
-			"sSmallExit"
+			"sSmallExit",
+			"sMenuBG"
 		],
 		"subfolders": [
 			{
@@ -575,7 +576,16 @@
 			"subfolders": []
 		},
 		"font": {
-			"items": [],
+			"items": [
+				{
+					"name": "PixelatedPusab.ttf",
+					"type": "application/font-sfnt",
+					"sid": 231859450876873,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"icon": {
