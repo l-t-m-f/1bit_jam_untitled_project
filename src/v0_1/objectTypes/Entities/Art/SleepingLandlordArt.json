@@ -1,0 +1,114 @@
+{
+	"name": "SleepingLandlordArt",
+	"plugin-id": "Sprite",
+	"sid": 225895590168052,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7234684,
+						"collisionPoly": {
+							"points": [
+								0.40625,
+								0.078125,
+								0.484375,
+								0.078125,
+								0.953125,
+								0.515625,
+								0.953125,
+								0.984375,
+								0.03125,
+								0.984375,
+								0.03125,
+								0.515625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3011900,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0.078125,
+								0.578125,
+								0.078125,
+								0.953125,
+								0.515625,
+								0.953125,
+								0.984375,
+								0.03125,
+								0.984375,
+								0.03125,
+								0.515625,
+								0.390625,
+								0.125
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7226533,
+						"collisionPoly": {
+							"points": [
+								0.390625,
+								0.078125,
+								0.6875,
+								0.09375,
+								0.953125,
+								0.515625,
+								0.953125,
+								0.984375,
+								0.03125,
+								0.984375,
+								0.03125,
+								0.515625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 596591332923887,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

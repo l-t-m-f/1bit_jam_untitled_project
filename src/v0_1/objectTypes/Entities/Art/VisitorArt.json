@@ -1,0 +1,99 @@
+{
+	"name": "VisitorArt",
+	"plugin-id": "Sprite",
+	"sid": 482608667981658,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 34,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4971340,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0,
+								0.75,
+								0,
+								0.875,
+								0.029411764705882353,
+								1,
+								0.08823529411764706,
+								1,
+								0.7058823529411765,
+								0.8125,
+								1,
+								0.1875,
+								1,
+								0,
+								0.7058823529411765,
+								0,
+								0.08823529411764706,
+								0.125,
+								0.029411764705882353
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 16,
+						"height": 34,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1031724,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.029411764705882353,
+								0.75,
+								0.029411764705882353,
+								0.875,
+								0.058823529411764705,
+								1,
+								0.11764705882352941,
+								1,
+								0.7352941176470589,
+								0.8125,
+								1,
+								0.1875,
+								1,
+								0,
+								0.7352941176470589,
+								0,
+								0.11764705882352941,
+								0.125,
+								0.058823529411764705
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 397571055986650,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -189,7 +189,7 @@
 								"period-offset-random": 0,
 								"magnitude": 12,
 								"magnitude-random": 0.5,
-								"enabled": true,
+								"enabled": false,
 								"live-preview": false
 							}
 						},
@@ -209,7 +209,7 @@
 						},
 						"Rotate": {
 							"properties": {
-								"speed": 90,
+								"speed": -10,
 								"acceleration": 0,
 								"enabled": true,
 								"live-preview": false
@@ -235,8 +235,8 @@
 							"transformX": 0,
 							"transformY": 0,
 							"transformZElevation": 0,
-							"transformW": 0,
-							"transformH": 0,
+							"transformW": 2.220446049250313e-16,
+							"transformH": 2.220446049250313e-16,
 							"transformA": 0,
 							"transformSX": 0,
 							"transformSY": 0,
@@ -283,7 +283,7 @@
 								"period-offset-random": 0,
 								"magnitude": 12,
 								"magnitude-random": 0.5,
-								"enabled": true,
+								"enabled": false,
 								"live-preview": false
 							}
 						},
@@ -303,7 +303,7 @@
 						},
 						"Rotate": {
 							"properties": {
-								"speed": 90,
+								"speed": -10,
 								"acceleration": 0,
 								"enabled": true,
 								"live-preview": false
@@ -329,8 +329,8 @@
 							"transformX": 0,
 							"transformY": 0,
 							"transformZElevation": 0,
-							"transformW": 0,
-							"transformH": 0,
+							"transformW": 2.220446049250313e-16,
+							"transformH": 2.220446049250313e-16,
 							"transformA": 0,
 							"transformSX": 0,
 							"transformSY": 0,
@@ -377,7 +377,7 @@
 								"period-offset-random": 0,
 								"magnitude": 12,
 								"magnitude-random": 0.5,
-								"enabled": true,
+								"enabled": false,
 								"live-preview": false
 							}
 						},
@@ -397,7 +397,7 @@
 						},
 						"Rotate": {
 							"properties": {
-								"speed": 90,
+								"speed": -10,
 								"acceleration": 0,
 								"enabled": true,
 								"live-preview": false
@@ -423,8 +423,8 @@
 							"transformX": 0,
 							"transformY": 0,
 							"transformZElevation": 0,
-							"transformW": 0,
-							"transformH": 0,
+							"transformW": 2.220446049250313e-16,
+							"transformH": 2.220446049250313e-16,
 							"transformA": 0,
 							"transformSX": 0,
 							"transformSY": 0,
@@ -433,8 +433,8 @@
 						}
 					},
 					"world": {
-						"x": 592,
-						"y": 320,
+						"x": 590.9736837635386,
+						"y": 244.0525985018554,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -485,13 +485,13 @@
 								"period-offset-random": 0,
 								"magnitude": 12,
 								"magnitude-random": 0,
-								"enabled": true,
+								"enabled": false,
 								"live-preview": false
 							}
 						},
 						"Rotate": {
 							"properties": {
-								"speed": 90,
+								"speed": -10,
 								"acceleration": 0,
 								"enabled": true,
 								"live-preview": false
@@ -667,8 +667,8 @@
 						}
 					},
 					"world": {
-						"x": 32,
-						"y": 240,
+						"x": 34.565790591153544,
+						"y": 238.46052564530788,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -744,8 +744,8 @@
 						}
 					},
 					"world": {
-						"x": 288,
-						"y": 48,
+						"x": 287.4185918520446,
+						"y": 47.99281578634477,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -822,7 +822,7 @@
 					},
 					"world": {
 						"x": 592,
-						"y": 320,
+						"y": 241.99996602893236,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -898,8 +898,8 @@
 						}
 					},
 					"world": {
-						"x": 336,
-						"y": 432,
+						"x": 337.0263162364614,
+						"y": 431.4868418817694,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,

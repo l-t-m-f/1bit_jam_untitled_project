@@ -1,0 +1,105 @@
+{
+	"name": "TrainGuardArt",
+	"plugin-id": "Sprite",
+	"sid": 704742083672368,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 28,
+						"height": 40,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1512475,
+						"collisionPoly": {
+							"points": [
+								0.10714285714285714,
+								0,
+								0.8214285714285714,
+								0,
+								0.8571428571428571,
+								0.025,
+								1,
+								0.175,
+								1,
+								0.225,
+								0.9285714285714286,
+								0.725,
+								0.75,
+								1,
+								0.25,
+								1,
+								0,
+								0.675,
+								0,
+								0.05,
+								0.03571428571428571,
+								0.025
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 28,
+						"height": 40,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3471564,
+						"collisionPoly": {
+							"points": [
+								0.10714285714285714,
+								0.025,
+								0.8214285714285714,
+								0.025,
+								0.8571428571428571,
+								0.05,
+								1,
+								0.2,
+								1,
+								0.25,
+								0.9285714285714286,
+								0.75,
+								0.75,
+								1,
+								0.25,
+								1,
+								0.03571428571428571,
+								0.75,
+								0,
+								0.7,
+								0,
+								0.075,
+								0.03571428571428571,
+								0.05
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 482654102116378,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}
