@@ -25,6 +25,21 @@
 		"tag": ""
 	},
 	"tile-collision-polys": {
+		"4": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0,
+					1,
+					0,
+					1,
+					1,
+					0,
+					1
+				]
+			},
+			"useCollisionPoly": false
+		},
 		"7": {
 			"collisionPoly": {
 				"points": [

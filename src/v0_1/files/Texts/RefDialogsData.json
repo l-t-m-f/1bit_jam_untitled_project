@@ -24,30 +24,55 @@
 			"name": "OldMan",
 			"lines": [
 				{
-					"text": "Oh hi there ! I didn’t expect to see anyone here I used to be the gravedigger around here, but since I died no one’s taking care of the graveyard anymore.",
+					"text": "Oh hi there ! I didn’t expect to see anyone here.",
 					"choices": [],
 					"default_effect": 0
 				},
 				{
-					"text": "No one’s coming here anyway, but I wish I had more time to say goodbye to the skeletons, they’re some of the coolest people I’ve ever met.",
+					"text": " I used to be the gravedigger around here, but since I died no one’s taking care of the graveyard anymore.",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "No one’s coming here anyway, but I wish I had more time to say goodbye to the skeletons...",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "...They’re some of the coolest people I’ve ever met *wink*",
 					"choices": [
 						{
 							"text": "Give clock",
-							"effect": 0
+							"effect": 6
 						},
 						{
 							"text": "Leave",
-							"effect": 2
+							"effect": 0
 						}
 					],
 					"default_effect": -1
 				},
 				{
-					"text": "Thanks again for the clock, the constant ticking kind of brought a bit of life back in this garden. It’s really nice.",
+					"text": "Oh okay bye !",
 					"choices": [],
-					"default_effect": 2
+					"default_effect": 0
+				},
+				{
+					"text": "Huh ? Thank you, bud. It won't bring me back to life but it is a nice clock.",
+					"choices": [],
+					"default_effect": 5
 				}
-			]
+			],
+			"success": {
+				"text": "Its constant ticking kind of brought a bit of life back in this garden...Thanks again for the clock.",
+				"choices": [],
+				"default_effect": 0
+			},
+			"failure": {
+				"text": "",
+				"choices": [],
+				"default_effect": 0
+			}
 		},
 		{
 			"name": "Fisherman",
@@ -183,6 +208,21 @@
 						}
 					],
 					"default_effect": 0
+				}
+			]
+		},
+		{
+			"name": "Ending Hole",
+			"lines": [
+				{
+					"text": "There’s a hole there, you can see a bright light coming out of it.",
+					"choices": [],
+					"default_effect": 0
+				},
+				{
+					"text": "Unfortunately, you’re way too big to crawl inside.",
+					"choices": [],
+					"default_effect": 2
 				}
 			]
 		}
